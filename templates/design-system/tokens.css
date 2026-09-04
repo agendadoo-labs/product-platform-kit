@@ -1,0 +1,78 @@
+:root {
+  color-scheme: light;
+
+  /* Semantic colors: replace the values when adopting, not the token names. */
+  --ppk-color-text: #0f172a;
+  --ppk-color-text-subtle: #475569;
+  --ppk-color-text-muted: #64748b;
+  --ppk-color-primary: #2563eb;
+  --ppk-color-primary-hover: #1d4ed8;
+  --ppk-color-primary-soft: #dbeafe;
+  --ppk-color-accent: #0891b2;
+  --ppk-color-canvas: #f8fafc;
+  --ppk-color-surface: #ffffff;
+  --ppk-color-surface-raised: #ffffff;
+  --ppk-color-border: #cbd5e1;
+  --ppk-color-border-strong: #94a3b8;
+  --ppk-color-success: #047857;
+  --ppk-color-success-soft: #d1fae5;
+  --ppk-color-warning: #b45309;
+  --ppk-color-warning-soft: #fef3c7;
+  --ppk-color-danger: #b91c1c;
+  --ppk-color-danger-soft: #fee2e2;
+
+  /* Native system fonts keep the starter independent from brand assets. */
+  --ppk-font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --ppk-font-mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  --ppk-font-size-xs: 0.75rem;
+  --ppk-font-size-sm: 0.875rem;
+  --ppk-font-size-md: 1rem;
+  --ppk-font-size-lg: 1.25rem;
+  --ppk-font-size-xl: clamp(1.75rem, 4vw, 2.5rem);
+  --ppk-line-height-tight: 1.2;
+  --ppk-line-height-normal: 1.55;
+
+  --ppk-space-1: 0.25rem;
+  --ppk-space-2: 0.5rem;
+  --ppk-space-3: 0.75rem;
+  --ppk-space-4: 1rem;
+  --ppk-space-5: 1.5rem;
+  --ppk-space-6: 2rem;
+  --ppk-space-7: 3rem;
+
+  --ppk-radius-sm: 0.375rem;
+  --ppk-radius-md: 0.625rem;
+  --ppk-radius-lg: 0.875rem;
+  --ppk-shadow-sm: 0 1px 2px rgb(15 23 42 / 8%);
+  --ppk-shadow-md: 0 12px 30px rgb(15 23 42 / 10%);
+  --ppk-focus-ring: 0 0 0 3px rgb(37 99 235 / 24%);
+  --ppk-motion-fast: 160ms ease;
+  --ppk-content-width: 72rem;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --ppk-color-text: #f8fafc;
+  --ppk-color-text-subtle: #cbd5e1;
+  --ppk-color-text-muted: #94a3b8;
+  --ppk-color-primary: #60a5fa;
+  --ppk-color-primary-hover: #93c5fd;
+  --ppk-color-primary-soft: #172554;
+  --ppk-color-accent: #22d3ee;
+  --ppk-color-canvas: #020617;
+  --ppk-color-surface: #0f172a;
+  --ppk-color-surface-raised: #1e293b;
+  --ppk-color-border: #334155;
+  --ppk-color-border-strong: #475569;
+  --ppk-color-success: #34d399;
+  --ppk-color-success-soft: #052e2b;
+  --ppk-color-warning: #fbbf24;
+  --ppk-color-warning-soft: #422006;
+  --ppk-color-danger: #f87171;
+  --ppk-color-danger-soft: #450a0a;
+  --ppk-shadow-md: 0 16px 36px rgb(0 0 0 / 35%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --ppk-motion-fast: 0ms; }
+}

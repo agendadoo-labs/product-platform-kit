@@ -7,8 +7,9 @@
 3. Aplique as migrações na ordem numérica.
 4. Cadastre o primeiro administrador por uma operação privilegiada no servidor.
 5. Copie `templates/web/` e adapte o import do cliente Supabase.
-6. Configure os ambientes conforme `ENVIRONMENTS.md`.
-7. Valide RLS com duas contas comuns e uma administrativa.
+6. Opcionalmente copie `templates/design-system/`, personalize os tokens e valide contraste com a nova marca.
+7. Configure os ambientes conforme `ENVIRONMENTS.md`.
+8. Valide RLS com duas contas comuns e uma administrativa.
 
 ## Projeto existente
 
