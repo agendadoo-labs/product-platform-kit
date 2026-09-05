@@ -1,0 +1,16 @@
+name: critical
+purpose: "Mudanças de alto risco, produção ou arquitetura."
+orchestrator: { model: gpt-6-astra, reasoning_effort: high }
+discovery_specialist: { model: gpt-5.6-luna, reasoning_effort: low }
+default_specialist: { model: gpt-5.6-terra, reasoning_effort: high }
+critical_reviewer: { model: gpt-5.6-sol, reasoning_effort: high }
+max_parallel_specialists: 3
+context_policy: scoped_with_evidence
+mandatory_final_review_by_orchestrator: true
+require_human_action_time_confirmation: true
+use_when:
+  - producao_credenciais_permissoes_ou_exclusao
+  - autenticacao_pagamento_ou_dados_pessoais
+  - migracao_dificil_de_reverter
+  - conflito_entre_fontes_ou_criterios_de_aceite
+

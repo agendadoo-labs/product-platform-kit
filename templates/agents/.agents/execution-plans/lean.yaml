@@ -1,0 +1,13 @@
+name: lean
+purpose: "Menor custo para trabalho previsível e reversível."
+orchestrator: { model: gpt-5.6-sol, reasoning_effort: medium }
+default_specialist: { model: gpt-5.6-luna, reasoning_effort: low }
+complex_specialist: { model: gpt-5.6-terra, reasoning_effort: medium }
+max_parallel_specialists: 2
+context_policy: minimal
+mandatory_final_review_by_orchestrator: true
+use_when:
+  - escopo_e_aceite_estao_claros
+  - alteracoes_sao_reversiveis
+  - checks_deterministicos_estao_disponiveis
+

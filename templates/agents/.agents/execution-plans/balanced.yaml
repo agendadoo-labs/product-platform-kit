@@ -1,0 +1,13 @@
+name: balanced
+purpose: "Padrão para desenvolvimento de produto com múltiplas especialidades."
+orchestrator: { model: gpt-5.6-sol, reasoning_effort: high }
+mechanical_specialist: { model: gpt-5.6-luna, reasoning_effort: low }
+default_specialist: { model: gpt-5.6-terra, reasoning_effort: medium }
+max_parallel_specialists: 3
+context_policy: scoped
+mandatory_final_review_by_orchestrator: true
+use_when:
+  - feature_cruza_design_desenvolvimento_ou_dados
+  - existe_julgamento_moderado
+  - entrega_exige_documentacao_e_telemetria
+

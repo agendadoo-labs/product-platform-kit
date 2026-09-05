@@ -12,6 +12,7 @@ Inclui:
 - exemplos seguros de configuração de ambientes;
 - clientes TypeScript para telemetria e experimentos;
 - starter design system neutro, acessível e independente de marca;
+- starter de equipe agêntica com roteamento econômico entre Desenvolvimento, Design e Dados;
 - verificação automática contra segredos e migrações fora de ordem.
 
 ## Princípios
@@ -31,6 +32,7 @@ Inclui:
 4. Copie os clientes de `templates/web/` para o aplicativo.
 5. Se precisar de uma base visual, copie `templates/design-system/` e personalize apenas os tokens semânticos.
 6. Execute `npm run check` antes de publicar.
+7. Para operar com agentes, copie `templates/agents/AGENTS.md` e `templates/agents/.agents/` para o projeto consumidor.
 
 ## Documentação
 
@@ -42,5 +44,8 @@ Inclui:
 - [Testes A/B](docs/EXPERIMENTS.md)
 - [Mapeamento do Valora RJ](docs/VALORA-RJ-MAPPING.md)
 - [Starter Design System](templates/design-system/README.md)
+- [Operação agêntica de Produto](docs/AGENTIC-WORKFLOW.md)
+- [Roteamento de modelos e tokens](docs/AGENT-MODEL-ROUTING.md)
+- [Starter de equipe agêntica](templates/agents/README.md)
 
 Este kit é um ponto de partida versionado. Alterações específicas de um produto devem ficar no repositório desse produto.

@@ -10,6 +10,7 @@
 6. Opcionalmente copie `templates/design-system/`, personalize os tokens e valide contraste com a nova marca.
 7. Configure os ambientes conforme `ENVIRONMENTS.md`.
 8. Valide RLS com duas contas comuns e uma administrativa.
+9. Se usar agentes, copie `templates/agents/AGENTS.md` e `templates/agents/.agents/`, adapte modelos e responsável de Produto e execute uma tarefa piloto.
 
 ## Projeto existente
 

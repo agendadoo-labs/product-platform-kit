@@ -1,0 +1,53 @@
+version: 1
+team:
+  name: product_delivery_team
+  product_owner: "[ADAPTAR: nome ou papel]"
+  orchestrator:
+    id: product_orchestrator
+    model: gpt-5.6-sol
+    reasoning_effort: high
+    owns: [scope, routing, cross_role_contracts, final_validation]
+  specialists:
+    - id: development
+      instructions: .agents/roles/development.md
+      default_model: gpt-5.6-terra
+      default_reasoning_effort: medium
+    - id: design
+      instructions: .agents/roles/design.md
+      default_model: gpt-5.6-terra
+      default_reasoning_effort: medium
+    - id: data
+      instructions: .agents/roles/data.md
+      default_model: gpt-5.6-terra
+      default_reasoning_effort: medium
+model_routing:
+  economy:
+    model: gpt-5.6-luna
+    reasoning_effort: low
+    target_input_tokens: 8000
+    target_output_tokens: 2000
+  standard:
+    model: gpt-5.6-terra
+    reasoning_effort: medium
+    target_input_tokens: 24000
+    target_output_tokens: 6000
+  complex:
+    model: gpt-5.6-sol
+    reasoning_effort: high
+    target_input_tokens: 64000
+    target_output_tokens: 12000
+  promote_when:
+    - production_migration
+    - destructive_change
+    - authentication_payment_or_personal_data
+    - cross_specialty_conflict
+    - ambiguous_acceptance_criteria
+    - repeated_failure
+workflow:
+  handoff_template: .agents/HANDOFF.md
+  decision_directory: docs/decisions
+  required_feature_docs: [product, design, data, engineering]
+  telemetry_required: true
+  production_changes_require_confirmation: true
+  secrets_allowed_in_repository: false
+
