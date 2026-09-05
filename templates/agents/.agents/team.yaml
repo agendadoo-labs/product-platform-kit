@@ -45,9 +45,11 @@ model_routing:
     - repeated_failure
 workflow:
   handoff_template: .agents/HANDOFF.md
+  token_report_template: .agents/TOKEN-REPORT.md
+  token_report_directory: docs/agent-runs
   decision_directory: docs/decisions
   required_feature_docs: [product, design, data, engineering]
   telemetry_required: true
   production_changes_require_confirmation: true
   secrets_allowed_in_repository: false
-
+  token_report_required: true

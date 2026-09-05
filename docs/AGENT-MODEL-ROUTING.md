@@ -61,6 +61,10 @@ São orçamentos operacionais, não limites da plataforma. Meça custo real por 
 5. Checks determinísticos substituem revisões adicionais por modelo sempre que possível.
 6. Registre modelo, esforço, tokens estimados, retrabalho e aceite para calibrar o roteador.
 
+## Relatório pós-execução
+
+Todo plano exige um relatório em `docs/agent-runs/`, baseado no template `.agents/TOKEN-REPORT.md`. Registre tokens de entrada e saída por papel/modelo somente quando a API ou o ambiente fornecer a medição. Caso contrário, marque `indisponível` para evitar falsa precisão. Quando houver custo monetário, registre também a fonte e a data da tabela usada.
+
 ## Planos prontos
 
 - `lean.yaml`: Luna por padrão nos especialistas e Terra apenas quando a tarefa deixar de ser mecânica.

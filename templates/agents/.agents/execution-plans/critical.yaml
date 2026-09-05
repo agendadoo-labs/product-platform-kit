@@ -7,10 +7,10 @@ critical_reviewer: { model: gpt-5.6-sol, reasoning_effort: high }
 max_parallel_specialists: 3
 context_policy: scoped_with_evidence
 mandatory_final_review_by_orchestrator: true
+mandatory_token_report: true
 require_human_action_time_confirmation: true
 use_when:
   - producao_credenciais_permissoes_ou_exclusao
   - autenticacao_pagamento_ou_dados_pessoais
   - migracao_dificil_de_reverter
   - conflito_entre_fontes_ou_criterios_de_aceite
-

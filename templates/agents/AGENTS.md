@@ -11,6 +11,7 @@ A pessoa de Produto responde pelo objetivo e aceite. O agente principal atua com
 - Use o menor perfil de modelo que cumpra a tarefa com segurança.
 - Promova tarefas conforme as regras de risco do manifesto.
 - Preserve o modelo mais capaz para orquestração, conflitos e revisão final.
+- Gere o relatório definido em `.agents/TOKEN-REPORT.md` ao concluir a operação.
 
 ## Regras comuns
 
@@ -20,6 +21,6 @@ A pessoa de Produto responde pelo objetivo e aceite. O agente principal atua com
 4. Atualize Product, Design, Data e Eng Docs conforme o impacto.
 5. Verifique a entrega em proporção ao risco.
 6. Peça aprovação imediatamente antes de publicar, alterar produção, criar credenciais, mudar permissões, assumir custos ou excluir dados.
+7. Registre tokens exatos apenas quando fornecidos pela API ou ambiente; use `indisponível` nos demais casos.
 
 Desenvolvimento não redefine comportamento de Produto sozinho; Design não inventa disponibilidade de dados; Dados não expõe campos sem contrato de experiência e privacidade. O orquestrador resolve conflitos e entrega uma visão única.
-
