@@ -1,0 +1,48 @@
+# Padrão de ambiente de teste
+
+## Objetivo
+
+Toda mudança relevante deve passar por um ambiente de homologação isolado, executando o mesmo código e as mesmas migrações que podem chegar à produção. O ambiente usa dados públicos reais ou uma cópia minimizada e desidentificada; nunca credenciais nem dados pessoais de produção.
+
+## Fluxo obrigatório
+
+```mermaid
+flowchart LR
+  F[Branch de feature] --> L[Checks locais]
+  L --> PR[Pull request]
+  PR --> VP[Vercel Preview]
+  PR --> SP[Supabase Preview Branch]
+  SP --> SD[Seed real minimizado]
+  VP --> QA[Teste de Produto e QA]
+  SD --> QA
+  QA -->|aprovado| M[Merge em main]
+  QA -->|reprovado| F
+  M --> P[Produção]
+```
+
+## Regras
+
+1. Produção recebe somente código revisado e aprovado na URL de Preview.
+2. Migrações são aditivas e executadas primeiro na Preview Branch.
+3. Preview usa URL, chave publicável, `service_role` e redirects próprios.
+4. Seeds são reproduzíveis, versionados por fonte e sem dados pessoais.
+5. Dados reais devem registrar fonte, versão, cobertura, rejeições e método de minimização.
+6. Feature flags ficam desligadas em produção até o aceite explícito.
+7. Falha de preview não pode causar fallback silencioso para o banco de produção.
+8. A branch de banco é removida depois do merge ou abandono para interromper custos.
+
+## Checklist de promoção
+
+- [ ] build, lint, testes e verificação de segredos passaram;
+- [ ] migrações foram aplicadas do zero;
+- [ ] RLS e acesso entre contas foram testados;
+- [ ] dados reais têm cobertura e linhagem documentadas;
+- [ ] jornada desktop e mobile foi testada na URL pública de Preview;
+- [ ] telemetria de descoberta, uso, sucesso, abandono e proteção apareceu no ambiente correto;
+- [ ] desempenho e limites de provedor foram validados;
+- [ ] rollback e limpeza do ambiente estão definidos;
+- [ ] Produto registrou aprovação antes do merge.
+
+## Custos
+
+Antes de criar recursos cobrados, registre estimativa e obtenha confirmação no momento da ação. Preview Branches devem ter responsável, data de expiração e rotina de remoção.

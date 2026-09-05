@@ -13,6 +13,8 @@ Inclui:
 - clientes TypeScript para telemetria e experimentos;
 - starter design system neutro, acessível e independente de marca;
 - starter de equipe agêntica com roteamento econômico entre Desenvolvimento, Design e Dados;
+- pacote `@product-platform-kit/map-core` para contratos e operação de mapas sem marca;
+- padrão de Preview/Homologação com dados reais minimizados e banco isolado;
 - verificação automática contra segredos e migrações fora de ordem.
 
 ## Princípios
@@ -39,6 +41,8 @@ Inclui:
 - [Arquitetura](docs/ARCHITECTURE.md)
 - [Passo a passo: GoDaddy, Supabase, Resend e Vercel](docs/SETUP-PLAYBOOK.md)
 - [Configuração de ambientes](docs/ENVIRONMENTS.md)
+- [Padrão de ambiente de teste](docs/TEST-ENVIRONMENT-STANDARD.md)
+- [Map Core](packages/map-core/README.md)
 - [Segurança e privacidade](docs/SECURITY-PRIVACY.md)
 - [Telemetria](docs/TELEMETRY.md)
 - [Testes A/B](docs/EXPERIMENTS.md)

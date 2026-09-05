@@ -1,5 +1,11 @@
 # Histórico de versões
 
+## 0.3.0 — 2026-09-05
+
+- pacote neutro `@product-platform-kit/map-core` para contratos, zoom, cache, validação e telemetria de mapas;
+- padrão de homologação isolada com Vercel Preview, Supabase Preview Branch e dados reais minimizados;
+- templates de configuração e checklist de Preview.
+
 ## 0.2.0 — 2026-09-04
 
 - starter design system neutro e independente da identidade do Valora;
