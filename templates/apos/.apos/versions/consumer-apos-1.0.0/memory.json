@@ -1,0 +1,6 @@
+{
+  "persistent": ["Intent", "Contract", "Decision", "Evidence", "ProductState"],
+  "proportional": ["AgentRun"],
+  "ephemeral": ["task", "handoff", "temporary_plan", "intermediate_status", "agent_role_assignment"],
+  "provenance_states": ["explicit", "inherited_from_active_decision", "reported", "suggested", "unknown"]
+}

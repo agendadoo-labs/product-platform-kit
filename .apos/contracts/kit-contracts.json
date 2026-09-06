@@ -1,0 +1,10 @@
+{
+  "contracts": [
+    {"id": "C-PPK-SCOPE-001", "family": "product", "description": "Templates reutilizáveis não incorporam dados, regras de negócio, identidade ou decisões de um consumidor específico.", "applies_when": ["template", "package", "shared_documentation"], "verification": {"status": "specified", "required_evidence": "consumer coupling scan and review"}},
+    {"id": "C-PPK-CAP-001", "family": "engineering", "description": "A operação compõe capabilities conforme o Intent e não exige organograma, papel ou conjunto fixo de agentes.", "applies_when": ["operating_model", "starter"], "verification": {"status": "specified", "required_evidence": "starter structure and prohibited-reference checks"}},
+    {"id": "C-PPK-EVID-001", "family": "operations", "description": "Executor e verificador são semanticamente separados; falha e ausência de evidência não produzem satisfação.", "applies_when": ["runtime", "verification", "product_state"], "verification": {"status": "specified", "required_evidence": "runtime tests or independent artifact checks"}},
+    {"id": "C-PPK-REV-001", "family": "operations", "description": "Mudanças materiais preservam versão anterior identificável, hashes e caminho de restauração.", "applies_when": ["migration", "release", "material_change"], "verification": {"status": "specified", "required_evidence": "tag, manifest and digest verification"}},
+    {"id": "C-PPK-SEC-001", "family": "engineering", "description": "Repositório, templates e evidências não contêm segredos, dados pessoais ou arquivos reais de ambiente.", "applies_when": ["all_changes"], "verification": {"status": "implemented", "verifier": "scripts/check-repository.mjs"}},
+    {"id": "C-PPK-GOV-001", "family": "operations", "description": "Publicação na main, releases, custos, permissões e ações destrutivas exigem autorização específica vinculada à revisão.", "applies_when": ["external_effect", "critical_boundary"], "verification": {"status": "specified", "required_evidence": "scoped authorization recorded before effect"}}
+  ]
+}

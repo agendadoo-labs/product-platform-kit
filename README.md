@@ -12,7 +12,7 @@ Inclui:
 - exemplos seguros de configuração de ambientes;
 - clientes TypeScript para telemetria e experimentos;
 - starter design system neutro, acessível e independente de marca;
-- starter de equipe agêntica com roteamento econômico entre Desenvolvimento, Design e Dados;
+- starter APOS com Intents, Contracts, Capabilities, Evidence e roteamento econômico por risco;
 - pacote `@product-platform-kit/map-core` para contratos e operação de mapas sem marca;
 - padrão de Preview/Homologação com dados reais minimizados e banco isolado;
 - verificação automática contra segredos e migrações fora de ordem.
@@ -34,7 +34,7 @@ Inclui:
 4. Copie os clientes de `templates/web/` para o aplicativo.
 5. Se precisar de uma base visual, copie `templates/design-system/` e personalize apenas os tokens semânticos.
 6. Execute `npm run check` antes de publicar.
-7. Para operar com agentes, copie `templates/agents/AGENTS.md` e `templates/agents/.agents/` para o projeto consumidor.
+7. Para operar com agentes, adote `templates/apos/` no projeto consumidor e registre seu primeiro Intent.
 
 ## Documentação
 
@@ -50,7 +50,8 @@ Inclui:
 - [Starter Design System](templates/design-system/README.md)
 - [Operação agêntica de Produto](docs/AGENTIC-WORKFLOW.md)
 - [Roteamento de modelos e tokens](docs/AGENT-MODEL-ROUTING.md)
-- [Starter de equipe agêntica](templates/agents/README.md)
+- [Starter APOS](templates/apos/README.md)
+- [Starter anterior, somente para consulta](templates/agents/README.md)
 
 Este kit é um ponto de partida versionado. Alterações específicas de um produto devem ficar no repositório desse produto.
 
@@ -60,3 +61,4 @@ O [APOS v0.1](docs/APOS-v0.1.md) adiciona governança, contratos e evidências a
 
 - [APOS aplicado ao Valora e interpretação de builders](docs/apos/VALORA-OPERATING-MODE.md)
 - [Contexto e decisões do APOS](docs/apos/CONTEXT.md)
+- [Migração operacional do próprio toolkit](docs/apos/OPERATING-MODEL-MIGRATION.md)

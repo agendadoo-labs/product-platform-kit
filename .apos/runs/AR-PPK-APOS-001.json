@@ -1,0 +1,14 @@
+{
+  "id": "AR-PPK-APOS-001",
+  "intent_id": "I-PPK-APOS-001",
+  "status": "succeeded",
+  "capabilities": ["recover-context", "design-reusable-contract", "change-package", "verify-package", "publish-authorized-version"],
+  "base_revision": 0,
+  "result_revision": 2,
+  "environment": "repository",
+  "artifact_digest": "41a50f7156652a4a4cb328744f4d49464161d23fe8d4617baa5623e7f133b2d7",
+  "completed_at": "2026-09-06T01:13:58-03:00",
+  "consumption": {"input_tokens": "unavailable", "output_tokens": "unavailable", "monetary_cost": "unavailable", "source": "environment does not expose exact usage"},
+  "outputs": ["Versioned toolkit operating model", "Reusable APOS consumer starter", "Legacy tag and hash manifest", "Operational verifier", "Updated adoption and routing documentation"],
+  "remaining_uncertainties": ["Generic runtime verifiers beyond bootstrap", "Removal date for the physical legacy starter"]
+}

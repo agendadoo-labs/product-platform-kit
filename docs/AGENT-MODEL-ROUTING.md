@@ -1,78 +1,23 @@
-# Roteamento de modelos e orçamento de tokens
+# Roteamento de modelos por capacidade e risco
 
-O orquestrador preserva contexto, decisões e integração em um modelo mais capaz. Especialistas recebem o menor modelo que atende com segurança à tarefa e sobem de nível quando risco, ambiguidade ou dificuldade exigirem.
+Modelos são recursos de execução, não papéis organizacionais. O roteamento acontece depois de interpretar o Intent e classificar a ação.
 
-## Perfis padrão
+## Critério
 
-| Perfil | Modelo padrão | Esforço | Uso |
-|---|---|---|---|
-| Orquestração | `gpt-5.6-sol` | `high` | decomposição, decisões, integração e revisão final |
-| Especialista | `gpt-5.6-terra` | `medium` | implementação, análise e design com julgamento moderado |
-| Econômico | `gpt-5.6-luna` | `low` | inventário, busca local, mudanças mecânicas e checks |
+Escolha o modelo de menor custo que consiga executar a capability com qualidade suficiente. Promova quando aumentarem ambiguidade, impacto, dificuldade de verificação ou risco. Modelo mais capaz não concede autoridade, e modelo econômico não reduz contratos.
 
-Os identificadores são defaults substituíveis no `team.yaml`. Revise-os quando disponibilidade ou preços mudarem.
+| Classe da capability | Características | Roteamento esperado |
+|---|---|---|
+| Mecânica | entrada fechada, transformação previsível, check determinístico | modelo econômico |
+| Analítica | julgamento moderado, alternativas delimitadas, evidência disponível | modelo intermediário |
+| Crítica | arquitetura, conflito, alta incerteza, segurança ou efeito sensível | modelo mais capaz e revisão independente |
 
-## Classificação de tarefas
+## Eficiência de contexto
 
-### Econômica
+1. Recupere somente Intents, Contracts, Decisions, Evidence e arquivos relevantes.
+2. Envie à execução a menor revisão suficiente, com critérios verificáveis.
+3. Prefira verificadores determinísticos quando provarem o mesmo contrato.
+4. Não replique a conversa completa nem crie um AgentRun para cada chamada interna.
+5. Registre consumo exato somente quando fornecido pelo ambiente; indisponível não significa zero.
 
-Use Luna com esforço baixo para localizar arquivos, levantar referências, atualizar índices de documentação, executar checks conhecidos, formatar conteúdo e aplicar mudanças repetitivas bem especificadas.
-
-### Padrão
-
-Use Terra com esforço médio para implementar componentes definidos, escrever testes, analisar dados com critérios claros, produzir variações de layout e revisar contratos locais.
-
-### Complexa
-
-Use Sol com esforço alto para arquitetura, segurança, migrações de produção, investigação ambígua, reconciliação entre áreas e revisão final. O orquestrador permanece neste perfil por padrão.
-
-## Regras de promoção
-
-Promova uma tarefa um nível quando houver alteração destrutiva, dados pessoais, autenticação ou pagamento, migração irreversível, conflito entre fontes, falha repetida, requisito ambíguo que afete aceite ou decisão que atravesse duas especialidades.
-
-Não promova por tamanho de arquivo ou quantidade de passos quando o trabalho continuar mecânico e verificável.
-
-## Orçamento de contexto
-
-1. Envie ao especialista somente objetivo, arquivos, contratos e critérios necessários.
-2. Prefira caminhos e trechos precisos a históricos completos.
-3. Defina saída curta: resultado, evidência, arquivos alterados e riscos.
-4. Reuse artefatos versionados; não repita documentação extensa no prompt.
-5. Delegue uma vez por fronteira clara e evite cadeias de agentes.
-6. Não peça ao especialista para revalidar trabalho fora de seu contrato.
-7. O orquestrador resume resultados antes de cruzá-los com outra área.
-
-## Limites sugeridos
-
-| Tarefa | Entrada alvo | Saída alvo | Tentativas antes de promoção |
-|---|---:|---:|---:|
-| Mecânica | 8 mil tokens | 2 mil tokens | 2 |
-| Especializada | 24 mil tokens | 6 mil tokens | 2 |
-| Complexa | 64 mil tokens | 12 mil tokens | revisão humana conforme risco |
-
-São orçamentos operacionais, não limites da plataforma. Meça custo real por tipo de tarefa e ajuste trimestralmente.
-
-## Plano de execução econômico
-
-1. O orquestrador classifica risco e cria contratos curtos.
-2. Luna faz descoberta e tarefas mecânicas em paralelo quando houver ganho real.
-3. Terra implementa ou analisa os itens que exigem julgamento de área.
-4. Sol recebe apenas conflitos, decisões críticas e integração final.
-5. Checks determinísticos substituem revisões adicionais por modelo sempre que possível.
-6. Registre modelo, esforço, tokens estimados, retrabalho e aceite para calibrar o roteador.
-
-## Relatório pós-execução
-
-Todo plano exige um relatório em `docs/agent-runs/`, baseado no template `.agents/TOKEN-REPORT.md`. Registre tokens de entrada e saída por papel/modelo somente quando a API ou o ambiente fornecer a medição. Caso contrário, marque `indisponível` para evitar falsa precisão. Quando houver custo monetário, registre também a fonte e a data da tabela usada.
-
-## Planos prontos
-
-- `lean.yaml`: Luna por padrão nos especialistas e Terra apenas quando a tarefa deixar de ser mecânica.
-- `balanced.yaml`: Terra nos especialistas, Luna em descoberta e Sol na orquestração; é o padrão recomendado.
-- `critical.yaml`: Astra na orquestração de alto risco, Sol na revisão crítica e modelos menores na coleta de evidências.
-
-Os três planos ficam em `templates/agents/.agents/execution-plans/`. A configuração correspondente de ambiente está em `templates/agents/.env.agents.example`.
-
-## Critério de sucesso
-
-Otimize custo por entrega aceita, não custo por chamada. Uma tarefa barata que gera retrabalho pode custar mais que uma execução correta em Terra ou Sol.
+Otimize custo por Intent validado, não por quantidade de chamadas ou documentos produzidos.

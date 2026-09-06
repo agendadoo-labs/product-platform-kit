@@ -1,0 +1,10 @@
+{
+  "id": "PS-PRODUCT-PLATFORM-KIT",
+  "revision": 2,
+  "active_operating_model": "product-platform-kit-apos-2.0.0",
+  "satisfied_intents": ["I-PPK-APOS-001"],
+  "candidate_intents": [],
+  "evidence_ids": ["E-PPK-APOS-001", "E-PPK-APOS-002", "E-PPK-APOS-003", "E-PPK-APOS-004"],
+  "knowledge": {"migration": "operating_model_and_starter_activated", "legacy_snapshot": "operating-model-v1-agent-starter", "runtime": "APOS v0.1 bootstrap preserved; 12 tests passed"},
+  "updated_at": "2026-09-06"
+}

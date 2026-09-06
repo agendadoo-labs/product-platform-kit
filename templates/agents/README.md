@@ -1,27 +1,7 @@
-# Starter de equipe agêntica
+# Starter legado — não usar em novos projetos
 
-1. Copie `AGENTS.md` para a raiz do repositório consumidor.
-2. Copie `.agents/` para a raiz.
-3. Ajuste os campos `[ADAPTAR]` e os modelos disponíveis no ambiente.
-4. Copie `.env.agents.example` para a configuração segura do seu orquestrador, sem inserir chaves no repositório.
-5. Escolha um plano em `.agents/execution-plans/`: `lean`, `balanced` ou `critical`.
-6. Faça uma tarefa piloto envolvendo duas especialidades.
-7. Crie `docs/agent-runs/` e gere o relatório de tokens ao concluir cada operação.
+Este starter preserva o modelo histórico baseado em orquestrador, papéis fixos e planos Lean/Balanced/Critical. Ele permanece apenas para consulta e compatibilidade.
 
-`AGENTS.md` contém instruções consumidas pelo agente. `.agents/team.yaml` é o manifesto portátil de papéis, roteamento e orçamento.
+Novos projetos devem usar [`templates/apos/`](../apos/), que organiza execução por Intent, Contracts, Capabilities, Decision, AgentRun, Evidence e ProductState.
 
-```text
-AGENTS.md
-.agents/
-├── team.yaml
-├── HANDOFF.md
-├── TOKEN-REPORT.md
-├── execution-plans/
-│   ├── lean.yaml
-│   ├── balanced.yaml
-│   └── critical.yaml
-└── roles/
-    ├── development.md
-    ├── design.md
-    └── data.md
-```
+O snapshot original completo está na tag Git `operating-model-v1-agent-starter`. Não copie `.agents/` para uma nova adoção.

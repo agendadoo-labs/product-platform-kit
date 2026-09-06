@@ -1,0 +1,6 @@
+{
+  "contracts": [
+    {"id": "ADAPTAR-C-REV-001", "family": "operations", "description": "Material changes preserve an identifiable previous state and restoration path.", "applies_when": ["material_change"], "verification": {"status": "specified", "required_evidence": "ADAPTAR"}},
+    {"id": "ADAPTAR-C-GOV-001", "family": "operations", "description": "Critical external effects require scoped authority bound to the action and revision.", "applies_when": ["external_effect"], "verification": {"status": "specified", "required_evidence": "ADAPTAR"}}
+  ]
+}

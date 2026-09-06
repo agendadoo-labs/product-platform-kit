@@ -1,0 +1,8 @@
+{
+  "id": "ADAPTAR-consumer-apos-1.0.0",
+  "protocol": "APOS v0.1",
+  "owner": "ADAPTAR",
+  "purpose": "ADAPTAR",
+  "authority": {"default": "local_reversible_low_impact", "explicit_confirmation_required": ["production", "external_cost", "credentials_or_permissions", "personal_data", "destructive_action"]},
+  "completion_rule": "intent_satisfied AND applicable_contracts_met AND evidence_sufficient"
+}

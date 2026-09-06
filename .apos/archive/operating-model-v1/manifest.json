@@ -1,0 +1,16 @@
+{
+  "model_id": "product-platform-kit-agent-starter-1.0.0",
+  "status": "superseded_but_restorable",
+  "archived_at": "2026-09-06",
+  "git_commit": "49a509adb3fc78436c31a5ca4e038a083d1258d3",
+  "git_tag": "operating-model-v1-agent-starter",
+  "files": {
+    "AGENTS.md": "be537b63d792911f7e4a91df99cb2c29442539b5d8a1ae94092046511bc53364",
+    "templates/agents/AGENTS.md": "14498c8df1386ce8daf749dc785382b9a4a07690fc9940ac699a42850924e3ce",
+    "templates/agents/README.md": "ae7023ee9a914eb13da6fd3541b913ebb04abc98fe6820f46267c57b9776a0d0",
+    "docs/AGENTIC-WORKFLOW.md": "c44a3dafa58ee598380b0157e2eb1e5941c95a1748257ef60457bf88f2a3cf4d",
+    "docs/AGENT-MODEL-ROUTING.md": "642404149208e02676524e907a17c8f7b8f75733e7a7fdafc14602dfeb28f008",
+    "scripts/check-repository.mjs": "b6615d20991d0c8bdcc7cd6e68edbbb1263cde384923f479f09b2dffe7a93be9"
+  },
+  "restore": {"principle": "Create a new revision from the archived tag; never erase migration history.", "inspection_example": "git show operating-model-v1-agent-starter:templates/agents/AGENTS.md", "full_restore_requires_builder_decision": true}
+}

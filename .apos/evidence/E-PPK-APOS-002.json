@@ -1,0 +1,11 @@
+{
+  "id": "E-PPK-APOS-002",
+  "intent_id": "I-PPK-APOS-001",
+  "run_id": "AR-PPK-APOS-001",
+  "contract_id": "C-PPK-SCOPE-001",
+  "passed": true,
+  "observed": "The reusable APOS starter contains no Valora, ITBI, city or personal-vault context and does not require a fixed agent organization.",
+  "artifact_digest": "41a50f7156652a4a4cb328744f4d49464161d23fe8d4617baa5623e7f133b2d7",
+  "verifier": "scripts/check-operating-model.mjs",
+  "created_at": "2026-09-06T01:13:58-03:00"
+}

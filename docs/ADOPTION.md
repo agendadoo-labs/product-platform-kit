@@ -10,7 +10,7 @@
 6. Opcionalmente copie `templates/design-system/`, personalize os tokens e valide contraste com a nova marca.
 7. Configure os ambientes conforme `ENVIRONMENTS.md`.
 8. Valide RLS com duas contas comuns e uma administrativa.
-9. Se usar agentes, copie `templates/agents/AGENTS.md` e `templates/agents/.agents/`, adapte modelos e responsável de Produto e execute uma tarefa piloto.
+9. Se usar agentes, copie `templates/apos/`, adapte Constitution e Contracts, registre um Intent piloto e implemente apenas os verificadores necessários.
 
 ## Projeto existente
 
@@ -42,3 +42,5 @@ Prefira criar uma migração de compatibilidade no repositório consumidor. Não
 - [ ] expurgo foi testado em ambiente não produtivo;
 - [ ] painel administrativo lê somente RPCs agregadas;
 - [ ] documento de finalidade e base legal foi adaptado ao produto.
+- [ ] modelo operacional APOS aponta para uma versão explícita e preserva eventual configuração anterior.
+- [ ] contratos sem verificador estão marcados como `specified`, nunca como aprovados.

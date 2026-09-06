@@ -1,0 +1,12 @@
+{
+  "capabilities": [
+    {"id": "recover-context", "purpose": "Recuperar estado, decisões, contratos e evidências."},
+    {"id": "research", "purpose": "Reduzir incerteza com fontes rastreáveis."},
+    {"id": "design-reusable-contract", "purpose": "Definir contrato ou template sem acoplar um consumidor."},
+    {"id": "change-package", "purpose": "Criar candidato local de código, schema, documentação ou template."},
+    {"id": "verify-package", "purpose": "Observar candidato contra contratos aplicáveis."},
+    {"id": "publish-authorized-version", "purpose": "Publicar branch, main ou release somente com autorização vinculada."},
+    {"id": "observe-adoption", "purpose": "Observar uso e aprendizado sem confundir download com outcome."}
+  ],
+  "selection_rule": "Compose the smallest sufficient set for the Intent; model routing follows capability complexity and risk, never a permanent job title."
+}

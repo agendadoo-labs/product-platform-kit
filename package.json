@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "check": "node scripts/check-repository.mjs",
+    "check:operating-model": "node scripts/check-operating-model.mjs",
     "test:apos": "npm run test --workspace @product-platform-kit/apos",
     "demo:apos": "npm run demo --workspace @product-platform-kit/apos"
   }

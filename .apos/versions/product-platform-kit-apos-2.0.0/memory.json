@@ -1,0 +1,8 @@
+{
+  "persistent": ["Intent", "Contract", "Decision", "Evidence", "ProductState"],
+  "proportional": ["AgentRun"],
+  "ephemeral": ["task", "handoff", "temporary_plan", "intermediate_status", "agent_role_assignment"],
+  "provenance_states": ["explicit", "inherited_from_active_decision", "reported", "suggested", "unknown"],
+  "write_rule": "Persist only information that guides execution, imposes a boundary, explains a decision, supports evidence or reconstructs state.",
+  "projection_rule": "Documentation and external knowledge-vault copies are derived views, not independent sources of truth."
+}

@@ -1,0 +1,5 @@
+{
+  "dimensions": ["impact", "uncertainty", "reversibility", "environment", "cost", "data_sensitivity"],
+  "allow": {"conditions": ["local", "low_impact", "low_uncertainty", "reversible", "known_capability", "contracts_resolved"], "effect": "candidate_only_until_evidence"},
+  "escalate": {"conditions_any": ["production", "high_impact", "high_uncertainty", "compensatable", "irreversible", "unknown_capability", "external_cost", "sensitive_data", "missing_contract"], "effect": "stop_before_effect_and_request_scoped_authorization"}
+}

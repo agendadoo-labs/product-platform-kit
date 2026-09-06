@@ -1,9 +1,29 @@
-# Product Platform Kit — continuidade do trabalho
+# Product Platform Kit — operação APOS
 
-## Documentação APOS
+O modelo operacional ativo está em [`.apos/active-model.json`](.apos/active-model.json). Este repositório desenvolve infraestrutura reutilizável; não imponha organogramas, papéis profissionais ou regras de um produto consumidor.
 
-- Por definição, toda documentação deste trabalho deve ser salva nos dois destinos: neste repositório e no vault leo-brain. Não aguardar um pedido separado para a segunda cópia. Manter conteúdo equivalente, adaptando links ao GitHub e ao Obsidian.
-- Usar uma branch de trabalho para alterações; fazer merge na main quando autorizado pelo usuário. O merge de `feat/apos-v0.1` foi explicitamente autorizado nesta sessão.
-- Manter documentos gerais em `docs/` e estudos aplicados em `docs/apos/`. Não incluir dados de negócio, credenciais ou caminhos pessoais em novos documentos.
-- Usar links Markdown navegáveis no GitHub. Preservar proveniência e distinguir decisões existentes, evidências relatadas e sugestões aguardando aprovação.
-- Salvar/publicar documentação não equivale a aprovar suas propostas, autorizar execução em produção ou conceder gastos.
+## Protocolo
+
+1. Interpretar a conversa como Intent: problema, população, outcome, restrições, incertezas e evidência necessária.
+2. Recuperar Constitution, ProductState, Intents, Decisions, Contracts e Evidence relacionados.
+3. Compor a menor combinação suficiente de Capabilities. Produto, design, engenharia, dados e operações são famílias de contratos ou conhecimentos, não agentes obrigatórios.
+4. Classificar cada ação por impacto, incerteza, reversibilidade, ambiente, custo e sensibilidade.
+5. Produzir candidato somente dentro da autoridade disponível. Publicação, custos, permissões, credenciais, dados pessoais e efeitos destrutivos exigem autorização específica.
+6. Separar execução de verificação. Resultado do executor não é Evidence.
+7. Atualizar ProductState apenas quando `Intent satisfeito ∧ Contracts atendidos ∧ Evidence suficiente`.
+8. Persistir conhecimento; tarefas, handoffs e status intermediários são efêmeros.
+
+## Reutilização
+
+- Artefatos gerais vivem no kit; dados, contratos de negócio e evidências de consumidores ficam nos repositórios consumidores.
+- O starter ativo está em `templates/apos/`. `templates/agents/` é legado consultável e não deve iniciar novos projetos.
+- Documentos são projeções humanas úteis, não fontes de verdade paralelas obrigatórias.
+- Nunca incluir credenciais, dados de negócio, caminhos pessoais ou decisões específicas de um consumidor em templates reutilizáveis.
+
+## Proveniência e versões
+
+Preserve a origem de cada afirmação e diferencie definido, relatado, sugerido e desconhecido. Mudanças do modelo operacional criam nova versão e Decision; não reescreva versões publicadas.
+
+O modelo anterior está congelado na tag `operating-model-v1-agent-starter` e inventariado em `.apos/archive/operating-model-v1/manifest.json`.
+
+A projeção para um vault pessoal é um efeito externo configurável do repositório, não requisito do template público. Quando previamente autorizada e acessível, copie somente documentação material, sem segredos ou caminhos internos.

@@ -1,0 +1,8 @@
+{
+  "model_id": "product-platform-kit-apos-2.0.0",
+  "apos_protocol": "0.1",
+  "effective_from": "2026-09-06",
+  "path": ".apos/versions/product-platform-kit-apos-2.0.0",
+  "supersedes": "product-platform-kit-agent-starter-1.0.0",
+  "decision_id": "D-PPK-APOS-001"
+}

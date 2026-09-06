@@ -1,0 +1,13 @@
+{
+  "id": "D-PPK-APOS-001",
+  "intent_id": "I-PPK-APOS-001",
+  "outcome": "adopt_candidate",
+  "decision": "Substituir o starter operacional baseado em papéis pelo modelo product-platform-kit-apos-2.0.0 e pelo template templates/apos.",
+  "rationale": "O APOS compõe capacidades e preserva conhecimento; um organograma fixo e quatro entregáveis departamentais contradizem esse princípio.",
+  "alternatives": ["Manter o starter antigo como padrão", "Alterar somente os nomes dos papéis", "Excluir o legado sem snapshot"],
+  "supersedes": "product-platform-kit-agent-starter-1.0.0",
+  "actor": "builder",
+  "authority_source": "Autorização explícita para aplicar a migração ao Product Platform Kit em 2026-09-06",
+  "scope": "Repositório product-platform-kit e sua main; sem release de pacote ou custo externo",
+  "created_at": "2026-09-06"
+}

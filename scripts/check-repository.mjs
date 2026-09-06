@@ -24,18 +24,17 @@ async function walk(directory) {
 await walk(root)
 const errors = []
 const repositoryFiles = new Set(files.map((path) => relative(root, path)))
-const requiredAgentFiles = [
-  'templates/agents/AGENTS.md',
-  'templates/agents/.agents/team.yaml',
-  'templates/agents/.agents/HANDOFF.md',
-  'templates/agents/.agents/roles/development.md',
-  'templates/agents/.agents/roles/design.md',
-  'templates/agents/.agents/roles/data.md',
-  'templates/agents/.agents/execution-plans/lean.yaml',
-  'templates/agents/.agents/execution-plans/balanced.yaml',
-  'templates/agents/.agents/execution-plans/critical.yaml',
+const requiredAposFiles = [
+  'templates/apos/AGENTS.md',
+  'templates/apos/README.md',
+  'templates/apos/.apos/active-model.json',
+  'templates/apos/.apos/contracts/contracts.json',
+  'templates/apos/.apos/versions/consumer-apos-1.0.0/constitution.json',
+  'templates/apos/.apos/versions/consumer-apos-1.0.0/capabilities.json',
+  'templates/apos/.apos/versions/consumer-apos-1.0.0/policy.json',
+  'templates/apos/.apos/versions/consumer-apos-1.0.0/memory.json',
 ]
-for (const name of requiredAgentFiles) if (!repositoryFiles.has(name)) errors.push(`${name}: arquivo obrigatório do starter agêntico ausente`)
+for (const name of requiredAposFiles) if (!repositoryFiles.has(name)) errors.push(`${name}: arquivo obrigatório do starter APOS ausente`)
 for (const path of files) {
   const name = relative(root, path)
   if (/^\.env(\.|$)/.test(name) && !name.endsWith('.example')) errors.push(`${name}: arquivo de ambiente real não pode ser versionado`)
@@ -56,3 +55,4 @@ if (errors.length) {
   process.exit(1)
 }
 console.log(`OK: ${files.length} arquivos e ${migrations.length} migrações verificados.`)
+await import('./check-operating-model.mjs')

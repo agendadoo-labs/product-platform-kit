@@ -1,0 +1,11 @@
+{
+  "id": "E-PPK-APOS-004",
+  "intent_id": "I-PPK-APOS-001",
+  "run_id": "AR-PPK-APOS-001",
+  "contract_id": "C-PPK-GOV-001",
+  "passed": true,
+  "observed": "The builder explicitly authorized applying this migration to the product-platform-kit main after the price-wizard integration.",
+  "artifact_digest": "41a50f7156652a4a4cb328744f4d49464161d23fe8d4617baa5623e7f133b2d7",
+  "verifier": "scope review against builder message",
+  "created_at": "2026-09-06T01:13:58-03:00"
+}

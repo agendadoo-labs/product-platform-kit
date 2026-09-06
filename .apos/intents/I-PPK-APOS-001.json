@@ -1,0 +1,14 @@
+{
+  "id": "I-PPK-APOS-001",
+  "revision": 1,
+  "problem": "O toolkit publica o APOS, mas seu starter e sua documentação operacional ainda orientam uma equipe fixa e entregáveis departamentais.",
+  "population": "Builders e repositórios consumidores do Product Platform Kit",
+  "outcome": "O toolkit passa a operar e oferecer um starter por Intent, Contracts, Capabilities, Decision, AgentRun, Evidence e ProductState, preservando o starter anterior para consulta e rollback.",
+  "constraints": ["Não copiar contratos de negócio do Valora", "Preservar integralmente a versão anterior", "Não alegar verificadores inexistentes", "Manter o runtime APOS v0.1 separado da configuração operacional"],
+  "uncertainties": ["Quais contratos genéricos devem ser adicionados ao runtime numa próxima versão", "Prazo de remoção física do starter legado"],
+  "required_contract_ids": ["C-PPK-SCOPE-001", "C-PPK-CAP-001", "C-PPK-REV-001", "C-PPK-SEC-001", "C-PPK-GOV-001"],
+  "capabilities": ["recover-context", "design-reusable-contract", "change-package", "verify-package", "publish-authorized-version"],
+  "classification": {"impact": "medium", "uncertainty": "medium", "reversibility": "reversible", "environment": "repository"},
+  "status": "satisfied",
+  "source": {"type": "builder_conversation", "date": "2026-09-06"}
+}

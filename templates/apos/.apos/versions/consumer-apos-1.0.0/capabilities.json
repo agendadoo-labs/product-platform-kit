@@ -1,0 +1,11 @@
+{
+  "capabilities": [
+    {"id": "recover-context", "purpose": "Recover related product knowledge."},
+    {"id": "research", "purpose": "Reduce uncertainty with traceable sources."},
+    {"id": "change-artifact", "purpose": "Produce a local candidate."},
+    {"id": "verify-artifact", "purpose": "Observe a candidate against applicable contracts."},
+    {"id": "publish-authorized-change", "purpose": "Produce an external effect only with scoped authority."},
+    {"id": "observe-outcome", "purpose": "Measure what changed for the affected population."}
+  ],
+  "selection_rule": "Compose the smallest sufficient set for the Intent."
+}
