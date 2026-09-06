@@ -21,3 +21,9 @@
 - contratos de ambiente, verificação automática e CI;
 - manual replicável de GoDaddy, Supabase, Resend e Vercel;
 - mapeamento de compatibilidade com o Valora RJ.
+
+## Unreleased — APOS v0.1
+
+- Preserve the Agentic Product Manifesto as a separate philosophical layer.
+- Add six domain schemas, bounded governance, an atomic local execution/evidence loop and a dogfooding catalog experiment under `packages/apos`.
+- Add failure-path tests and CI validation; existing product infrastructure remains independently adoptable.

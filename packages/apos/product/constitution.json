@@ -1,0 +1,17 @@
+{
+  "purpose": "Help one builder govern agents through intent, contracts and evidence.",
+  "owner": "builder",
+  "principles": [
+    "Preserve the manifesto separately from implementation",
+    "Never infer success from executor claims",
+    "Keep failed evidence",
+    "No external side effects in v0.1"
+  ],
+  "autonomy": {
+    "allowed_capability": "build-domain-catalog",
+    "allowed_risk": "reversible",
+    "scope": "local SQLite artifact only",
+    "other_actions": "escalate without execution"
+  },
+  "success_boundary": "A verified local catalog is an engineering outcome, not proof of business value."
+}

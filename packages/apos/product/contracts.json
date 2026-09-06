@@ -1,0 +1,32 @@
+[
+  {
+    "id": "C1",
+    "family": "product",
+    "description": "Catalog covers all six APOS domains",
+    "check": "domain_coverage"
+  },
+  {
+    "id": "C2",
+    "family": "design",
+    "description": "Catalog has a title and one readable line per domain",
+    "check": "readable_catalog"
+  },
+  {
+    "id": "C3",
+    "family": "engineering",
+    "description": "All schema documents meet the supported schema profile",
+    "check": "valid_schemas"
+  },
+  {
+    "id": "C4",
+    "family": "data",
+    "description": "Domain names occur exactly once",
+    "check": "unique_domains"
+  },
+  {
+    "id": "C5",
+    "family": "operations",
+    "description": "Artifact is at most 4096 UTF-8 bytes",
+    "check": "bounded_artifact"
+  }
+]

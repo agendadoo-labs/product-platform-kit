@@ -3,7 +3,7 @@ import { extname, join, relative } from 'node:path'
 
 const root = new URL('..', import.meta.url).pathname
 const ignored = new Set(['.git', 'node_modules', '.supabase'])
-const textExtensions = new Set(['.md', '.sql', '.ts', '.js', '.mjs', '.json', '.toml', '.css', '.html', '.example', ''])
+const textExtensions = new Set(['.md', '.sql', '.ts', '.js', '.mjs', '.json', '.toml', '.css', '.html', '.example', '.py', ''])
 const secretPatterns = [
   /\bsb_secret_[A-Za-z0-9_-]{12,}\b/,
   /\bre_[A-Za-z0-9_-]{20,}\b/,

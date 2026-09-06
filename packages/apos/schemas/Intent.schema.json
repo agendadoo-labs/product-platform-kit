@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:apos:v0.1:Intent",
+  "title": "Intent",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "problem",
+    "outcome",
+    "population",
+    "contract_ids",
+    "capability",
+    "risk",
+    "status",
+    "impact",
+    "uncertainty"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "problem": {
+      "type": "string",
+      "minLength": 1
+    },
+    "outcome": {
+      "type": "string",
+      "minLength": 1
+    },
+    "population": {
+      "type": "string",
+      "minLength": 1
+    },
+    "contract_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "capability": {
+      "type": "string",
+      "minLength": 1
+    },
+    "risk": {
+      "type": "string",
+      "enum": [
+        "reversible",
+        "compensatable",
+        "irreversible"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "proposed",
+        "satisfied"
+      ]
+    },
+    "impact": {
+      "type": "string",
+      "enum": [
+        "low",
+        "high"
+      ]
+    },
+    "uncertainty": {
+      "type": "string",
+      "enum": [
+        "low",
+        "high"
+      ]
+    }
+  }
+}
