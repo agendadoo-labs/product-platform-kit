@@ -1,0 +1,13 @@
+{
+  "id": "E-PPK-APOS-006",
+  "intent_id": "I-PPK-APOS-002",
+  "run_id": "AR-PPK-APOS-002",
+  "contract_id": "C-PPK-REV-001",
+  "passed": true,
+  "observed": "product-platform-kit-apos-2.0.0 and consumer-apos-1.0.0 remain unchanged and addressable; the legacy agent-starter tag and digest manifest also remain valid.",
+  "artifact_digest": "fe12edb2327ad36cc8792dd8d73f995404b998a6bc68b4ce1dcc7c24ff4775d1",
+  "verifier": "scripts/check-operating-model.mjs and repository inspection",
+  "environment": "repository",
+  "created_at": "2026-09-06T08:46:07-03:00",
+  "expires_at": null
+}

@@ -1,0 +1,9 @@
+{
+  "intent_id": "ADAPTAR",
+  "risk_tier": "low|medium|high",
+  "complexity_tier": "simple|standard|complex",
+  "routing": {"policy": "least_expensive_capable", "model_ceiling": "ADAPTAR", "fallback": "stop_or_escalate"},
+  "ceilings": {"context_tokens": "ADAPTAR", "output_tokens": "ADAPTAR", "parallel_fanout": "ADAPTAR", "tool_calls": "ADAPTAR", "elapsed_minutes": "ADAPTAR"},
+  "actual": {"input_tokens": "unavailable", "output_tokens": "unavailable", "requests": "unavailable", "cost": "unavailable", "source": "ADAPTAR"},
+  "rule": "Unavailable is never recorded as zero; use provider cost data for financial reconciliation."
+}

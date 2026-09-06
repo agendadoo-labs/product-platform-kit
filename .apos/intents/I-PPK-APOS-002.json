@@ -1,0 +1,14 @@
+{
+  "id": "I-PPK-APOS-002",
+  "revision": 1,
+  "problem": "O starter APOS não possui um mecanismo reutilizável para requisitos não funcionais, segurança de ambientes, contenção de custos, consumo de agentes e recuperação.",
+  "population": "Builders e repositórios consumidores do Product Platform Kit",
+  "outcome": "O kit oferece Quality Profiles, Environment Profiles, Exposure Budget, gates, Evidence com validade e templates de exceção/DR sem acoplamento a fornecedor ou produto.",
+  "constraints": ["Preservar product-platform-kit-apos-2.0.0 e consumer-apos-1.0.0", "Não copiar metas, recursos ou regras de negócio do Valora", "Não publicar na main ou criar custo externo", "Não alegar controles do consumidor como verificados"],
+  "uncertainties": ["Adoção e ergonomia só poderão ser observadas em consumidores", "O runtime APOS ainda não interpreta os novos tipos nativamente"],
+  "required_contract_ids": ["C-PPK-SCOPE-001", "C-PPK-CAP-001", "C-PPK-EVID-001", "C-PPK-REV-001", "C-PPK-SEC-001", "C-PPK-GOV-001", "C-PPK-NFR-001", "C-PPK-ENV-001", "C-PPK-COST-001", "C-PPK-AI-COST-001", "C-PPK-REL-001", "C-PPK-DR-001", "C-PPK-EXPOSURE-001"],
+  "capabilities": ["recover-context", "research", "design-reusable-contract", "model-quality", "manage-exposure", "change-package", "verify-package"],
+  "classification": {"impact": "medium", "uncertainty": "medium", "reversibility": "reversible", "environment": "repository", "external_cost": "none"},
+  "status": "candidate",
+  "source": {"type": "builder_conversation", "date": "2026-09-06"}
+}

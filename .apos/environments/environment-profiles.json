@@ -1,0 +1,7 @@
+{
+  "id": "EP-PPK-001",
+  "revision": 1,
+  "required_environment_fields": ["id", "purpose", "public_exposure", "data_class", "credential_boundary", "cost_controls", "promotion_gate"],
+  "required_environment_ids": ["local", "test", "preview", "production"],
+  "rule": "Templates define structure and safe defaults; consumers define providers, values, owners and approved targets."
+}

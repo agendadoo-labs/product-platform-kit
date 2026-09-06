@@ -1,0 +1,13 @@
+{
+  "id": "E-PPK-APOS-005",
+  "intent_id": "I-PPK-APOS-002",
+  "run_id": "AR-PPK-APOS-002",
+  "contract_id": "C-PPK-NFR-001",
+  "passed": true,
+  "observed": "The kit and starter expose complete measurable quality scenario schemas, four isolated environment profiles and an expiring waiver template without consumer-specific references.",
+  "artifact_digest": "fe12edb2327ad36cc8792dd8d73f995404b998a6bc68b4ce1dcc7c24ff4775d1",
+  "verifier": "scripts/check-operating-model.mjs",
+  "environment": "repository",
+  "created_at": "2026-09-06T08:46:07-03:00",
+  "expires_at": "2026-10-06T08:46:07-03:00"
+}

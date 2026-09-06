@@ -1,0 +1,10 @@
+{
+  "id": "ADAPTAR-EP-001",
+  "revision": 1,
+  "environments": [
+    {"id": "local", "purpose": "development", "public_exposure": "none", "data_class": "synthetic_or_anonymized", "credential_boundary": "local_not_committed", "cost_controls": "paid_calls_disabled_by_default", "promotion_gate": "ADAPTAR"},
+    {"id": "test", "purpose": "integration", "public_exposure": "restricted", "data_class": "masked_or_approved", "credential_boundary": "isolated_from_production", "cost_controls": "meter_budget_alert_quota_circuit_breaker", "promotion_gate": "ADAPTAR"},
+    {"id": "preview", "purpose": "release_validation", "public_exposure": "temporary_controlled", "data_class": "nonproduction", "credential_boundary": "isolated_short_lived", "cost_controls": "meter_quota_expiry", "promotion_gate": "ADAPTAR"},
+    {"id": "production", "purpose": "customer_service", "public_exposure": "intentional", "data_class": "classified_minimized", "credential_boundary": "managed_identity_or_vault", "cost_controls": "meter_budget_alert_quota_hard_application_containment", "promotion_gate": "ADAPTAR"}
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ADAPTAR-XB-001",
+  "revision": 1,
+  "status": "ADAPTAR",
+  "rate_source": "ADAPTAR rolling window and percentile",
+  "projection": {
+    "people": "people_rate * rto * affected_fraction",
+    "operations": "operation_rate * rto * failure_fraction",
+    "economic_value": "affected_operations * value_per_operation",
+    "data": "write_rate * rpo"
+  },
+  "limits": [
+    {"dimension": "people", "metric": "ADAPTAR", "limit": "ADAPTAR", "unit": "ADAPTAR"},
+    {"dimension": "operations", "metric": "ADAPTAR", "limit": "ADAPTAR", "unit": "ADAPTAR"},
+    {"dimension": "economic_value", "metric": "ADAPTAR", "limit": "ADAPTAR", "unit": "ADAPTAR"},
+    {"dimension": "data", "metric": "ADAPTAR", "limit": "ADAPTAR", "unit": "ADAPTAR"}
+  ],
+  "aggregation": "maximum_observed_to_limit_ratio",
+  "response_ladder": {"rto_by_tier": "ADAPTAR", "impact_reduction_controls": "ADAPTAR", "rule": "Reduce RTO or affected fraction when ratio exceeds one, then recalculate."},
+  "non_relaxable_floors": ["security", "privacy", "authorization", "financial_integrity"],
+  "review": {"cadence": "ADAPTAR", "event_triggers": "ADAPTAR"},
+  "telemetry_minimum": "ADAPTAR privacy-minimized aggregate measures"
+}

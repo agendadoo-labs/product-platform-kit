@@ -1,0 +1,13 @@
+{
+  "id": "E-PPK-APOS-007",
+  "intent_id": "I-PPK-APOS-002",
+  "run_id": "AR-PPK-APOS-002",
+  "contract_id": "C-PPK-EXPOSURE-001",
+  "passed": true,
+  "observed": "The kit defines provider-neutral people, operations, economic-value and data exposure dimensions, maximum-ratio aggregation, progressive response and non-relaxable floors without Valora-specific limits.",
+  "artifact_digest": "77bb6567961a7e72b1b89b502991f897ea943ef0150b73f60008e0a210305dd7",
+  "verifier": "scripts/check-operating-model.mjs",
+  "environment": "repository",
+  "created_at": "2026-09-06",
+  "expires_at": "2026-10-06"
+}

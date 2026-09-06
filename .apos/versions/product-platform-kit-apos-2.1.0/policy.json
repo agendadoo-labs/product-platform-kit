@@ -1,0 +1,10 @@
+{
+  "dimensions": ["impact", "uncertainty", "reversibility", "environment", "cost", "agent_compute", "data_sensitivity", "quality_criticality", "exposure_budget", "evidence_freshness"],
+  "allow": {"conditions": ["local", "low_impact", "low_uncertainty", "reversible", "known_capability", "contracts_resolved", "quality_gate_passed"], "effect": "candidate_only_until_evidence"},
+  "escalate": {"conditions_any": ["main_branch_publication", "release", "high_impact", "high_uncertainty", "compensatable", "irreversible", "unknown_capability", "external_cost", "sensitive_data", "missing_contract", "quality_waiver", "stale_evidence"], "effect": "stop_before_effect_and_request_scoped_authorization"},
+  "approval_binding": ["actor", "intent_revision", "action", "repository", "environment", "limits", "accepted_risk", "expiry_when_applicable"],
+  "model_routing": "Use the least expensive capable model after risk classification; declare context, output, fanout and tool-call ceilings. Model choice never grants authority or counts as verification.",
+  "quality_gate": "All applicable mandatory scenarios require fresh passing evidence; waivers are scoped, compensating and expiring.",
+  "exposure_gate": "Consumers project people, operations, economic value and data exposed during RTO/RPO. Exceeding any approved limit requires a shorter recovery target or verified impact reduction; non-relaxable safety floors remain independent of volume.",
+  "forbidden_inferences": ["Alert means hard stop", "Replica means backup", "Backup means recoverability", "Missing usage means zero cost", "Stale evidence proves the current revision"]
+}

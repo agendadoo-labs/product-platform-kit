@@ -1,0 +1,10 @@
+{
+  "id": "XB-SCHEMA-PPK-001",
+  "revision": 1,
+  "required_dimensions": ["people", "operations", "economic_value", "data"],
+  "required_fields": ["rate_source", "projection", "limits", "aggregation", "response_ladder", "non_relaxable_floors", "review", "telemetry_minimum"],
+  "aggregation_rule": "Evaluate each dimension independently and use the maximum observed-to-limit ratio; never average unlike risks.",
+  "evolution_rule": "When the maximum ratio exceeds one, reduce RTO or affected fraction using the least-cost verified control, then recalculate.",
+  "minimum_floors": ["security", "privacy", "authorization", "financial_integrity"],
+  "consumer_boundary": "The kit defines shape and invariants only. A consumer sets approved limits, RTO/RPO ladders, telemetry sources and review cadence."
+}

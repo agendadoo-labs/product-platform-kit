@@ -1,0 +1,11 @@
+{
+  "id": "ADAPTAR-QP-001",
+  "revision": 1,
+  "status": "ADAPTAR",
+  "dimensions": ["security_privacy", "availability_reliability", "performance_latency", "capacity_scalability", "cost", "agent_compute", "observability_auditability", "recoverability", "maintainability_portability", "accessibility"],
+  "scenario_schema": ["stimulus", "context", "response", "metric", "threshold", "verifier", "evidence_ttl_days"],
+  "service_tiers": [],
+  "mandatory_scenarios": [],
+  "gate_rule": "All applicable scenarios require fresh passing evidence.",
+  "invalidation_triggers": ["dependency_change", "architecture_change", "credential_model_change", "data_classification_change", "material_configuration_change"]
+}

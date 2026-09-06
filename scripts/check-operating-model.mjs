@@ -20,10 +20,17 @@ const capabilitiesDocument = readJson(`${active.path}/capabilities.json`)
 const policy = readJson(`${active.path}/policy.json`)
 const memory = readJson(`${active.path}/memory.json`)
 const contractsDocument = readJson('.apos/contracts/kit-contracts.json')
-const intent = readJson('.apos/intents/I-PPK-APOS-001.json')
-const decision = readJson('.apos/decisions/D-PPK-APOS-001.json')
+const decision = readJson(`.apos/decisions/${active.decision_id}.json`)
+const intent = readJson(`.apos/intents/${decision.intent_id}.json`)
 const state = readJson('.apos/state/product-state.json')
 const archive = readJson('.apos/archive/operating-model-v1/manifest.json')
+const quality = readJson('.apos/quality/quality-profile.json')
+const environmentSchema = readJson('.apos/environments/environment-profiles.json')
+const exposureSchema = readJson('.apos/exposure/exposure-budget.schema.json')
+const starterActive = readJson('templates/apos/.apos/active-model.json')
+const starterQuality = readJson('templates/apos/.apos/quality/quality-profile.json')
+const starterEnvironments = readJson('templates/apos/.apos/environments/environment-profiles.json')
+const starterExposure = readJson('templates/apos/.apos/exposure/exposure-budget.json')
 
 check(active.model_id === constitution.id, 'active pointer resolves to the declared constitution')
 check(active.apos_protocol === '0.1' && constitution.protocol === 'APOS v0.1', 'APOS protocol version is explicit and consistent')
@@ -31,6 +38,8 @@ check(active.decision_id === decision.id && decision.intent_id === intent.id, 'a
 check(state.active_operating_model === active.model_id, 'ProductState projects the active operating model')
 check(memory.persistent.includes('Intent') && memory.persistent.includes('Evidence') && memory.ephemeral.includes('task'), 'memory preserves knowledge and treats tasks as ephemeral')
 check(policy.dimensions.includes('impact') && policy.dimensions.includes('uncertainty') && policy.dimensions.includes('reversibility'), 'policy classifies impact, uncertainty and reversibility')
+check(policy.dimensions.includes('agent_compute') && policy.dimensions.includes('quality_criticality') && policy.dimensions.includes('evidence_freshness'), 'policy classifies agent compute, quality criticality and evidence freshness')
+check(policy.dimensions.includes('exposure_budget'), 'policy classifies progressive operational exposure')
 
 const uniqueIds = (items) => new Set(items.map(({ id }) => id)).size === items.length
 check(uniqueIds(capabilitiesDocument.capabilities), 'capability IDs are unique')
@@ -45,9 +54,26 @@ const reusableText = [
   readFileSync(resolve(root, 'templates/apos/AGENTS.md'), 'utf8'),
   readFileSync(resolve(root, 'templates/apos/README.md'), 'utf8'),
   JSON.stringify(readJson('templates/apos/.apos/contracts/contracts.json')),
+  JSON.stringify(starterQuality),
+  JSON.stringify(starterEnvironments),
+  JSON.stringify(starterExposure),
 ].join('\n')
 check(!/Valora|ITBI|São Paulo|Rio de Janeiro|leo-brain/u.test(reusableText), 'reusable starter contains no consumer-specific product or personal context')
 check(!/\.agents\/team\.yaml|papéis fixos|specialists/u.test(readFileSync(resolve(root, 'templates/apos/AGENTS.md'), 'utf8')), 'active starter does not require a fixed agent organization')
+
+const requiredScenarioFields = ['stimulus', 'context', 'response', 'metric', 'threshold', 'verifier', 'evidence_ttl_days']
+check(requiredScenarioFields.every((field) => quality.scenario_schema.includes(field)), 'kit quality scenario schema is measurable and time-bounded')
+check(quality.mandatory_scenarios.every((scenario) => requiredScenarioFields.every((field) => Object.hasOwn(scenario, field))), 'kit mandatory scenarios implement the complete schema')
+check(quality.mandatory_scenarios.every(({ contract_id }) => contractIds.has(contract_id)), 'kit quality scenarios resolve to active contracts')
+check(['local', 'test', 'preview', 'production'].every((id) => environmentSchema.required_environment_ids.includes(id)), 'kit requires the four baseline environments')
+check(starterActive.path.endsWith('consumer-apos-1.1.0'), 'starter active pointer selects the quality-aware version')
+check(requiredScenarioFields.every((field) => starterQuality.scenario_schema.includes(field)), 'starter exposes the complete quality scenario schema')
+check(['local', 'test', 'preview', 'production'].every((id) => starterEnvironments.environments.some((environment) => environment.id === id)), 'starter defines local, test, preview and production profiles')
+check(starterEnvironments.environments.every((environment) => environment.credential_boundary && environment.cost_controls && environment.promotion_gate), 'starter environments separate credentials, cost controls and promotion gates')
+check(['people', 'operations', 'economic_value', 'data'].every((dimension) => exposureSchema.required_dimensions.includes(dimension)), 'kit exposure schema covers people, operations, economic value and data')
+check(exposureSchema.aggregation_rule.includes('maximum') && exposureSchema.minimum_floors.length >= 4, 'kit exposure schema uses the worst dimension and preserves safety floors')
+check(['people', 'operations', 'economic_value', 'data'].every((dimension) => starterExposure.limits.some((item) => item.dimension === dimension)), 'starter exposure budget includes every required dimension')
+check(starterExposure.non_relaxable_floors.includes('security') && starterExposure.non_relaxable_floors.includes('financial_integrity'), 'starter exposure budget keeps security and financial integrity independent of volume')
 
 const archivedCommit = execFileSync('git', ['rev-list', '-n', '1', `${archive.git_tag}^{}`], { cwd: root, encoding: 'utf8' }).trim()
 check(archivedCommit === archive.git_commit, 'legacy tag resolves to the archived commit')

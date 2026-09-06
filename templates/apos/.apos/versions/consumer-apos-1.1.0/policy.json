@@ -1,0 +1,7 @@
+{
+  "dimensions": ["impact", "uncertainty", "reversibility", "environment", "cost", "agent_compute", "data_sensitivity", "quality_criticality", "exposure_budget", "evidence_freshness"],
+  "model_routing": "Use the least expensive capable model after risk classification and declare ceilings before material runs.",
+  "promotion_rule": "Applicable scenarios require fresh passing evidence; an exception is scoped, compensating, authorized and expiring.",
+  "exposure_rule": "Compare each exposure dimension independently. Above an approved limit, reduce RTO or affected fraction and preserve non-relaxable safety floors.",
+  "forbidden_inferences": ["budget alert is a hard stop", "replica is a backup", "backup is proof of recovery", "unavailable usage is zero"]
+}

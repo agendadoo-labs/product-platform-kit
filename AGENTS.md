@@ -7,10 +7,10 @@ O modelo operacional ativo está em [`.apos/active-model.json`](.apos/active-mod
 1. Interpretar a conversa como Intent: problema, população, outcome, restrições, incertezas e evidência necessária.
 2. Recuperar Constitution, ProductState, Intents, Decisions, Contracts e Evidence relacionados.
 3. Compor a menor combinação suficiente de Capabilities. Produto, design, engenharia, dados e operações são famílias de contratos ou conhecimentos, não agentes obrigatórios.
-4. Classificar cada ação por impacto, incerteza, reversibilidade, ambiente, custo e sensibilidade.
+4. Classificar cada ação por impacto, incerteza, reversibilidade, ambiente, custo, consumo de agentes, criticidade de qualidade, exposição durante RTO/RPO, validade da evidência e sensibilidade.
 5. Produzir candidato somente dentro da autoridade disponível. Publicação, custos, permissões, credenciais, dados pessoais e efeitos destrutivos exigem autorização específica.
 6. Separar execução de verificação. Resultado do executor não é Evidence.
-7. Atualizar ProductState apenas quando `Intent satisfeito ∧ Contracts atendidos ∧ Evidence suficiente`.
+7. Atualizar ProductState apenas quando `Intent satisfeito ∧ Contracts atendidos ∧ Evidence suficiente e vigente`.
 8. Persistir conhecimento; tarefas, handoffs e status intermediários são efêmeros.
 
 ## Reutilização
@@ -18,6 +18,9 @@ O modelo operacional ativo está em [`.apos/active-model.json`](.apos/active-mod
 - Artefatos gerais vivem no kit; dados, contratos de negócio e evidências de consumidores ficam nos repositórios consumidores.
 - O starter ativo está em `templates/apos/`. `templates/agents/` é legado consultável e não deve iniciar novos projetos.
 - Documentos são projeções humanas úteis, não fontes de verdade paralelas obrigatórias.
+- Requisitos não funcionais vivem em Contracts e cenários mensuráveis do `QualityProfile`; o starter não fixa metas de consumidores.
+- O `ExposureBudget` usa a pior dimensão entre pessoas, operações, valor econômico e dados para evoluir RTO ou reduzir impacto; baixo volume não relaxa segurança, privacidade, autorização ou integridade financeira.
+- Budget, alerta, quota e circuit breaker são controles diferentes. Replicação, backup e restauração testada também são controles diferentes.
 - Nunca incluir credenciais, dados de negócio, caminhos pessoais ou decisões específicas de um consumidor em templates reutilizáveis.
 
 ## Proveniência e versões

@@ -1,0 +1,7 @@
+{
+  "archived_from": ".apos/contracts/kit-contracts.json",
+  "active_model_at_archive": "product-platform-kit-apos-2.0.0",
+  "archived_at": "2026-09-06",
+  "restoration": "Restore this contract set from the parent Git revision and point active-model.json to product-platform-kit-apos-2.0.0.",
+  "contract_ids": ["C-PPK-SCOPE-001", "C-PPK-CAP-001", "C-PPK-EVID-001", "C-PPK-REV-001", "C-PPK-SEC-001", "C-PPK-GOV-001"]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "ADAPTAR-consumer-apos-1.1.0",
+  "protocol": "APOS v0.1",
+  "owner": "ADAPTAR",
+  "purpose": "ADAPTAR",
+  "principles": ["Intent persists", "Contracts govern autonomy", "Quality is measurable", "Operational risk evolves with exposure", "Evidence is fresh and revision-bound", "Unknown is not passed"],
+  "completion_rule": "intent_satisfied AND applicable_contracts_met AND evidence_sufficient_and_fresh"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "QP-PPK-001",
+  "revision": 1,
+  "purpose": "Verify that the reusable starter represents quality without consumer coupling.",
+  "scenario_schema": ["stimulus", "context", "response", "metric", "threshold", "verifier", "evidence_ttl_days"],
+  "mandatory_scenarios": [
+    {"id": "Q-PPK-REUSE-001", "contract_id": "C-PPK-SCOPE-001", "stimulus": "starter adoption by an unknown product", "context": "repository template", "response": "require adaptation without consumer-specific names, targets or providers", "metric": "consumer-specific references", "threshold": 0, "verifier": "scripts/check-operating-model.mjs", "evidence_ttl_days": 30},
+    {"id": "Q-PPK-NFR-001", "contract_id": "C-PPK-NFR-001", "stimulus": "material Intent is prepared for promotion", "context": "any consumer environment", "response": "select applicable measurable quality scenarios and require fresh evidence", "metric": "applicable mandatory scenarios without a complete schema", "threshold": 0, "verifier": "scripts/check-operating-model.mjs", "evidence_ttl_days": 30},
+    {"id": "Q-PPK-EXPOSURE-001", "contract_id": "C-PPK-EXPOSURE-001", "stimulus": "consumer traffic, value or write rate changes", "context": "periodic review or material event", "response": "recalculate every exposure dimension and evolve RTO or impact controls when the maximum ratio exceeds one", "metric": "exposure schema defects", "threshold": 0, "verifier": "scripts/check-operating-model.mjs", "evidence_ttl_days": 30}
+  ],
+  "invalidation_triggers": ["template_change", "contract_change", "verifier_change", "dependency_change"]
+}

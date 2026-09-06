@@ -1,10 +1,10 @@
 {
   "id": "PS-PRODUCT-PLATFORM-KIT",
-  "revision": 2,
-  "active_operating_model": "product-platform-kit-apos-2.0.0",
+  "revision": 3,
+  "active_operating_model": "product-platform-kit-apos-2.1.0",
   "satisfied_intents": ["I-PPK-APOS-001"],
-  "candidate_intents": [],
-  "evidence_ids": ["E-PPK-APOS-001", "E-PPK-APOS-002", "E-PPK-APOS-003", "E-PPK-APOS-004"],
-  "knowledge": {"migration": "operating_model_and_starter_activated", "legacy_snapshot": "operating-model-v1-agent-starter", "runtime": "APOS v0.1 bootstrap preserved; 12 tests passed"},
+  "candidate_intents": ["I-PPK-APOS-002"],
+  "evidence_ids": ["E-PPK-APOS-001", "E-PPK-APOS-002", "E-PPK-APOS-003", "E-PPK-APOS-004", "E-PPK-APOS-005", "E-PPK-APOS-006", "E-PPK-APOS-007"],
+  "knowledge": {"migration": "quality_guardrails_local_candidate", "previous_model": "product-platform-kit-apos-2.0.0", "legacy_snapshot": "operating-model-v1-agent-starter", "starter": "consumer-apos-1.1.0 candidate with progressive exposure budget", "runtime": "APOS v0.1 bootstrap unchanged; new quality types are configuration until native runtime support"},
   "updated_at": "2026-09-06"
 }

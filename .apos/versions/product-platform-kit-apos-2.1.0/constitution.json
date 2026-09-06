@@ -1,0 +1,10 @@
+{
+  "id": "product-platform-kit-apos-2.1.0",
+  "protocol": "APOS v0.1",
+  "owner": "builder",
+  "purpose": "Fornecer infraestrutura e padrões reutilizáveis para produtos governados por intenção, contratos, qualidade e evidência.",
+  "scope": "Reusable product infrastructure and operating-model templates; consumer business state and targets remain outside the kit.",
+  "authority": {"default": "local_reversible_low_impact", "explicit_confirmation_required": ["main_branch_publication", "release", "external_cost", "credential_or_permission", "destructive_action", "accept_quality_exception"]},
+  "completion_rule": "intent_satisfied AND applicable_contracts_met AND evidence_sufficient_and_fresh",
+  "principles": ["Intent persists; tasks are ephemeral", "Capabilities replace fixed roles", "Quality attributes are measurable scenarios", "Operational risk evolves with measured exposure", "Consumer targets stay with the consumer", "Execution and verification are separate", "Published versions are immutable", "Budgets and alerts are not hard limits", "Unknown, stale or unavailable is not passed"]
+}
