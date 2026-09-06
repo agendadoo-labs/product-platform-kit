@@ -1,0 +1,135 @@
+[
+  {
+    "chapter": 1,
+    "source": "docs/AGENTIC-PRODUCT-MANIFESTO.md",
+    "sha256": "304b9f5f2e5723a4152f5a8cb56924e5c2a26596ffaf7d73b8cfb6130246c769",
+    "title_pt": "Manifesto do Produto Agêntico",
+    "title_en": "Agentic Product Manifesto"
+  },
+  {
+    "chapter": 2,
+    "source": "docs/APOS-v0.1.md",
+    "sha256": "44273f3a232e4e24fd85a5618c17bb1c561d7c88bbe68b9e9c9f0a8cbe75f46b",
+    "title_pt": "Especificação executável do APOS v0.1",
+    "title_en": "APOS v0.1 executable specification"
+  },
+  {
+    "chapter": 3,
+    "source": "docs/apos/CONTEXT.md",
+    "sha256": "a80d04d84d537fd46a85eeb85f973028c7a3202ccb27c5e54a3e38193a220c7b",
+    "title_pt": "Contexto e decisões iniciais",
+    "title_en": "Context and initial decisions"
+  },
+  {
+    "chapter": 4,
+    "source": "docs/apos/VALORA-OPERATING-MODE.md",
+    "sha256": "cec9ea5ec66e0c3e834c4e8ceb3b8f036c9b6c4866526b558ec341ad045c36c0",
+    "title_pt": "APOS aplicado ao Valora e interpretação do builder",
+    "title_en": "APOS applied to Valora and builder interpretation"
+  },
+  {
+    "chapter": 5,
+    "source": "docs/apos/VALORA-SOURCES.md",
+    "sha256": "5afee072be884da1339f28a37a9c407a830e7f1fbc4c374bfa3cde29cf7c77d6",
+    "title_pt": "Fontes da aplicação ao Valora",
+    "title_en": "Sources for the Valora application"
+  },
+  {
+    "chapter": 6,
+    "source": "docs/AGENTIC-WORKFLOW.md",
+    "sha256": "e1a3f061856a5b6e49c3e760cede8cdf414ba257739c10fb2aba442bf6a39bdb",
+    "title_pt": "Operação agêntica por APOS",
+    "title_en": "Agentic operation through APOS"
+  },
+  {
+    "chapter": 7,
+    "source": "docs/AGENT-MODEL-ROUTING.md",
+    "sha256": "3a72e09d1b735ef690bb68169cc833781950b2adbc241af64acc70f9110fc23c",
+    "title_pt": "Roteamento de modelos por capacidade e risco",
+    "title_en": "Model routing by capability and risk"
+  },
+  {
+    "chapter": 8,
+    "source": "docs/apos/OPERATING-MODEL-MIGRATION.md",
+    "sha256": "7430fde0e445b18c612fd34374f8f21d1a6816b2835b5e6605d7ce5e0f3ede73",
+    "title_pt": "Migração operacional do Product Platform Kit",
+    "title_en": "Product Platform Kit operating migration"
+  },
+  {
+    "chapter": 9,
+    "source": ".apos/README.md",
+    "sha256": "4670fb4b47c85c3df384d8dc78c02d49c504950e29dec7de08b724a348bc76bf",
+    "title_pt": "Modelo operacional ativo do kit",
+    "title_en": "Active kit operating model"
+  },
+  {
+    "chapter": 10,
+    "source": "AGENTS.md",
+    "sha256": "c88207edd86fd2a6d32bae75868d6f4e2f5900f3b47862230ea72732e8e4333f",
+    "title_pt": "Protocolo operacional do repositório",
+    "title_en": "Repository operating protocol"
+  },
+  {
+    "chapter": 11,
+    "source": "templates/apos/README.md",
+    "sha256": "9bffca5663b99e64b7d6488f730dfc41fca9899f7556377a1220bb3984b55e52",
+    "title_pt": "Starter APOS para adoção",
+    "title_en": "APOS adoption starter"
+  },
+  {
+    "chapter": 12,
+    "source": "templates/apos/AGENTS.md",
+    "sha256": "a97cbc080bf77d81b6f6cad122247c8790ac8a753057fc380c2599fad5e2fa0d",
+    "title_pt": "Protocolo do repositório consumidor",
+    "title_en": "Consumer repository protocol"
+  },
+  {
+    "chapter": 13,
+    "source": "packages/apos/README.md",
+    "sha256": "e600c2b1e913ec964bcfba409c057922e71b60469eeb052b2438882015cb1ced",
+    "title_pt": "Guia de execução do runtime",
+    "title_en": "Runtime execution guide"
+  },
+  {
+    "chapter": 14,
+    "source": "packages/apos/evidence/bootstrap/catalog.md",
+    "sha256": "0a2e4cd81903c14dff5e98fbaf5ee8c467be0ca04d8446178f3d6f0ff3ba8d54",
+    "title_pt": "Catálogo verificado dos domínios",
+    "title_en": "Verified domain catalog"
+  },
+  {
+    "chapter": 15,
+    "source": "price-wizard/docs/AGENTIC-OPERATING-MODE.md",
+    "sha256": "5be6f0c16d9e18ab0d39f254ee45505fbc7e867c7b04dfdec8f6461c98a8cca5",
+    "title_pt": "Modelo operacional ativo do Valora",
+    "title_en": "Active Valora operating model"
+  },
+  {
+    "chapter": 16,
+    "source": "price-wizard/docs/operating-model/APOS-MIGRATION.md",
+    "sha256": "f50b4683f0d8b6d62fba235daeb53a70fa2d250e950d944f83d686837b651ff8",
+    "title_pt": "Migração do modelo operacional do Valora",
+    "title_en": "Valora operating model migration"
+  },
+  {
+    "chapter": 17,
+    "source": "price-wizard/.apos/README.md",
+    "sha256": "fa87fecfdbfad0d4751b5b2dffb390655e2347e385bedcc94b85cfb23028ec97",
+    "title_pt": "Fonte operacional APOS do Valora",
+    "title_en": "Valora APOS operational source"
+  },
+  {
+    "chapter": 18,
+    "source": "leo-brain/Projetos/APOS — Migração dos modelos operacionais.md",
+    "sha256": "e7f4c6abf660dd5fed64b6036943d360bf9e547e486d8ffc376060e516434c7b",
+    "title_pt": "Registro da migração dos dois modelos",
+    "title_en": "Record of both operating model migrations"
+  },
+  {
+    "chapter": 19,
+    "source": "leo-brain/Projetos/APOS — Convenção de documentação.md",
+    "sha256": "3c42600fbe4ccda24fa165e95f1d2fede76bd9ce1f7c8ccdff7f19efd11ea143",
+    "title_pt": "Convenção de documentação em dois destinos",
+    "title_en": "Documentation convention for both destinations"
+  }
+]
