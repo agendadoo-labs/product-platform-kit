@@ -18,6 +18,25 @@ export type MapMarketArea = {
 
 export type MapViewport = { west: number; south: number; east: number; north: number; zoom: number }
 
+export type MapStorageTier = 'detail' | 'aggregate' | 'archive'
+
+export type MapRetentionPolicy = {
+  detailedYears?: number
+  aggregateFromYear: number
+}
+
+export type HistoricalMarketPoint = {
+  year: number
+  transactionCount: number
+  medianTotal: number
+  medianPricePerSqm: number
+  p25PricePerSqm?: number
+  p75PricePerSqm?: number
+  financedTransactionCount?: number
+  financedShare?: number
+  medianFinancingRatio?: number
+}
+
 export type MapProviderConfig = {
   styleUrl?: string
   rasterTileUrls?: string[]
@@ -46,6 +65,16 @@ export function areaLevelForZoom(zoom: number, config: Pick<MapProviderConfig, '
 export function viewportCacheKey(cityCode: string, viewport: MapViewport, precision = 2) {
   const round = (value: number) => value.toFixed(precision)
   return [cityCode, areaLevelForZoom(viewport.zoom), Math.floor(viewport.zoom), round(viewport.west), round(viewport.south), round(viewport.east), round(viewport.north)].join(':')
+}
+
+export function storageTierForYear(year: number, currentYear: number, policy: MapRetentionPolicy): MapStorageTier {
+  const detailedYears = policy.detailedYears ?? 3
+  if (!Number.isInteger(year) || !Number.isInteger(currentYear) || !Number.isInteger(detailedYears) || detailedYears < 1) {
+    throw new Error('invalid_retention_policy')
+  }
+  if (year >= currentYear - detailedYears + 1) return 'detail'
+  if (year >= policy.aggregateFromYear) return 'aggregate'
+  return 'archive'
 }
 
 export function validateMapArea(area: MapMarketArea) {

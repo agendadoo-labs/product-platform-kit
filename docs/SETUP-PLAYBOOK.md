@@ -100,6 +100,12 @@ O SMTP padrão do Supabase serve apenas para testes e tem limitações severas; 
 
 A integração GitHub da Vercel publica automaticamente alterações e gera previews para branches. Referência: [Vercel para GitHub](https://vercel.com/docs/git/vercel-for-github).
 
+### Repositório privado de organização: configuração recomendada
+
+Para um repositório privado pertencente a uma organização GitHub, use um plano Vercel que ofereça essa integração (Pro ou superior, conforme a oferta vigente). No GitHub, instale o GitHub App da Vercel na organização e conceda acesso somente aos repositórios necessários. Na Vercel, desconecte qualquer vínculo com a localização pessoal antiga, conecte o repositório da organização e confirme que cada PR recebe uma URL Preview.
+
+Separe as variáveis por ambiente: Production aponta para o Supabase produtivo; Preview aponta para uma Preview Branch; Development aponta para o backend local ou de desenvolvimento. Proteja `main`, exija os checks do repositório e o aceite de Produto na URL Preview antes do merge. O deploy por CLI pode destravar uma homologação pontual, mas não substitui esse fluxo porque não mantém automaticamente a relação PR → commit → deploy → backend de Preview.
+
 ## 5. Módulo de privacidade
 
 1. Registre para cada categoria de dado: finalidade, titular, fonte, base legal, operadores, retenção e destinatários.
@@ -158,7 +164,7 @@ O sistema não declara um vencedor automaticamente. A equipe de Produto continua
 
 | Item | Configuração adotada |
 |---|---|
-| Repositório do produto | `agendadoo01/price-wizard` |
+| Repositório do produto | `agendadoo-labs/price-wizard` |
 | Domínio canônico | `https://www.valorarj.com.br` |
 | Domínio raiz | redireciona para `www` |
 | Supabase | projeto `konwvubojlsoiedsqoqr` |

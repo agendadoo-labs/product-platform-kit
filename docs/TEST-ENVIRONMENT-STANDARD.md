@@ -46,3 +46,18 @@ flowchart LR
 ## Custos
 
 Antes de criar recursos cobrados, registre estimativa e obtenha confirmação no momento da ação. Preview Branches devem ter responsável, data de expiração e rotina de remoção.
+
+## Vercel para repositórios privados de organização
+
+O caminho recomendado para equipes é usar um plano Vercel que aceite repositórios privados pertencentes a uma organização GitHub (atualmente, Pro ou superior):
+
+1. instale o GitHub App da Vercel na organização e limite-o aos repositórios necessários;
+2. conecte o projeto Vercel ao repositório da organização, nunca à antiga localização pessoal;
+3. mantenha `main` como Production Branch protegida;
+4. habilite Preview Deployments para pull requests e comentários de status na PR;
+5. cadastre as variáveis de Production somente no escopo Production;
+6. cadastre URL e chave publicável do Supabase Preview no escopo Preview, preferencialmente restritas à branch da feature;
+7. nunca cadastre `service_role`, senha de banco ou chave administrativa em variáveis `VITE_*`;
+8. valide a URL de Preview antes do merge e remova variáveis/branches temporárias após a promoção.
+
+Deploy manual por CLI é apenas uma contingência para homologação. Ele perde parte da rastreabilidade automática entre PR, commit, variáveis e Supabase Preview e não deve ser o processo contínuo da equipe.
