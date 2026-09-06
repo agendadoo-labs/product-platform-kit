@@ -70,3 +70,7 @@ Segredos nunca entram em prompts, commits, logs ou handoffs. Use arquivos locais
 
 Essas métricas avaliam o sistema de trabalho, não pessoas.
 
+
+## Evolução para APOS
+
+O [APOS v0.1](APOS-v0.1.md) oferece um primeiro ciclo executável baseado em intenção, contratos, decisões e evidências. O starter acima continua disponível; o APOS compõe capacidades conforme o problema e não exige um organograma fixo.

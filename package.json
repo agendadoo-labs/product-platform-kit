@@ -3,8 +3,12 @@
   "version": "0.2.0",
   "private": true,
   "type": "module",
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "check": "node scripts/check-repository.mjs"
+    "check": "node scripts/check-repository.mjs",
+    "test:apos": "npm run test --workspace @product-platform-kit/apos",
+    "demo:apos": "npm run demo --workspace @product-platform-kit/apos"
   }
 }

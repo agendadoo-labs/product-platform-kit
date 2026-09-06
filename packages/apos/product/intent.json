@@ -1,0 +1,18 @@
+{
+  "id": "I-APOS-001",
+  "problem": "Builders cannot inspect the APOS domain vocabulary from one verified artifact.",
+  "outcome": "Generate a readable catalog containing each of the six schema domains exactly once, within 4096 bytes.",
+  "population": "Builders adopting Product Platform Kit",
+  "contract_ids": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5"
+  ],
+  "capability": "build-domain-catalog",
+  "risk": "reversible",
+  "status": "proposed",
+  "impact": "low",
+  "uncertainty": "low"
+}

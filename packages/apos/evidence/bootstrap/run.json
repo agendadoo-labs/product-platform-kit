@@ -1,0 +1,481 @@
+{
+  "run": {
+    "id": "7f06af28-7383-4089-8496-578ae6bc5ab0",
+    "intent_id": "I-APOS-001",
+    "status": "succeeded",
+    "capability": "build-domain-catalog",
+    "input_digest": "dfd2c3848d90ec2285e705ca19ef23cd324e4abd56c7a90491208045c3dd9ffd",
+    "base_revision": 0,
+    "created_at": "2026-09-06T01:23:07.870830+00:00"
+  },
+  "decision": {
+    "id": "0c405bab-711c-4035-9ad7-59eb3a40d6f2",
+    "intent_id": "I-APOS-001",
+    "run_id": "7f06af28-7383-4089-8496-578ae6bc5ab0",
+    "outcome": "allow",
+    "rationale": "Bounded local candidate with atomic publication",
+    "alternatives": [
+      "Defer execution",
+      "Revise intent to supported local scope"
+    ],
+    "input_digest": "dfd2c3848d90ec2285e705ca19ef23cd324e4abd56c7a90491208045c3dd9ffd",
+    "actor": "apos-policy-0.1",
+    "created_at": "2026-09-06T01:23:07.870830+00:00"
+  },
+  "evidence": [
+    {
+      "id": "ef61637b-a8fc-4fee-97e7-8219ce99de35",
+      "intent_id": "I-APOS-001",
+      "run_id": "7f06af28-7383-4089-8496-578ae6bc5ab0",
+      "contract_id": "C1",
+      "passed": true,
+      "observed": "domain_coverage: True",
+      "artifact_digest": "e1a36d24a0711cd7dd7bfcedebb894975544a171ab7d47fc3225f94ea8fdacfd",
+      "verifier": "apos-verifier-0.1",
+      "created_at": "2026-09-06T01:23:07.870830+00:00"
+    },
+    {
+      "id": "dcf923a7-e0ca-43e4-b5be-0f2e4e2cdbbd",
+      "intent_id": "I-APOS-001",
+      "run_id": "7f06af28-7383-4089-8496-578ae6bc5ab0",
+      "contract_id": "C2",
+      "passed": true,
+      "observed": "readable_catalog: True",
+      "artifact_digest": "e1a36d24a0711cd7dd7bfcedebb894975544a171ab7d47fc3225f94ea8fdacfd",
+      "verifier": "apos-verifier-0.1",
+      "created_at": "2026-09-06T01:23:07.870830+00:00"
+    },
+    {
+      "id": "53076592-d0bc-4de5-8fcd-468b6255627a",
+      "intent_id": "I-APOS-001",
+      "run_id": "7f06af28-7383-4089-8496-578ae6bc5ab0",
+      "contract_id": "C3",
+      "passed": true,
+      "observed": "valid_schemas: True",
+      "artifact_digest": "e1a36d24a0711cd7dd7bfcedebb894975544a171ab7d47fc3225f94ea8fdacfd",
+      "verifier": "apos-verifier-0.1",
+      "created_at": "2026-09-06T01:23:07.870830+00:00"
+    },
+    {
+      "id": "eb9b8a40-0ca0-4d31-a752-5c2a05da5e81",
+      "intent_id": "I-APOS-001",
+      "run_id": "7f06af28-7383-4089-8496-578ae6bc5ab0",
+      "contract_id": "C4",
+      "passed": true,
+      "observed": "unique_domains: True",
+      "artifact_digest": "e1a36d24a0711cd7dd7bfcedebb894975544a171ab7d47fc3225f94ea8fdacfd",
+      "verifier": "apos-verifier-0.1",
+      "created_at": "2026-09-06T01:23:07.870830+00:00"
+    },
+    {
+      "id": "5f31bae6-3689-4769-b9cb-c05f7a16f4b2",
+      "intent_id": "I-APOS-001",
+      "run_id": "7f06af28-7383-4089-8496-578ae6bc5ab0",
+      "contract_id": "C5",
+      "passed": true,
+      "observed": "bounded_artifact: True",
+      "artifact_digest": "e1a36d24a0711cd7dd7bfcedebb894975544a171ab7d47fc3225f94ea8fdacfd",
+      "verifier": "apos-verifier-0.1",
+      "created_at": "2026-09-06T01:23:07.870830+00:00"
+    }
+  ],
+  "state": {
+    "id": "product-platform-kit",
+    "revision": 1,
+    "satisfied_intents": [
+      "I-APOS-001"
+    ],
+    "evidence_ids": [
+      "ef61637b-a8fc-4fee-97e7-8219ce99de35",
+      "dcf923a7-e0ca-43e4-b5be-0f2e4e2cdbbd",
+      "53076592-d0bc-4de5-8fcd-468b6255627a",
+      "eb9b8a40-0ca0-4d31-a752-5c2a05da5e81",
+      "5f31bae6-3689-4769-b9cb-c05f7a16f4b2"
+    ],
+    "artifact_digest": "e1a36d24a0711cd7dd7bfcedebb894975544a171ab7d47fc3225f94ea8fdacfd"
+  },
+  "error": null,
+  "inputs": {
+    "intent": {
+      "id": "I-APOS-001",
+      "problem": "Builders cannot inspect the APOS domain vocabulary from one verified artifact.",
+      "outcome": "Generate a readable catalog containing each of the six schema domains exactly once, within 4096 bytes.",
+      "population": "Builders adopting Product Platform Kit",
+      "contract_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "capability": "build-domain-catalog",
+      "risk": "reversible",
+      "status": "proposed",
+      "impact": "low",
+      "uncertainty": "low"
+    },
+    "contracts": [
+      {
+        "id": "C1",
+        "family": "product",
+        "description": "Catalog covers all six APOS domains",
+        "check": "domain_coverage"
+      },
+      {
+        "id": "C2",
+        "family": "design",
+        "description": "Catalog has a title and one readable line per domain",
+        "check": "readable_catalog"
+      },
+      {
+        "id": "C3",
+        "family": "engineering",
+        "description": "All schema documents meet the supported schema profile",
+        "check": "valid_schemas"
+      },
+      {
+        "id": "C4",
+        "family": "data",
+        "description": "Domain names occur exactly once",
+        "check": "unique_domains"
+      },
+      {
+        "id": "C5",
+        "family": "operations",
+        "description": "Artifact is at most 4096 UTF-8 bytes",
+        "check": "bounded_artifact"
+      }
+    ],
+    "schemas": [
+      {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "urn:apos:v0.1:Intent",
+        "title": "Intent",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "problem",
+          "outcome",
+          "population",
+          "contract_ids",
+          "capability",
+          "risk",
+          "status",
+          "impact",
+          "uncertainty"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "problem": {
+            "type": "string",
+            "minLength": 1
+          },
+          "outcome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "population": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contract_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "capability": {
+            "type": "string",
+            "minLength": 1
+          },
+          "risk": {
+            "type": "string",
+            "enum": [
+              "reversible",
+              "compensatable",
+              "irreversible"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "proposed",
+              "satisfied"
+            ]
+          },
+          "impact": {
+            "type": "string",
+            "enum": [
+              "low",
+              "high"
+            ]
+          },
+          "uncertainty": {
+            "type": "string",
+            "enum": [
+              "low",
+              "high"
+            ]
+          }
+        }
+      },
+      {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "urn:apos:v0.1:Contract",
+        "title": "Contract",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "family",
+          "description",
+          "check"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "family": {
+            "type": "string",
+            "enum": [
+              "product",
+              "design",
+              "engineering",
+              "data",
+              "operations"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "check": {
+            "type": "string",
+            "enum": [
+              "domain_coverage",
+              "readable_catalog",
+              "valid_schemas",
+              "unique_domains",
+              "bounded_artifact"
+            ]
+          }
+        }
+      },
+      {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "urn:apos:v0.1:Evidence",
+        "title": "Evidence",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "intent_id",
+          "run_id",
+          "contract_id",
+          "passed",
+          "observed",
+          "artifact_digest",
+          "verifier",
+          "created_at"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "intent_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "run_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contract_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "passed": {
+            "type": "boolean"
+          },
+          "observed": {
+            "type": "string",
+            "minLength": 1
+          },
+          "artifact_digest": {
+            "type": "string",
+            "minLength": 1
+          },
+          "verifier": {
+            "type": "string",
+            "minLength": 1
+          },
+          "created_at": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "urn:apos:v0.1:Decision",
+        "title": "Decision",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "intent_id",
+          "run_id",
+          "outcome",
+          "rationale",
+          "alternatives",
+          "input_digest",
+          "actor",
+          "created_at"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "intent_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "run_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "outcome": {
+            "type": "string",
+            "enum": [
+              "allow",
+              "escalate"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          },
+          "alternatives": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "input_digest": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actor": {
+            "type": "string",
+            "minLength": 1
+          },
+          "created_at": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "urn:apos:v0.1:AgentRun",
+        "title": "AgentRun",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "intent_id",
+          "status",
+          "capability",
+          "input_digest",
+          "base_revision",
+          "created_at"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "intent_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "succeeded",
+              "failed",
+              "blocked"
+            ]
+          },
+          "capability": {
+            "type": "string",
+            "minLength": 1
+          },
+          "input_digest": {
+            "type": "string",
+            "minLength": 1
+          },
+          "base_revision": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "created_at": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "urn:apos:v0.1:ProductState",
+        "title": "ProductState",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "revision",
+          "satisfied_intents",
+          "evidence_ids",
+          "artifact_digest"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "revision": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "satisfied_intents": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "artifact_digest": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    ]
+  }
+}

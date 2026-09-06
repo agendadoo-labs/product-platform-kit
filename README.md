@@ -53,3 +53,10 @@ Inclui:
 - [Starter de equipe agêntica](templates/agents/README.md)
 
 Este kit é um ponto de partida versionado. Alterações específicas de um produto devem ficar no repositório desse produto.
+
+## APOS — execução orientada a intenção
+
+O [APOS v0.1](docs/APOS-v0.1.md) adiciona governança, contratos e evidências ao kit. Leia o [manifesto](docs/AGENTIC-PRODUCT-MANIFESTO.md) e execute o [experimento local](packages/apos/README.md).
+
+- [APOS aplicado ao Valora e interpretação de builders](docs/apos/VALORA-OPERATING-MODE.md)
+- [Contexto e decisões do APOS](docs/apos/CONTEXT.md)

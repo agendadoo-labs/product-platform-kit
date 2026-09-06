@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:apos:v0.1:Contract",
+  "title": "Contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "family",
+    "description",
+    "check"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "family": {
+      "type": "string",
+      "enum": [
+        "product",
+        "design",
+        "engineering",
+        "data",
+        "operations"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "check": {
+      "type": "string",
+      "enum": [
+        "domain_coverage",
+        "readable_catalog",
+        "valid_schemas",
+        "unique_domains",
+        "bounded_artifact"
+      ]
+    }
+  }
+}
