@@ -1,7 +1,7 @@
 {
   "id": "AR-PPK-APOS-002",
   "intent_id": "I-PPK-APOS-002",
-  "status": "candidate_succeeded",
+  "status": "succeeded",
   "capabilities": ["recover-context", "research", "design-reusable-contract", "model-quality", "manage-exposure", "change-package", "verify-package"],
   "base_revision": 2,
   "result_revision": 3,
@@ -11,5 +11,5 @@
   "budget": {"routing": "single_orchestrator_no_subagents", "model_ceiling": "runtime_selected", "context_tokens": "not_predeclared_legacy_gap", "output_tokens": "not_predeclared_legacy_gap", "parallel_fanout": 0, "external_cost": 0},
   "consumption": {"input_tokens": "unavailable", "output_tokens": "unavailable", "monetary_cost": "unavailable", "source": "desktop runtime does not expose exact per-run usage"},
   "outputs": ["Product Platform Kit APOS 2.1 local candidate", "Consumer starter 1.1", "Quality/environment/exposure/waiver templates", "Agent-run budget and DR templates", "Structural verifier and adoption guide"],
-  "remaining_uncertainties": ["Native runtime support for Profiles, Waivers and evidence expiry", "Consumer adoption evidence", "Publication to main"]
+  "remaining_uncertainties": ["Native runtime support for Profiles, Waivers and evidence expiry", "Consumer adoption evidence"]
 }

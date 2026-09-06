@@ -9,6 +9,6 @@
   "required_contract_ids": ["C-PPK-SCOPE-001", "C-PPK-CAP-001", "C-PPK-EVID-001", "C-PPK-REV-001", "C-PPK-SEC-001", "C-PPK-GOV-001", "C-PPK-NFR-001", "C-PPK-ENV-001", "C-PPK-COST-001", "C-PPK-AI-COST-001", "C-PPK-REL-001", "C-PPK-DR-001", "C-PPK-EXPOSURE-001"],
   "capabilities": ["recover-context", "research", "design-reusable-contract", "model-quality", "manage-exposure", "change-package", "verify-package"],
   "classification": {"impact": "medium", "uncertainty": "medium", "reversibility": "reversible", "environment": "repository", "external_cost": "none"},
-  "status": "candidate",
+  "status": "satisfied",
   "source": {"type": "builder_conversation", "date": "2026-09-06"}
 }

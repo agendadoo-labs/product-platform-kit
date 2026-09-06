@@ -1,0 +1,13 @@
+{
+  "id": "E-PPK-APOS-008",
+  "intent_id": "I-PPK-APOS-002",
+  "run_id": "AR-PPK-APOS-002",
+  "contract_id": "C-PPK-GOV-001",
+  "passed": true,
+  "observed": "After repository checks and 12 APOS runtime tests passed, the builder explicitly authorized publication and commit e2cdbd9 was fast-forwarded and pushed to origin/main.",
+  "artifact_digest": "77bb6567961a7e72b1b89b502991f897ea943ef0150b73f60008e0a210305dd7",
+  "verifier": "git fetch, ancestry check, fast-forward merge and push result",
+  "environment": "repository_main",
+  "created_at": "2026-09-06",
+  "expires_at": null
+}

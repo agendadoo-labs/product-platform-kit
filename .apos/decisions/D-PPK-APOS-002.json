@@ -1,13 +1,13 @@
 {
   "id": "D-PPK-APOS-002",
   "intent_id": "I-PPK-APOS-002",
-  "outcome": "adopt_local_candidate",
+  "outcome": "adopted_and_published",
   "decision": "Evoluir localmente para product-platform-kit-apos-2.1.0 e consumer-apos-1.1.0 com qualidade, ambientes e exposição progressiva como tipos operacionais versionados.",
   "rationale": "Qualidade só governa autonomia quando é mensurável, verificável, ligada ao ambiente e capaz de bloquear promoção. A exposição torna o investimento em confiabilidade progressivo sem relaxar pisos críticos.",
   "alternatives": ["Publicar apenas uma checklist", "Impor um stack cloud específico", "Criar agentes fixos de SRE, segurança e FinOps"],
   "supersedes": "D-PPK-APOS-001",
   "actor": "builder",
-  "authority_source": "Pedido para evoluir o APOS e aplicá-lo ao Valora e ao Product Platform Kit em 2026-09-06",
-  "scope": "Candidato local; main, release, custos e permissões não autorizados",
+  "authority_source": "Pedido para evoluir o APOS e autorização explícita para publicar na main após aprovação dos testes em 2026-09-06",
+  "scope": "Configuração e templates publicados na main do product-platform-kit; sem release de pacote, custo ou permissão externa",
   "created_at": "2026-09-06"
 }
