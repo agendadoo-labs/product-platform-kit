@@ -2,9 +2,15 @@
 
 Este starter substitui o antigo modelo de equipe fixa. Ele fornece uma estrutura mínima para governar agentes por intenção, contratos, capacidades e evidência.
 
+Se esta é sua primeira adoção, leia antes o [guia APOS em 30 minutos](../../docs/APOS-GETTING-STARTED.md). Ele contém um exemplo completo e explica a ordem de criação dos registros.
+
+## Resultado esperado
+
+Ao terminar a adoção, seu repositório terá um modelo ativo, um Intent ligado a uma Decision, um ContextManifest dentro do orçamento, um AgentRun, Evidence independente e um ProductState atualizado somente após a verificação.
+
 ## Adoção
 
-1. Copie `AGENTS.md` e a pasta `.apos/` para o repositório consumidor.
+1. Copie `AGENTS.md`, a pasta `.apos/` e `scripts/compile-apos-context.mjs` para o repositório consumidor.
 2. Substitua os campos `ADAPTAR` na Constitution e nos Contracts.
 3. Registre o primeiro Intent do produto; não converta um backlog inteiro mecanicamente.
 4. Selecione somente os Contracts e Capabilities aplicáveis à mudança.
@@ -17,6 +23,19 @@ Este starter substitui o antigo modelo de equipe fixa. Ele fornece uma estrutura
 11. Implemente verificadores progressivamente. Enquanto não existirem, marque-os `specified`.
 12. Preserve o modelo anterior com commit, tag e hashes antes de trocar o ponteiro ativo.
 13. Produza ProductState apenas a partir de Evidence; não marque “feito” manualmente.
+
+## Comandos essenciais
+
+Depois de substituir todos os campos `ADAPTAR` e criar o primeiro Intent e Decision:
+
+```sh
+node scripts/compile-apos-context.mjs \
+  --intent .apos/intents/I-SEU-PRODUTO-001.json \
+  --decision .apos/decisions/D-SEU-PRODUTO-001.json \
+  --output .apos/context/manifests/CM-I-SEU-PRODUTO-001.json
+```
+
+O comando termina com código `2` quando o contexto excede o orçamento. Isso é um pedido de revisão ou escalonamento, não autorização para apagar fontes relevantes. Adapte ao projeto um verificador equivalente a `scripts/check-operating-model.mjs` deste kit.
 
 Produto, design, engenharia, dados e operações podem continuar como famílias de contrato. Eles não representam agentes, etapas obrigatórias nem documentos independentes que toda mudança deve produzir.
 

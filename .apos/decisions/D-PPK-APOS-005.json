@@ -1,0 +1,13 @@
+{
+  "id": "D-PPK-APOS-005",
+  "intent_id": "I-PPK-APOS-005",
+  "run_id": "AR-PPK-APOS-005",
+  "outcome": "validated_for_main_documentation",
+  "decision": "Publicar APOS v0.2 primeiro e, em seguida, criar uma trilha de onboarding executável e coerente na main do toolkit.",
+  "rationale": "O README anterior era referência para iniciados, mas não permitia a primeira execução autônoma e ainda direcionava o leitor à v0.1.",
+  "alternatives": ["manter somente o memorial técnico", "reescrever a especificação inteira no README", "adiar documentação até existir runtime v0.2 nativo"],
+  "actor": "builder",
+  "authority_source": "Pedido explícito de 2026-09-08 para fazer o merge da v0.2 e alterar a documentação em seguida",
+  "scope": "main do Product Platform Kit; documentação e compatibilidade do Context Compiler; sem mudança em consumidores ou serviços",
+  "created_at": "2026-09-08"
+}

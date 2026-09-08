@@ -1,0 +1,25 @@
+{
+  "id": "AR-PPK-APOS-005",
+  "intent_id": "I-PPK-APOS-005",
+  "status": "succeeded",
+  "capabilities": ["recover-context", "compile-context", "change-package", "verify-package", "publish-authorized-version"],
+  "base_revision": 6,
+  "result_revision": 7,
+  "environment": "repository_main",
+  "ceremony": {"selected": "standard", "required": "standard", "triggers": ["shared_documentation", "cli_contract"], "authorization_source": "explicit_builder_request_2026-09-08"},
+  "context_manifest_id": "CM-I-PPK-APOS-005",
+  "artifact_digest": "1d101ceade2fbabf6e59437b4830fc1aa91471a3e79b695e5998a8eaa5c2c754",
+  "completed_at": "2026-09-08",
+  "budget": {"routing": "single_orchestrator_no_subagents", "parallel_fanout": 0, "external_cost": 0},
+  "consumption": {"input_tokens": "unavailable", "output_tokens": "unavailable", "monetary_cost": 0, "source": "desktop runtime does not expose exact per-run token usage; external API was not called"},
+  "learning_cost": {
+    "steps": [
+      {"step": "onboarding_audit", "capability": "recover-context", "context_tokens": "unavailable", "output_tokens": "unavailable", "external_calls": 0, "duration_ms": "unavailable", "rework_count": 1, "regressions_found": 1, "reused_evidence_ids": ["E-PPK-APOS-011"], "usage_status": "desktop_usage_unavailable"},
+      {"step": "context_compile", "capability": "compile-context", "context_tokens": 26242, "output_tokens": "not_applicable", "external_calls": 0, "duration_ms": "unavailable", "rework_count": 0, "regressions_found": 0, "reused_evidence_ids": [], "usage_status": "conservative_estimate"},
+      {"step": "verification", "capability": "verify-package", "context_tokens": "unavailable", "output_tokens": "unavailable", "external_calls": 0, "duration_ms": "unavailable", "rework_count": 0, "regressions_found": 0, "reused_evidence_ids": [], "usage_status": "repository_and_onboarding_checks_passed"}
+    ],
+    "run": {"route": "human_assisted_codex", "total_tokens": "unavailable", "estimated_cost": "unavailable", "reconciled_cost": 0, "currency": "USD", "validated_outcome": true, "quality_score": "repository_checks_and_executable_onboarding_tests_passed", "latency_ms": "unavailable", "provider_request_ids": []}
+  },
+  "outputs": ["APOS-GETTING-STARTED.md", "version-correct README navigation", "explicit Intent/Decision compiler contract", "starter onboarding tests"],
+  "remaining_uncertainties": ["time-to-first-valid-Intent requires observation with a new developer"]
+}

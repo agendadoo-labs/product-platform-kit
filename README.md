@@ -34,7 +34,7 @@ Inclui:
 4. Copie os clientes de `templates/web/` para o aplicativo.
 5. Se precisar de uma base visual, copie `templates/design-system/` e personalize apenas os tokens semânticos.
 6. Execute `npm run check` antes de publicar.
-7. Para operar com agentes, adote `templates/apos/` no projeto consumidor e registre seu primeiro Intent.
+7. Para operar com agentes, comece pelo [APOS em 30 minutos](docs/APOS-GETTING-STARTED.md), adote `templates/apos/` e registre seu primeiro Intent.
 
 ## Documentação
 
@@ -51,14 +51,21 @@ Inclui:
 - [Operação agêntica de Produto](docs/AGENTIC-WORKFLOW.md)
 - [Roteamento de modelos e tokens](docs/AGENT-MODEL-ROUTING.md)
 - [Starter APOS](templates/apos/README.md)
+- [APOS em 30 minutos](docs/APOS-GETTING-STARTED.md)
+- [Especificação APOS v0.2](docs/APOS-v0.2.md)
 - [Starter anterior, somente para consulta](templates/agents/README.md)
 
 Este kit é um ponto de partida versionado. Alterações específicas de um produto devem ficar no repositório desse produto.
 
 ## APOS — execução orientada a intenção
 
-O [APOS v0.1](docs/APOS-v0.1.md) adiciona governança, contratos e evidências ao kit. Leia o [manifesto](docs/AGENTIC-PRODUCT-MANIFESTO.md) e execute o [experimento local](packages/apos/README.md).
+O modelo operacional vigente é o [APOS v0.2](docs/APOS-v0.2.md). Ele governa trabalho por Intent, contratos, evidência e cinco componentes operacionais: Kernel, Context Compiler, Epistemic Registry, Adaptive Ceremony e Learning and Cost Loop.
+
+Se você está começando agora, siga o [guia prático de 30 minutos](docs/APOS-GETTING-STARTED.md). Depois consulte o [manifesto](docs/AGENTIC-PRODUCT-MANIFESTO.md) para os princípios, o [starter](templates/apos/README.md) para adoção e o [runtime experimental](packages/apos/README.md) para entender a implementação transacional ainda baseada no perfil v0.1.
+
+O v0.2 amplia a governança verificável; não significa que todas as políticas já sejam executadas automaticamente pelo runtime Python.
 
 - [APOS aplicado ao Valora e interpretação de builders](docs/apos/VALORA-OPERATING-MODE.md)
 - [Contexto e decisões do APOS](docs/apos/CONTEXT.md)
 - [Migração operacional do próprio toolkit](docs/apos/OPERATING-MODEL-MIGRATION.md)
+- [Memorial da evolução v0.2](docs/apos/APOS-v0.2-MEMORIAL.md)

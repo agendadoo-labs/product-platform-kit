@@ -90,6 +90,27 @@ const reusableText = [
 check(!/Valora|ITBI|São Paulo|Rio de Janeiro|leo-brain/u.test(reusableText), 'reusable starter contains no consumer-specific product or personal context')
 check(!/\.agents\/team\.yaml|papéis fixos|specialists/u.test(readFileSync(resolve(root, 'templates/apos/AGENTS.md'), 'utf8')), 'active starter does not require a fixed agent organization')
 
+const rootReadme = readFileSync(resolve(root, 'README.md'), 'utf8')
+const gettingStarted = readFileSync(resolve(root, 'docs/APOS-GETTING-STARTED.md'), 'utf8')
+const starterCompiler = readFileSync(resolve(root, 'templates/apos/scripts/compile-apos-context.mjs'), 'utf8')
+check(rootReadme.includes('docs/APOS-GETTING-STARTED.md') && rootReadme.includes('docs/APOS-v0.2.md'), 'root README routes newcomers to APOS v0.2 and the getting-started path')
+check(['Os cinco componentes', 'Qual cerimônia usar', 'Primeiro Intent completo', 'Problemas comuns'].every((heading) => gettingStarted.includes(heading)), 'getting-started guide covers model, ceremony, complete first Intent and troubleshooting')
+check(gettingStarted.includes('--decision') && starterCompiler.includes('decision.intent_id !== intent.id'), 'documented compiler binds an explicit Decision to the first Intent')
+
+for (const satisfiedIntentId of state.satisfied_intents) {
+  const satisfiedIntentPath = `.apos/intents/${satisfiedIntentId}.json`
+  if (!existsSync(resolve(root, satisfiedIntentPath))) continue
+  const satisfiedIntent = readJson(satisfiedIntentPath)
+  if (!satisfiedIntent.ceremony_selection) continue
+  const passingEvidence = state.evidence_ids
+    .map((id) => `.apos/evidence/${id}.json`)
+    .filter((path) => existsSync(resolve(root, path)))
+    .map(readJson)
+    .filter((item) => item.intent_id === satisfiedIntentId && item.passed)
+  const covered = new Set(passingEvidence.flatMap(({ contract_ids }) => contract_ids))
+  check((satisfiedIntent.required_contract_ids ?? []).every((id) => covered.has(id)), `satisfied Intent has Evidence for all contracts: ${satisfiedIntentId}`)
+}
+
 const requiredScenarioFields = ['stimulus', 'context', 'response', 'metric', 'threshold', 'verifier', 'evidence_ttl_days']
 check(requiredScenarioFields.every((field) => quality.scenario_schema.includes(field)), 'kit quality scenario schema is measurable and time-bounded')
 check(quality.mandatory_scenarios.every((scenario) => requiredScenarioFields.every((field) => Object.hasOwn(scenario, field))), 'kit mandatory scenarios implement the complete schema')

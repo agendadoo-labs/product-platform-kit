@@ -1,6 +1,6 @@
 # APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada
 
-Status: especificação operacional candidata. O runtime transacional de `packages/apos` permanece no perfil executável v0.1; o v0.2 amplia a governança e os perfis verificáveis sem alegar que todas as políticas já são automaticamente executadas.
+Status: modelo operacional vigente na `main` desde 2026-09-08. O runtime transacional de `packages/apos` permanece no perfil executável v0.1; o v0.2 amplia a governança e os perfis verificáveis sem alegar que todas as políticas já são automaticamente executadas.
 
 ## Resultado esperado
 

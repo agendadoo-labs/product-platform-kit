@@ -1,0 +1,13 @@
+{
+  "id": "E-PPK-APOS-012",
+  "intent_id": "I-PPK-APOS-005",
+  "run_id": "AR-PPK-APOS-005",
+  "contract_ids": ["C-PPK-SCOPE-001", "C-PPK-CAP-001", "C-PPK-EVID-001", "C-PPK-PRES-001", "C-PPK-SEC-001", "C-PPK-GOV-001", "C-PPK-CONTEXT-001", "C-PPK-EPI-001", "C-PPK-CEREMONY-001"],
+  "passed": true,
+  "observed": "The onboarding path distinguishes APOS v0.2 governance from the v0.1 transactional runtime, links from the root README, provides a complete first Intent workflow and uses the starter compiler successfully in an isolated consumer fixture. A Decision bound to a different Intent is rejected. Repository checks, 12 runtime tests and 2 onboarding compiler tests pass.",
+  "artifact_digest": "1d101ceade2fbabf6e59437b4830fc1aa91471a3e79b695e5998a8eaa5c2c754",
+  "verifier": "scripts/check-repository.mjs and scripts/tests/apos-context-compiler.test.mjs",
+  "environment": "repository_main",
+  "created_at": "2026-09-08",
+  "expires_at": null
+}

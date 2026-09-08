@@ -1,0 +1,202 @@
+{
+  "id": "CM-I-PPK-APOS-005",
+  "protocol": "APOS v0.2",
+  "intent_id": "I-PPK-APOS-005",
+  "domains": [
+    "operating_model",
+    "templates"
+  ],
+  "sources": [
+    {
+      "path": ".apos/active-model.json",
+      "sha256": "37e2d7d71695af153c05560286d4acbd7622f4a0d6e15f0d4203f67ad2d9f0cd",
+      "bytes": 258
+    },
+    {
+      "path": ".apos/ai/ai-execution-profile.json",
+      "sha256": "a0cd8918c1184e41f4d3de9b3fe1b3695fd0b86609f022db96162509f186575a",
+      "bytes": 1372
+    },
+    {
+      "path": ".apos/architecture/architecture-profile.json",
+      "sha256": "7b1217ef8746d00c6f47700108637ae47f4c0d21868bc5870d13d38aeb9b664f",
+      "bytes": 1533
+    },
+    {
+      "path": ".apos/ceremony/adaptive-ceremony.json",
+      "sha256": "38913dad89253963fa354c4967dc5feda5c8fbd529e2a0ab787c68eef39f556b",
+      "bytes": 1260
+    },
+    {
+      "path": ".apos/context/context-profile.json",
+      "sha256": "3386ba7efe70096e6ab2b44490c43022f9f54c06e55af85299d81197bb502338",
+      "bytes": 4511
+    },
+    {
+      "path": ".apos/contracts/kit-contracts.json",
+      "sha256": "8e2bf16aa8e80e7ccce88b61affda880a5b854ca409dc15b353b389150d3d5ee",
+      "bytes": 7541
+    },
+    {
+      "path": ".apos/decisions/D-PPK-APOS-005.json",
+      "sha256": "b8d9087c5690c4326108256db418720c5067017b0740e472faa202347f0f9499",
+      "bytes": 911
+    },
+    {
+      "path": ".apos/epistemic/registry.json",
+      "sha256": "2ed5e7572e2e5182ffcecf1eeb42f3b653bd7f701474cefe6a25b92e6eb35ca2",
+      "bytes": 4149
+    },
+    {
+      "path": ".apos/intents/I-PPK-APOS-005.json",
+      "sha256": "ae64ecbc31c7e1568a20f6980997c3421d4346e6d22de5175f8807a7c39a5eec",
+      "bytes": 2683
+    },
+    {
+      "path": ".apos/kernel/kernel.json",
+      "sha256": "2849ddf7fce25dc84e87b0f1ae13209a458a80cbde0d5e23a75c15491e86abe3",
+      "bytes": 1475
+    },
+    {
+      "path": ".apos/learning/learning-cost-loop.json",
+      "sha256": "c8bd5ba78a3db5c160f93c9feff4e83bd0fa9290790254a210c9652e2e8d8864",
+      "bytes": 987
+    },
+    {
+      "path": ".apos/state/product-state.json",
+      "sha256": "d48d5aa26ae2e0ef6a20bc7e045d8985cef0a3b1007c456155fba9ac179950ea",
+      "bytes": 1379
+    },
+    {
+      "path": ".apos/versions/product-platform-kit-apos-2.3.0/capabilities.json",
+      "sha256": "b82438058dfc484b57eee4333e3fe4abe529afe3082a59d9bf05474611f553b3",
+      "bytes": 2118
+    },
+    {
+      "path": ".apos/versions/product-platform-kit-apos-2.3.0/constitution.json",
+      "sha256": "34cade807c52867082d82155903ccf52a1f4843689164719ffa9defd88b0e469",
+      "bytes": 1910
+    },
+    {
+      "path": ".apos/versions/product-platform-kit-apos-2.3.0/memory.json",
+      "sha256": "36692469c9c7655ac55dfc57967afc29c94332c81e0883d05ef4f915633c8f88",
+      "bytes": 1564
+    },
+    {
+      "path": ".apos/versions/product-platform-kit-apos-2.3.0/policy.json",
+      "sha256": "2ed146dda7a83276528f5c184308aeef55f7642c2d4e02e5ed21f710bccb7d77",
+      "bytes": 3175
+    },
+    {
+      "path": "README.md",
+      "sha256": "b8c8ff86bce405e75e609d484e93d5622e0665569cb71ee896a4ad08246fb328",
+      "bytes": 4097
+    },
+    {
+      "path": "docs/APOS-GETTING-STARTED.md",
+      "sha256": "1d101ceade2fbabf6e59437b4830fc1aa91471a3e79b695e5998a8eaa5c2c754",
+      "bytes": 11540
+    },
+    {
+      "path": "docs/APOS-v0.2.md",
+      "sha256": "6e234350d03b1187657e44935d080be811f6af53e574ad3a8df59b78939f094d",
+      "bytes": 7299
+    },
+    {
+      "path": "packages/apos/README.md",
+      "sha256": "58851d20936a15685c7b7bea6bb082847311bc8dd42d0c1129cebe481c8f5903",
+      "bytes": 1913
+    },
+    {
+      "path": "scripts/check-operating-model.mjs",
+      "sha256": "b54ed67100ec2442f85d15ad9db4d2dd028ba88c015a05e538037be795722efc",
+      "bytes": 20421
+    },
+    {
+      "path": "scripts/compile-apos-context.mjs",
+      "sha256": "3961200c3746ea16a8535d60fe3bfc045da19bdaa8ea8864512460879a197c6e",
+      "bytes": 4262
+    },
+    {
+      "path": "templates/apos/.apos/active-model.json",
+      "sha256": "0ce442ceb968917e27d30f11bada226633c239ce34b42b721ce3785e356bbfd3",
+      "bytes": 228
+    },
+    {
+      "path": "templates/apos/.apos/ai/ai-execution-profile.json",
+      "sha256": "65025b15522b285d1c9e1c435447b7219a4591b9f15709140747106174ed6caf",
+      "bytes": 921
+    },
+    {
+      "path": "templates/apos/.apos/architecture/architecture-profile.json",
+      "sha256": "c00292cc04626218c47fea9a962ffb0f8aad24c732d04f3f36b2b9f3c1e03820",
+      "bytes": 818
+    },
+    {
+      "path": "templates/apos/.apos/ceremony/adaptive-ceremony.json",
+      "sha256": "03f418bdf7ee3b931610bb2f81d56270632ba3b9eb24acb009d05c4919473ef7",
+      "bytes": 978
+    },
+    {
+      "path": "templates/apos/.apos/context/context-profile.json",
+      "sha256": "7e4736c1022ed898ce9499cade7edc1e054c869e7ed0a40d699a246525e1734c",
+      "bytes": 1537
+    },
+    {
+      "path": "templates/apos/.apos/epistemic/registry.json",
+      "sha256": "f947273abc4e164bd74e9c8e225a7d5c08c7844489b69285d452ddf4802914b3",
+      "bytes": 565
+    },
+    {
+      "path": "templates/apos/.apos/kernel/kernel.json",
+      "sha256": "a44cc1d33155aae3a5d1c1c465d9a09093bf02afe198c059714e20b7a07246f2",
+      "bytes": 1135
+    },
+    {
+      "path": "templates/apos/.apos/learning/learning-cost-loop.json",
+      "sha256": "458598fd75d6221a9b5e89721466127c08d489bca1c09b6eda0aac632837b3af",
+      "bytes": 839
+    },
+    {
+      "path": "templates/apos/.apos/versions/consumer-apos-1.3.0/capabilities.json",
+      "sha256": "c481fecaf93940abf4377a9043ae29b30151d41baf3a1f5500d4b59982bc8dd5",
+      "bytes": 1281
+    },
+    {
+      "path": "templates/apos/.apos/versions/consumer-apos-1.3.0/constitution.json",
+      "sha256": "c76a009667d95c5905271b83064e1d67164fb20b034ef82ed32a38758a4bab03",
+      "bytes": 783
+    },
+    {
+      "path": "templates/apos/.apos/versions/consumer-apos-1.3.0/memory.json",
+      "sha256": "fcade20d89c048e36ae77bdc4afec3c9117cb21de1cbf3103b180638ce6aa5d1",
+      "bytes": 858
+    },
+    {
+      "path": "templates/apos/.apos/versions/consumer-apos-1.3.0/policy.json",
+      "sha256": "f2ebbc425fac74e0508e64f6dd0a7d23ae35320005a796f671c76543bd10e7f4",
+      "bytes": 1792
+    },
+    {
+      "path": "templates/apos/AGENTS.md",
+      "sha256": "f2658687a600161a553b51bd689a40d46e18ca6d4e47862671d290bec55ec23b",
+      "bytes": 1861
+    },
+    {
+      "path": "templates/apos/README.md",
+      "sha256": "44c335f5ae3ed7a835d4f22e67205e0d62d2484b048069cf13237c49cdf8e54a",
+      "bytes": 5012
+    }
+  ],
+  "measurement": {
+    "method": "conservative_utf8_bytes_divided_by_4",
+    "total_bytes": 104966,
+    "estimated_input_tokens": 26242,
+    "exact_provider_tokens": "unavailable_without_model_request"
+  },
+  "budget": {
+    "max_estimated_input_tokens": 30000
+  },
+  "status": "within_budget",
+  "created_at": "2026-09-08"
+}

@@ -10,9 +10,12 @@ const argument = (name) => {
 }
 const readJson = (path) => JSON.parse(readFileSync(resolve(root, path), 'utf8'))
 const active = readJson('.apos/active-model.json')
-const decision = readJson(`.apos/decisions/${active.decision_id}.json`)
+const decisionPath = argument('--decision') ?? `.apos/decisions/${active.decision_id}.json`
+if (!existsSync(resolve(root, decisionPath))) throw new Error(`Decision not found: ${decisionPath}. Create it and pass --decision before compiling a new Intent.`)
+const decision = readJson(decisionPath)
 const intentPath = argument('--intent') ?? `.apos/intents/${decision.intent_id}.json`
 const intent = readJson(intentPath)
+if (decision.intent_id !== intent.id) throw new Error(`Decision ${decision.id} is bound to ${decision.intent_id}, not ${intent.id}.`)
 const profile = readJson('.apos/context/context-profile.json')
 const registry = readJson('.apos/epistemic/registry.json')
 const haystack = JSON.stringify(intent.change_envelope ?? intent).toLocaleLowerCase('pt-BR')
@@ -43,7 +46,7 @@ const collect = (candidate) => {
   } else files.add(relative(root, absolute))
 }
 for (const id of selected) for (const source of byId.get(id).sources) collect(source)
-for (const source of ['.apos/kernel/kernel.json', '.apos/active-model.json', intentPath, `.apos/decisions/${active.decision_id}.json`]) collect(source)
+for (const source of ['.apos/kernel/kernel.json', '.apos/active-model.json', intentPath, decisionPath]) collect(source)
 const sources = [...files].sort().map((path) => {
   const content = readFileSync(resolve(root, path))
   return { path, sha256: createHash('sha256').update(content).digest('hex'), bytes: content.byteLength }

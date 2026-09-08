@@ -1,0 +1,25 @@
+{
+  "id": "I-PPK-APOS-005",
+  "revision": 1,
+  "problem": "Um desenvolvedor sem contexto prévio não consegue entender e executar o APOS v0.2 apenas pelos READMEs atuais, que misturam referências v0.1 e v0.2 e não oferecem um primeiro fluxo completo.",
+  "population": "Desenvolvedores adotando ou mantendo o Product Platform Kit",
+  "outcome": "Um novo desenvolvedor entende o modelo, distingue governança v0.2 do runtime v0.1 e consegue registrar e compilar seu primeiro Intent seguindo um percurso único e verificável.",
+  "constraints": ["preservar documentação histórica v0.1", "não alegar automação inexistente", "manter starter neutro", "não alterar contratos de produtos consumidores"],
+  "change_envelope": {
+    "delta": ["criar guia prático APOS", "corrigir navegação e versões nos READMEs", "tornar explícito o par Intent/Decision no compilador"],
+    "affected_surfaces": ["README principal", "guia APOS", "README do starter", "README do runtime", "Context Compiler"],
+    "affected_domains": ["operating_model", "templates"],
+    "invariants": ["cinco componentes v0.2", "runtime transacional v0.1 preservado", "autoridade vinculada", "Evidence antes de ProductState", "orçamentos não truncam informação"],
+    "out_of_scope": ["novo runtime", "integração LLM", "mudança de consumidor", "alteração de infraestrutura"],
+    "compatibility": ["comandos atuais sem argumentos continuam usando a Decision ativa", "histórico v0.1 permanece acessível"],
+    "regression_surface": ["links", "comandos", "neutralidade do starter", "compilação do contexto", "verificador do repositório"],
+    "rollback": "reverter o commit de onboarding sem alterar a versão operacional 2.3.0",
+    "component_reuse_assessment": {"components_reviewed": [], "decision": "not_applicable", "rationale": "Mudança de documentação e ferramenta de linha de comando, sem interface visual.", "reuse_surfaces": []}
+  },
+  "required_contract_ids": ["C-PPK-SCOPE-001", "C-PPK-CAP-001", "C-PPK-EVID-001", "C-PPK-PRES-001", "C-PPK-SEC-001", "C-PPK-GOV-001", "C-PPK-CONTEXT-001", "C-PPK-EPI-001", "C-PPK-CEREMONY-001"],
+  "capabilities": ["recover-context", "compile-context", "change-package", "verify-package", "publish-authorized-version"],
+  "classification": {"impact": "medium", "uncertainty": "low", "reversibility": "reversible", "environment": "repository_main", "external_cost": "none"},
+  "ceremony_selection": {"level": "standard", "triggers": ["shared_documentation", "cli_contract"], "authority": "explicit_builder_request_2026-09-08", "downgrade_allowed": false},
+  "status": "satisfied",
+  "source": {"type": "builder_conversation", "date": "2026-09-08"}
+}

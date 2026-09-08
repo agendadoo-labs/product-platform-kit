@@ -9,7 +9,7 @@
   "scripts": {
     "check": "node scripts/check-repository.mjs",
     "check:operating-model": "node scripts/check-operating-model.mjs",
-    "test:apos": "PYTHONPATH=packages/apos python3 -m unittest discover -s packages/apos/tests -v",
+    "test:apos": "PYTHONPATH=packages/apos python3 -m unittest discover -s packages/apos/tests -v && node --test scripts/tests/apos-context-compiler.test.mjs",
     "demo:apos": "npm run demo --workspace @product-platform-kit/apos"
   }
 }
