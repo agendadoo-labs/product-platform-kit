@@ -1,6 +1,6 @@
 # Memorial de evolução — APOS v0.2
 
-Data: 2026-09-07  
+Data: 2026-09-08
 Origem: aprendizado acumulado durante a construção e operação inicial do Valora.
 
 ## Por que o v0.2 existe
@@ -12,6 +12,14 @@ O APOS v0.1 estabeleceu Intent, Contracts, Capabilities, Decision, Evidence e Pr
 3. mudanças de interface mostraram o risco de apagar capacidades fora do pedido; em APIs, dados e ambientes esse risco é menos visível e mais grave;
 4. requisitos não funcionais e exposição operacional precisavam evoluir com uso real;
 5. a escolha de agentes e modelos precisava considerar qualidade, custo, privacidade e mensuração real, não apenas preferência.
+
+## Estado da implementação
+
+Os cinco componentes foram implementados tanto no próprio toolkit quanto no starter reutilizável. O `Context Compiler` produz um manifesto auditável; o verificador cobre os limites e pisos do Kernel, a equivalência dos domínios do Context Profile e Epistemic Registry, a escolha da cerimônia, os campos do Learning and Cost Loop e a preservação das versões anteriores. O starter exige que o projeto consumidor substitua seus campos `ADAPTAR` antes de compilar contexto.
+
+O manifesto desta evolução ficou dentro do teto de 30 mil tokens estimados. Trata-se de uma aproximação conservadora por bytes; uso real ausente continua `unavailable`, nunca zero.
+
+Os limites de 1.500 tokens para o Kernel e 30 mil para o contexto são baselines iniciais, não números universais. Após dez runs materiais, o consumidor deve confrontá-los com cobertura de contratos, falhas de recuperação, retrabalho, regressões, resultado validado e uso medido pelo provedor. Um estouro de orçamento interrompe ou escala a compilação; nunca justifica truncar silenciosamente informação necessária.
 
 ## Melhorias consolidadas
 

@@ -16,9 +16,10 @@
     "rollback": "restore active pointers to product-platform-kit-apos-2.2.0 and consumer-apos-1.2.0",
     "component_reuse_assessment": {"components_reviewed": [], "decision": "not_applicable", "rationale": "Operating-model evolution does not implement a product interface.", "reuse_surfaces": []}
   },
-  "required_contract_ids": ["C-PPK-ARCH-001", "C-PPK-CONTEXT-001", "C-PPK-AI-ROUTE-001", "C-PPK-PRES-001", "C-PPK-REV-001"],
+  "required_contract_ids": ["C-PPK-KERNEL-001", "C-PPK-CONTEXT-001", "C-PPK-EPI-001", "C-PPK-CEREMONY-001", "C-PPK-LEARN-001", "C-PPK-ARCH-001", "C-PPK-AI-ROUTE-001", "C-PPK-PRES-001", "C-PPK-REV-001"],
   "capabilities": ["recover-context", "compile-context", "assess-architecture", "route-model", "account-agent-usage", "change-package", "verify-package"],
   "classification": {"impact": "high", "uncertainty": "medium", "reversibility": "reversible", "environment": "repository_candidate", "external_cost": "none"},
-  "status": "candidate",
+  "ceremony_selection": {"level": "strict", "triggers": ["high_impact", "operating_model_change"], "authority": "explicit_builder_request", "downgrade_allowed": false},
+  "status": "satisfied",
   "source": {"type": "builder_conversation", "date": "2026-09-07"}
 }

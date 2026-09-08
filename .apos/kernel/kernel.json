@@ -10,5 +10,6 @@
   "evidence": "Execution and verification are separate; executor output, silence, missing usage and stale observations do not prove success.",
   "memory": "Persist governing knowledge and validated state; tasks, raw retrieval candidates and intermediate narration are ephemeral.",
   "economics": "Choose the smallest sufficient capability, context and architecture; optimize cost per validated outcome, not activity or token price.",
+  "budget_rule": "Budgets are evidence-calibrated guardrails, never permission to omit governing contracts or material facts; exceed and escalate rather than truncate silently.",
   "unknown_rule": "Unknown, unavailable or stale remains unknown and triggers bounded investigation or escalation."
 }

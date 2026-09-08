@@ -36,6 +36,12 @@ This requires a different operating model.
 
 We call it the **Agentic Product Operating System — APOS**.
 
+## APOS v0.2 operational addendum
+
+The manifesto is executed through five components: a compact **Kernel**, a selective **Context Compiler**, an **Epistemic Registry**, an **Adaptive Ceremony** (`Lite`, `Standard`, `Strict`) and a **Learning and Cost Loop**. Architecture evolves by domain and observed fitness rather than fashion.
+
+Token and context limits are evidence-calibrated guardrails, not arbitrary optimization targets. They must be reviewed against contract coverage, retrieval misses, rework, regressions and validated outcomes. A budget breach may stop or escalate a run; it never authorizes silent loss of governing information.
+
 ---
 
 # I. We manage intent, not tasks

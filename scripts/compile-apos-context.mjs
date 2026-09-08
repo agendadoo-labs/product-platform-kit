@@ -43,6 +43,7 @@ const collect = (candidate) => {
   } else files.add(relative(root, absolute))
 }
 for (const id of selected) for (const source of byId.get(id).sources) collect(source)
+for (const source of ['.apos/kernel/kernel.json', '.apos/active-model.json', intentPath, `.apos/decisions/${active.decision_id}.json`]) collect(source)
 const sources = [...files].sort().map((path) => {
   const content = readFileSync(resolve(root, path))
   return { path, sha256: createHash('sha256').update(content).digest('hex'), bytes: content.byteLength }
@@ -59,7 +60,7 @@ const manifest = {
   measurement: { method: 'conservative_utf8_bytes_divided_by_4', total_bytes: totalBytes, estimated_input_tokens: estimatedTokens, exact_provider_tokens: 'unavailable_without_model_request' },
   budget: { max_estimated_input_tokens: limit },
   status: estimatedTokens <= limit ? 'within_budget' : 'budget_exceeded',
-  created_at: '2026-09-07'
+  created_at: new Date().toISOString().slice(0, 10)
 }
 const serialized = `${JSON.stringify(manifest, null, 2)}\n`
 const output = argument('--output')

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:apos:v0.2:AgentRun",
+  "title": "APOS AgentRun v0.2",
+  "type": "object",
+  "required": ["id", "intent_id", "status", "capabilities", "environment", "ceremony", "context_manifest_id", "budget", "consumption", "learning_cost"],
+  "properties": {
+    "ceremony": {"type": "object", "required": ["selected", "required", "triggers", "authorization_source"]},
+    "context_manifest_id": {"type": "string"},
+    "learning_cost": {
+      "type": "object",
+      "required": ["steps", "run"],
+      "properties": {
+        "steps": {"type": "array", "items": {"type": "object", "required": ["step", "capability", "context_tokens", "output_tokens", "external_calls", "duration_ms", "rework_count", "regressions_found", "reused_evidence_ids", "usage_status"]}},
+        "run": {"type": "object", "required": ["route", "total_tokens", "estimated_cost", "reconciled_cost", "currency", "validated_outcome", "quality_score", "latency_ms", "provider_request_ids"]}
+      }
+    }
+  }
+}

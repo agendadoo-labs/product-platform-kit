@@ -1,7 +1,8 @@
 {
   "id": "D-PPK-APOS-004",
   "intent_id": "I-PPK-APOS-004",
-  "outcome": "adopted_in_candidate_branch",
+  "run_id": "AR-PPK-APOS-004",
+  "outcome": "validated_in_candidate_branch",
   "decision": "Adopt APOS v0.2 with maturity-based architecture, selective context compilation and governed provider-neutral AI execution.",
   "rationale": "This controls the permanent cost of architecture and agent context while preserving a simple human-assisted operating mode until repeatable work and eval evidence justify API automation.",
   "alternatives": ["Keep v0.1 without architecture lifecycle", "Build a custom multi-agent platform immediately", "Bind APOS to one model provider"],

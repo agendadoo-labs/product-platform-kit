@@ -6,8 +6,11 @@
   "domain_assessment_rule": "Assess maturity per domain; never promote the entire product because one critical flow needs a stronger baseline.",
   "default_style": "modular_monolith_and_managed_services",
   "complexity_budget_dimensions": ["deployable_units", "datastores", "paid_external_dependencies", "queues", "regions", "integration_contracts", "fallback_paths"],
+  "inventory_schema": {"required": ["observed", "unknown", "owner", "review_date"], "rule": "Unknown inventory is not zero."},
   "admission_requirements": ["observed_problem", "simpler_alternative_assessed", "owner", "fitness_function", "recurring_cost", "rollback", "removal_condition"],
   "fitness_functions": ["validated_delivery_time", "change_failure_rate", "latency", "availability", "unit_cost", "recovery_time", "context_cost_per_validated_outcome"],
+  "threshold_rule": "Each consumer assigns measurable thresholds or an explicit pending-baseline gate before architecture promotion.",
+  "review_rule": "Review monthly or when exposure, dependency, cost, incident or domain-stage changes; promote and regress domains independently.",
   "evolution_rule": "Add architectural complexity only when evidence shows the current risk, cost or delay exceeds the lifecycle cost of the proposed complexity.",
   "non_relaxable_floors": ["security", "privacy", "authorization", "financial_integrity"]
 }

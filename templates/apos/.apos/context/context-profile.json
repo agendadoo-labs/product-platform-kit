@@ -1,9 +1,13 @@
 {
   "id": "CTX-ADAPTAR-001",
   "protocol": "APOS v0.2",
-  "domains": [{"id": "ADAPTAR", "authoritative_sources": [], "dependencies": []}],
+  "max_estimated_input_tokens": "ADAPTAR",
+  "budget_basis": "ADAPTAR with evidence; this value is a guardrail, not a universal optimum.",
+  "budget_calibration": {"review_after_material_runs": "ADAPTAR", "metrics": ["contract_coverage", "retrieval_misses", "rework_count", "regressions_found", "validated_outcome", "provider_input_tokens"], "decision_rule": "Change the limit only with recorded evidence; preserve sufficient context even when that requires an explicit exception or a higher budget."},
+  "domains": [{"id": "ADAPTAR", "match_terms": ["ADAPTAR"], "sources": ["ADAPTAR"], "dependencies": []}],
   "source_priority": ["active_machine_readable_state", "active_contract", "active_decision", "fresh_evidence", "versioned_documentation", "external_authoritative_source", "historical_projection"],
   "compile_steps": ["resolve_change_envelope", "select_affected_domains", "load_governing_contracts", "load_active_decisions_and_state", "include_fresh_evidence", "follow_declared_dependencies", "exclude_superseded_unrelated_history", "record_context_manifest"],
   "token_rule": "Declare context, output, tool and fanout ceilings before material runs.",
+  "information_preservation_rule": "A budget breach stops or escalates compilation; it never silently removes authoritative sources, applicable contracts, safety constraints or known uncertainties.",
   "projection_rule": "Human documents and knowledge vaults are derived projections linked to operational identifiers."
 }

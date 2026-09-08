@@ -1,0 +1,13 @@
+{
+  "id": "E-PPK-APOS-011",
+  "intent_id": "I-PPK-APOS-004",
+  "run_id": "AR-PPK-APOS-004",
+  "contract_ids": ["C-PPK-KERNEL-001", "C-PPK-CONTEXT-001", "C-PPK-EPI-001", "C-PPK-CEREMONY-001", "C-PPK-LEARN-001", "C-PPK-ARCH-001", "C-PPK-AI-ROUTE-001", "C-PPK-PRES-001", "C-PPK-REV-001"],
+  "passed": true,
+  "observed": "APOS v0.2 is complete on the candidate branch and reusable starter: bounded Kernel, Context Compiler and manifest, canonical Epistemic Registry, risk-bound Adaptive Ceremony, Learning and Cost Loop, evolutionary architecture and provider-neutral AI policy pass repository checks. Twelve transactional runtime tests pass and prior versions remain restorable.",
+  "artifact_digest": "c5083cf230df35f229f44b85f526c47c57d814853885c1d42cd0aca0c9368688",
+  "verifier": "scripts/check-repository.mjs, scripts/check-operating-model.mjs and packages/apos unit suite",
+  "environment": "repository_candidate",
+  "created_at": "2026-09-08",
+  "expires_at": null
+}

@@ -4,6 +4,8 @@ O modelo operacional ativo está em [`.apos/active-model.json`](.apos/active-mod
 
 ## Protocolo
 
+O APOS v0.2 é composto por Kernel, Context Compiler, Epistemic Registry, Adaptive Ceremony e Learning and Cost Loop. A cerimônia `Lite`, `Standard` ou `Strict` segue a pior dimensão de risco e não pode ser reduzida pelo executor.
+
 1. Interpretar a conversa como Intent: problema, população, outcome, restrições, incertezas e evidência necessária.
 2. Recuperar Constitution, ProductState, Intents, Decisions, Contracts e Evidence relacionados.
 3. Compor a menor combinação suficiente de Capabilities. Produto, design, engenharia, dados e operações são famílias de contratos ou conhecimentos, não agentes obrigatórios.
@@ -12,6 +14,7 @@ O modelo operacional ativo está em [`.apos/active-model.json`](.apos/active-mod
 6. Separar execução de verificação. Resultado do executor não é Evidence.
 7. Atualizar ProductState apenas quando `Intent satisfeito ∧ Contracts atendidos ∧ Evidence suficiente e vigente`.
 8. Persistir conhecimento; tarefas, handoffs e status intermediários são efêmeros.
+9. Tratar limites de tokens como baselines calibráveis por resultados. Nunca omitir silenciosamente contratos, riscos, incertezas ou fontes necessárias para caber em um teto; interromper ou escalar e registrar a decisão.
 
 ## Reutilização
 
