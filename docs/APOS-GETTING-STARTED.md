@@ -2,7 +2,7 @@
 
 Este guia é a porta de entrada para quem acabou de conhecer o Product Platform Kit. Ao final, você saberá ler o estado de um produto, escolher o nível de processo e registrar uma mudança sem confundir código produzido com resultado comprovado.
 
-## 1. O APOS em cinco minutos
+## 1. O que é APOS?
 
 APOS é um modelo operacional para pessoas trabalharem com agentes de software. Sua unidade persistente não é uma tarefa: é um **Intent**, que declara problema, população, resultado esperado, restrições e evidência necessária.
 
