@@ -1,0 +1,9 @@
+{
+  "id": "ADAPTAR-consumer-apos-1.3.0",
+  "protocol": "APOS v0.2",
+  "owner": "ADAPTAR",
+  "purpose": "ADAPTAR",
+  "authority": {"default": "local_reversible_low_impact", "explicit_confirmation_required": ["production", "external_cost", "credential_or_permission", "destructive_action", "accept_quality_exception"]},
+  "completion_rule": "intent_satisfied AND applicable_contracts_met AND evidence_sufficient_and_fresh",
+  "principles": ["Intent persists; tasks are ephemeral", "Unmentioned behavior and contracts are preserved", "Architecture is minimum sufficient by domain maturity", "Context is compiled from authoritative dependencies", "Models are replaceable dependencies", "Usage and cost are evidence", "Execution and verification are separate", "Unknown is not passed"]
+}

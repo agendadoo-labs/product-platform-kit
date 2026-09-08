@@ -1,0 +1,21 @@
+{
+  "id": "EPI-PPK-001",
+  "protocol": "APOS v0.2",
+  "entry_schema": ["domain", "authoritative_sources", "methods", "known_uncertainties", "relationships", "owner", "refresh_triggers"],
+  "domains": [
+    {"domain": "operating_model", "authoritative_sources": [".apos/active-model.json", ".apos/contracts", ".apos/state"], "methods": ["schema_validation", "contract_resolution"], "known_uncertainties": ["native_v0_2_runtime_support"], "relationships": ["runtime"], "owner": "builder", "refresh_triggers": ["protocol_change"]},
+    {"domain": "runtime", "authoritative_sources": ["packages/apos"], "methods": ["unit_test", "transaction_test"], "known_uncertainties": ["distributed_execution"], "relationships": ["operating_model", "quality"], "owner": "builder", "refresh_triggers": ["runtime_change"]},
+    {"domain": "templates", "authoritative_sources": ["templates"], "methods": ["consumer_neutrality_scan"], "known_uncertainties": ["consumer_adoption"], "relationships": ["operating_model"], "owner": "builder", "refresh_triggers": ["template_change"]},
+    {"domain": "security", "authoritative_sources": ["docs/SECURITY-PRIVACY.md", "scripts/check-repository.mjs"], "methods": ["secret_scan", "privacy_review"], "known_uncertainties": ["consumer_threat_model"], "relationships": ["environments", "telemetry"], "owner": "builder", "refresh_triggers": ["security_change"]},
+    {"domain": "quality", "authoritative_sources": [".apos/quality", "docs/apos/QUALITY-AND-ENVIRONMENT-GUARDRAILS.md"], "methods": ["scenario_validation", "evidence_freshness_check"], "known_uncertainties": ["consumer_thresholds"], "relationships": ["runtime"], "owner": "builder", "refresh_triggers": ["quality_profile_change"]},
+    {"domain": "environments", "authoritative_sources": [".apos/environments", "docs/ENVIRONMENTS.md"], "methods": ["profile_validation"], "known_uncertainties": ["consumer_provider"], "relationships": ["security", "finops", "reliability"], "owner": "builder", "refresh_triggers": ["environment_change"]},
+    {"domain": "finops", "authoritative_sources": ["docs/AGENT-MODEL-ROUTING.md", ".apos/ai", ".apos/learning"], "methods": ["usage_reconciliation", "outcome_cost_analysis"], "known_uncertainties": ["provider_prices"], "relationships": ["operating_model"], "owner": "builder", "refresh_triggers": ["pricing_change", "budget_change"]},
+    {"domain": "reliability", "authoritative_sources": [".apos/exposure", "templates/operations"], "methods": ["exposure_review", "recovery_exercise"], "known_uncertainties": ["consumer_rto_rpo"], "relationships": ["environments"], "owner": "builder", "refresh_triggers": ["exposure_change"]},
+    {"domain": "design_system", "authoritative_sources": ["templates/design-system"], "methods": ["component_inventory"], "known_uncertainties": ["consumer_brand"], "relationships": ["templates"], "owner": "builder", "refresh_triggers": ["component_change"]},
+    {"domain": "maps", "authoritative_sources": ["packages/map-core"], "methods": ["package_test", "performance_review"], "known_uncertainties": ["consumer_provider"], "relationships": ["quality", "finops"], "owner": "builder", "refresh_triggers": ["map_core_change"]},
+    {"domain": "telemetry", "authoritative_sources": ["docs/TELEMETRY.md"], "methods": ["event_contract_review"], "known_uncertainties": ["consumer_metrics"], "relationships": ["security", "experiments"], "owner": "builder", "refresh_triggers": ["telemetry_contract_change"]},
+    {"domain": "experiments", "authoritative_sources": ["docs/EXPERIMENTS.md"], "methods": ["assignment_review", "analysis_review"], "known_uncertainties": ["consumer_sample_size"], "relationships": ["telemetry"], "owner": "builder", "refresh_triggers": ["experiment_contract_change"]}
+  ],
+  "admission_rule": "A source becomes authoritative only through explicit registry review; semantic retrieval cannot promote its authority.",
+  "uncertainty_rule": "Known uncertainty is preserved until traceable evidence resolves or supersedes it."
+}

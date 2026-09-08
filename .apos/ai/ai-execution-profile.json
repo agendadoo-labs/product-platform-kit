@@ -1,0 +1,14 @@
+{
+  "id": "AI-PPK-001",
+  "protocol": "APOS v0.2",
+  "architecture": "provider_neutral_control_plane_with_allowlisted_adapters",
+  "current_mode": "human_assisted_codex_orchestration",
+  "planes": ["orchestration", "execution", "verification", "accounting"],
+  "route_key": ["capability", "risk_tier", "data_class", "latency_class", "quality_threshold"],
+  "provider_admission": ["approved_terms", "data_handling_review", "credential_boundary", "hard_limits", "request_traceability", "eval_baseline", "fallback"],
+  "run_usage_fields": ["provider", "model", "model_snapshot", "reasoning_effort", "input_tokens", "cached_input_tokens", "output_tokens", "reasoning_tokens", "tool_calls", "latency_ms", "request_id", "estimated_cost", "currency", "usage_status"],
+  "cost_rule": "Per-call usage is operational evidence; invoiced cost must be reconciled from the provider billing source and unavailable is never zero.",
+  "routing_rule": "Choose the least expensive approved route that meets measured quality and risk constraints; change routes only after eval evidence.",
+  "automation_stages": ["human_assisted", "bounded_api_pilot", "evaluated_multi_model_routing", "volume_justified_autonomy"],
+  "prohibited": ["client_side_provider_key", "unbounded_tool_access", "unreviewed_sensitive_data", "provider_selected_only_by_price", "executor_self_attestation_as_evidence"]
+}

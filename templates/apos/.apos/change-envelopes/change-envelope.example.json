@@ -1,0 +1,20 @@
+{
+  "id": "ADAPTAR-CE-001",
+  "intent_id": "ADAPTAR-I-001",
+  "intent_revision": 1,
+  "delta": ["ADAPTAR: requested behavior and outcome"],
+  "affected_surfaces": ["ADAPTAR: files, APIs, data, environments and artifacts that must change"],
+  "affected_domains": ["ADAPTAR: canonical Epistemic Registry domain IDs"],
+  "invariants": ["ADAPTAR: existing behavior and contracts that must remain true"],
+  "out_of_scope": ["ADAPTAR: nearby elements that cannot change"],
+  "compatibility": ["ADAPTAR: consumers and historical data that must continue working"],
+  "regression_surface": ["ADAPTAR: focused checks for the delta and at-risk invariants"],
+  "rollback": "ADAPTAR: reversible unit and identifiable prior state",
+  "component_reuse_assessment": {
+    "components_reviewed": ["ADAPTAR: component catalog entries inspected; use [] only with not_applicable"],
+    "decision": "ADAPTAR: reuse | extend | create | local | not_applicable",
+    "rationale": "ADAPTAR: why this decision minimizes duplication without speculative abstraction",
+    "reuse_surfaces": ["ADAPTAR: current and plausible consumer surfaces"]
+  },
+  "status": "candidate"
+}

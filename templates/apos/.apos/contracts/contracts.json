@@ -1,6 +1,7 @@
 {
   "contracts": [
     {"id": "ADAPTAR-C-REV-001", "family": "operations", "description": "Material changes preserve an identifiable previous state and restoration path.", "applies_when": ["material_change"], "verification": {"status": "specified", "required_evidence": "ADAPTAR"}},
+    {"id": "ADAPTAR-C-PRES-001", "family": "change_control", "description": "Material changes declare a Change Envelope; unmentioned behavior, contracts, data and configuration remain unchanged.", "applies_when": ["all_changes"], "verification": {"status": "specified", "required_evidence": "ADAPTAR: envelope and focused regression evidence"}},
     {"id": "ADAPTAR-C-GOV-001", "family": "operations", "description": "Critical external effects require scoped authority bound to the action and revision.", "applies_when": ["external_effect"], "verification": {"status": "specified", "required_evidence": "ADAPTAR"}},
     {"id": "ADAPTAR-C-NFR-001", "family": "quality", "description": "Applicable quality attributes are measurable scenarios with fresh evidence.", "applies_when": ["material_change", "promotion"], "verification": {"status": "specified", "required_evidence": "ADAPTAR"}},
     {"id": "ADAPTAR-C-ENV-001", "family": "operations", "description": "Environments isolate exposure, data, credentials and cost controls.", "applies_when": ["environment", "deployment"], "verification": {"status": "specified", "required_evidence": "ADAPTAR"}},

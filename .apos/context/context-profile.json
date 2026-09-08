@@ -1,0 +1,24 @@
+{
+  "id": "CTX-PPK-001",
+  "protocol": "APOS v0.2",
+  "max_estimated_input_tokens": 30000,
+  "domains": [
+    {"id": "operating_model", "match_terms": ["apos", "operating model", "constitution", "policy", "contract"], "sources": [".apos/active-model.json", ".apos/contracts/kit-contracts.json", ".apos/state/product-state.json", ".apos/versions/product-platform-kit-apos-2.3.0"], "dependencies": ["runtime"]},
+    {"id": "runtime", "match_terms": ["runtime", "engine", "schema", "python"], "sources": ["packages/apos"], "dependencies": ["operating_model", "quality"]},
+    {"id": "templates", "match_terms": ["template", "starter", "consumer"], "sources": ["templates/apos/README.md", "templates/apos/AGENTS.md", "templates/apos/.apos/active-model.json", "templates/apos/.apos/versions/consumer-apos-1.3.0", "templates/apos/.apos/kernel", "templates/apos/.apos/context", "templates/apos/.apos/epistemic", "templates/apos/.apos/ceremony", "templates/apos/.apos/learning", "templates/apos/.apos/ai", "templates/apos/.apos/architecture"], "dependencies": ["operating_model"]},
+    {"id": "security", "match_terms": ["security", "privacy", "secret", "credential"], "sources": ["docs/SECURITY-PRIVACY.md", "scripts/check-repository.mjs"], "dependencies": []},
+    {"id": "quality", "match_terms": ["quality", "nfr", "test", "evidence"], "sources": [".apos/quality", "docs/apos/QUALITY-AND-ENVIRONMENT-GUARDRAILS.md"], "dependencies": ["operating_model"]},
+    {"id": "environments", "match_terms": ["environment", "deploy", "preview", "production"], "sources": [".apos/environments", "docs/ENVIRONMENTS.md", "templates/environments"], "dependencies": ["security", "finops", "reliability"]},
+    {"id": "finops", "match_terms": ["cost", "token", "budget", "finops"], "sources": ["docs/AGENT-MODEL-ROUTING.md", ".apos/ai", ".apos/learning"], "dependencies": ["operating_model"]},
+    {"id": "reliability", "match_terms": ["reliability", "rto", "rpo", "recovery", "exposure"], "sources": [".apos/exposure", "templates/operations"], "dependencies": ["environments"]},
+    {"id": "design_system", "match_terms": ["design system", "component", "interface"], "sources": ["templates/design-system"], "dependencies": ["templates"]},
+    {"id": "maps", "match_terms": ["map", "geocod"], "sources": ["packages/map-core"], "dependencies": ["quality", "finops"]},
+    {"id": "telemetry", "match_terms": ["telemetry", "event", "metric"], "sources": ["docs/TELEMETRY.md"], "dependencies": ["security"]},
+    {"id": "experiments", "match_terms": ["experiment", "a/b", "campaign"], "sources": ["docs/EXPERIMENTS.md"], "dependencies": ["telemetry"]}
+  ],
+  "source_priority": ["active_machine_readable_state", "active_contract", "active_decision", "fresh_evidence", "versioned_documentation", "external_authoritative_source", "historical_projection"],
+  "compile_steps": ["resolve_change_envelope", "select_affected_domains", "load_governing_contracts", "load_active_decisions_and_state", "include_fresh_evidence", "follow_declared_dependencies", "exclude_superseded_unrelated_history", "record_context_manifest"],
+  "retrieval_rule": "Semantic retrieval proposes candidates; authority, provenance, version and freshness determine inclusion.",
+  "token_rule": "Load the smallest sufficient dependency subgraph and declare input, output, tool and fanout ceilings before material runs.",
+  "projection_rule": "Human documentation and knowledge vaults are derived projections and must link back to operational identifiers."
+}

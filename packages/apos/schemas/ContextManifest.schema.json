@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://product-platform-kit.local/schemas/ContextManifest.schema.json",
+  "title": "APOS ContextManifest v0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "protocol", "intent_id", "domains", "sources", "measurement", "budget", "status", "created_at"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "protocol": {"const": "APOS v0.2"},
+    "intent_id": {"type": "string", "minLength": 1},
+    "domains": {"type": "array", "items": {"type": "string"}, "uniqueItems": true, "minItems": 1},
+    "sources": {"type": "array", "items": {"type": "object", "required": ["path", "sha256", "bytes"], "properties": {"path": {"type": "string"}, "sha256": {"type": "string"}, "bytes": {"type": "integer", "minimum": 0}}, "additionalProperties": false}},
+    "measurement": {"type": "object"},
+    "budget": {"type": "object"},
+    "status": {"enum": ["within_budget", "budget_exceeded", "measurement_unavailable"]},
+    "created_at": {"type": "string"}
+  }
+}

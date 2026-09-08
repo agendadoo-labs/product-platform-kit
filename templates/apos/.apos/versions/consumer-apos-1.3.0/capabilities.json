@@ -1,0 +1,17 @@
+{
+  "capabilities": [
+    {"id": "recover-context", "purpose": "Recover relevant operational state."},
+    {"id": "compile-context", "purpose": "Compile the smallest authoritative context for an Intent."},
+    {"id": "control-change-scope", "purpose": "Declare and protect the explicit change envelope."},
+    {"id": "assess-component-reuse", "purpose": "Inspect and grow the Design System deliberately."},
+    {"id": "model-quality", "purpose": "Define measurable quality scenarios."},
+    {"id": "manage-exposure", "purpose": "Evolve operational safeguards with measured exposure."},
+    {"id": "assess-architecture", "purpose": "Evaluate maturity, complexity budget and fitness functions by domain."},
+    {"id": "route-model", "purpose": "Select an approved model route from risk, data, quality and cost evidence."},
+    {"id": "account-agent-usage", "purpose": "Record and reconcile model usage and cost."},
+    {"id": "change-artifact", "purpose": "Create a bounded candidate."},
+    {"id": "verify-artifact", "purpose": "Observe the candidate against contracts."},
+    {"id": "publish-authorized-change", "purpose": "Publish only with bound authority."}
+  ],
+  "selection_rule": "Compose the smallest sufficient set for the Intent; do not create fixed agent departments."
+}

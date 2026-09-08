@@ -1,0 +1,11 @@
+{
+  "id": "CEREMONY-PPK-001",
+  "protocol": "APOS v0.2",
+  "levels": [
+    {"id": "lite", "when": ["local", "low_impact", "low_uncertainty", "reversible", "no_contract_change", "no_sensitive_data", "no_external_cost"], "requires": ["compact_intent", "change_envelope", "focused_verification"], "prohibits": ["production_effect", "scope_expansion"]},
+    {"id": "standard", "when": ["feature", "api_or_schema_change", "new_dependency", "medium_risk"], "requires": ["intent", "change_envelope", "context_manifest", "applicable_profiles", "contract_evidence", "rollback"], "prohibits": ["unbound_production_effect"]},
+    {"id": "strict", "when": ["production", "security", "personal_data", "payment", "irreversible", "high_impact", "high_uncertainty"], "requires": ["standard_requirements", "bound_human_authorization", "fresh_independent_evidence", "tested_rollback_or_recovery", "monitoring", "cost_and_exposure_check"], "prohibits": ["self_authorization", "stale_evidence", "silent_waiver"]}
+  ],
+  "selection_rule": "Use the lightest level that covers the worst applicable risk dimension; agents cannot downgrade a required level.",
+  "upgrade_rule": "Unexpected scope, uncertainty, sensitivity or external effect upgrades the ceremony before continuing."
+}

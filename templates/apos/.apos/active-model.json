@@ -1,8 +1,8 @@
 {
-  "model_id": "ADAPTAR-consumer-apos-1.1.0",
-  "apos_protocol": "0.1",
+  "model_id": "ADAPTAR-consumer-apos-1.3.0",
+  "apos_protocol": "0.2",
   "effective_from": "ADAPTAR",
-  "path": ".apos/versions/consumer-apos-1.1.0",
-  "supersedes": "ADAPTAR-consumer-apos-1.0.0",
+  "path": ".apos/versions/consumer-apos-1.3.0",
+  "supersedes": "ADAPTAR-consumer-apos-1.2.0",
   "decision_id": "ADAPTAR"
 }

@@ -1,0 +1,28 @@
+{
+  "id": "product-platform-kit-apos-2.3.0",
+  "protocol": "APOS v0.2",
+  "owner": "builder",
+  "purpose": "Provide reusable infrastructure and patterns for products governed by Intent, Contracts, quality, Evidence and economical evolution.",
+  "scope": "Reusable product infrastructure and operating-model templates; consumer business state, architecture stages, providers and targets remain outside the kit.",
+  "authority": {"default": "local_reversible_low_impact", "explicit_confirmation_required": ["main_branch_publication", "release", "external_cost", "credential_or_permission", "destructive_action", "accept_quality_exception"]},
+  "completion_rule": "intent_satisfied AND applicable_contracts_met AND evidence_sufficient_and_fresh",
+  "principles": [
+    "Intent persists; tasks are ephemeral",
+    "Capabilities replace fixed roles",
+    "Every change is an explicit delta; unmentioned behavior, contracts, data and configuration are preserved by default",
+    "Every interface change reviews the Design System before implementation",
+    "Quality attributes are measurable scenarios",
+    "Operational risk evolves with measured exposure",
+    "Architecture is the minimum sufficient for the current domain maturity and evidence",
+    "Complexity has an explicit lifecycle cost, fitness function, rollback and removal condition",
+    "Context is compiled from the smallest sufficient authoritative dependency subgraph",
+    "Models and providers are replaceable execution dependencies, not sources of authority",
+    "Per-run usage is measured and financial cost is reconciled with provider billing",
+    "Automation advances only after bounded eval evidence",
+    "Consumer targets stay with the consumer",
+    "Execution and verification are separate",
+    "Published versions are immutable",
+    "Budgets and alerts are not hard limits",
+    "Unknown, stale or unavailable is not passed"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "D-PPK-APOS-003",
+  "intent_id": "I-PPK-APOS-003",
+  "outcome": "adopted_in_candidate_branch",
+  "decision": "Add preservation-by-default and a reusable Change Envelope in product-platform-kit-apos-2.2.0 and consumer-apos-1.2.0.",
+  "rationale": "Explicit deltas and invariants protect hidden contracts while focused impact-based verification reduces unnecessary context and token usage.",
+  "alternatives": ["Full regression for every change", "Rely on visual review", "Require builders to enumerate every dependency"],
+  "supersedes": "D-PPK-APOS-002",
+  "actor": "builder",
+  "authority_source": "Explicit builder request on 2026-09-07 to create the principles in Valora and Product Platform Kit",
+  "scope": "Candidate branch only; no main publication or package release",
+  "created_at": "2026-09-07"
+}

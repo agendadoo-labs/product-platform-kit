@@ -1,0 +1,17 @@
+{
+  "capabilities": [
+    {"id":"recover-context","purpose":"Recover state, decisions, contracts, profiles and evidence."},
+    {"id":"research","purpose":"Reduce uncertainty with traceable sources."},
+    {"id":"design-reusable-contract","purpose":"Define a contract or template without coupling a consumer."},
+    {"id":"design-change-envelope","purpose":"Define delta, affected surfaces, invariants, exclusions, compatibility, regression and rollback."},
+    {"id":"assess-component-reuse","purpose":"Inspect the Design System and decide whether to reuse, extend, create or keep an interface element local."},
+    {"id":"model-quality","purpose":"Model measurable quality scenarios, gates and evidence validity."},
+    {"id":"manage-exposure","purpose":"Model multidimensional operational exposure and progressive triggers."},
+    {"id":"change-package","purpose":"Create a local candidate for code, schema, documentation or template."},
+    {"id":"verify-package","purpose":"Observe a candidate against applicable contracts."},
+    {"id":"exercise-recovery","purpose":"Verify restoration within defined objectives."},
+    {"id":"publish-authorized-version","purpose":"Publish branch, main or release only with bound authority."},
+    {"id":"observe-adoption","purpose":"Observe use, cost and learning without confusing download with outcome."}
+  ],
+  "selection_rule":"Compose the smallest sufficient set for the Intent; model routing follows capability complexity and risk, never a permanent job title."
+}

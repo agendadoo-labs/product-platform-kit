@@ -1,0 +1,13 @@
+{
+  "id": "E-PPK-APOS-010",
+  "intent_id": "I-PPK-APOS-004",
+  "run_id": "AR-PPK-APOS-004",
+  "contract_ids": ["C-PPK-ARCH-001", "C-PPK-CONTEXT-001", "C-PPK-AI-ROUTE-001", "C-PPK-PRES-001", "C-PPK-REV-001"],
+  "passed": true,
+  "observed": "The APOS v0.2 candidate resolves, preserves prior versions, exposes reusable Architecture, Context and AI Execution profiles, keeps the starter consumer-neutral and passes all operating-model structural and archive checks.",
+  "artifact_digest": "c029a5bd8ddeecf7fb1f49518f281db448047d2e3838713c6d426746794fc2ec",
+  "verifier": "scripts/check-operating-model.mjs",
+  "environment": "repository_candidate",
+  "created_at": "2026-09-07",
+  "expires_at": null
+}

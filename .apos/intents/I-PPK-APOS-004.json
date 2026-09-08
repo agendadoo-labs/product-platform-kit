@@ -1,0 +1,24 @@
+{
+  "id": "I-PPK-APOS-004",
+  "revision": 1,
+  "problem": "APOS v0.1 does not explicitly govern architecture maturity, selective context retrieval or measurable multi-provider AI execution, allowing complexity and token cost to grow without an evidence-based evolution rule.",
+  "population": "Builders and products adopting APOS",
+  "outcome": "APOS v0.2 adds reusable Architecture, Context and AI Execution profiles, a progressive adoption policy and a complete evolution memorial.",
+  "constraints": ["Provider-neutral and consumer-neutral", "No mandatory custom orchestrator", "No external API call or cost", "Previous versions remain immutable", "Runtime limitations remain explicit"],
+  "change_envelope": {
+    "delta": ["add APOS v0.2 governance and reusable profiles"],
+    "affected_surfaces": ["kit APOS model", "consumer starter", "operating-model verifier", "documentation"],
+    "affected_domains": ["operating_model", "templates"],
+    "invariants": ["authority gates", "scope preservation", "quality and exposure profiles", "consumer independence", "legacy runtime semantics"],
+    "out_of_scope": ["production model gateway", "provider credentials", "external spend", "package release", "main publication"],
+    "compatibility": ["v0.1 persistent entities", "rollback through active-model", "immutable 2.2.0 and consumer 1.2.0"],
+    "regression_surface": ["active model resolution", "contract/capability resolution", "starter neutrality", "profile completeness", "archived digest checks"],
+    "rollback": "restore active pointers to product-platform-kit-apos-2.2.0 and consumer-apos-1.2.0",
+    "component_reuse_assessment": {"components_reviewed": [], "decision": "not_applicable", "rationale": "Operating-model evolution does not implement a product interface.", "reuse_surfaces": []}
+  },
+  "required_contract_ids": ["C-PPK-ARCH-001", "C-PPK-CONTEXT-001", "C-PPK-AI-ROUTE-001", "C-PPK-PRES-001", "C-PPK-REV-001"],
+  "capabilities": ["recover-context", "compile-context", "assess-architecture", "route-model", "account-agent-usage", "change-package", "verify-package"],
+  "classification": {"impact": "high", "uncertainty": "medium", "reversibility": "reversible", "environment": "repository_candidate", "external_cost": "none"},
+  "status": "candidate",
+  "source": {"type": "builder_conversation", "date": "2026-09-07"}
+}

@@ -1,0 +1,3 @@
+{
+  "id":"E-PPK-APOS-009","intent_id":"I-PPK-APOS-003","run_id":"AR-PPK-APOS-003","contract_ids":["C-PPK-PRES-001","C-PPK-REV-001","C-PPK-NFR-001"],"passed":true,"observed":"The kit candidate and generic starter expose complete Change Envelopes with a Design System reuse assessment, preserve prior immutable versions, remain consumer-neutral and pass operating-model and repository checks.","artifact_digest":"6c1206a62f5f9c540f1ebac48e40f9a7d2917d62560c1955079312933c4878e1","verifier":"scripts/check-operating-model.mjs and scripts/check-repository.mjs","environment":"repository_candidate","created_at":"2026-09-07","expires_at":null
+}

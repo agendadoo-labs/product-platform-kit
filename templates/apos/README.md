@@ -8,15 +8,24 @@ Este starter substitui o antigo modelo de equipe fixa. Ele fornece uma estrutura
 2. Substitua os campos `ADAPTAR` na Constitution e nos Contracts.
 3. Registre o primeiro Intent do produto; não converta um backlog inteiro mecanicamente.
 4. Selecione somente os Contracts e Capabilities aplicáveis à mudança.
-5. Adapte `QualityProfile`, `EnvironmentProfile` e `ExposureBudget`; selecione somente dimensões aplicáveis, transforme qualidade em cenários mensuráveis e defina gatilhos progressivos de RTO/RPO.
-6. Implemente verificadores progressivamente. Enquanto não existirem, marque-os `specified`.
-7. Preserve o modelo anterior com commit, tag e hashes antes de trocar o ponteiro ativo.
-8. Produza ProductState apenas a partir de Evidence; não marque “feito” manualmente.
+5. Preencha um `ChangeEnvelope`: declare o delta, superfícies afetadas, invariantes, fora de escopo, compatibilidade, regressão proporcional e rollback. O que não for mencionado permanece inalterado.
+6. Antes de qualquer interface, pesquise o Design System e registre `component_reuse_assessment`: reutilizar, estender, criar, manter local ou não aplicável. Um novo componente exige contrato estável e reuso plausível; não crie abstrações especulativas.
+7. Adapte `QualityProfile`, `EnvironmentProfile` e `ExposureBudget`; selecione somente dimensões aplicáveis, transforme qualidade em cenários mensuráveis e defina gatilhos progressivos de RTO/RPO.
+8. Preencha o `ArchitectureProfile` por domínio. Mantenha a arquitetura mínima suficiente e aceite complexidade somente com problema observado, alternativa simples avaliada, fitness function, custo permanente, rollback e condição de remoção.
+9. Preencha o `ContextProfile` com domínios, fontes autoritativas e dependências. Cada run material deve compilar e registrar somente o contexto relacionado ao Intent.
+10. Preencha o `AIExecutionProfile` apenas se houver uso de modelos. Comece humano-assistido; uma rota por API exige provider aprovado, tratamento de dados, limite rígido, request trace, eval e fallback.
+11. Implemente verificadores progressivamente. Enquanto não existirem, marque-os `specified`.
+12. Preserve o modelo anterior com commit, tag e hashes antes de trocar o ponteiro ativo.
+13. Produza ProductState apenas a partir de Evidence; não marque “feito” manualmente.
 
 Produto, design, engenharia, dados e operações podem continuar como famílias de contrato. Eles não representam agentes, etapas obrigatórias nem documentos independentes que toda mudança deve produzir.
 
-O starter não contém modelos de IA fixos. O roteamento escolhe o menor modelo capaz depois de considerar risco e complexidade, declara tetos de consumo antes do run e não converte a escolha em autoridade ou evidência.
+O starter não contém modelos de IA fixos. O roteamento escolhe a rota aprovada de menor custo que atenda qualidade, risco e política de dados. Preço por token não substitui custo por resultado validado. Uso por chamada é registrado quando disponível e reconciliado com a cobrança do fornecedor.
+
+A análise inicial de impacto é responsabilidade do agente, não do builder. Ela cobre ao menos experiência, APIs, backend, dados, identidade, ambientes, integrações, telemetria, experimentos, monetização, privacidade, operação e artefatos gerados. Evidência ainda válida pode ser reutilizada quando suas dependências observadas não mudaram; regressão ampla fica para acoplamento sistêmico ou gate de promoção.
 
 O starter separa medição, budget, alerta, quota e circuit breaker. Também separa alta disponibilidade, replicação, backup e restauração comprovada. Os valores de RTO, RPO, latência, gasto e tokens pertencem ao consumidor e devem ser aprovados no contexto do seu negócio.
 
 O `ExposureBudget` evita antecipar infraestrutura cara: projeta pessoas, operações, valor econômico e dados no RTO/RPO vigente e exige evolução quando qualquer limite for superado. O template não oferece números padrão, pois exposição aceitável é uma decisão do consumidor.
+
+O `ArchitectureProfile` impede que antecipação de escala vire infraestrutura permanente sem evidência. O `ContextProfile` evita que o crescimento do conhecimento obrigue todo agente a reler todo o projeto. O `AIExecutionProfile` permite incorporar novos fornecedores e modelos por adapter e eval, sem tornar o APOS dependente deles.

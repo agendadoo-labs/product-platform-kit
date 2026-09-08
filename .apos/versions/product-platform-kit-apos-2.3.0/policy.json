@@ -1,0 +1,16 @@
+{
+  "dimensions": ["impact", "uncertainty", "reversibility", "environment", "cost", "agent_compute", "data_sensitivity", "quality_criticality", "exposure_budget", "evidence_freshness", "change_scope", "architecture_maturity", "complexity_budget", "context_scope", "provider_risk"],
+  "allow": {"conditions": ["local", "low_impact", "low_uncertainty", "reversible", "known_capability", "contracts_resolved", "scope_envelope_complete", "quality_gate_passed", "architecture_profile_resolved", "context_manifest_bounded"], "effect": "candidate_only_until_evidence"},
+  "escalate": {"conditions_any": ["main_branch_publication", "release", "high_impact", "high_uncertainty", "compensatable", "irreversible", "unknown_capability", "external_cost", "sensitive_data", "missing_contract", "scope_expansion", "quality_waiver", "stale_evidence", "complexity_budget_exceeded", "unapproved_model_provider", "unbounded_agent_run"], "effect": "stop_before_effect_and_request_scoped_authorization"},
+  "approval_binding": ["actor", "intent_revision", "action", "repository", "environment", "limits", "accepted_risk", "expiry_when_applicable"],
+  "scope_gate": "Material changes require a complete ChangeEnvelope. Unmentioned elements are preserved; deletion, contract break or expansion requires new Intent or explicit authority.",
+  "design_system_gate": "Before implementing an interface, inspect the component catalog and record reuse, extend, create, local or not_applicable with rationale and consumers.",
+  "architecture_gate": "Resolve the domain ArchitectureProfile and admit new complexity only for an observed problem with a simpler alternative assessment, owner, fitness function, lifecycle cost, rollback and removal condition.",
+  "context_gate": "Compile the smallest sufficient authoritative dependency subgraph for the Intent, reject superseded unrelated history and record a ContextManifest.",
+  "model_routing": "Select the least expensive allowlisted provider-model route that meets capability, risk, data and eval thresholds; declare ceilings before execution and reroute only with fresh evidence.",
+  "usage_accounting": "Record provider usage per run when available, mark unavailable as unknown, estimate immediately and reconcile invoiced cost from the provider billing source.",
+  "automation_gate": "New work is human-assisted by default; API automation requires a bounded repeatable capability, hard limits, evals, traceability and fallback.",
+  "quality_gate": "All applicable mandatory scenarios require fresh passing evidence; waivers are scoped, compensating and expiring.",
+  "exposure_gate": "The worst of people, operations, economic value and data exposure drives evolution while safety floors remain independent of volume.",
+  "forbidden_inferences": ["Alert means hard stop", "Replica means backup", "Backup means recoverability", "Missing usage means zero cost", "Stale evidence proves the current revision", "Silence authorizes removal or behavior change", "A nearby refactor belongs to the requested delta", "More services means greater maturity", "Cheapest token price means cheapest validated outcome", "Semantic similarity establishes authority"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "KERNEL-ADAPTAR-001",
+  "protocol": "APOS v0.2",
+  "target_max_tokens": 1500,
+  "token_measurement": "Measure exactly with the selected model tokenizer during compilation; repository checks use a conservative 6000 UTF-8 byte ceiling.",
+  "authority": "ADAPTAR explicit effects requiring human authorization.",
+  "scope": "Execute only the declared delta and preserve unmentioned behavior, contracts, data and configuration.",
+  "safety_floors": ["security", "privacy", "authorization", "financial_integrity"],
+  "completion": "Intent satisfied AND applicable Contracts met AND Evidence sufficient and fresh.",
+  "evidence": "Execution and verification are separate; missing, stale or executor-reported success is not evidence.",
+  "economics": "Use the smallest sufficient capability, context and architecture; optimize cost per validated outcome.",
+  "unknown_rule": "Unknown remains unknown and triggers bounded investigation or escalation."
+}

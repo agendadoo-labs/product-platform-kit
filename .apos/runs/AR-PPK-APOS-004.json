@@ -1,0 +1,15 @@
+{
+  "id": "AR-PPK-APOS-004",
+  "intent_id": "I-PPK-APOS-004",
+  "status": "succeeded",
+  "capabilities": ["recover-context", "compile-context", "assess-architecture", "route-model", "account-agent-usage", "change-package", "verify-package"],
+  "base_revision": 4,
+  "result_revision": 5,
+  "environment": "repository_candidate",
+  "artifact_digest": "c029a5bd8ddeecf7fb1f49518f281db448047d2e3838713c6d426746794fc2ec",
+  "completed_at": "2026-09-07",
+  "budget": {"routing": "single_orchestrator_no_subagents", "parallel_fanout": 0, "external_cost": 0},
+  "consumption": {"input_tokens": "unavailable", "output_tokens": "unavailable", "monetary_cost": 0, "source": "desktop runtime does not expose exact per-run token usage; external API was not called"},
+  "outputs": ["APOS v0.2 specification", "architecture/context/AI profiles", "consumer 1.3.0 starter", "complete v0.2 memorial"],
+  "remaining_uncertainties": ["main publication requires separate authorization", "native v0.2 runtime support", "provider selection awaits a bounded pilot and evals"]
+}

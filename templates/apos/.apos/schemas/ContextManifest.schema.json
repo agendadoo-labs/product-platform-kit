@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "APOS ContextManifest v0.2",
+  "type": "object",
+  "required": ["id", "protocol", "intent_id", "domains", "sources", "measurement", "budget", "status", "created_at"],
+  "properties": {"protocol": {"const": "APOS v0.2"}, "status": {"enum": ["within_budget", "budget_exceeded", "measurement_unavailable"]}}
+}

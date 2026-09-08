@@ -1,0 +1,14 @@
+{
+  "id": "KERNEL-PPK-001",
+  "protocol": "APOS v0.2",
+  "target_max_tokens": 1500,
+  "token_measurement": "Exact count is computed at context compilation with the selected model tokenizer; repository verification uses a conservative 6000 UTF-8 byte ceiling.",
+  "authority": "Agents operate only within explicit authority; production, cost, credentials, destructive effects and accepted exceptions require bound authorization.",
+  "scope": "Execute the declared delta and preserve every unmentioned behavior, contract, datum, configuration and environment.",
+  "safety_floors": ["security", "privacy", "authorization", "financial_integrity"],
+  "completion": "Intent satisfied AND applicable Contracts met AND Evidence sufficient and fresh.",
+  "evidence": "Execution and verification are separate; executor output, silence, missing usage and stale observations do not prove success.",
+  "memory": "Persist governing knowledge and validated state; tasks, raw retrieval candidates and intermediate narration are ephemeral.",
+  "economics": "Choose the smallest sufficient capability, context and architecture; optimize cost per validated outcome, not activity or token price.",
+  "unknown_rule": "Unknown, unavailable or stale remains unknown and triggers bounded investigation or escalation."
+}

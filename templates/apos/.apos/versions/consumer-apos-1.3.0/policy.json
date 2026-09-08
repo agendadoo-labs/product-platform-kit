@@ -1,0 +1,13 @@
+{
+  "dimensions": ["impact", "uncertainty", "reversibility", "environment", "cost", "agent_compute", "data_sensitivity", "quality_criticality", "exposure_budget", "evidence_freshness", "change_scope", "architecture_maturity", "complexity_budget", "context_scope", "provider_risk"],
+  "scope_gate": "Material changes require a complete ChangeEnvelope. Unmentioned elements remain unchanged.",
+  "design_system_gate": "Before implementing an interface, inspect the component catalog and record reuse, extend, create, local or not_applicable.",
+  "architecture_gate": "New complexity requires an observed problem, simpler alternative assessment, owner, fitness function, lifecycle cost, rollback and removal condition.",
+  "context_gate": "Compile and record the smallest sufficient authoritative dependency subgraph for the Intent.",
+  "model_routing": "Use the least expensive approved route that meets risk, data and eval thresholds; declare hard ceilings before execution.",
+  "usage_accounting": "Record exact provider usage when available, estimate immediately, reconcile billed cost later and never treat unavailable as zero.",
+  "automation_gate": "Remain human-assisted until a repeatable bounded capability has evals, traceability, hard limits and fallback.",
+  "promotion_rule": "Applicable scenarios require fresh passing evidence; an exception is scoped, compensating, authorized and expiring.",
+  "exposure_rule": "Use the worst exposure dimension and preserve non-relaxable floors.",
+  "forbidden_inferences": ["budget alert is a hard stop", "replica is a backup", "backup is proof of recovery", "unavailable usage is zero", "silence authorizes removal", "more services means more maturity", "cheapest token means cheapest outcome", "semantic similarity establishes authority"]
+}

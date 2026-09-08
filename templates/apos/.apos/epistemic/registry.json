@@ -1,0 +1,8 @@
+{
+  "id": "EPI-ADAPTAR-001",
+  "protocol": "APOS v0.2",
+  "entry_schema": ["domain", "authoritative_sources", "methods", "known_uncertainties", "relationships", "owner", "refresh_triggers"],
+  "domains": [{"domain": "ADAPTAR", "authoritative_sources": [], "methods": [], "known_uncertainties": [], "relationships": [], "owner": "ADAPTAR", "refresh_triggers": []}],
+  "admission_rule": "Semantic retrieval proposes candidates; explicit review determines authority.",
+  "uncertainty_rule": "Preserve uncertainty until traceable evidence resolves or supersedes it."
+}

@@ -1,0 +1,12 @@
+{
+  "persistent": ["Kernel", "Intent", "Contract", "Decision", "Evidence", "ProductState", "QualityProfile", "EnvironmentProfile", "ExposureBudget", "ChangeEnvelope", "Waiver", "ArchitectureProfile", "ContextProfile", "EpistemicRegistry", "AdaptiveCeremony", "AIExecutionProfile", "ContextManifest", "ModelEvaluation", "LearningCostLoop"],
+  "proportional": ["AgentRun", "RecoveryExercise", "UsageReconciliation"],
+  "ephemeral": ["task", "handoff", "temporary_plan", "intermediate_status", "agent_role_assignment", "raw_retrieval_candidate"],
+  "provenance_states": ["explicit", "inherited_from_active_decision", "observed", "reported", "suggested", "unknown"],
+  "write_rule": "Persist only information that guides execution, imposes a boundary, explains a decision, supports evidence or reconstructs state.",
+  "retrieval_rule": "Resolve by affected domain and declared dependency; semantic similarity proposes candidates but authority, provenance, version and freshness control inclusion.",
+  "context_manifest_rule": "Material runs record identifiers and versions of the operational context actually used, plus excluded superseded sources when relevant.",
+  "evidence_rule": "Evidence includes revision, environment, observation time and expiry; dependency or material configuration changes may invalidate it.",
+  "supersession_rule": "Never silently overwrite a decision, target or invariant; record what supersedes it and why.",
+  "projection_rule": "Documentation and external knowledge-vault copies are derived views, not independent sources of truth."
+}

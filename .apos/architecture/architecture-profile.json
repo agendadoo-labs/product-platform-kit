@@ -1,0 +1,13 @@
+{
+  "id": "ARCH-PPK-001",
+  "protocol": "APOS v0.2",
+  "default_stage": "validation",
+  "stages": ["discovery", "validation", "growth", "scale", "mission_critical"],
+  "domain_assessment_rule": "Assess maturity per domain; never promote the entire product because one critical flow needs a stronger baseline.",
+  "default_style": "modular_monolith_and_managed_services",
+  "complexity_budget_dimensions": ["deployable_units", "datastores", "paid_external_dependencies", "queues", "regions", "integration_contracts", "fallback_paths"],
+  "admission_requirements": ["observed_problem", "simpler_alternative_assessed", "owner", "fitness_function", "recurring_cost", "rollback", "removal_condition"],
+  "fitness_functions": ["validated_delivery_time", "change_failure_rate", "latency", "availability", "unit_cost", "recovery_time", "context_cost_per_validated_outcome"],
+  "evolution_rule": "Add architectural complexity only when evidence shows the current risk, cost or delay exceeds the lifecycle cost of the proposed complexity.",
+  "non_relaxable_floors": ["security", "privacy", "authorization", "financial_integrity"]
+}

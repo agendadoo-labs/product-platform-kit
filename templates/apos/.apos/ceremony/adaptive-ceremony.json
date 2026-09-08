@@ -1,0 +1,11 @@
+{
+  "id": "CEREMONY-ADAPTAR-001",
+  "protocol": "APOS v0.2",
+  "levels": [
+    {"id": "lite", "when": ["local", "low_impact", "low_uncertainty", "reversible"], "requires": ["compact_intent", "change_envelope", "focused_verification"]},
+    {"id": "standard", "when": ["feature", "api_or_schema_change", "new_dependency", "medium_risk"], "requires": ["intent", "change_envelope", "context_manifest", "applicable_profiles", "contract_evidence", "rollback"]},
+    {"id": "strict", "when": ["production", "security", "personal_data", "payment", "irreversible", "high_risk"], "requires": ["standard_requirements", "bound_human_authorization", "fresh_independent_evidence", "tested_rollback_or_recovery", "monitoring", "cost_and_exposure_check"]}
+  ],
+  "selection_rule": "Use the lightest level covering the worst applicable risk dimension; agents cannot downgrade it.",
+  "upgrade_rule": "Unexpected scope, uncertainty, sensitivity or effect upgrades ceremony before continuing."
+}

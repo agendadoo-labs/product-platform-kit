@@ -1,0 +1,9 @@
+{
+  "id": "CTX-ADAPTAR-001",
+  "protocol": "APOS v0.2",
+  "domains": [{"id": "ADAPTAR", "authoritative_sources": [], "dependencies": []}],
+  "source_priority": ["active_machine_readable_state", "active_contract", "active_decision", "fresh_evidence", "versioned_documentation", "external_authoritative_source", "historical_projection"],
+  "compile_steps": ["resolve_change_envelope", "select_affected_domains", "load_governing_contracts", "load_active_decisions_and_state", "include_fresh_evidence", "follow_declared_dependencies", "exclude_superseded_unrelated_history", "record_context_manifest"],
+  "token_rule": "Declare context, output, tool and fanout ceilings before material runs.",
+  "projection_rule": "Human documents and knowledge vaults are derived projections linked to operational identifiers."
+}

@@ -1,0 +1,12 @@
+{
+  "dimensions":["impact","uncertainty","reversibility","environment","cost","agent_compute","data_sensitivity","quality_criticality","exposure_budget","evidence_freshness","change_scope"],
+  "allow":{"conditions":["local","low_impact","low_uncertainty","reversible","known_capability","contracts_resolved","scope_envelope_complete","quality_gate_passed"],"effect":"candidate_only_until_evidence"},
+  "escalate":{"conditions_any":["main_branch_publication","release","high_impact","high_uncertainty","compensatable","irreversible","unknown_capability","external_cost","sensitive_data","missing_contract","scope_expansion","quality_waiver","stale_evidence"],"effect":"stop_before_effect_and_request_scoped_authorization"},
+  "approval_binding":["actor","intent_revision","action","repository","environment","limits","accepted_risk","expiry_when_applicable"],
+  "scope_gate":"Material changes require a ChangeEnvelope with delta, affected_surfaces, invariants, out_of_scope, compatibility, regression_surface and rollback. Unmentioned elements are preserved; deletion, contract break or expansion requires new Intent or explicit authority.",
+  "design_system_gate":"Before implementing an interface, inspect the component catalog and record a component_reuse_assessment choosing reuse, extend, create, local or not_applicable with rationale and consumer surfaces. Creation requires a stable contract and plausible reuse; one-off feature rules remain local.",
+  "model_routing":"Use the least expensive capable model after risk classification; declare ceilings and reuse fresh evidence only when observed dependencies are unchanged.",
+  "quality_gate":"All applicable mandatory scenarios require fresh passing evidence; waivers are scoped, compensating and expiring.",
+  "exposure_gate":"Consumers project people, operations, economic value and data exposed during RTO/RPO; the worst dimension drives evolution while safety floors remain independent of volume.",
+  "forbidden_inferences":["Alert means hard stop","Replica means backup","Backup means recoverability","Missing usage means zero cost","Stale evidence proves the current revision","Silence authorizes removal or behavior change","A nearby refactor belongs to the requested delta"]
+}
