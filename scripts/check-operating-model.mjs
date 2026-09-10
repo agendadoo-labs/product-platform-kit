@@ -93,9 +93,15 @@ check(!/\.agents\/team\.yaml|papéis fixos|specialists/u.test(readFileSync(resol
 const rootReadme = readFileSync(resolve(root, 'README.md'), 'utf8')
 const gettingStarted = readFileSync(resolve(root, 'docs/APOS-GETTING-STARTED.md'), 'utf8')
 const starterCompiler = readFileSync(resolve(root, 'templates/apos/scripts/compile-apos-context.mjs'), 'utf8')
+const sessionBootstrap = readFileSync(resolve(root, 'scripts/bootstrap-apos-session.mjs'), 'utf8')
+const starterSessionBootstrap = readFileSync(resolve(root, 'templates/apos/scripts/bootstrap-apos-session.mjs'), 'utf8')
+const agentBootstrapPrimer = readFileSync(resolve(root, 'templates/apos/APOS-AGENT-BOOTSTRAP.md'), 'utf8')
 check(rootReadme.includes('docs/APOS-GETTING-STARTED.md') && rootReadme.includes('docs/APOS-v0.2.md'), 'root README routes newcomers to APOS v0.2 and the getting-started path')
 check(['Os cinco componentes', 'Qual cerimônia usar', 'Primeiro Intent completo', 'Problemas comuns'].every((heading) => gettingStarted.includes(heading)), 'getting-started guide covers model, ceremony, complete first Intent and troubleshooting')
 check(gettingStarted.includes('--decision') && starterCompiler.includes('decision.intent_id !== intent.id'), 'documented compiler binds an explicit Decision to the first Intent')
+check(rootReadme.includes('SESSION-BOOTSTRAP-AND-MULTI-TEAM.md') && sessionBootstrap.includes('deterministic_session_bootstrap'), 'root documentation and CLI expose deterministic session bootstrap')
+check(starterSessionBootstrap.includes('candidate_intents') && existsSync(resolve(root, 'templates/apos/.apos/coordination/workstreams.json')), 'starter recovers open Intents and provides optional multi-team coordination')
+check(Buffer.byteLength(agentBootstrapPrimer) <= 6000 && agentBootstrapPrimer.includes('Definição de concluído'), 'agent cold-start primer is self-contained and remains within its conservative 1,500-token ceiling')
 
 for (const satisfiedIntentId of state.satisfied_intents) {
   const satisfiedIntentPath = `.apos/intents/${satisfiedIntentId}.json`
@@ -177,6 +183,7 @@ check(starterCeremony.levels.map(({ id }) => id).join(',') === 'lite,standard,st
 check(starterLearning.per_step_fields.includes('context_tokens') && starterLearning.per_run_fields.includes('validated_outcome'), 'starter includes the Learning and Cost Loop')
 check(starterKernel.budget_rule.includes('never permission') && starterContext.information_preservation_rule.includes('never silently'), 'starter prevents budget-driven information loss')
 check(existsSync(resolve(root, 'templates/apos/scripts/compile-apos-context.mjs')), 'starter includes a reusable Context Compiler')
+check(existsSync(resolve(root, 'templates/apos/scripts/bootstrap-apos-session.mjs')), 'starter includes a reusable Session Bootstrap')
 
 const archivedCommit = execFileSync('git', ['rev-list', '-n', '1', `${archive.git_tag}^{}`], { cwd: root, encoding: 'utf8' }).trim()
 check(archivedCommit === archive.git_commit, 'legacy tag resolves to the archived commit')

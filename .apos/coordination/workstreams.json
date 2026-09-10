@@ -1,0 +1,20 @@
+{
+  "id": "COORD-PPK-001",
+  "protocol": "APOS v0.2",
+  "workstreams": [
+    {
+      "id": "WS-PPK-SESSION-BOOTSTRAP-001",
+      "intent_id": "I-PPK-APOS-006",
+      "status": "done",
+      "owner": "builder",
+      "collaborators": ["agent_orchestrator"],
+      "affected_domains": ["session_memory"],
+      "dependencies": [],
+      "branch": "feature/apos-session-bootstrap",
+      "updated_at": "2026-09-09",
+      "next_checkpoint": "builder decides whether to publish candidate branch"
+    }
+  ],
+  "status_values": ["ready", "active", "blocked", "paused", "done"],
+  "rule": "Workstreams coordinate ownership and dependencies across teams; they never grant authority or replace Intent, Contracts, Decision, Evidence or ProductState."
+}

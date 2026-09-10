@@ -1,0 +1,25 @@
+{
+  "id": "I-PPK-APOS-006",
+  "revision": 1,
+  "problem": "À medida que um produto e seus times crescem, uma nova sessão de agente pode perder decisões, trabalho aberto e dependências ou gastar contexto relendo todo o histórico.",
+  "population": "Builders, desenvolvedores e múltiplos times que operam produtos longevos com agentes",
+  "outcome": "Toda sessão começa com um pacote pequeno, determinístico e verificável do estado vigente, relaciona o pedido a um Intent e só então expande o contexto necessário ao domínio e ao risco.",
+  "constraints": ["não reler todo o Git por padrão", "não resumir segredos ou dados pessoais", "não transformar ownership em autoridade", "não usar limite arbitrário para truncar informação necessária", "não substituir fonte autoritativa por resumo gerado"],
+  "change_envelope": {
+    "delta": ["bootstrap determinístico de sessão", "registro opcional de workstreams e dependências", "instrução de inicialização para agentes", "teste reutilizável do starter"],
+    "affected_surfaces": ["AGENTS.md", "starter APOS", "CLI APOS", "documentação de operação multi-time"],
+    "affected_domains": ["session_memory"],
+    "invariants": ["Intent continua persistente", "ProductState deriva de Evidence", "Context Compiler permanece seletivo", "autorização continua vinculada à ação", "histórico não é apagado"],
+    "out_of_scope": ["serviço de embeddings", "banco vetorial", "orquestração autônoma", "atribuição automática de times", "mudança de provedor LLM"],
+    "compatibility": ["repositórios sem registro de workstreams continuam funcionando", "compilador de contexto existente não muda", "bootstrap não grava estado"],
+    "regression_surface": ["starter APOS", "verificador do repositório", "custos de contexto", "neutralidade do kit"],
+    "rollback": "remover o comando e as instruções de bootstrap; Intents, Decisions e ProductState existentes permanecem intactos",
+    "component_reuse_assessment": {"components_reviewed": [], "decision": "not_applicable", "rationale": "Mudança de processo, documentação e ferramenta de linha de comando sem interface visual.", "reuse_surfaces": []}
+  },
+  "required_contract_ids": ["C-PPK-SCOPE-001", "C-PPK-CAP-001", "C-PPK-EVID-001", "C-PPK-PRES-001", "C-PPK-SEC-001", "C-PPK-GOV-001", "C-PPK-CONTEXT-001", "C-PPK-EPI-001"],
+  "capabilities": ["recover-context", "compile-context", "change-package", "verify-package"],
+  "classification": {"impact": "medium", "uncertainty": "medium", "reversibility": "reversible", "environment": "candidate_branch", "external_cost": "none"},
+  "ceremony_selection": {"level": "standard", "triggers": ["shared_operating_process", "multi_team_coordination"], "authority": "explicit_builder_request_2026-09-09", "downgrade_allowed": false},
+  "status": "satisfied",
+  "source": {"type": "builder_conversation", "date": "2026-09-09"}
+}

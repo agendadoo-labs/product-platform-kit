@@ -1,0 +1,12 @@
+{
+  "id": "E-PPK-APOS-013",
+  "intent_id": "I-PPK-APOS-006",
+  "run_id": "AR-PPK-APOS-006",
+  "contract_ids": ["C-PPK-SCOPE-001", "C-PPK-CAP-001", "C-PPK-EVID-001", "C-PPK-PRES-001", "C-PPK-SEC-001", "C-PPK-GOV-001", "C-PPK-CONTEXT-001", "C-PPK-EPI-001"],
+  "passed": true,
+  "observed": "The deterministic bootstrap recovered active model, ProductState, open Intent, Decision, last run/evidence and workstream in an isolated starter fixture without external calls. The measured toolkit bootstrap package was about 644 estimated tokens. APOS runtime tests, compiler tests, operating-model verification and repository checks passed.",
+  "verifier": "scripts/tests/apos-session-bootstrap.test.mjs, scripts/check-operating-model.mjs and scripts/check-repository.mjs",
+  "environment": "candidate_branch",
+  "created_at": "2026-09-09",
+  "expires_at": null
+}

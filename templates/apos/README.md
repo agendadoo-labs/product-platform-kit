@@ -10,7 +10,7 @@ Ao terminar a adoção, seu repositório terá um modelo ativo, um Intent ligado
 
 ## Adoção
 
-1. Copie `AGENTS.md`, a pasta `.apos/` e `scripts/compile-apos-context.mjs` para o repositório consumidor.
+1. Copie `AGENTS.md`, `APOS-AGENT-BOOTSTRAP.md`, a pasta `.apos/`, `scripts/bootstrap-apos-session.mjs` e `scripts/compile-apos-context.mjs` para o repositório consumidor.
 2. Substitua os campos `ADAPTAR` na Constitution e nos Contracts.
 3. Registre o primeiro Intent do produto; não converta um backlog inteiro mecanicamente.
 4. Selecione somente os Contracts e Capabilities aplicáveis à mudança.
@@ -29,6 +29,12 @@ Ao terminar a adoção, seu repositório terá um modelo ativo, um Intent ligado
 Depois de substituir todos os campos `ADAPTAR` e criar o primeiro Intent e Decision:
 
 ```sh
+node scripts/bootstrap-apos-session.mjs
+```
+
+Esse primeiro comando monta um índice pequeno do estado e do trabalho aberto sem chamar uma LLM. Depois de relacionar o pedido ao Intent correto, compile o contexto material:
+
+```sh
 node scripts/compile-apos-context.mjs \
   --intent .apos/intents/I-SEU-PRODUTO-001.json \
   --decision .apos/decisions/D-SEU-PRODUTO-001.json \
@@ -36,6 +42,8 @@ node scripts/compile-apos-context.mjs \
 ```
 
 O comando termina com código `2` quando o contexto excede o orçamento. Isso é um pedido de revisão ou escalonamento, não autorização para apagar fontes relevantes. Adapte ao projeto um verificador equivalente a `scripts/check-operating-model.mjs` deste kit.
+
+Para produtos com múltiplos times, mantenha `coordination/workstreams.json` enxuto: Intent, owner, colaboradores, domínios, dependências, branch/ambiente e próximo checkpoint. Não replique detalhes do Intent nem trate ownership como permissão.
 
 Produto, design, engenharia, dados e operações podem continuar como famílias de contrato. Eles não representam agentes, etapas obrigatórias nem documentos independentes que toda mudança deve produzir.
 

@@ -1,0 +1,7 @@
+{
+  "id": "COORD-ADAPTAR-001",
+  "protocol": "APOS v0.2",
+  "workstreams": [],
+  "status_values": ["ready", "active", "blocked", "paused", "done"],
+  "rule": "Workstreams coordinate ownership and dependencies across teams; they never grant authority or replace Intent, Contracts, Decision, Evidence or ProductState."
+}
