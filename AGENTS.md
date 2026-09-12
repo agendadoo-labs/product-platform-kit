@@ -16,6 +16,7 @@ O APOS v0.2 é composto por Kernel, Context Compiler, Epistemic Registry, Adapti
 8. Persistir conhecimento; tarefas, handoffs e status intermediários são efêmeros.
 9. Tratar limites de tokens como baselines calibráveis por resultados. Nunca omitir silenciosamente contratos, riscos, incertezas ou fontes necessárias para caber em um teto; interromper ou escalar e registrar a decisão.
 10. Em trabalho com múltiplos times, atualizar `.apos/coordination/workstreams.json` com ownership, dependências e próximo checkpoint. Ownership coordena; não concede autoridade.
+11. No checkpoint, atualizar as projeções humanas e o relatório de Intents com `npm run apos:checkpoint`. Se entidades, relações, classificação, retenção ou linhagem mudaram, atualizar o DataMap antes do checkpoint.
 
 ## Reutilização
 

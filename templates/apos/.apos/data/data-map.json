@@ -1,0 +1,16 @@
+{
+  "id": "DM-ADAPTAR-001",
+  "revision": 1,
+  "protocol": "APOS v0.2",
+  "updated_at": "ADAPTAR",
+  "purpose": "Catálogo de entidades, relações, linhagem, classificação e retenção do produto consumidor.",
+  "authority": {"schema_source": "ADAPTAR", "runtime_truth": "evidência por ambiente", "documentation_projection": "docs/DATA-MAP.md", "rule": "ProductState referencia este catálogo sem duplicá-lo."},
+  "entities": [
+    {"id": "ADAPTAR.source", "zone": "source", "domain": "ADAPTAR", "classification": "ADAPTAR", "purpose": "ADAPTAR", "retention": "ADAPTAR", "authoritative_source": "ADAPTAR"},
+    {"id": "ADAPTAR.serving", "zone": "serving", "domain": "ADAPTAR", "classification": "ADAPTAR", "purpose": "ADAPTAR", "retention": "ADAPTAR", "authoritative_source": "ADAPTAR"}
+  ],
+  "relationships": [{"from": "ADAPTAR.source", "to": "ADAPTAR.serving", "cardinality": "ADAPTAR", "key": "ADAPTAR"}],
+  "lineage_flows": [{"id": "ADAPTAR", "flow": ["ADAPTAR.source", "ADAPTAR.serving"]}],
+  "access_principles": ["menor privilégio", "minimização", "PII fora de telemetria e memória de agentes"],
+  "known_gaps": ["ADAPTAR"]
+}

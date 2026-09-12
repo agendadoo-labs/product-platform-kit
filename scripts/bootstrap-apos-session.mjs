@@ -60,7 +60,7 @@ const packageValue = {
   purpose: 'deterministic_session_bootstrap',
   generated_at: new Date().toISOString(),
   active_model: { id: active.model_id, protocol: active.apos_protocol, path: active.path, decision_id: active.decision_id },
-  product_state: { id: state.id, revision: state.revision, updated_at: state.updated_at, knowledge_keys: Object.keys(state.knowledge ?? {}).sort() },
+  product_state: { id: state.id, revision: state.revision, updated_at: state.updated_at, knowledge_keys: Object.keys(state.knowledge ?? {}).sort(), data_map: state.data_map ?? null },
   open_intents: openIntents,
   coordination: {
     active_workstreams: (coordination.workstreams ?? []).filter(({ status }) => ['active', 'blocked', 'ready'].includes(status)).length,

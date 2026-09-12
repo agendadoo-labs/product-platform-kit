@@ -10,7 +10,7 @@ Ao terminar a adoção, seu repositório terá um modelo ativo, um Intent ligado
 
 ## Adoção
 
-1. Copie `AGENTS.md`, `APOS-AGENT-BOOTSTRAP.md`, a pasta `.apos/`, `scripts/bootstrap-apos-session.mjs` e `scripts/compile-apos-context.mjs` para o repositório consumidor.
+1. Copie `AGENTS.md`, `APOS-AGENT-BOOTSTRAP.md`, as pastas `.apos/` e `docs/`, e os scripts do starter para o repositório consumidor.
 2. Substitua os campos `ADAPTAR` na Constitution e nos Contracts.
 3. Registre o primeiro Intent do produto; não converta um backlog inteiro mecanicamente.
 4. Selecione somente os Contracts e Capabilities aplicáveis à mudança.
@@ -23,6 +23,8 @@ Ao terminar a adoção, seu repositório terá um modelo ativo, um Intent ligado
 11. Implemente verificadores progressivamente. Enquanto não existirem, marque-os `specified`.
 12. Preserve o modelo anterior com commit, tag e hashes antes de trocar o ponteiro ativo.
 13. Produza ProductState apenas a partir de Evidence; não marque “feito” manualmente.
+14. Catalogue entidades, relações, linhagem, classificação e retenção em `.apos/data/data-map.json`; o ProductState guarda apenas ID, revisão e caminhos da projeção.
+15. Ao encerrar trabalho material, execute o gerador de memória e faça o CI verificar que `APOS-PROJECT-MEMORY.md` e `APOS-OPEN-INTENTS.md` correspondem ao ProductState.
 
 ## Comandos essenciais
 
@@ -42,6 +44,15 @@ node scripts/compile-apos-context.mjs \
 ```
 
 O comando termina com código `2` quando o contexto excede o orçamento. Isso é um pedido de revisão ou escalonamento, não autorização para apagar fontes relevantes. Adapte ao projeto um verificador equivalente a `scripts/check-operating-model.mjs` deste kit.
+
+No checkpoint, atualize as projeções humanas:
+
+```sh
+node scripts/sync-apos-project-memory.mjs
+node scripts/sync-apos-project-memory.mjs --check
+```
+
+O relatório de Intents abertos mostra o estado operacional, o próximo checkpoint e a memória ligada a cada `intent_id`. O DataMap dedicado evita colocar o mapa inteiro da empresa dentro do ProductState.
 
 Para produtos com múltiplos times, mantenha `coordination/workstreams.json` enxuto: Intent, owner, colaboradores, domínios, dependências, branch/ambiente e próximo checkpoint. Não replique detalhes do Intent nem trate ownership como permissão.
 
