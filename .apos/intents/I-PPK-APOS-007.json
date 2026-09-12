@@ -1,0 +1,25 @@
+{
+  "id": "I-PPK-APOS-007",
+  "revision": 1,
+  "problem": "Produtos crescentes precisam manter mapa de dados, memória humana e trabalho aberto sincronizados com registros operacionais sem reler todo o histórico ou duplicar fontes de verdade.",
+  "population": "Produtos consumidores do APOS, seus builders, agentes e múltiplos times",
+  "outcome": "O starter fornece DataMap dedicado, ponteiro compacto no ProductState, projeção de memória e relatório de Intents abertos gerados e verificáveis em cada checkpoint.",
+  "constraints": ["neutralidade entre produtos e fornecedores", "sem PII, segredos ou caminhos pessoais", "projeções não se tornam autoritativas", "schema pretendido não se confunde com observado", "não exigir serviço externo"],
+  "change_envelope": {
+    "delta": ["DataMap reutilizável", "projeções humanas determinísticas", "relatório de Intents abertos", "gate de checkpoint"],
+    "affected_surfaces": ["starter APOS", "ProductState do kit", "scripts", "documentação", "verificador"],
+    "affected_domains": ["operating_model", "session_memory", "templates", "security"],
+    "invariants": ["Intent, Decision, AgentRun e Evidence continuam canônicos", "ProductState deriva de Evidence", "consumidores definem suas próprias entidades e políticas", "nenhum runtime externo é necessário"],
+    "out_of_scope": ["catálogo SaaS", "banco vetorial", "sincronização obrigatória com vault", "inferir schema do consumidor", "migrar consumidores automaticamente"],
+    "compatibility": ["bootstrap e Context Compiler existentes permanecem", "starter continua copiável", "projeções são opt-in até o consumidor configurar o checkpoint"],
+    "regression_surface": ["starter", "scripts Node", "verificador do repositório", "documentação de adoção"],
+    "rollback": "remover DataMap, gerador e scripts de checkpoint sem apagar Intents, Decisions, Runs, Evidence ou versões existentes",
+    "component_reuse_assessment": {"components_reviewed": [], "decision": "not_applicable", "rationale": "Infraestrutura operacional sem interface visual.", "reuse_surfaces": []}
+  },
+  "required_contract_ids": ["C-PPK-SCOPE-001", "C-PPK-EVID-001", "C-PPK-PRES-001", "C-PPK-SEC-001", "C-PPK-GOV-001", "C-PPK-CONTEXT-001", "C-PPK-EPI-001"],
+  "capabilities": ["recover-context", "compile-context", "change-package", "verify-package"],
+  "classification": {"impact": "medium", "uncertainty": "low", "reversibility": "reversible", "environment": "candidate_branch", "external_cost": "none"},
+  "ceremony_selection": {"level": "standard", "triggers": ["shared_operating_process", "data_governance"], "authority": "explicit_builder_request_2026-09-12", "downgrade_allowed": false},
+  "status": "satisfied",
+  "source": {"type": "builder_conversation", "date": "2026-09-12"}
+}

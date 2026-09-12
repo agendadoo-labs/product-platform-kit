@@ -1,6 +1,6 @@
 # Product Platform Kit — operação APOS
 
-O modelo operacional ativo está em [`.apos/active-model.json`](.apos/active-model.json). Este repositório desenvolve infraestrutura reutilizável; não imponha organogramas, papéis profissionais ou regras de um produto consumidor.
+O modelo operacional ativo está em [`.apos/active-model.json`](.apos/active-model.json). Se o agente não conhece APOS, leia primeiro `templates/apos/APOS-AGENT-BOOTSTRAP.md`. Ao iniciar ou retomar uma sessão, execute `npm run apos:bootstrap`, relacione o pedido atual a um Intent aberto ou novo e só então compile o contexto daquele Intent. Este repositório desenvolve infraestrutura reutilizável; não imponha organogramas, papéis profissionais ou regras de um produto consumidor.
 
 ## Protocolo
 
@@ -15,6 +15,8 @@ O APOS v0.2 é composto por Kernel, Context Compiler, Epistemic Registry, Adapti
 7. Atualizar ProductState apenas quando `Intent satisfeito ∧ Contracts atendidos ∧ Evidence suficiente e vigente`.
 8. Persistir conhecimento; tarefas, handoffs e status intermediários são efêmeros.
 9. Tratar limites de tokens como baselines calibráveis por resultados. Nunca omitir silenciosamente contratos, riscos, incertezas ou fontes necessárias para caber em um teto; interromper ou escalar e registrar a decisão.
+10. Em trabalho com múltiplos times, atualizar `.apos/coordination/workstreams.json` com ownership, dependências e próximo checkpoint. Ownership coordena; não concede autoridade.
+11. No checkpoint, atualizar as projeções humanas e o relatório de Intents com `npm run apos:checkpoint`. Se entidades, relações, classificação, retenção ou linhagem mudaram, atualizar o DataMap antes do checkpoint.
 
 ## Reutilização
 

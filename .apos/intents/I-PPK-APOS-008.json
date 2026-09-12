@@ -1,0 +1,25 @@
+{
+  "id": "I-PPK-APOS-008",
+  "revision": 1,
+  "problem": "O kit não consolidava Intents resolvidos nem fornecia um modelo que distinguisse Git, infraestrutura, dados, segredos, memória agêntica e Evidence de reconstrução.",
+  "population": "Produtos e organizações que adotam APOS com múltiplos agentes ou times",
+  "outcome": "O starter gera memória de Intents resolvidos e oferece princípios, matriz e Recovery Manifest neutros para reconstrução comprovável e recuperação do contexto agêntico.",
+  "constraints": ["provider-neutral", "sem segredos, PII ou caminhos pessoais", "Evidence obrigatória para afirmar recuperação", "adoção progressiva e econômica"],
+  "change_envelope": {
+    "delta": ["resolved Intent projection", "reconstruction guide", "Recovery Manifest template"],
+    "affected_surfaces": ["APOS starter", "project memory", "operations templates", "documentation"],
+    "affected_domains": ["operating_model", "session_memory", "operations", "security", "templates"],
+    "invariants": ["Git não contém valores secretos", "consumidor define RTO/RPO", "projeções não são fontes paralelas", "backup só é comprovado por restore"],
+    "out_of_scope": ["escolher cloud do consumidor", "executar backup", "criar serviço de memória", "migrar consumidores automaticamente"],
+    "compatibility": ["projeções existentes permanecem", "template anterior de DR continua válido"],
+    "regression_surface": ["starter generator", "tests", "repository checks", "APOS docs"],
+    "rollback": "remover a nova projeção, guia e template sem alterar registros históricos",
+    "component_reuse_assessment": {"components_reviewed": ["project memory generator", "disaster recovery template"], "decision": "extend", "rationale": "os componentes existentes são as superfícies corretas para a capacidade", "reuse_surfaces": ["templates/apos", "templates/operations"]}
+  },
+  "required_contract_ids": ["C-PPK-SCOPE-001", "C-PPK-EVID-001", "C-PPK-PRES-001", "C-PPK-SEC-001", "C-PPK-GOV-001", "C-PPK-CONTEXT-001"],
+  "capabilities": ["recover-context", "research", "design-recovery", "change-package", "verify-package"],
+  "classification": {"impact": "high", "uncertainty": "medium", "reversibility": "reversible", "environment": "candidate_branch", "external_cost": "none"},
+  "ceremony_selection": {"level": "strict", "triggers": ["security", "recovery", "shared_operating_process"], "authority": "explicit_builder_request_2026-09-12", "downgrade_allowed": false},
+  "status": "satisfied",
+  "source": {"type": "builder_conversation", "date": "2026-09-12"}
+}

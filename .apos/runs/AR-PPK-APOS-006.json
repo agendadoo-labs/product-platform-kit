@@ -1,0 +1,13 @@
+{
+  "id": "AR-PPK-APOS-006",
+  "intent_id": "I-PPK-APOS-006",
+  "status": "succeeded",
+  "environment": "candidate_branch",
+  "ceremony": {"selected": "standard", "required": "standard", "triggers": ["shared_operating_process", "multi_team_coordination"], "authorization_source": "explicit_builder_request_2026-09-09"},
+  "context_manifest_id": "CM-I-PPK-APOS-006",
+  "budget": {"routing": "single_orchestrator_no_subagents", "parallel_fanout": 0, "external_cost": 0},
+  "consumption": {"input_tokens": "unavailable", "output_tokens": "unavailable", "monetary_cost": 0, "source": "desktop runtime does not expose exact per-run usage; bootstrap itself estimated 644 tokens and made no model call"},
+  "outputs": ["deterministic bootstrap CLI", "consumer starter", "multi-team workstream registry", "operational documentation", "automated test"],
+  "remaining_uncertainties": ["retrieval miss rate and optimal package size require observation in larger multi-team repositories"],
+  "completed_at": "2026-09-09"
+}

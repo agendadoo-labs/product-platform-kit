@@ -34,6 +34,8 @@ Comece pelo [guia APOS em 30 minutos](docs/APOS-GETTING-STARTED.md) e depois sig
 
 - starter APOS com Intents, Contracts, Capabilities, Evidence e roteamento econômico por risco;
 - Context Compiler para recuperar somente o contexto necessário;
+- Session Bootstrap determinístico para retomar estado, decisões e trabalho aberto antes de gastar contexto com inferência;
+- DataMap dedicado e projeções automáticas de memória e Intents abertos em cada checkpoint;
 - cerimônias `Lite`, `Standard` e `Strict`, proporcionais ao risco;
 - registro de aprendizado, custo, retrabalho e evidências;
 - princípios de preservação de escopo para interfaces, APIs, dados, ambientes e configurações.
@@ -90,6 +92,10 @@ Outro serviço pode ser adotado quando cumprir os mesmos contratos de segurança
 - [APOS em 30 minutos](docs/APOS-GETTING-STARTED.md)
 - [Manifesto de produto agêntico](docs/AGENTIC-PRODUCT-MANIFESTO.md)
 - [Especificação APOS v0.2](docs/APOS-v0.2.md)
+- [Retomada de sessão e múltiplos times](docs/apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md)
+- [DataMap e projeções humanas](docs/apos/DATA-MAP-AND-HUMAN-PROJECTIONS.md)
+- [Intents resolvidos](docs/APOS-RESOLVED-INTENTS.md)
+- [Reconstrução e memória agêntica](docs/apos/RECONSTRUCTION-AND-AGENTIC-MEMORY.md)
 - [Fluxo de trabalho com agentes](docs/AGENTIC-WORKFLOW.md)
 - [Roteamento de modelos e tokens](docs/AGENT-MODEL-ROUTING.md)
 - [Starter APOS](templates/apos/README.md)

@@ -1,0 +1,12 @@
+{
+  "id": "E-PPK-APOS-015",
+  "intent_id": "I-PPK-APOS-008",
+  "run_id": "AR-PPK-APOS-008",
+  "contract_ids": ["C-PPK-SCOPE-001", "C-PPK-EVID-001", "C-PPK-PRES-001", "C-PPK-SEC-001", "C-PPK-GOV-001", "C-PPK-CONTEXT-001"],
+  "passed": true,
+  "observed": "O kit gera Intents resolvidos, detecta divergência entre ProductState e Intent, documenta a separação entre memória por thread e memória durável e oferece Recovery Manifest sem valores secretos ou acoplamento a fornecedor.",
+  "verifier": "starter test, APOS projection check, repository check and primary-source review",
+  "environment": "candidate_branch",
+  "created_at": "2026-09-12",
+  "expires_at": null
+}

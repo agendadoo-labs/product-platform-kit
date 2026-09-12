@@ -1,0 +1,33 @@
+{
+  "id": "DM-PPK-001",
+  "revision": 1,
+  "protocol": "APOS v0.2",
+  "updated_at": "2026-09-12",
+  "purpose": "Mapear os registros de conhecimento e artefatos reutilizáveis do Product Platform Kit sem incorporar dados de consumidores.",
+  "authority": {"schema_source": "repository", "runtime_truth": "verified repository revision", "documentation_projection": "docs/apos/DATA-MAP-AND-HUMAN-PROJECTIONS.md"},
+  "entities": [
+    {"id": "apos.intent", "classification": "internal_knowledge", "purpose": "problema e outcome persistentes"},
+    {"id": "apos.decision", "classification": "internal_knowledge", "purpose": "escolha, autoridade e alternativas"},
+    {"id": "apos.agent_run", "classification": "internal_operational", "purpose": "execução, custo e incertezas"},
+    {"id": "apos.evidence", "classification": "internal_evidence", "purpose": "verificação independente"},
+    {"id": "apos.product_state", "classification": "internal_projection", "purpose": "estado atual comprovado"},
+    {"id": "apos.workstream", "classification": "internal_coordination", "purpose": "dependências e próximo checkpoint"},
+    {"id": "apos.data_map", "classification": "internal_metadata", "purpose": "entidades, relações, linhagem e classificação"},
+    {"id": "human.project_memory", "classification": "derived_projection", "purpose": "memória corrente legível"},
+    {"id": "human.open_intents", "classification": "derived_projection", "purpose": "relatório de trabalho aberto"},
+    {"id": "starter.apos", "classification": "public_template", "purpose": "adoção neutra por produtos consumidores"}
+  ],
+  "relationships": [
+    {"from": "apos.intent", "to": "apos.decision", "cardinality": "1:N", "key": "intent_id"},
+    {"from": "apos.intent", "to": "apos.agent_run", "cardinality": "1:N", "key": "intent_id"},
+    {"from": "apos.intent", "to": "apos.evidence", "cardinality": "1:N", "key": "intent_id"},
+    {"from": "apos.intent", "to": "apos.workstream", "cardinality": "1:N", "key": "intent_id"},
+    {"from": "apos.evidence", "to": "apos.product_state", "cardinality": "N:1 projection", "key": "evidence_ids"},
+    {"from": "apos.data_map", "to": "apos.product_state", "cardinality": "1:1 pointer", "key": "data_map.id + revision"},
+    {"from": "apos.product_state", "to": "human.project_memory", "cardinality": "1:1 generated", "key": "revision"},
+    {"from": "apos.intent", "to": "human.open_intents", "cardinality": "N:1 generated", "key": "candidate_intents"},
+    {"from": "apos.data_map", "to": "starter.apos", "cardinality": "1:N template", "key": "neutralized_pattern"}
+  ],
+  "access_principles": ["não conter segredos ou PII", "não incorporar domínio de consumidor", "projeções humanas não substituem fontes APOS", "alterações materiais atualizam revisão e evidência"],
+  "known_gaps": ["adoção e retrieval misses ainda precisam de observação em mais consumidores"]
+}

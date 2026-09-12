@@ -1,0 +1,12 @@
+{
+  "id": "AR-PPK-APOS-008",
+  "intent_id": "I-PPK-APOS-008",
+  "status": "succeeded",
+  "environment": "candidate_branch",
+  "ceremony": {"selected": "strict", "required": "strict", "triggers": ["security", "recovery", "shared_operating_process"], "authorization_source": "explicit_builder_request_2026-09-12"},
+  "budget": {"routing": "single_orchestrator_no_subagents", "parallel_fanout": 0, "external_cost": 0},
+  "consumption": {"input_tokens": "unavailable", "output_tokens": "unavailable", "monetary_cost": 0, "source": "desktop runtime does not expose exact usage"},
+  "outputs": ["resolved Intent projection", "agentic reconstruction guide", "provider-neutral Recovery Manifest"],
+  "remaining_uncertainties": ["adoption and restore-drill evidence must be supplied by each consumer", "semantic memory remains intentionally deferred until retrieval misses justify it"],
+  "completed_at": "2026-09-12"
+}

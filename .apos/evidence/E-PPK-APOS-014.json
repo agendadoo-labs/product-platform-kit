@@ -1,0 +1,12 @@
+{
+  "id": "E-PPK-APOS-014",
+  "intent_id": "I-PPK-APOS-007",
+  "run_id": "AR-PPK-APOS-007",
+  "contract_ids": ["C-PPK-SCOPE-001", "C-PPK-EVID-001", "C-PPK-PRES-001", "C-PPK-SEC-001", "C-PPK-GOV-001", "C-PPK-CONTEXT-001", "C-PPK-EPI-001"],
+  "passed": true,
+  "observed": "O kit e o starter contêm DataMap neutro, ponteiro no ProductState, gerador determinístico e relatório de Intents ligados por intent_id; o verificador detecta ponteiro, relações ou projeções inconsistentes e nenhum serviço externo é chamado.",
+  "verifier": "scripts/sync-apos-project-memory.mjs, starter test and repository checks",
+  "environment": "candidate_branch",
+  "created_at": "2026-09-12",
+  "expires_at": null
+}

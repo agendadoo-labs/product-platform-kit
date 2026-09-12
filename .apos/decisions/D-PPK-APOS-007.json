@@ -1,0 +1,13 @@
+{
+  "id": "D-PPK-APOS-007",
+  "intent_id": "I-PPK-APOS-007",
+  "run_id": "AR-PPK-APOS-007",
+  "outcome": "approved_and_implemented_in_candidate_branch",
+  "decision": "Adicionar ao starter um DataMap dedicado e projeções determinísticas de memória e Intents abertos, verificadas em checkpoint; ProductState conserva apenas um ponteiro tipado para o mapa.",
+  "rationale": "A separação reduz contexto e divergência, preserva rastreabilidade por intent_id e oferece a novos produtos um processo econômico de retomada e governança de dados.",
+  "alternatives": ["histórico manual", "mapa completo dentro do ProductState", "somente migrations", "memória dependente da conversa"],
+  "actor": "builder",
+  "authority_source": "Solicitação explícita de 2026-09-12 para levar o conceito ao Product Platform Kit.",
+  "scope": "branch candidata do kit e starter; sem release, main, consumidor ou serviço externo",
+  "created_at": "2026-09-12"
+}

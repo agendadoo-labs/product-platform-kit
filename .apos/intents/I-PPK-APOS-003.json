@@ -23,6 +23,6 @@
   "required_contract_ids": ["C-PPK-PRES-001", "C-PPK-REV-001", "C-PPK-GOV-001", "C-PPK-NFR-001"],
   "capabilities": ["recover-context", "design-change-envelope", "assess-component-reuse", "change-package", "verify-package"],
   "classification": {"impact": "high", "uncertainty": "medium", "reversibility": "reversible", "environment": "repository_candidate", "external_cost": "none"},
-  "status": "candidate",
+  "status": "satisfied",
   "source": {"type": "builder_conversation", "date": "2026-09-07"}
 }

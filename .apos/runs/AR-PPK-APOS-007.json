@@ -1,0 +1,12 @@
+{
+  "id": "AR-PPK-APOS-007",
+  "intent_id": "I-PPK-APOS-007",
+  "status": "succeeded",
+  "environment": "candidate_branch",
+  "ceremony": {"selected": "standard", "required": "standard", "triggers": ["shared_operating_process", "data_governance"], "authorization_source": "explicit_builder_request_2026-09-12"},
+  "budget": {"routing": "single_orchestrator_no_subagents", "parallel_fanout": 0, "external_cost": 0},
+  "consumption": {"input_tokens": "unavailable", "output_tokens": "unavailable", "monetary_cost": 0, "source": "desktop runtime does not expose exact per-run usage; no external model was called"},
+  "outputs": ["DataMap starter", "ProductState pointer", "project memory projection", "open Intents report", "checkpoint command", "adoption documentation"],
+  "remaining_uncertainties": ["adoption and retrieval misses require evidence from more consumer projects"],
+  "completed_at": "2026-09-12"
+}

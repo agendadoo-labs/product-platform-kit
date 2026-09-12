@@ -1,0 +1,13 @@
+{
+  "id": "D-PPK-APOS-006",
+  "intent_id": "I-PPK-APOS-006",
+  "run_id": "AR-PPK-APOS-006",
+  "outcome": "approved_for_candidate_implementation",
+  "decision": "Adicionar um Session Bootstrap determinístico antes da inferência: ler ponteiro ativo, ProductState, Intents abertos, decisões e coordenação; depois compilar o subgrafo completo somente para o Intent em foco.",
+  "rationale": "A leitura integral cresce com o repositório e desperdiça contexto. Um índice determinístico e pequeno reduz custo sem converter um resumo probabilístico em fonte de verdade; workstreams explicitam dependências entre times sem criar organograma obrigatório.",
+  "alternatives": ["reler todo o repositório a cada sessão", "usar somente busca semântica", "manter memória apenas na conversa", "implantar banco vetorial antes de medir necessidade"],
+  "actor": "builder",
+  "authority_source": "Pedido explícito de 2026-09-09 para criar um processo de retomada econômico e adicioná-lo ao Product Platform Kit para projetos com múltiplos times.",
+  "scope": "branch candidata do Product Platform Kit e starter reutilizável; sem publicação, serviço externo ou mudança em consumidores",
+  "created_at": "2026-09-09"
+}

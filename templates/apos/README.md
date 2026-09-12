@@ -10,7 +10,7 @@ Ao terminar a adoção, seu repositório terá um modelo ativo, um Intent ligado
 
 ## Adoção
 
-1. Copie `AGENTS.md`, a pasta `.apos/` e `scripts/compile-apos-context.mjs` para o repositório consumidor.
+1. Copie `AGENTS.md`, `APOS-AGENT-BOOTSTRAP.md`, as pastas `.apos/` e `docs/`, e os scripts do starter para o repositório consumidor.
 2. Substitua os campos `ADAPTAR` na Constitution e nos Contracts.
 3. Registre o primeiro Intent do produto; não converta um backlog inteiro mecanicamente.
 4. Selecione somente os Contracts e Capabilities aplicáveis à mudança.
@@ -23,10 +23,18 @@ Ao terminar a adoção, seu repositório terá um modelo ativo, um Intent ligado
 11. Implemente verificadores progressivamente. Enquanto não existirem, marque-os `specified`.
 12. Preserve o modelo anterior com commit, tag e hashes antes de trocar o ponteiro ativo.
 13. Produza ProductState apenas a partir de Evidence; não marque “feito” manualmente.
+14. Catalogue entidades, relações, linhagem, classificação e retenção em `.apos/data/data-map.json`; o ProductState guarda apenas ID, revisão e caminhos da projeção.
+15. Ao encerrar trabalho material, execute o gerador de memória e faça o CI verificar que `APOS-PROJECT-MEMORY.md`, `APOS-OPEN-INTENTS.md` e `APOS-RESOLVED-INTENTS.md` correspondem ao ProductState.
 
 ## Comandos essenciais
 
 Depois de substituir todos os campos `ADAPTAR` e criar o primeiro Intent e Decision:
+
+```sh
+node scripts/bootstrap-apos-session.mjs
+```
+
+Esse primeiro comando monta um índice pequeno do estado e do trabalho aberto sem chamar uma LLM. Depois de relacionar o pedido ao Intent correto, compile o contexto material:
 
 ```sh
 node scripts/compile-apos-context.mjs \
@@ -36,6 +44,17 @@ node scripts/compile-apos-context.mjs \
 ```
 
 O comando termina com código `2` quando o contexto excede o orçamento. Isso é um pedido de revisão ou escalonamento, não autorização para apagar fontes relevantes. Adapte ao projeto um verificador equivalente a `scripts/check-operating-model.mjs` deste kit.
+
+No checkpoint, atualize as projeções humanas:
+
+```sh
+node scripts/sync-apos-project-memory.mjs
+node scripts/sync-apos-project-memory.mjs --check
+```
+
+O relatório de Intents abertos mostra o estado operacional e o próximo checkpoint. O relatório de resolvidos mantém outcome, Evidence, ambiente e incertezas históricas por `intent_id`; uma evidência antiga não garante validade atual. O DataMap dedicado evita colocar o mapa inteiro da empresa dentro do ProductState.
+
+Para produtos com múltiplos times, mantenha `coordination/workstreams.json` enxuto: Intent, owner, colaboradores, domínios, dependências, branch/ambiente e próximo checkpoint. Não replique detalhes do Intent nem trate ownership como permissão.
 
 Produto, design, engenharia, dados e operações podem continuar como famílias de contrato. Eles não representam agentes, etapas obrigatórias nem documentos independentes que toda mudança deve produzir.
 
