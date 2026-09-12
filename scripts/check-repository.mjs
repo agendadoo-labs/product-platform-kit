@@ -33,6 +33,7 @@ const requiredAposFiles = [
   'templates/apos/.apos/state/product-state.json',
   'templates/apos/scripts/sync-apos-project-memory.mjs',
   'templates/apos/docs/DATA-MAP.md',
+  'templates/operations/reconstruction-manifest.example.json',
   'templates/apos/.apos/versions/consumer-apos-1.0.0/constitution.json',
   'templates/apos/.apos/versions/consumer-apos-1.0.0/capabilities.json',
   'templates/apos/.apos/versions/consumer-apos-1.0.0/policy.json',

@@ -1,0 +1,13 @@
+{
+  "id": "D-PPK-APOS-008",
+  "intent_id": "I-PPK-APOS-008",
+  "run_id": "AR-PPK-APOS-008",
+  "outcome": "implemented_in_candidate_branch",
+  "decision": "Tratar reconstrução como cadeia de estados heterogêneos, gerar Intents resolvidos do subgrafo APOS e oferecer um Recovery Manifest que referencia segredos sem armazená-los.",
+  "rationale": "Git é excelente para estado declarativo e conhecimento revisado, mas não é backup universal. O template permite que cada consumidor prove reconstrução sem acoplamento a fornecedor.",
+  "alternatives": ["documento narrativo sem estrutura", "Git como único backup", "serviço obrigatório de memória vetorial"],
+  "actor": "builder",
+  "authority_source": "Solicitação explícita de 2026-09-12.",
+  "scope": "branch candidata do kit e starter; sem publicação ou efeito externo",
+  "created_at": "2026-09-12"
+}

@@ -10,7 +10,7 @@ Schema pretendido e schema observado são fatos diferentes. Migrações ou IaC d
 
 ## Memória humana
 
-`APOS-PROJECT-MEMORY.md` resume revisão, modelo ativo, trabalho aberto e decisões recentes. `APOS-OPEN-INTENTS.md` detalha estado, próximo checkpoint, execução, evidência e incertezas de cada Intent candidato. Ambos são gerados; não devem ser editados manualmente.
+`APOS-PROJECT-MEMORY.md` resume revisão, modelo ativo, trabalho aberto e decisões recentes. `APOS-OPEN-INTENTS.md` detalha estado, próximo checkpoint, execução, evidência e incertezas de cada Intent candidato. `APOS-RESOLVED-INTENTS.md` conserva uma consulta consolidada do subgrafo dos Intents satisfeitos, sem apagar incertezas residuais nem confundir evidência histórica com validade atual. Os três são gerados; não devem ser editados manualmente.
 
 ```text
 Intent ─┬→ Decision

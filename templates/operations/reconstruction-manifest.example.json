@@ -1,0 +1,52 @@
+{
+  "id": "RM-ADAPTAR-001",
+  "revision": 1,
+  "updated_at": "ADAPTAR",
+  "owners": {
+    "business": "ADAPTAR",
+    "technical": "ADAPTAR",
+    "privacy": "ADAPTAR",
+    "alternate_recovery_contact": "ADAPTAR"
+  },
+  "recovery_objective": {
+    "scope": "ADAPTAR",
+    "rto": "ADAPTAR",
+    "rpo": "ADAPTAR",
+    "exposure_budget_id": "ADAPTAR"
+  },
+  "resources": [
+    {
+      "id": "ADAPTAR",
+      "provider": "ADAPTAR",
+      "type": "repository|database|object_store|identity|deployment|dns|email|secret_vault|agent_memory",
+      "environment": "ADAPTAR",
+      "criticality": "critical|high|medium|low",
+      "resource_reference": "identificador não secreto",
+      "desired_state_source": "caminho de IaC ou manifesto no Git",
+      "observed_state_evidence": "Evidence ID",
+      "secret_references": ["nome lógico no cofre; nunca o valor"],
+      "backup": {
+        "method": "ADAPTAR",
+        "destination": "conta/região independente",
+        "retention": "ADAPTAR",
+        "encrypted": true,
+        "last_verified_at": "ADAPTAR"
+      },
+      "restore": {
+        "order": 1,
+        "runbook": "ADAPTAR",
+        "integrity_checks": ["ADAPTAR"],
+        "dependencies": []
+      }
+    }
+  ],
+  "last_drill": {
+    "evidence_id": "ADAPTAR",
+    "revision": "ADAPTAR",
+    "environment": "empty_isolated_environment",
+    "measured_rto": "ADAPTAR",
+    "measured_rpo": "ADAPTAR",
+    "result": "not_run|passed|partial|failed",
+    "expires_at": "ADAPTAR"
+  }
+}

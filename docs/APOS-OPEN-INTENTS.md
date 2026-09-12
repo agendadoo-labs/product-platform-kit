@@ -5,7 +5,7 @@ updated: 2026-09-12
 
 # Intents abertos
 
-> Projeção da revisão 9 do ProductState. Não editar manualmente.
+> Projeção da revisão 10 do ProductState. Não editar manualmente.
 
 | Intent | Estado | Cerimônia | Próximo checkpoint |
 |---|---|---|---|

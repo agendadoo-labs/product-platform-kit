@@ -94,6 +94,8 @@ Outro serviço pode ser adotado quando cumprir os mesmos contratos de segurança
 - [Especificação APOS v0.2](docs/APOS-v0.2.md)
 - [Retomada de sessão e múltiplos times](docs/apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md)
 - [DataMap e projeções humanas](docs/apos/DATA-MAP-AND-HUMAN-PROJECTIONS.md)
+- [Intents resolvidos](docs/APOS-RESOLVED-INTENTS.md)
+- [Reconstrução e memória agêntica](docs/apos/RECONSTRUCTION-AND-AGENTIC-MEMORY.md)
 - [Fluxo de trabalho com agentes](docs/AGENTIC-WORKFLOW.md)
 - [Roteamento de modelos e tokens](docs/AGENT-MODEL-ROUTING.md)
 - [Starter APOS](templates/apos/README.md)

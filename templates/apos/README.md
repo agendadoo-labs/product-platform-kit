@@ -24,7 +24,7 @@ Ao terminar a adoção, seu repositório terá um modelo ativo, um Intent ligado
 12. Preserve o modelo anterior com commit, tag e hashes antes de trocar o ponteiro ativo.
 13. Produza ProductState apenas a partir de Evidence; não marque “feito” manualmente.
 14. Catalogue entidades, relações, linhagem, classificação e retenção em `.apos/data/data-map.json`; o ProductState guarda apenas ID, revisão e caminhos da projeção.
-15. Ao encerrar trabalho material, execute o gerador de memória e faça o CI verificar que `APOS-PROJECT-MEMORY.md` e `APOS-OPEN-INTENTS.md` correspondem ao ProductState.
+15. Ao encerrar trabalho material, execute o gerador de memória e faça o CI verificar que `APOS-PROJECT-MEMORY.md`, `APOS-OPEN-INTENTS.md` e `APOS-RESOLVED-INTENTS.md` correspondem ao ProductState.
 
 ## Comandos essenciais
 
@@ -52,7 +52,7 @@ node scripts/sync-apos-project-memory.mjs
 node scripts/sync-apos-project-memory.mjs --check
 ```
 
-O relatório de Intents abertos mostra o estado operacional, o próximo checkpoint e a memória ligada a cada `intent_id`. O DataMap dedicado evita colocar o mapa inteiro da empresa dentro do ProductState.
+O relatório de Intents abertos mostra o estado operacional e o próximo checkpoint. O relatório de resolvidos mantém outcome, Evidence, ambiente e incertezas históricas por `intent_id`; uma evidência antiga não garante validade atual. O DataMap dedicado evita colocar o mapa inteiro da empresa dentro do ProductState.
 
 Para produtos com múltiplos times, mantenha `coordination/workstreams.json` enxuto: Intent, owner, colaboradores, domínios, dependências, branch/ambiente e próximo checkpoint. Não replique detalhes do Intent nem trate ownership como permissão.
 

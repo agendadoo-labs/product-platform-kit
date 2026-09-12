@@ -29,6 +29,11 @@ const date = String(state.updated_at).slice(0, 10)
 const byId = new Map(intents.map(({ value }) => [value.id, value]))
 const linked = (items, id) => items.filter(({ value }) => value.intent_id === id || value.related_intent_ids?.includes(id))
 const latest = (items, field) => [...items].sort((a, b) => String(b.value[field] ?? '').localeCompare(String(a.value[field] ?? '')))[0]?.value
+for (const id of state.satisfied_intents ?? []) {
+  const intent = byId.get(id)
+  if (!intent) throw new Error(`satisfied_intent_missing_record: ${id}`)
+  if (intent.status !== 'satisfied') throw new Error(`satisfied_intent_status_mismatch: ${id} is ${intent.status}`)
+}
 
 const entityIds = dataMap.entities.map(({ id }) => id)
 const entitySet = new Set(entityIds)
@@ -115,6 +120,35 @@ ${openDetails.join('\n') || 'Nenhum Intent aberto.'}
 O \`intent_id\` liga Intent, Decisions, AgentRuns e Evidence. ProductState resume a situação; workstreams registram dependências e próximo checkpoint. A memória do Intent é esse subgrafo rastreável, não uma narrativa paralela.
 `
 
+const resolvedDetails = (state.satisfied_intents ?? []).map((id) => {
+  const intent = byId.get(id)
+  const ds = linked(decisions, id)
+  const run = latest(linked(runs, id), 'completed_at')
+  const ev = latest(linked(evidence, id), 'created_at')
+  return `## ${id}
+
+- **Problema resolvido:** ${intent.problem}
+- **Resultado registrado:** ${intent.outcome}
+- **Decisões:** ${ds.length ? ds.map(({ value }) => `\`${value.id}\``).join(', ') : 'nenhuma'}.
+- **Última execução:** ${run ? `\`${run.id}\` — ${run.status}` : 'nenhuma'}.
+- **Última evidência:** ${ev ? `\`${ev.id}\` — ${ev.passed ? 'passou' : 'não passou'}` : 'nenhuma'}.
+- **Ambiente:** ${ev?.environment ?? 'não informado'}.
+- **Incertezas remanescentes:** ${run?.remaining_uncertainties?.length ? run.remaining_uncertainties.join('; ') : 'nenhuma registrada'}.
+`
+})
+const resolvedReport = `---
+title: APOS — Intents resolvidos
+updated: ${date}
+---
+
+# Intents resolvidos
+
+> Projeção determinística da revisão ${state.revision}. “Resolvido” exige consistência entre ProductState e o registro do Intent; validade para reuso ainda depende da revisão, do ambiente e da Evidence.
+
+${resolvedDetails.join('\n') || 'Nenhum Intent resolvido.'}
+`
+
 writeOrCheck('docs/APOS-PROJECT-MEMORY.md', memory)
 writeOrCheck('docs/APOS-OPEN-INTENTS.md', openReport)
+writeOrCheck('docs/APOS-RESOLVED-INTENTS.md', resolvedReport)
 console.log(`${checkOnly ? 'Checked' : 'Updated'} APOS projections for ProductState revision ${state.revision}.`)
