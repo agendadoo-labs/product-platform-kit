@@ -1,0 +1,13 @@
+{
+  "id": "D-PPK-CAPABILITY-002",
+  "intent_id": "I-PPK-CAPABILITY-001",
+  "run_id": "AR-PPK-CAPABILITY-002",
+  "outcome": "approved_for_main",
+  "decision": "Modelar Commercial Model como uma camada transversal Economic Control Plane sobre os 14 macrodomínios, adicionar commercial_model e economic_control_plane ao domínio Business & Growth e registrar o grafo de influência sem criar autoridade implícita sobre os domínios afetados.",
+  "rationale": "O modelo comercial traduz estratégia em eventos econômicos, incentivos, entitlements e guardrails que atravessam vários domínios. Mantê-lo transversal evita duplicar capacidades de pricing, billing e payments e permite avaliar efeitos de primeira e segunda ordem antes de mudanças comerciais.",
+  "alternatives": ["criar um décimo quinto macrodomínio independente", "tratar Commercial Model apenas como Pricing", "manter o memorial sem projeção operacional ou contrato machine-readable"],
+  "actor": "builder",
+  "authority_source": "Solicitação explícita de 2026-09-13 e memorial Commercial Model Architecture v2 fornecido pelo builder.",
+  "scope": "ontologia, documentação, contexto epistemológico e exemplo provider-neutral do Product Platform Kit; sem mutação automática de produtos consumidores",
+  "created_at": "2026-09-13"
+}

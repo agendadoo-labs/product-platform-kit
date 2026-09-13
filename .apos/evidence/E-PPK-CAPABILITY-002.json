@@ -1,0 +1,12 @@
+{
+  "id": "E-PPK-CAPABILITY-002",
+  "intent_id": "I-PPK-CAPABILITY-001",
+  "run_id": "AR-PPK-CAPABILITY-002",
+  "contract_ids": ["C-PPK-SCOPE-001", "C-PPK-EVID-001", "C-PPK-PRES-001", "C-PPK-SEC-001", "C-PPK-GOV-001", "C-PPK-ARCH-001", "C-PPK-CONTEXT-001", "C-PPK-EPI-001", "C-PPK-LEARN-001"],
+  "passed": true,
+  "observed": "O catálogo mantém 14 macrodomínios e passa a conter 130 capacidades, 28 claims evidenciados e 102 lacunas explícitas. Commercial Model foi registrado como camada transversal com 14 influências, contrato provider-neutral, regras de propagação e aplicação inicial no Valora. Context Profile e Epistemic Registry possuem o mesmo domínio commercial_model. As verificações de catálogo, repositório, projeções e APOS passaram.",
+  "verifier": "scripts/check-capability-catalog.mjs; scripts/check-repository.mjs; scripts/check-operating-model.mjs; scripts/sync-apos-project-memory.mjs --check; inspeção estrutural do catálogo e do contrato commercial-model/system.example.json",
+  "environment": "main",
+  "created_at": "2026-09-13",
+  "expires_at": null
+}

@@ -1,0 +1,13 @@
+{
+  "id": "D-PPK-CAPABILITY-001",
+  "intent_id": "I-PPK-CAPABILITY-001",
+  "run_id": "AR-PPK-CAPABILITY-001",
+  "outcome": "approved_for_candidate_branch",
+  "decision": "Usar o Digital Product Capability Map v2 como ontologia de composição do kit, separado do Epistemic Registry, e governar a evolução por cobertura evidenciada, regras de ativação e prioridade por valor reutilizável.",
+  "rationale": "A separação evita confundir o que um produto pode precisar com as fontes que um agente deve recuperar. Uma matriz evidenciada reduz falsa cobertura e direciona investimento para módulos que destravam mais projetos.",
+  "alternatives": ["manter somente uma lista narrativa no README", "tratar todo domínio como obrigatório", "fundir capability map e Epistemic Registry"],
+  "actor": "builder",
+  "authority_source": "Solicitação explícita de 2026-09-12 e mapa v2 fornecido pelo builder.",
+  "scope": "branch candidata do kit; sem publicação ou efeitos em produtos consumidores",
+  "created_at": "2026-09-12"
+}

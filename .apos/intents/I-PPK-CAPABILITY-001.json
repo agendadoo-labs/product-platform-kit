@@ -1,0 +1,39 @@
+{
+  "id": "I-PPK-CAPABILITY-001",
+  "revision": 2,
+  "problem": "A proposta de valor do Product Platform Kit e seu inventário reutilizável ainda não estão organizados contra uma ontologia ampla de capacidades de produtos digitais, dificultando enxergar cobertura, lacunas e a melhor ordem de evolução.",
+  "population": "Mentes criativas, pessoas de produto e equipes pequenas que precisam levar novos negócios do conceito à produção com organizações agênticas",
+  "outcome": "O kit declara sua missão, incorpora um mapa de capacidades legível por humanos e agentes, mede cobertura com evidência, prioriza módulos reutilizáveis, fornece benchmark e caminho de implementação para os dez primeiros e modela o Commercial Model como camada econômica transversal com influências explícitas.",
+  "constraints": [
+    "provider-neutral por padrão",
+    "distinguir documentação, template, pacote, exemplo e implementação validada",
+    "não considerar menção textual como cobertura implementada",
+    "preservar proveniência do mapa fornecido pelo builder",
+    "priorização deve maximizar projetos destravados e minimizar dependências e custo de adoção",
+    "links e benchmarks precisam apontar para fontes primárias vigentes",
+    "Commercial Model não pode ser reduzido a pricing, billing ou payments",
+    "uma influência comercial amplia o Change Envelope, mas não concede autoridade implícita para mudar o domínio influenciado"
+  ],
+  "change_envelope": {
+    "delta": ["nova missão", "capability map", "auditoria de cobertura", "roadmap priorizado", "benchmark top 10", "Commercial Model como Economic Control Plane", "grafo de influência comercial", "contrato comercial machine-readable"],
+    "affected_surfaces": ["README", "APOS state", "capability catalog", "documentation", "adoption guidance"],
+    "affected_domains": ["capability_ontology", "commercial_model", "operating_model", "templates", "runtime", "security", "environments", "design_system", "maps", "telemetry", "experiments", "finops"],
+    "invariants": ["APOS permanece o modelo operacional", "tecnologias continuam substituíveis", "dados de consumidores não entram no kit", "cobertura sem Evidence permanece parcial ou ausente"],
+    "out_of_scope": ["implementar os dez módulos nesta execução", "alterar produtos consumidores", "selecionar um único fornecedor obrigatório", "conceder autoridade automática para alterar domínios influenciados"],
+    "compatibility": ["documentação e módulos existentes continuam válidos", "novo catálogo referencia superfícies existentes sem movê-las"],
+    "regression_surface": ["README", "APOS checks", "project memory", "documentation links", "repository checks"],
+    "rollback": "remover o catálogo, auditoria e roadmap e restaurar a declaração anterior de missão sem alterar módulos existentes",
+    "component_reuse_assessment": {
+      "components_reviewed": ["APOS Epistemic Registry", "DataMap", "ADOPTION.md", "README", "package inventory"],
+      "decision": "extend",
+      "rationale": "o capability map orienta composição de produto, enquanto o Epistemic Registry continua orientando recuperação de conhecimento; são relacionados, mas não equivalentes",
+      "reuse_surfaces": [".apos", "docs", "packages", "templates"]
+    }
+  },
+  "required_contract_ids": ["C-PPK-SCOPE-001", "C-PPK-EVID-001", "C-PPK-PRES-001", "C-PPK-SEC-001", "C-PPK-GOV-001", "C-PPK-ARCH-001", "C-PPK-CONTEXT-001", "C-PPK-EPI-001", "C-PPK-LEARN-001"],
+  "capabilities": ["recover-context", "inventory", "research", "domain-modeling", "prioritization", "documentation", "verify-package"],
+  "classification": {"impact": "high", "uncertainty": "high", "reversibility": "reversible", "environment": "candidate_branch", "external_cost": "none"},
+  "ceremony_selection": {"level": "strict", "triggers": ["shared_operating_process", "cross-domain architecture", "external research"], "authority": "explicit_builder_request_2026-09-12", "downgrade_allowed": false},
+  "status": "satisfied",
+  "source": {"type": "builder_conversation_and_supplied_capability_and_commercial_model_maps", "date": "2026-09-13"}
+}

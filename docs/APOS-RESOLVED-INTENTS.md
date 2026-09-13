@@ -1,11 +1,11 @@
 ---
 title: APOS — Intents resolvidos
-updated: 2026-09-12
+updated: 2026-09-13
 ---
 
 # Intents resolvidos
 
-> Projeção determinística da revisão 10. “Resolvido” exige consistência entre ProductState e o registro do Intent; validade para reuso ainda depende da revisão, do ambiente e da Evidence.
+> Projeção determinística da revisão 12. “Resolvido” exige consistência entre ProductState e o registro do Intent; validade para reuso ainda depende da revisão, do ambiente e da Evidence.
 
 ## I-PPK-APOS-001
 
@@ -86,4 +86,14 @@ updated: 2026-09-12
 - **Última evidência:** `E-PPK-APOS-015` — passou.
 - **Ambiente:** candidate_branch.
 - **Incertezas remanescentes:** adoption and restore-drill evidence must be supplied by each consumer; semantic memory remains intentionally deferred until retrieval misses justify it.
+
+## I-PPK-CAPABILITY-001
+
+- **Problema resolvido:** A proposta de valor do Product Platform Kit e seu inventário reutilizável ainda não estão organizados contra uma ontologia ampla de capacidades de produtos digitais, dificultando enxergar cobertura, lacunas e a melhor ordem de evolução.
+- **Resultado registrado:** O kit declara sua missão, incorpora um mapa de capacidades legível por humanos e agentes, mede cobertura com evidência, prioriza módulos reutilizáveis, fornece benchmark e caminho de implementação para os dez primeiros e modela o Commercial Model como camada econômica transversal com influências explícitas.
+- **Decisões:** `D-PPK-CAPABILITY-001`, `D-PPK-CAPABILITY-002`.
+- **Última execução:** `AR-PPK-CAPABILITY-002` — succeeded.
+- **Última evidência:** `E-PPK-CAPABILITY-002` — passou.
+- **Ambiente:** main.
+- **Incertezas remanescentes:** consumer adoption is not yet measured; domain-specific commercial changes still require their own Intent and Evidence; exact desktop token usage is unavailable.
 

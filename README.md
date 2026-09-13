@@ -1,6 +1,10 @@
 # Product Platform Kit
 
-Um caminho reutilizável para levar produtos digitais **do protótipo à produção com agentes**, de forma rápida, segura e verificável.
+## Missão
+
+**Transformar as barreiras tecnológicas de entrada de novos negócios em praticamente zero, permitindo que mentes criativas coloquem projetos e produtos em prática com a ajuda de organizações agênticas.**
+
+Para cumprir essa missão, o Product Platform Kit oferece um caminho reutilizável para levar produtos digitais **do protótipo à produção com agentes**, de forma rápida, segura e verificável.
 
 O kit combina método operacional, componentes técnicos e exemplos práticos para que uma pessoa de produto ou uma equipe pequena consiga transformar uma intenção em software funcionando sem precisar desenhar toda a operação do zero.
 
@@ -111,6 +115,12 @@ Outro serviço pode ser adotado quando cumprir os mesmos contratos de segurança
 
 ### Quero adicionar capacidades
 
+- [Visão de produto](docs/capabilities/PRODUCT-VISION.md)
+- [Mapa de capacidades digitais](docs/capabilities/DIGITAL-PRODUCT-CAPABILITY-MAP-v2.md)
+- [Commercial Model como Economic Control Plane](docs/capabilities/COMMERCIAL-MODEL-ECONOMIC-CONTROL-PLANE.md)
+- [Auditoria de cobertura](docs/capabilities/CAPABILITY-COVERAGE-AUDIT.md)
+- [Roadmap priorizado de módulos](docs/capabilities/MODULE-PRIORITY-ROADMAP.md)
+- [Benchmarks e implementação dos dez primeiros módulos](docs/capabilities/TOP-10-MODULE-BENCHMARKS.md)
 - [Telemetria](docs/TELEMETRY.md)
 - [Testes A/B](docs/EXPERIMENTS.md)
 - [Map Core](packages/map-core/README.md)

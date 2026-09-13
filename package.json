@@ -11,7 +11,8 @@
     "apos:project-memory": "node scripts/sync-apos-project-memory.mjs",
     "apos:project-memory:check": "node scripts/sync-apos-project-memory.mjs --check",
     "apos:checkpoint": "node scripts/sync-apos-project-memory.mjs && node scripts/check-operating-model.mjs && node scripts/sync-apos-project-memory.mjs --check",
-    "check": "node scripts/check-repository.mjs && node scripts/sync-apos-project-memory.mjs --check",
+    "check": "node scripts/check-repository.mjs && node scripts/check-capability-catalog.mjs && node scripts/sync-apos-project-memory.mjs --check",
+    "check:capabilities": "node scripts/check-capability-catalog.mjs",
     "check:operating-model": "node scripts/check-operating-model.mjs",
     "test:apos": "PYTHONPATH=packages/apos python3 -m unittest discover -s packages/apos/tests -v && node --test scripts/tests/apos-context-compiler.test.mjs scripts/tests/apos-session-bootstrap.test.mjs scripts/tests/apos-project-memory.test.mjs",
     "demo:apos": "npm run demo --workspace @product-platform-kit/apos"

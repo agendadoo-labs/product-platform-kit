@@ -1,0 +1,39 @@
+{
+  "schema_version": "0.1.0",
+  "system_id": "example-subscription",
+  "actors": [
+    {"id": "customer", "roles": ["payer", "beneficiary"]},
+    {"id": "platform", "roles": ["receiver", "service_provider"]}
+  ],
+  "revenue_streams": [
+    {
+      "id": "individual_subscription",
+      "payer": "customer",
+      "receiver": "platform",
+      "model": "subscription",
+      "unit": {"entity": "subscription", "event": "subscription.activated"},
+      "price": {"function": "fixed_rate_card", "currency": "BRL"},
+      "entitlement": {"grant_on": "payment.confirmed", "revoke_on": "subscription.terminated"},
+      "dispute": {"allowed": true, "policy_ref": "project_defined"}
+    }
+  ],
+  "objectives": {
+    "platform": {"maximize": ["validated_customer_value", "contribution_margin"], "guardrails": ["user_utility", "trust", "fairness"]},
+    "customer": {"maximize": ["task_success", "value_for_money"], "minimize": ["friction", "unexpected_charges"]}
+  },
+  "propagation": {
+    "affected_domains": {
+      "commerce_offering": "critical",
+      "financial": "critical",
+      "customer_identity": "high",
+      "trust_risk_safety": "critical",
+      "data_intelligence": "critical",
+      "platform_engineering": "high",
+      "governance_cross_cutting": "critical"
+    }
+  },
+  "evidence": {
+    "primary_metrics": ["activation_rate", "paid_conversion", "retained_value"],
+    "guardrails": ["refund_rate", "complaint_rate", "task_success", "unexpected_charge_rate"]
+  }
+}

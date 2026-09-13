@@ -1,0 +1,12 @@
+{
+  "id": "E-PPK-CAPABILITY-001",
+  "intent_id": "I-PPK-CAPABILITY-001",
+  "run_id": "AR-PPK-CAPABILITY-001",
+  "contract_ids": ["C-PPK-SCOPE-001", "C-PPK-EVID-001", "C-PPK-PRES-001", "C-PPK-SEC-001", "C-PPK-GOV-001", "C-PPK-ARCH-001", "C-PPK-CONTEXT-001", "C-PPK-EPI-001", "C-PPK-LEARN-001"],
+  "passed": true,
+  "observed": "A missão e a visão foram explicitadas; o mapa fornecido foi preservado com SHA-256 idêntico; 14 domínios e 128 capacidades foram catalogados; 26 claims possuem evidência existente e 102 lacunas permanecem explícitas; o roadmap e os benchmarks top 10 foram produzidos com fontes primárias; verificações do catálogo, repositório e APOS passaram.",
+  "verifier": "scripts/check-capability-catalog.mjs; scripts/check-repository.mjs; scripts/check-operating-model.mjs; APOS Python and Node test suites; SHA-256 provenance check; primary-source review",
+  "environment": "candidate_branch",
+  "created_at": "2026-09-12",
+  "expires_at": null
+}

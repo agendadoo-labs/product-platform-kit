@@ -1,0 +1,25 @@
+{
+  "id": "AR-PPK-CAPABILITY-002",
+  "intent_id": "I-PPK-CAPABILITY-001",
+  "status": "succeeded",
+  "capabilities": ["recover-context", "inventory", "domain-modeling", "prioritization", "documentation", "verify-package"],
+  "base_revision": 11,
+  "result_revision": 12,
+  "environment": "main",
+  "ceremony": {"selected": "strict", "required": "strict", "triggers": ["shared_operating_process", "cross-domain architecture"], "authorization_source": "explicit_builder_request_2026-09-13"},
+  "budget": {"routing": "single_orchestrator_no_subagents", "parallel_fanout": 0, "external_cost": 0, "context_rule": "memorial supplied by builder plus capability ontology and APOS governing records", "max_estimated_input_tokens": 100000, "calibration": "explicit exception to preserve the complete cross-domain ontology and supplied memorial; no authoritative source was silently removed"},
+  "consumption": {"input_tokens": "unavailable", "output_tokens": "unavailable", "monetary_cost": 0, "source": "desktop runtime does not expose exact per-run token usage"},
+  "context_manifest_id": "CM-I-PPK-CAPABILITY-001",
+  "learning_cost": {
+    "steps": [
+      {"step": "context_compile", "capability": "recover-context", "context_tokens": 83404, "output_tokens": "unavailable", "external_calls": 0, "duration_ms": "unavailable", "rework_count": 0, "regressions_found": 0, "reused_evidence_ids": ["E-PPK-CAPABILITY-001"], "usage_status": "conservative_estimate"},
+      {"step": "commercial_model_projection", "capability": "domain-modeling", "context_tokens": "included_in_context_compile", "output_tokens": "unavailable", "external_calls": 0, "duration_ms": "unavailable", "rework_count": 0, "regressions_found": 0, "reused_evidence_ids": ["E-PPK-CAPABILITY-001"], "usage_status": "builder_memorial_projected"},
+      {"step": "verification", "capability": "verify-package", "context_tokens": "unavailable", "output_tokens": "unavailable", "external_calls": 0, "duration_ms": "unavailable", "rework_count": 0, "regressions_found": 0, "reused_evidence_ids": ["E-PPK-CAPABILITY-002"], "usage_status": "repository_and_operating_model_checks_passed"}
+    ],
+    "run": {"intent_id": "I-PPK-CAPABILITY-001", "route": "human_assisted_codex", "total_tokens": "unavailable", "estimated_cost": "unavailable", "reconciled_cost": 0, "currency": "USD", "validated_outcome": true, "quality_score": "catalog_repository_and_apos_checks_passed", "latency_ms": "unavailable", "provider_request_ids": []}
+  },
+  "outputs": ["Commercial Model operational projection", "cross-domain influence graph", "provider-neutral machine-readable commercial contract", "updated capability coverage", "updated epistemic retrieval domain"],
+  "remaining_uncertainties": ["consumer adoption is not yet measured", "domain-specific commercial changes still require their own Intent and Evidence", "exact desktop token usage is unavailable"],
+  "started_at": "2026-09-13",
+  "completed_at": "2026-09-13"
+}
