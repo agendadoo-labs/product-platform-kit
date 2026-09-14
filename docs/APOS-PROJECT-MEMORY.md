@@ -21,6 +21,7 @@ updated: 2026-09-13
 
 ## Decisões recentes
 
+- **2026-09-14 · D-PPK-RELEASE-001:** Adicionar ao APOS um gate semântico de release que observa o ambiente-alvo antes de promover qualquer cliente dependente.
 - **2026-09-13 · D-PPK-CAPABILITY-002:** Modelar Commercial Model como uma camada transversal Economic Control Plane sobre os 14 macrodomínios, adicionar commercial_model e economic_control_plane ao domínio Business & Growth e registrar o grafo de influência sem criar autoridade implícita sobre os domínios afetados.
 - **2026-09-12 · D-PPK-APOS-007:** Adicionar ao starter um DataMap dedicado e projeções determinísticas de memória e Intents abertos, verificadas em checkpoint; ProductState conserva apenas um ponteiro tipado para o mapa.
 - **2026-09-12 · D-PPK-APOS-008:** Tratar reconstrução como cadeia de estados heterogêneos, gerar Intents resolvidos do subgrafo APOS e oferecer um Recovery Manifest que referencia segredos sem armazená-los.
@@ -30,7 +31,6 @@ updated: 2026-09-13
 - **2026-09-07 · D-PPK-APOS-003:** Add preservation-by-default and a reusable Change Envelope in product-platform-kit-apos-2.2.0 and consumer-apos-1.2.0.
 - **2026-09-07 · D-PPK-APOS-004:** Adopt APOS v0.2 with maturity-based architecture, selective context compilation and governed provider-neutral AI execution.
 - **2026-09-06 · D-PPK-APOS-001:** Substituir o starter operacional baseado em papéis pelo modelo product-platform-kit-apos-2.0.0 e pelo template templates/apos.
-- **2026-09-06 · D-PPK-APOS-002:** Evoluir localmente para product-platform-kit-apos-2.1.0 e consumer-apos-1.1.0 com qualidade, ambientes e exposição progressiva como tipos operacionais versionados.
 
 ## Fontes para aprofundar
 

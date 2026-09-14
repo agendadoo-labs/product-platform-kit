@@ -1,0 +1,14 @@
+{
+  "contractVersion": "ADAPTAR-YYYY-MM-DD-capability-v1",
+  "targetEnvironment": "production",
+  "dependencies": [
+    {"kind": "database_function", "name": "ADAPTAR", "signature": "ADAPTAR", "required": true},
+    {"kind": "database_column", "name": "ADAPTAR", "required": true},
+    {"kind": "configuration", "name": "ADAPTAR", "secret": false, "required": true}
+  ],
+  "handshake": {"method": "POST", "urlEnvironmentVariable": "DATABASE_CONTRACT_URL", "credentialEnvironmentVariable": "DATABASE_CONTRACT_PUBLIC_KEY", "returnsOnlyNonSensitiveMetadata": true},
+  "promotionOrder": ["additive_change", "target_contract_check", "dependent_client", "authenticated_smoke", "evidence"],
+  "failurePolicy": "block_promotion",
+  "rollback": "Keep the previous contract available until the dependent client rollback window closes.",
+  "requiredEvidence": ["target_contract_version", "authorization_boundary", "authenticated_smoke", "rollback_compatibility"]
+}

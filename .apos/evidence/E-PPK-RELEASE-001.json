@@ -1,0 +1,12 @@
+{
+  "id": "E-PPK-RELEASE-001",
+  "intent_id": "I-PPK-RELEASE-001",
+  "run_id": "AR-PPK-RELEASE-001",
+  "contract_ids": ["C-PPK-SCOPE-001", "C-PPK-EVID-001", "C-PPK-PRES-001", "C-PPK-SEC-001", "C-PPK-GOV-001", "C-PPK-RELEASE-001"],
+  "passed": true,
+  "observed": "O kit contém contrato provider-neutral, guia, manifesto reutilizável e verificação de presença; o padrão foi validado contra um incidente e handshake reais no consumidor Valora.",
+  "verifier": "repository check, JSON validation and Valora production evidence E-VAL-RELEASE-001",
+  "environment": "candidate_branch",
+  "created_at": "2026-09-14",
+  "expires_at": null
+}

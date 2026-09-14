@@ -1,0 +1,13 @@
+{
+  "id": "D-PPK-RELEASE-001",
+  "intent_id": "I-PPK-RELEASE-001",
+  "run_id": "AR-PPK-RELEASE-001",
+  "outcome": "implemented_in_candidate_branch",
+  "decision": "Adicionar ao APOS um gate semântico de release que observa o ambiente-alvo antes de promover qualquer cliente dependente.",
+  "rationale": "Estado declarado em Git não prova estado aplicado; o handshake reduz drift com custo operacional pequeno e sem exigir uma plataforma específica.",
+  "alternatives": ["checklist manual", "comparar somente nomes de migrations", "orquestrador de release obrigatório e complexo"],
+  "actor": "builder",
+  "authority_source": "Solicitação explícita de 14/09/2026 após incidente real no Valora.",
+  "scope": "APOS e templates reutilizáveis do product-platform-kit; sem publicar consumidores.",
+  "created_at": "2026-09-14"
+}

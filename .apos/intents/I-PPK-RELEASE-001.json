@@ -1,0 +1,25 @@
+{
+  "id": "I-PPK-RELEASE-001",
+  "revision": 1,
+  "problem": "O starter não prevenia a promoção de um cliente antes que schema, APIs e configuração exigidos estivessem realmente aplicados no ambiente-alvo.",
+  "population": "Produtos e times que usam o product-platform-kit para sair do protótipo à produção",
+  "outcome": "Fornecer um gate provider-neutral, econômico e verificável que bloqueie drift entre cliente publicado e dependências aplicadas.",
+  "constraints": ["provider-neutral", "sem segredos ou dados pessoais", "falha fecha a promoção", "rollback compatível", "Evidence vinculada ao ambiente"],
+  "change_envelope": {
+    "delta": ["contrato APOS de release", "guia de adoção", "manifesto reutilizável", "verificação de presença no kit"],
+    "affected_surfaces": ["APOS contracts", "operations templates", "quality pipeline", "documentation"],
+    "affected_domains": ["operations", "security", "templates", "reliability"],
+    "invariants": ["kit não contém credenciais", "consumidor adapta dependências", "publicação continua dependente de autoridade"],
+    "out_of_scope": ["impor Supabase", "impor Vercel", "executar migrations de consumidores", "armazenar segredos"],
+    "compatibility": ["starters atuais continuam válidos", "adoção incremental"],
+    "regression_surface": ["repository checker", "APOS starter", "templates de operação"],
+    "rollback": "remover o template e o contrato sem alterar projetos consumidores já gerados",
+    "component_reuse_assessment": {"components_reviewed": ["operations templates", "environment gates", "Evidence"], "decision": "extend", "rationale": "a melhoria amplia controles existentes", "reuse_surfaces": ["qualquer produto com cliente e dependência promovidos separadamente"]}
+  },
+  "required_contract_ids": ["C-PPK-SCOPE-001", "C-PPK-EVID-001", "C-PPK-PRES-001", "C-PPK-SEC-001", "C-PPK-GOV-001", "C-PPK-RELEASE-001"],
+  "capabilities": ["design-release-gate", "change-package", "verify-package"],
+  "classification": {"impact": "high", "uncertainty": "low", "reversibility": "reversible", "environment": "candidate_branch", "external_cost": "none"},
+  "ceremony_selection": {"level": "strict", "triggers": ["shared_operating_process", "security", "production_pattern"], "authority": "explicit_builder_request_2026-09-14", "downgrade_allowed": false},
+  "status": "satisfied",
+  "source": {"type": "builder_conversation", "date": "2026-09-14"}
+}

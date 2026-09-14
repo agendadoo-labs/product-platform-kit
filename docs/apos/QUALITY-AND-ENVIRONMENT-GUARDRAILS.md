@@ -23,6 +23,10 @@ O consumidor seleciona somente o que for aplicável e define os limites. O kit f
 
 O baseline contém `local`, `test`, `preview` e `production`, separados por exposição pública, classe de dados, fronteira de credenciais, controles de custo e gate. O template não fixa Azure, AWS, Supabase, Vercel ou outro fornecedor.
 
+### Contrato de release entre cliente e dependências
+
+Quando cliente e dependência são promovidos separadamente, o gate observa um contrato semântico versionado no ambiente-alvo. Migration ou configuração presente no Git é somente estado pretendido. A promoção segue: mudança aditiva, handshake remoto, cliente dependente, smoke autenticado e Evidence. Falta ou divergência de contrato bloqueia o release e nunca é convertida em zero, vazio ou erro comum de usuário. O padrão reutilizável está em `docs/apos/DATABASE-CONTRACT-RELEASE-GATE.md`.
+
 ## Exposure Budget
 
 O starter modela separadamente pessoas, operações, valor econômico e dados expostos durante RTO/RPO. O consumidor define limites e fontes; a decisão usa a maior razão `observado ÷ limite`, nunca a média de riscos diferentes.
