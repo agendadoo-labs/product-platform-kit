@@ -17,7 +17,7 @@
     "component_reuse_assessment": {"components_reviewed": ["operations templates", "environment gates", "Evidence"], "decision": "extend", "rationale": "a melhoria amplia controles existentes", "reuse_surfaces": ["qualquer produto com cliente e dependência promovidos separadamente"]}
   },
   "required_contract_ids": ["C-PPK-SCOPE-001", "C-PPK-EVID-001", "C-PPK-PRES-001", "C-PPK-SEC-001", "C-PPK-GOV-001", "C-PPK-RELEASE-001"],
-  "capabilities": ["design-release-gate", "change-package", "verify-package"],
+  "capabilities": ["design-reusable-contract", "change-package", "verify-package"],
   "classification": {"impact": "high", "uncertainty": "low", "reversibility": "reversible", "environment": "candidate_branch", "external_cost": "none"},
   "ceremony_selection": {"level": "strict", "triggers": ["shared_operating_process", "security", "production_pattern"], "authority": "explicit_builder_request_2026-09-14", "downgrade_allowed": false},
   "status": "satisfied",
