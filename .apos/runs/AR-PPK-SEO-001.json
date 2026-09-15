@@ -32,6 +32,11 @@
   "completed_at": "2026-09-15",
   "verification": {
     "local_checks": "passed",
-    "remote_publication": "pending"
+    "remote_publication": "git_push_succeeded"
+  },
+  "publication": {
+    "branch": "docs/seo-geo-principle-20260915",
+    "observed_commit": "e42667d",
+    "merged_to_main": false
   }
 }
