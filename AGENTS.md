@@ -35,3 +35,7 @@ Preserve a origem de cada afirmação e diferencie definido, relatado, sugerido 
 O modelo anterior está congelado na tag `operating-model-v1-agent-starter` e inventariado em `.apos/archive/operating-model-v1/manifest.json`.
 
 A projeção para um vault pessoal é um efeito externo configurável do repositório, não requisito do template público. Quando previamente autorizada e acessível, copie somente documentação material, sem segredos ou caminhos internos.
+
+## Conteúdo público: SEO e GEO
+
+Sempre gerar e revisar conteúdo público otimizado para SEO e GEO, com utilidade, fontes, rastreabilidade e proteção de dados. Aplicar `C-PPK-SEO-001` e [docs/apos/SEO-GEO.md](docs/apos/SEO-GEO.md); verificar antes da publicação e distinguir publicação de indexação e impacto.

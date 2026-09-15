@@ -1,11 +1,11 @@
 ---
 title: APOS — Intents resolvidos
-updated: 2026-09-13
+updated: 2026-09-15
 ---
 
 # Intents resolvidos
 
-> Projeção determinística da revisão 12. “Resolvido” exige consistência entre ProductState e o registro do Intent; validade para reuso ainda depende da revisão, do ambiente e da Evidence.
+> Projeção determinística da revisão 13. “Resolvido” exige consistência entre ProductState e o registro do Intent; validade para reuso ainda depende da revisão, do ambiente e da Evidence.
 
 ## I-PPK-APOS-001
 
@@ -96,4 +96,14 @@ updated: 2026-09-13
 - **Última evidência:** `E-PPK-CAPABILITY-002` — passou.
 - **Ambiente:** main.
 - **Incertezas remanescentes:** consumer adoption is not yet measured; domain-specific commercial changes still require their own Intent and Evidence; exact desktop token usage is unavailable.
+
+## I-PPK-SEO-001
+
+- **Problema resolvido:** SEO e GEO precisam ser princípio recuperável desde a criação do conteúdo público.
+- **Resultado registrado:** Princípio permanente e template genérico com critérios verificáveis de SEO/GEO.
+- **Decisões:** `D-PPK-SEO-001`.
+- **Última execução:** `AR-PPK-SEO-001` — succeeded.
+- **Última evidência:** `E-PPK-SEO-001` — passou.
+- **Ambiente:** repository.
+- **Incertezas remanescentes:** Downstream adoption not measured.
 
