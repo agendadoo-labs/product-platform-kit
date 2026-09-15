@@ -1,0 +1,91 @@
+{
+  "id": "CM-I-PPK-SKILLS-001",
+  "protocol": "APOS v0.2",
+  "intent_id": "I-PPK-SKILLS-001",
+  "domains": [
+    "session_memory"
+  ],
+  "sources": [
+    {
+      "path": ".apos/active-model.json",
+      "sha256": "37e2d7d71695af153c05560286d4acbd7622f4a0d6e15f0d4203f67ad2d9f0cd",
+      "bytes": 258
+    },
+    {
+      "path": ".apos/coordination/workstreams.json",
+      "sha256": "a679951e4865ca2636082ae8403258c4cb9a020f058cf3af1e70fda896e79830",
+      "bytes": 743
+    },
+    {
+      "path": ".apos/decisions/D-PPK-SKILLS-001.json",
+      "sha256": "d400c247eaf5f8216a294400daccd601824b0cead1aa4b8c69428ea6c5f77109",
+      "bytes": 521
+    },
+    {
+      "path": ".apos/intents/I-PPK-SKILLS-001.json",
+      "sha256": "52d8842879a769fc6c76e021fa6638beee1698774826f9bd0d8f4739f539c911",
+      "bytes": 2011
+    },
+    {
+      "path": ".apos/kernel/kernel.json",
+      "sha256": "2849ddf7fce25dc84e87b0f1ae13209a458a80cbde0d5e23a75c15491e86abe3",
+      "bytes": 1475
+    },
+    {
+      "path": ".apos/state/product-state.json",
+      "sha256": "20e462567454cef59e800440b7299e98fb47ba18f7446026b9e86f42529ec0a2",
+      "bytes": 3418
+    },
+    {
+      "path": "docs/apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md",
+      "sha256": "b17e3a9699d872312ca72e23d916dca7236e4ec27e822a9885def50582f25635",
+      "bytes": 3532
+    },
+    {
+      "path": "scripts/bootstrap-apos-session.mjs",
+      "sha256": "5516facf3b50fa826e8c6e7ec07722e5f7cbd841e5eeef406d23ce61aa4c17bd",
+      "bytes": 5459
+    },
+    {
+      "path": "scripts/tests/apos-session-bootstrap.test.mjs",
+      "sha256": "992891d316e9a21c551b598ea90a452b6a26a7cd55929bab1d5a1a4ab15e8b81",
+      "bytes": 3143
+    },
+    {
+      "path": "templates/apos/.apos/coordination/workstreams.json",
+      "sha256": "41aae196410dc44884cc05954125ef6fc356f1d23f9366e0c5021967fe496b0a",
+      "bytes": 319
+    },
+    {
+      "path": "templates/apos/AGENTS.md",
+      "sha256": "58c4b58f777fd97f9762a688291944f2ebb65f388c9edd71276cfbc93453ff8b",
+      "bytes": 2505
+    },
+    {
+      "path": "templates/apos/APOS-AGENT-BOOTSTRAP.md",
+      "sha256": "97cb263bba8d129b5df1c945e58c53fd7bea5023030e975b5020126cc19108c7",
+      "bytes": 3396
+    },
+    {
+      "path": "templates/apos/README.md",
+      "sha256": "04ee3ad1a894d5d9eaf69819d9c55a00cacfd925702797c0034fce634cfa7924",
+      "bytes": 6370
+    },
+    {
+      "path": "templates/apos/scripts/bootstrap-apos-session.mjs",
+      "sha256": "7e9fc47545b02fbc31628441bd9e5f7514070e62e4db99a0f620e34dff230067",
+      "bytes": 5179
+    }
+  ],
+  "measurement": {
+    "method": "conservative_utf8_bytes_divided_by_4",
+    "total_bytes": 38329,
+    "estimated_input_tokens": 9583,
+    "exact_provider_tokens": "unavailable_without_model_request"
+  },
+  "budget": {
+    "max_estimated_input_tokens": 30000
+  },
+  "status": "within_budget",
+  "created_at": "2026-09-15"
+}

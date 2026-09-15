@@ -1,0 +1,14 @@
+{
+  "id": "D-PPK-SKILLS-001",
+  "intent_id": "I-PPK-SKILLS-001",
+  "run_id": "AR-PPK-SKILLS-001",
+  "date": "2026-09-15",
+  "outcome": "document_registration_without_changing_runtime",
+  "authority": "User requested one guide about registering skills in APOS for both Product Platform Kit and Valora.",
+  "decision": [
+    "One guide, same content in both repositories",
+    "Do not promote guidance to implemented product coverage",
+    "Do not modify immutable versions or runtime dispatcher"
+  ],
+  "supersedes": []
+}

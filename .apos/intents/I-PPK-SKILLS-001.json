@@ -1,0 +1,75 @@
+{
+  "id": "I-PPK-SKILLS-001",
+  "revision": 1,
+  "status": "candidate",
+  "problem": "Skill registration needs a single practical guide that distinguishes procedures, APOS capabilities, source authority and runtime support.",
+  "population": "Kit maintainers and consumer builders",
+  "outcome": "Traceable registration guide for the kit and Valora with verifiable references and no consumer coupling in templates.",
+  "capabilities": [
+    "recover-context",
+    "design-reusable-contract",
+    "change-package",
+    "verify-package",
+    "publish-authorized-version"
+  ],
+  "required_contract_ids": [
+    "C-PPK-SCOPE-001",
+    "C-PPK-EVID-001",
+    "C-PPK-REV-001"
+  ],
+  "classification": {
+    "impact": "low",
+    "uncertainty": "low",
+    "reversibility": "reversible",
+    "environment": "repository_documentation"
+  },
+  "ceremony_selection": {
+    "level": "standard",
+    "triggers": [
+      "published_documentation"
+    ],
+    "downgrade_allowed": false
+  },
+  "change_envelope": {
+    "delta": [
+      "standalone skill registration guide"
+    ],
+    "affected_surfaces": [
+      "docs/apos/SKILL-REGISTRATION.md",
+      "README.md",
+      ".apos"
+    ],
+    "affected_domains": [
+      "session_memory"
+    ],
+    "invariants": [
+      "No runtime dispatch changes",
+      "Published models immutable",
+      "Consumer branding remains outside templates"
+    ],
+    "out_of_scope": [
+      "runtime features",
+      "model version change",
+      "release",
+      "main merge"
+    ],
+    "compatibility": [
+      "Guidance explains existing catalogs and the consumer adapter index"
+    ],
+    "regression_surface": [
+      "documentation links",
+      "APOS projections"
+    ],
+    "rollback": "Revert documentation branch commit",
+    "component_reuse_assessment": {
+      "decision": "not_applicable",
+      "components_reviewed": [],
+      "rationale": "Documentation only",
+      "reuse_surfaces": []
+    }
+  },
+  "source": {
+    "type": "builder_conversation",
+    "date": "2026-09-15"
+  }
+}

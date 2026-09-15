@@ -140,3 +140,7 @@ O modelo operacional vigente é o [APOS v0.2](docs/APOS-v0.2.md). Ele governa o 
 O v0.2 amplia a governança verificável, mas nem todas as políticas estão automatizadas no runtime experimental. Consulte a [implementação do pacote APOS](packages/apos/README.md) para conhecer a cobertura atual.
 
 Este kit é um ponto de partida versionado. Adote somente o necessário, preserve a proveniência das decisões e devolva ao kit apenas o que for realmente reutilizável.
+
+### Cadastro de skills no APOS
+
+[Guia único de cadastro de skills](docs/apos/SKILL-REGISTRATION.md): procedimentos, capabilities, evidências e diferenças entre o kit e um consumidor.
