@@ -22,6 +22,10 @@
   "completed_at": "2026-09-15",
   "verification": {
     "local_checks": "passed",
-    "remote_publication": "pending"
+    "remote_publication": "git_push_succeeded"
+  },
+  "publication": {
+    "branch": "docs/apos-skill-registration-20260915",
+    "observed_commit": "a9c2f8706891de50b689c1ad79378e999e466df4"
   }
 }
