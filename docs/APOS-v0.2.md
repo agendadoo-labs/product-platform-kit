@@ -26,6 +26,7 @@ O protocolo é organizado nos cinco componentes propostos:
 6. **Modelo é uma dependência substituível.** Capabilities selecionam modelos aprovados por evidência; fornecedor, marca ou preço isolado não definem autoridade nem sucesso.
 7. **Custo por run é evidência operacional.** Uso exato, quando fornecido, é registrado por chamada; custo financeiro é reconciliado com a fonte de cobrança do provedor.
 8. **Automação cresce depois da avaliação.** Tarefas novas permanecem humano-assistidas. Chamadas autônomas são liberadas somente para tarefas repetíveis, limitadas e cobertas por evals.
+9. **Estado ativo e histórico têm autoridades distintas.** Runbooks mostram a operação vigente. A extensão Hot/Warm/Cold recupera histórico relacionado progressivamente, com fontes, hashes e motivos registrados, sem apagar os originais.
 
 ## Estágios arquiteturais
 
@@ -65,6 +66,8 @@ O `ContextProfile` mantém um mapa de domínios e fontes. Para cada Intent, o co
 6. registra o manifesto do contexto efetivamente utilizado.
 
 Busca semântica pode localizar candidatos, mas não substitui fonte autoritativa, proveniência, versão ou validação de atualidade.
+
+O contrato de ciclo de vida está em [`apos/ACTIVE-STATE-AND-HISTORY.md`](apos/ACTIVE-STATE-AND-HISTORY.md); a recuperação progressiva está em [`apos/LAYERED-MEMORY.md`](apos/LAYERED-MEMORY.md). Warm relacionado pode ser recuperado automaticamente; Cold exige gatilho e motivo. A [revisão bibliográfica e de maturidade](apos/RETRIEVAL-REVIEW-2026-10-01.md) registra fundamentos e limites.
 
 ## Plano de controle de IA
 

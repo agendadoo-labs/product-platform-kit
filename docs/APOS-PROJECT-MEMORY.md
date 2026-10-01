@@ -1,17 +1,17 @@
 ---
 title: APOS — memória atual do projeto
-updated: 2026-09-13
+updated: 2026-10-01
 ---
 
 # Memória atual do projeto
 
 > Projeção determinística. Fontes operacionais: `.apos/`. Não editar manualmente.
 
-- ProductState: `PS-PRODUCT-PLATFORM-KIT`, revisão 12.
+- ProductState: `PS-PRODUCT-PLATFORM-KIT`, revisão 14.
 - Modelo ativo: `product-platform-kit-apos-2.3.0`.
-- Intents satisfeitos: 9.
+- Intents satisfeitos: 11.
 - Intents abertos: 0.
-- Mapa de dados: `DM-PPK-001`, revisão 1.
+- Mapa de dados: `DM-PPK-001`, revisão 2.
 
 ## Trabalho aberto
 
@@ -21,6 +21,8 @@ updated: 2026-09-13
 
 ## Decisões recentes
 
+- **2026-10-01 · D-PPK-APOS-009:** Use active-only retrieval by default. Runbooks are replace-in-place projections of the latest validated procedure; incidents, cases, checkpoints and superseded sources are preserved in historical paths and loaded only through explicit Intent opt-in.
+- **2026-10-01 · D-PPK-APOS-010:** Mandatory current baseline plus lexical Warm catalog; justified relevant Cold retrieval with authority and provenance. No source truncation. External retrieval services require measured benefit.
 - **2026-09-14 · D-PPK-RELEASE-001:** Adicionar ao APOS um gate semântico de release que observa o ambiente-alvo antes de promover qualquer cliente dependente.
 - **2026-09-13 · D-PPK-CAPABILITY-002:** Modelar Commercial Model como uma camada transversal Economic Control Plane sobre os 14 macrodomínios, adicionar commercial_model e economic_control_plane ao domínio Business & Growth e registrar o grafo de influência sem criar autoridade implícita sobre os domínios afetados.
 - **2026-09-12 · D-PPK-APOS-007:** Adicionar ao starter um DataMap dedicado e projeções determinísticas de memória e Intents abertos, verificadas em checkpoint; ProductState conserva apenas um ponteiro tipado para o mapa.
@@ -29,8 +31,6 @@ updated: 2026-09-13
 - **2026-09-09 · D-PPK-APOS-006:** Adicionar um Session Bootstrap determinístico antes da inferência: ler ponteiro ativo, ProductState, Intents abertos, decisões e coordenação; depois compilar o subgrafo completo somente para o Intent em foco.
 - **2026-09-08 · D-PPK-APOS-005:** Publicar APOS v0.2 primeiro e, em seguida, criar uma trilha de onboarding executável e coerente na main do toolkit.
 - **2026-09-07 · D-PPK-APOS-003:** Add preservation-by-default and a reusable Change Envelope in product-platform-kit-apos-2.2.0 and consumer-apos-1.2.0.
-- **2026-09-07 · D-PPK-APOS-004:** Adopt APOS v0.2 with maturity-based architecture, selective context compilation and governed provider-neutral AI execution.
-- **2026-09-06 · D-PPK-APOS-001:** Substituir o starter operacional baseado em papéis pelo modelo product-platform-kit-apos-2.0.0 e pelo template templates/apos.
 
 ## Fontes para aprofundar
 

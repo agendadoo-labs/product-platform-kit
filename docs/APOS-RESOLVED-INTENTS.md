@@ -1,11 +1,11 @@
 ---
 title: APOS — Intents resolvidos
-updated: 2026-09-13
+updated: 2026-10-01
 ---
 
 # Intents resolvidos
 
-> Projeção determinística da revisão 12. “Resolvido” exige consistência entre ProductState e o registro do Intent; validade para reuso ainda depende da revisão, do ambiente e da Evidence.
+> Projeção determinística da revisão 14. “Resolvido” exige consistência entre ProductState e o registro do Intent; validade para reuso ainda depende da revisão, do ambiente e da Evidence.
 
 ## I-PPK-APOS-001
 
@@ -87,6 +87,16 @@ updated: 2026-09-13
 - **Ambiente:** candidate_branch.
 - **Incertezas remanescentes:** adoption and restore-drill evidence must be supplied by each consumer; semantic memory remains intentionally deferred until retrieval misses justify it.
 
+## I-PPK-APOS-009
+
+- **Problema resolvido:** Growing projects can turn runbooks into cumulative diaries, forcing agents to load obsolete incidents and intermediate states before understanding current operation.
+- **Resultado registrado:** APOS provides a reusable active-state and history-on-demand contract enforced by the Context Compiler and consumer starter.
+- **Decisões:** `D-PPK-APOS-009`.
+- **Última execução:** `AR-PPK-APOS-009` — succeeded.
+- **Última evidência:** `E-PPK-APOS-016` — passou.
+- **Ambiente:** repository.
+- **Incertezas remanescentes:** nenhuma registrada.
+
 ## I-PPK-CAPABILITY-001
 
 - **Problema resolvido:** A proposta de valor do Product Platform Kit e seu inventário reutilizável ainda não estão organizados contra uma ontologia ampla de capacidades de produtos digitais, dificultando enxergar cobertura, lacunas e a melhor ordem de evolução.
@@ -96,4 +106,14 @@ updated: 2026-09-13
 - **Última evidência:** `E-PPK-CAPABILITY-002` — passou.
 - **Ambiente:** main.
 - **Incertezas remanescentes:** consumer adoption is not yet measured; domain-specific commercial changes still require their own Intent and Evidence; exact desktop token usage is unavailable.
+
+## I-PPK-APOS-010
+
+- **Problema resolvido:** Recuperação binária de histórico não atende memória organizacional crescente; precisamos avaliar literatura, recuperação progressiva e maturidade com evidências.
+- **Resultado registrado:** Revisão primária documentada, memória local em camadas integrada e testada, comparação de maturidade com limites explícitos.
+- **Decisões:** `D-PPK-APOS-010`.
+- **Última execução:** `AR-PPK-APOS-010` — succeeded.
+- **Última evidência:** `E-PPK-APOS-017` — passou.
+- **Ambiente:** local_repository.
+- **Incertezas remanescentes:** catalog is a curated subset; real-task recall, costs and savings unmeasured; mandatory source baseline remains broad; temporal filtering and semantic retrieval not implemented.
 

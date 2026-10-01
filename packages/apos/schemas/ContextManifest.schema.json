@@ -13,7 +13,8 @@
     "sources": {"type": "array", "items": {"type": "object", "required": ["path", "sha256", "bytes"], "properties": {"path": {"type": "string"}, "sha256": {"type": "string"}, "bytes": {"type": "integer", "minimum": 0}}, "additionalProperties": false}},
     "measurement": {"type": "object"},
     "budget": {"type": "object"},
-    "status": {"enum": ["within_budget", "budget_exceeded", "measurement_unavailable"]},
+    "retrieval": {"type": "object"},
+    "status": {"enum": ["within_budget", "budget_exceeded", "measurement_unavailable", "retrieval_incomplete"]},
     "created_at": {"type": "string"}
   }
 }

@@ -1,0 +1,12 @@
+{
+  "id": "D-PPK-APOS-010",
+  "intent_id": "I-PPK-APOS-010",
+  "run_id": "AR-PPK-APOS-010",
+  "supersedes": "D-PPK-APOS-009",
+  "outcome": "approved_local_implementation",
+  "decision": "Mandatory current baseline plus lexical Warm catalog; justified relevant Cold retrieval with authority and provenance. No source truncation. External retrieval services require measured benefit.",
+  "rationale": "Primary literature supports adaptive hierarchical retrieval; present repository scale supports a local baseline before more infrastructure.",
+  "actor": "builder",
+  "authority_source": "Explicit user request for literature review, design and implementation",
+  "created_at": "2026-10-01"
+}

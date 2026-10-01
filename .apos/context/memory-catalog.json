@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "coverage": "curated_subset_not_complete_corpus",
+  "entries": [
+    {
+      "id": "memory-design",
+      "tier": "hot",
+      "path": "docs/apos/LAYERED-MEMORY.md",
+      "title": "Memória em camadas",
+      "summary": "APOS memória recuperação memory retrieval Hot Warm Cold contexto",
+      "domains": [
+        "operating_model",
+        "session_memory"
+      ],
+      "authority": "current",
+      "sensitivity": "internal",
+      "source_sha256": "401bf18cf629120c1313a10b671cffcd35709aa1e7a9a62c5179774f3b138f3d"
+    },
+    {
+      "id": "retrieval-research",
+      "tier": "warm",
+      "path": "docs/apos/RETRIEVAL-REVIEW-2026-10-01.md",
+      "title": "Revisão bibliográfica e maturidade",
+      "summary": "APOS literatura memória recuperação maturidade idempotência history retrieval",
+      "domains": [
+        "operating_model",
+        "session_memory"
+      ],
+      "authority": "current",
+      "sensitivity": "internal",
+      "source_sha256": "903594362192b66dd84bf55e15df0195d2ac44ef8bb1f8eb489a8a37c87cf733"
+    },
+    {
+      "id": "previous-lifecycle-decision",
+      "tier": "cold",
+      "path": ".apos/decisions/D-PPK-APOS-009.json",
+      "title": "Decisão anterior sobre histórico explícito",
+      "summary": "histórico history explicit recuperação memória",
+      "domains": [
+        "operating_model"
+      ],
+      "authority": "historical",
+      "status": "superseded",
+      "superseded_by": "D-PPK-APOS-010",
+      "sensitivity": "internal",
+      "source_sha256": "0da182fd261d835919590670f5465e017322f1ea16473fb94a1923fe0afaa812"
+    }
+  ]
+}
