@@ -1,0 +1,16 @@
+{
+  "id": "E-PPK-LLM-001",
+  "intent_id": "I-PPK-LLM-001",
+  "created_at": "2026-10-17",
+  "environment": "isolated_repository_snapshot",
+  "passed": true,
+  "claim": "Domínio, referências, dependências e template conservador validados; nenhuma alegação de melhora do modelo",
+  "verification": [
+    "python3 scripts/verify_llm_domain.py",
+    "Context compiler: within_budget"
+  ],
+  "limitations": [
+    "Nenhuma inferência ou benchmark executado nesta entrega",
+    "Integrações runtime e ledger existentes não foram alteradas"
+  ]
+}
