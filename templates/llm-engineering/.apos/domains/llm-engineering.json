@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "id": "llm_engineering",
+  "name": "Engenharia e otimização de LLMs",
+  "status": "defined",
+  "owner": "builder",
+  "scope": "Contrato reutilizável e templates neutros",
+  "capabilities": [
+    "prompt_and_context_versioning",
+    "semantic_evaluations",
+    "retrieval_and_memory_evaluation",
+    "tool_contract_verification",
+    "cost_per_verified_success",
+    "latency_and_resource_profiling",
+    "routing_and_cache_experiments",
+    "canary_and_rollback"
+  ],
+  "authority_limits": [
+    "Não altera autorização, privacidade ou semântica do consumidor",
+    "Não admite provider/modelo nem amplia orçamento automaticamente",
+    "Não promove sua própria resposta como evidência",
+    "Não reutiliza holdout inspecionado como avaliação cega"
+  ],
+  "interfaces": {
+    "product_platform_kit": "contrato e templates",
+    "personal_worker": "runtime, gateway, quotas, ledger e harness compartilhado",
+    "consumer": "dados, oracle, métricas e testes do domínio de negócio"
+  },
+  "artifacts": [
+    ".apos/llm/evaluation-policy.json",
+    ".apos/llm/experiment-template.json",
+    "docs/architecture/LLM_ENGINEERING.md"
+  ],
+  "freshness_triggers": [
+    "model_digest",
+    "prompt",
+    "context",
+    "tools",
+    "dataset",
+    "verifier",
+    "policy",
+    "runtime_environment"
+  ]
+}

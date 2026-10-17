@@ -1,11 +1,11 @@
 ---
 title: APOS — Intents resolvidos
-updated: 2026-09-13
+updated: 2026-10-17
 ---
 
 # Intents resolvidos
 
-> Projeção determinística da revisão 12. “Resolvido” exige consistência entre ProductState e o registro do Intent; validade para reuso ainda depende da revisão, do ambiente e da Evidence.
+> Projeção determinística da revisão 13. “Resolvido” exige consistência entre ProductState e o registro do Intent; validade para reuso ainda depende da revisão, do ambiente e da Evidence.
 
 ## I-PPK-APOS-001
 
@@ -96,4 +96,14 @@ updated: 2026-09-13
 - **Última evidência:** `E-PPK-CAPABILITY-002` — passou.
 - **Ambiente:** main.
 - **Incertezas remanescentes:** consumer adoption is not yet measured; domain-specific commercial changes still require their own Intent and Evidence; exact desktop token usage is unavailable.
+
+## I-PPK-LLM-001
+
+- **Problema resolvido:** Harness e otimizações sem domínio explícito para governar métricas, fronteiras e promoção.
+- **Resultado registrado:** Domínio registrado no compilador de contexto e no registro epistêmico, com política, template e documentação verificáveis.
+- **Decisões:** `D-PPK-LLM-001`.
+- **Última execução:** nenhuma.
+- **Última evidência:** `E-PPK-LLM-001` — passou.
+- **Ambiente:** isolated_repository_snapshot.
+- **Incertezas remanescentes:** nenhuma registrada.
 

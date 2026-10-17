@@ -3,26 +3,353 @@
   "protocol": "APOS v0.2",
   "max_estimated_input_tokens": 30000,
   "budget_basis": "Initial conservative operating baseline, not a universal optimum; recalibrate from successful runs, retrieval misses, rework and provider-measured usage.",
-  "budget_calibration": {"review_after_material_runs": 10, "metrics": ["contract_coverage", "retrieval_misses", "rework_count", "regressions_found", "validated_outcome", "provider_input_tokens"], "decision_rule": "Change the limit only with recorded evidence; preserve sufficient context even when that requires an explicit exception or a higher budget."},
+  "budget_calibration": {
+    "review_after_material_runs": 10,
+    "metrics": [
+      "contract_coverage",
+      "retrieval_misses",
+      "rework_count",
+      "regressions_found",
+      "validated_outcome",
+      "provider_input_tokens"
+    ],
+    "decision_rule": "Change the limit only with recorded evidence; preserve sufficient context even when that requires an explicit exception or a higher budget."
+  },
   "domains": [
-    {"id": "operating_model", "match_terms": ["apos", "operating model", "constitution", "policy", "contract", "session", "workstream", "multi-team"], "sources": ["README.md", "docs/APOS-v0.2.md", "docs/APOS-GETTING-STARTED.md", "docs/apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md", "packages/apos/README.md", ".apos/active-model.json", ".apos/contracts/kit-contracts.json", ".apos/state/product-state.json", ".apos/coordination", ".apos/versions/product-platform-kit-apos-2.3.0", ".apos/kernel", ".apos/context", ".apos/epistemic", ".apos/ceremony", ".apos/learning", ".apos/ai", ".apos/architecture", "scripts/check-operating-model.mjs", "scripts/bootstrap-apos-session.mjs", "scripts/compile-apos-context.mjs"], "dependencies": []},
-    {"id": "session_memory", "match_terms": ["session bootstrap", "retomar", "memory", "workstream", "multi-team"], "sources": ["docs/apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md", ".apos/state/product-state.json", ".apos/coordination/workstreams.json", "scripts/bootstrap-apos-session.mjs", "scripts/tests/apos-session-bootstrap.test.mjs", "templates/apos/APOS-AGENT-BOOTSTRAP.md", "templates/apos/AGENTS.md", "templates/apos/README.md", "templates/apos/scripts/bootstrap-apos-session.mjs", "templates/apos/.apos/coordination/workstreams.json"], "dependencies": []},
-    {"id": "runtime", "match_terms": ["runtime", "engine", "schema", "python"], "sources": ["packages/apos"], "dependencies": ["operating_model", "quality"]},
-    {"id": "templates", "match_terms": ["template", "starter", "consumer"], "sources": ["templates/apos/README.md", "templates/apos/AGENTS.md", "templates/apos/.apos/active-model.json", "templates/apos/.apos/versions/consumer-apos-1.3.0", "templates/apos/.apos/kernel", "templates/apos/.apos/context", "templates/apos/.apos/epistemic", "templates/apos/.apos/ceremony", "templates/apos/.apos/learning", "templates/apos/.apos/ai", "templates/apos/.apos/architecture"], "dependencies": ["operating_model"]},
-    {"id": "capability_ontology", "match_terms": ["capability map", "domain", "coverage", "module", "roadmap", "benchmark", "activation"], "sources": ["capabilities/catalog.json", "docs/capabilities", "docs/ADOPTION.md"], "dependencies": ["operating_model", "commercial_model", "templates", "runtime", "security", "environments", "design_system", "maps", "telemetry", "experiments"]},
-    {"id": "commercial_model", "match_terms": ["commercial model", "economic control plane", "monetization", "pricing", "subscription", "incentive", "billable event", "entitlement", "revenue stream", "economic objective"], "sources": ["docs/capabilities/COMMERCIAL-MODEL-ECONOMIC-CONTROL-PLANE.md", "commercial-model/system.example.json", "capabilities/catalog.json"], "dependencies": ["capability_ontology", "security", "quality", "finops", "telemetry", "experiments"]},
-    {"id": "security", "match_terms": ["security", "privacy", "secret", "credential"], "sources": ["docs/SECURITY-PRIVACY.md", "scripts/check-repository.mjs"], "dependencies": []},
-    {"id": "quality", "match_terms": ["quality", "nfr", "test", "evidence"], "sources": [".apos/quality", "docs/apos/QUALITY-AND-ENVIRONMENT-GUARDRAILS.md"], "dependencies": ["operating_model"]},
-    {"id": "environments", "match_terms": ["environment", "deploy", "preview", "production"], "sources": [".apos/environments", "docs/ENVIRONMENTS.md", "templates/environments"], "dependencies": ["security", "finops", "reliability"]},
-    {"id": "finops", "match_terms": ["cost", "token", "budget", "finops"], "sources": ["docs/AGENT-MODEL-ROUTING.md", ".apos/ai", ".apos/learning"], "dependencies": ["operating_model"]},
-    {"id": "reliability", "match_terms": ["reliability", "rto", "rpo", "recovery", "exposure"], "sources": [".apos/exposure", "templates/operations"], "dependencies": ["environments"]},
-    {"id": "design_system", "match_terms": ["design system", "component", "interface"], "sources": ["templates/design-system"], "dependencies": ["templates"]},
-    {"id": "maps", "match_terms": ["map", "geocod"], "sources": ["packages/map-core"], "dependencies": ["quality", "finops"]},
-    {"id": "telemetry", "match_terms": ["telemetry", "event", "metric"], "sources": ["docs/TELEMETRY.md"], "dependencies": ["security"]},
-    {"id": "experiments", "match_terms": ["experiment", "a/b", "campaign"], "sources": ["docs/EXPERIMENTS.md"], "dependencies": ["telemetry"]}
+    {
+      "id": "operating_model",
+      "match_terms": [
+        "apos",
+        "operating model",
+        "constitution",
+        "policy",
+        "contract",
+        "session",
+        "workstream",
+        "multi-team"
+      ],
+      "sources": [
+        "README.md",
+        "docs/APOS-v0.2.md",
+        "docs/APOS-GETTING-STARTED.md",
+        "docs/apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md",
+        "packages/apos/README.md",
+        ".apos/active-model.json",
+        ".apos/contracts/kit-contracts.json",
+        ".apos/state/product-state.json",
+        ".apos/coordination",
+        ".apos/versions/product-platform-kit-apos-2.3.0",
+        ".apos/kernel",
+        ".apos/context",
+        ".apos/epistemic",
+        ".apos/ceremony",
+        ".apos/learning",
+        ".apos/ai",
+        ".apos/architecture",
+        "scripts/check-operating-model.mjs",
+        "scripts/bootstrap-apos-session.mjs",
+        "scripts/compile-apos-context.mjs"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "session_memory",
+      "match_terms": [
+        "session bootstrap",
+        "retomar",
+        "memory",
+        "workstream",
+        "multi-team"
+      ],
+      "sources": [
+        "docs/apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md",
+        ".apos/state/product-state.json",
+        ".apos/coordination/workstreams.json",
+        "scripts/bootstrap-apos-session.mjs",
+        "scripts/tests/apos-session-bootstrap.test.mjs",
+        "templates/apos/APOS-AGENT-BOOTSTRAP.md",
+        "templates/apos/AGENTS.md",
+        "templates/apos/README.md",
+        "templates/apos/scripts/bootstrap-apos-session.mjs",
+        "templates/apos/.apos/coordination/workstreams.json"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "runtime",
+      "match_terms": [
+        "runtime",
+        "engine",
+        "schema",
+        "python"
+      ],
+      "sources": [
+        "packages/apos"
+      ],
+      "dependencies": [
+        "operating_model",
+        "quality"
+      ]
+    },
+    {
+      "id": "templates",
+      "match_terms": [
+        "template",
+        "starter",
+        "consumer"
+      ],
+      "sources": [
+        "templates/apos/README.md",
+        "templates/apos/AGENTS.md",
+        "templates/apos/.apos/active-model.json",
+        "templates/apos/.apos/versions/consumer-apos-1.3.0",
+        "templates/apos/.apos/kernel",
+        "templates/apos/.apos/context",
+        "templates/apos/.apos/epistemic",
+        "templates/apos/.apos/ceremony",
+        "templates/apos/.apos/learning",
+        "templates/apos/.apos/ai",
+        "templates/apos/.apos/architecture"
+      ],
+      "dependencies": [
+        "operating_model"
+      ]
+    },
+    {
+      "id": "capability_ontology",
+      "match_terms": [
+        "capability map",
+        "domain",
+        "coverage",
+        "module",
+        "roadmap",
+        "benchmark",
+        "activation"
+      ],
+      "sources": [
+        "capabilities/catalog.json",
+        "docs/capabilities",
+        "docs/ADOPTION.md"
+      ],
+      "dependencies": [
+        "operating_model",
+        "commercial_model",
+        "templates",
+        "runtime",
+        "security",
+        "environments",
+        "design_system",
+        "maps",
+        "telemetry",
+        "experiments"
+      ]
+    },
+    {
+      "id": "commercial_model",
+      "match_terms": [
+        "commercial model",
+        "economic control plane",
+        "monetization",
+        "pricing",
+        "subscription",
+        "incentive",
+        "billable event",
+        "entitlement",
+        "revenue stream",
+        "economic objective"
+      ],
+      "sources": [
+        "docs/capabilities/COMMERCIAL-MODEL-ECONOMIC-CONTROL-PLANE.md",
+        "commercial-model/system.example.json",
+        "capabilities/catalog.json"
+      ],
+      "dependencies": [
+        "capability_ontology",
+        "security",
+        "quality",
+        "finops",
+        "telemetry",
+        "experiments"
+      ]
+    },
+    {
+      "id": "security",
+      "match_terms": [
+        "security",
+        "privacy",
+        "secret",
+        "credential"
+      ],
+      "sources": [
+        "docs/SECURITY-PRIVACY.md",
+        "scripts/check-repository.mjs"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "quality",
+      "match_terms": [
+        "quality",
+        "nfr",
+        "test",
+        "evidence"
+      ],
+      "sources": [
+        ".apos/quality",
+        "docs/apos/QUALITY-AND-ENVIRONMENT-GUARDRAILS.md"
+      ],
+      "dependencies": [
+        "operating_model"
+      ]
+    },
+    {
+      "id": "environments",
+      "match_terms": [
+        "environment",
+        "deploy",
+        "preview",
+        "production"
+      ],
+      "sources": [
+        ".apos/environments",
+        "docs/ENVIRONMENTS.md",
+        "templates/environments"
+      ],
+      "dependencies": [
+        "security",
+        "finops",
+        "reliability"
+      ]
+    },
+    {
+      "id": "finops",
+      "match_terms": [
+        "cost",
+        "token",
+        "budget",
+        "finops"
+      ],
+      "sources": [
+        "docs/AGENT-MODEL-ROUTING.md",
+        ".apos/ai",
+        ".apos/learning"
+      ],
+      "dependencies": [
+        "operating_model"
+      ]
+    },
+    {
+      "id": "reliability",
+      "match_terms": [
+        "reliability",
+        "rto",
+        "rpo",
+        "recovery",
+        "exposure"
+      ],
+      "sources": [
+        ".apos/exposure",
+        "templates/operations"
+      ],
+      "dependencies": [
+        "environments"
+      ]
+    },
+    {
+      "id": "design_system",
+      "match_terms": [
+        "design system",
+        "component",
+        "interface"
+      ],
+      "sources": [
+        "templates/design-system"
+      ],
+      "dependencies": [
+        "templates"
+      ]
+    },
+    {
+      "id": "maps",
+      "match_terms": [
+        "map",
+        "geocod"
+      ],
+      "sources": [
+        "packages/map-core"
+      ],
+      "dependencies": [
+        "quality",
+        "finops"
+      ]
+    },
+    {
+      "id": "telemetry",
+      "match_terms": [
+        "telemetry",
+        "event",
+        "metric"
+      ],
+      "sources": [
+        "docs/TELEMETRY.md"
+      ],
+      "dependencies": [
+        "security"
+      ]
+    },
+    {
+      "id": "experiments",
+      "match_terms": [
+        "experiment",
+        "a/b",
+        "campaign"
+      ],
+      "sources": [
+        "docs/EXPERIMENTS.md"
+      ],
+      "dependencies": [
+        "telemetry"
+      ]
+    },
+    {
+      "id": "llm_engineering",
+      "match_terms": [
+        "llm",
+        "harness",
+        "prompt",
+        "eval",
+        "model optimization"
+      ],
+      "sources": [
+        ".apos/llm/evaluation-policy.json",
+        ".apos/llm/experiment-template.json",
+        "docs/architecture/LLM_ENGINEERING.md",
+        ".apos/domains/llm-engineering.json"
+      ],
+      "dependencies": [
+        "operating_model"
+      ]
+    }
   ],
-  "source_priority": ["active_machine_readable_state", "active_contract", "active_decision", "fresh_evidence", "versioned_documentation", "external_authoritative_source", "historical_projection"],
-  "compile_steps": ["resolve_change_envelope", "select_affected_domains", "load_governing_contracts", "load_active_decisions_and_state", "include_fresh_evidence", "follow_declared_dependencies", "exclude_superseded_unrelated_history", "record_context_manifest"],
+  "source_priority": [
+    "active_machine_readable_state",
+    "active_contract",
+    "active_decision",
+    "fresh_evidence",
+    "versioned_documentation",
+    "external_authoritative_source",
+    "historical_projection"
+  ],
+  "compile_steps": [
+    "resolve_change_envelope",
+    "select_affected_domains",
+    "load_governing_contracts",
+    "load_active_decisions_and_state",
+    "include_fresh_evidence",
+    "follow_declared_dependencies",
+    "exclude_superseded_unrelated_history",
+    "record_context_manifest"
+  ],
   "retrieval_rule": "Semantic retrieval proposes candidates; authority, provenance, version and freshness determine inclusion.",
   "token_rule": "Load the smallest sufficient dependency subgraph and declare input, output, tool and fanout ceilings before material runs.",
   "information_preservation_rule": "A budget breach stops or escalates compilation; it never silently removes authoritative sources, applicable contracts, safety constraints or known uncertainties.",

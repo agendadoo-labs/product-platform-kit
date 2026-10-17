@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "llm_engineering",
+  "status": "draft",
+  "intent_id": null,
+  "hypothesis": null,
+  "changed_factor": null,
+  "baseline_revision": null,
+  "candidate_revision": null,
+  "fingerprints": {
+    "model_digest": null,
+    "prompt": null,
+    "context": null,
+    "tools": null,
+    "dataset": null,
+    "verifier": null,
+    "policy": null,
+    "runtime_environment": null
+  },
+  "dataset": {
+    "development_hash": null,
+    "holdout_hash": null,
+    "oracle_owner": null
+  },
+  "limits": {
+    "model_calls": null,
+    "parallel_calls": null,
+    "tokens": null,
+    "paid_cost": null,
+    "timeout_seconds": null
+  },
+  "acceptance": {
+    "quality_min": null,
+    "holdout_cases_min": null,
+    "critical_errors_max": 0,
+    "latency_p95_max": null
+  },
+  "results": {
+    "report": null,
+    "negative_evidence": []
+  },
+  "promotion": {
+    "status": "not_eligible",
+    "reviewer": null,
+    "evidence": [],
+    "rollback_revision": null
+  }
+}

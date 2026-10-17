@@ -1,0 +1,9 @@
+{
+  "id": "D-PPK-LLM-001",
+  "intent_id": "I-PPK-LLM-001",
+  "created_at": "2026-10-17",
+  "decision": "Registrar llm_engineering como domínio transversal; separar contrato reutilizável, runtime compartilhado e oracle de negócio.",
+  "rationale": "Qualidade sintática não demonstra interpretação correta; otimização exige comparação e evidência independente.",
+  "authority_source": "Solicitação explícita de atualizar ambos os repositórios",
+  "compatibility": "Extensão dos registros operacionais; versões publicadas e rotas de modelos preservadas."
+}

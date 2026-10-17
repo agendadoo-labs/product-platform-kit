@@ -1,0 +1,30 @@
+{
+  "id": "I-PPK-LLM-001",
+  "revision": 1,
+  "problem": "Harness e otimizações sem domínio explícito para governar métricas, fronteiras e promoção.",
+  "population": "Mantenedores e produtos consumidores",
+  "outcome": "Domínio registrado no compilador de contexto e no registro epistêmico, com política, template e documentação verificáveis.",
+  "status": "satisfied",
+  "constraints": [
+    "Não altera autorização, privacidade ou semântica do consumidor",
+    "Não admite provider/modelo nem amplia orçamento automaticamente",
+    "Não promove sua própria resposta como evidência",
+    "Não reutiliza holdout inspecionado como avaliação cega"
+  ],
+  "change_envelope": {
+    "affected_domains": [
+      "llm_engineering"
+    ],
+    "out_of_scope": [
+      "alterar versões publicadas do modelo operacional",
+      "trocar modelo",
+      "executar inferências",
+      "mudar quotas existentes"
+    ]
+  },
+  "ceremony_selection": {
+    "level": "Strict",
+    "authority": "Pedido explícito do usuário em 2026-10-17"
+  },
+  "required_contract_ids": []
+}

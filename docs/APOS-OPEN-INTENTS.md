@@ -1,11 +1,11 @@
 ---
 title: APOS — Intents abertos
-updated: 2026-09-13
+updated: 2026-10-17
 ---
 
 # Intents abertos
 
-> Projeção da revisão 12 do ProductState. Não editar manualmente.
+> Projeção da revisão 13 do ProductState. Não editar manualmente.
 
 | Intent | Estado | Cerimônia | Próximo checkpoint |
 |---|---|---|---|

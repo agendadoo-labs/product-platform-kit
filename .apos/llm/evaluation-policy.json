@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "llm_engineering",
+  "status": "governance_contract_not_runtime_enforcement",
+  "promotion": "explicit_review_after_verified_evidence",
+  "required_fingerprints": [
+    "model_digest",
+    "prompt",
+    "context",
+    "tools",
+    "dataset",
+    "verifier",
+    "policy",
+    "runtime_environment"
+  ],
+  "required_metrics": [
+    "case_count",
+    "semantic_accuracy",
+    "critical_errors",
+    "pass_at_1",
+    "latency_p50",
+    "latency_p95",
+    "input_tokens",
+    "output_tokens",
+    "total_attempts",
+    "cost_per_verified_success",
+    "usage_status"
+  ],
+  "gates": {
+    "critical_errors_max": 0,
+    "quality_threshold": "declare_before_run",
+    "minimum_holdout_cases": "declare_before_run",
+    "latency_ceiling": "declare_before_run",
+    "budget": "reserve_before_run",
+    "unknown_metrics": "unknown_not_zero",
+    "missing_gate": "not_eligible"
+  },
+  "dataset_rules": [
+    "Separate development from holdout",
+    "Never put expected answers in model context or retrieval memory",
+    "After inspection/tuning, retire holdout to regression and obtain new held-out cases",
+    "Compare baseline and candidate on identical versioned cases and budgets"
+  ],
+  "controls": [
+    "Preserve failed attempts and denominator",
+    "No automatic retry, new provider, paid call or budget increase by this domain",
+    "Execution output requires independent verification",
+    "Require rollback revision and explicit reviewer before promotion"
+  ],
+  "runtime_binding": {
+    "enforced_by": "consumer implementation",
+    "no_new_model_calls": true
+  }
+}
