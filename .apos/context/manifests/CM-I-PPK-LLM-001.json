@@ -1,0 +1,167 @@
+{
+  "id": "CM-I-PPK-LLM-001",
+  "protocol": "APOS v0.2",
+  "intent_id": "I-PPK-LLM-001",
+  "domains": [
+    "llm_engineering",
+    "operating_model"
+  ],
+  "sources": [
+    {
+      "path": ".apos/active-model.json",
+      "sha256": "37e2d7d71695af153c05560286d4acbd7622f4a0d6e15f0d4203f67ad2d9f0cd",
+      "bytes": 258
+    },
+    {
+      "path": ".apos/ai/ai-execution-profile.json",
+      "sha256": "a0cd8918c1184e41f4d3de9b3fe1b3695fd0b86609f022db96162509f186575a",
+      "bytes": 1372
+    },
+    {
+      "path": ".apos/architecture/architecture-profile.json",
+      "sha256": "7b1217ef8746d00c6f47700108637ae47f4c0d21868bc5870d13d38aeb9b664f",
+      "bytes": 1533
+    },
+    {
+      "path": ".apos/ceremony/adaptive-ceremony.json",
+      "sha256": "38913dad89253963fa354c4967dc5feda5c8fbd529e2a0ab787c68eef39f556b",
+      "bytes": 1260
+    },
+    {
+      "path": ".apos/context/context-profile.json",
+      "sha256": "ab120b2729a88ac5db026ff07794051234b95b5e720b0a0f6e5a64b077f0632b",
+      "bytes": 8738
+    },
+    {
+      "path": ".apos/contracts/kit-contracts.json",
+      "sha256": "6007ede3c7b419f83846e3236fe1f105a76acf44a08f8c05f8ae023f8b8ae1b3",
+      "bytes": 7978
+    },
+    {
+      "path": ".apos/coordination/workstreams.json",
+      "sha256": "a679951e4865ca2636082ae8403258c4cb9a020f058cf3af1e70fda896e79830",
+      "bytes": 743
+    },
+    {
+      "path": ".apos/decisions/D-PPK-LLM-001.json",
+      "sha256": "4f28100b1c8153418c3c0d6d1dff177c0251348fcb81c3fba1831f8e5ae818f8",
+      "bytes": 572
+    },
+    {
+      "path": ".apos/domains/llm-engineering.json",
+      "sha256": "b479dcbe47cd8d9bdb2f29b76ef78e9299122cd23b33b46e1f409013faa7c389",
+      "bytes": 1348
+    },
+    {
+      "path": ".apos/epistemic/registry.json",
+      "sha256": "a57381a5ed220d2ea3e06a1abdb84b1806cf51fa5e9fe5fccfc6d6d127d899ac",
+      "bytes": 10305
+    },
+    {
+      "path": ".apos/intents/I-PPK-LLM-001.json",
+      "sha256": "f92a9e899d210309aa7c5c59c8ec429d2965ba0fc7fadb27aeea3277ea4e9c91",
+      "bytes": 1084
+    },
+    {
+      "path": ".apos/kernel/kernel.json",
+      "sha256": "2849ddf7fce25dc84e87b0f1ae13209a458a80cbde0d5e23a75c15491e86abe3",
+      "bytes": 1475
+    },
+    {
+      "path": ".apos/learning/learning-cost-loop.json",
+      "sha256": "c8bd5ba78a3db5c160f93c9feff4e83bd0fa9290790254a210c9652e2e8d8864",
+      "bytes": 987
+    },
+    {
+      "path": ".apos/llm/evaluation-policy.json",
+      "sha256": "c8bee6e2ec7a8211c3c7206aa98bc02ffbb3637d734ad3689da872f9c744320e",
+      "bytes": 1612
+    },
+    {
+      "path": ".apos/llm/experiment-template.json",
+      "sha256": "f71157b14ca4aa943b3481cb40f3ec71d0e469cdb262ace80aa808bd33c44428",
+      "bytes": 991
+    },
+    {
+      "path": ".apos/state/product-state.json",
+      "sha256": "db6f22befbb649b185690abb9387f8f9112f6d862fa61a69f3a0ef932ff08b17",
+      "bytes": 3394
+    },
+    {
+      "path": ".apos/versions/product-platform-kit-apos-2.3.0/capabilities.json",
+      "sha256": "b82438058dfc484b57eee4333e3fe4abe529afe3082a59d9bf05474611f553b3",
+      "bytes": 2118
+    },
+    {
+      "path": ".apos/versions/product-platform-kit-apos-2.3.0/constitution.json",
+      "sha256": "34cade807c52867082d82155903ccf52a1f4843689164719ffa9defd88b0e469",
+      "bytes": 1910
+    },
+    {
+      "path": ".apos/versions/product-platform-kit-apos-2.3.0/memory.json",
+      "sha256": "36692469c9c7655ac55dfc57967afc29c94332c81e0883d05ef4f915633c8f88",
+      "bytes": 1564
+    },
+    {
+      "path": ".apos/versions/product-platform-kit-apos-2.3.0/policy.json",
+      "sha256": "2ed146dda7a83276528f5c184308aeef55f7642c2d4e02e5ed21f710bccb7d77",
+      "bytes": 3175
+    },
+    {
+      "path": "README.md",
+      "sha256": "cda5f81158f680287b023d08b45d456c6b4de26933d51bf57843f2d76e0df89c",
+      "bytes": 8595
+    },
+    {
+      "path": "docs/APOS-GETTING-STARTED.md",
+      "sha256": "a5b2d3cc02e2f97792f9c4e040544c690b8b87009bf323070bb5b08f2a892bed",
+      "bytes": 11531
+    },
+    {
+      "path": "docs/APOS-v0.2.md",
+      "sha256": "6e234350d03b1187657e44935d080be811f6af53e574ad3a8df59b78939f094d",
+      "bytes": 7299
+    },
+    {
+      "path": "docs/apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md",
+      "sha256": "b17e3a9699d872312ca72e23d916dca7236e4ec27e822a9885def50582f25635",
+      "bytes": 3532
+    },
+    {
+      "path": "docs/architecture/LLM_ENGINEERING.md",
+      "sha256": "4228b4b5693db879a1be04b24c09f97dbe4d3b0b442b09aa761368d435004f2e",
+      "bytes": 3434
+    },
+    {
+      "path": "packages/apos/README.md",
+      "sha256": "58851d20936a15685c7b7bea6bb082847311bc8dd42d0c1129cebe481c8f5903",
+      "bytes": 1913
+    },
+    {
+      "path": "scripts/bootstrap-apos-session.mjs",
+      "sha256": "5516facf3b50fa826e8c6e7ec07722e5f7cbd841e5eeef406d23ce61aa4c17bd",
+      "bytes": 5459
+    },
+    {
+      "path": "scripts/check-operating-model.mjs",
+      "sha256": "ee33c9f822728261baec98bd934ba9062e0cd573762744140e3a638bab7b79f7",
+      "bytes": 21523
+    },
+    {
+      "path": "scripts/compile-apos-context.mjs",
+      "sha256": "3961200c3746ea16a8535d60fe3bfc045da19bdaa8ea8864512460879a197c6e",
+      "bytes": 4262
+    }
+  ],
+  "measurement": {
+    "method": "conservative_utf8_bytes_divided_by_4",
+    "total_bytes": 119965,
+    "estimated_input_tokens": 29992,
+    "exact_provider_tokens": "unavailable_without_model_request"
+  },
+  "budget": {
+    "max_estimated_input_tokens": 30000
+  },
+  "status": "within_budget",
+  "created_at": "2026-10-17"
+}
