@@ -1,0 +1,73 @@
+{
+  "id": "I-PPK-KNOWLEDGE-001",
+  "revision": 1,
+  "problem": "Human knowledge projections can mix published, local and historical states, duplicate context and lose provenance.",
+  "population": "Maintainers and product consumers",
+  "outcome": "A reusable, reversible projection contract with pinned provenance, explicit relationships, checkpoints and measured retrieval adoption.",
+  "status": "active",
+  "constraints": [
+    "No consumer data or personal paths",
+    "No model calls or paid services",
+    "No implicit promotion of candidates",
+    "Preserve historical evidence and local unpublished work"
+  ],
+  "change_envelope": {
+    "delta": [
+      "Optional knowledge-projection contract and manifest template",
+      "Adoption roadmap and restart checkpoint"
+    ],
+    "affected_domains": [
+      "session_memory",
+      "operating_model"
+    ],
+    "affected_surfaces": [
+      "documentation",
+      "optional template",
+      "APOS candidate records"
+    ],
+    "invariants": [
+      "Published operating-model versions unchanged",
+      "Git remains canonical for published state",
+      "Runtime deployment requires separate evidence"
+    ],
+    "out_of_scope": [
+      "Runtime retrieval implementation",
+      "Embeddings",
+      "Automatic deletion",
+      "Consumer vault synchronization",
+      "Automatic main merge"
+    ],
+    "compatibility": [
+      "Optional adoption; no existing runtime behavior changes"
+    ],
+    "regression_surface": [
+      "APOS project memory and context checks",
+      "Template integrity"
+    ],
+    "rollback": "Close candidate PR or revert its commit; no consumer state has been modified by the kit change."
+  },
+  "required_contract_ids": [
+    "C-PPK-SCOPE-001",
+    "C-PPK-EVID-001",
+    "C-PPK-REV-001",
+    "C-PPK-PRES-001",
+    "C-PPK-SEC-001",
+    "C-PPK-CONTEXT-001"
+  ],
+  "classification": {
+    "impact": "shared_documentation",
+    "uncertainty": "medium",
+    "reversibility": "reversible",
+    "environment": "candidate_branch",
+    "external_cost": "none"
+  },
+  "ceremony_selection": {
+    "level": "Strict",
+    "authority": "Explicit builder request to organize knowledge and proceed with reversible decisions on 2026-10-17",
+    "downgrade_allowed": false
+  },
+  "source": {
+    "type": "builder_conversation",
+    "date": "2026-10-17"
+  }
+}
