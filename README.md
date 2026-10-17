@@ -144,3 +144,7 @@ Este kit é um ponto de partida versionado. Adote somente o necessário, preserv
 ## Engenharia de LLMs
 
 [Domínio, harness, avaliação e otimização](docs/architecture/LLM_ENGINEERING.md): contrato entre kit, runtime e consumidores; experimentos com evidência e promoção explícita.
+
+## Projeções de conhecimento
+
+[Contrato opcional, proveniência e checkpoints retornáveis](docs/apos/KNOWLEDGE-PROJECTIONS.md): proposta de adoção com separação entre estado publicado, trabalho local e histórico.
