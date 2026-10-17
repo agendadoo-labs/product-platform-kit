@@ -1,0 +1,17 @@
+{
+  "id": "D-PPK-KNOWLEDGE-001",
+  "intent_id": "I-PPK-KNOWLEDGE-001",
+  "created_at": "2026-10-17",
+  "decision": "Treat a knowledge vault as a provenance-preserving projection of published Git state, with separate local deltas and historical checkpoints.",
+  "rationale": "Recency, similarity and graph centrality do not establish authority or implementation status.",
+  "authority_source": "Explicit builder request for Git as gold standard and reversible autonomous progress",
+  "compatibility": "Optional contract; no versioned kernel changes or runtime retrieval claims.",
+  "context_budget_exception": {
+    "scope": "this candidate documentation review only",
+    "max_estimated_input_tokens": 40000,
+    "global_profile_changed": false,
+    "rationale": "Default selection exceeded 30000; preserve governing sources. Builder authorized reversible recommendations. No provider call or cost authorized.",
+    "measurement": "UTF-8 bytes / 4 estimate, not exact tokens",
+    "baseline_evidence": "docs/evidence/knowledge-projection/context-budget-baseline.json"
+  }
+}
