@@ -5,7 +5,7 @@ updated: 2026-10-17
 
 # Intents resolvidos
 
-> Projeção determinística da revisão 13. “Resolvido” exige consistência entre ProductState e o registro do Intent; validade para reuso ainda depende da revisão, do ambiente e da Evidence.
+> Projeção determinística da revisão 14. “Resolvido” exige consistência entre ProductState e o registro do Intent; validade para reuso ainda depende da revisão, do ambiente e da Evidence.
 
 ## I-PPK-APOS-001
 
