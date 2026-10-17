@@ -1,0 +1,21 @@
+{
+  "id": "E-PPK-KNOWLEDGE-001",
+  "intent_id": "I-PPK-KNOWLEDGE-001",
+  "created_at": "2026-10-17",
+  "environment": "isolated_candidate_checkout",
+  "passed": true,
+  "claim": "Optional contract and unbound manifest structurally validated; adoption remains open.",
+  "verification": [
+    "python3 scripts/verify_knowledge_projection.py",
+    "node scripts/check-repository.mjs",
+    "node scripts/check-capability-catalog.mjs",
+    "node scripts/sync-apos-project-memory.mjs --check",
+    "node --test scripts/tests/apos-context-compiler.test.mjs scripts/tests/apos-session-bootstrap.test.mjs scripts/tests/apos-project-memory.test.mjs: 5 passed"
+  ],
+  "limitations": [
+    "No retrieval or synchronization implemented",
+    "No model calls or measured token savings",
+    "Obsidian rendering not verified",
+    "Default context budget exceeded; documented per-review 40000 estimate exception, global profile unchanged"
+  ]
+}
