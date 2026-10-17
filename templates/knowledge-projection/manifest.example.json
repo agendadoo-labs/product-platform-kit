@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "status": "draft",
+  "publishable": false,
+  "project_id": null,
+  "source": {
+    "repository": null,
+    "canonical_ref": null,
+    "commit": null,
+    "path": null,
+    "blob_sha": null,
+    "observed_at": null
+  },
+  "projection": {
+    "id": null,
+    "type": "project",
+    "path": null,
+    "sha256": null,
+    "authority": "derived_projection",
+    "tier": "warm",
+    "scope": "published_documentation_not_runtime_verification"
+  },
+  "relations": [],
+  "local_delta": {
+    "status": "unknown",
+    "evidence": []
+  },
+  "checkpoint": {
+    "id": null,
+    "completed": [],
+    "pending": [],
+    "next_action": null,
+    "validation_report": null,
+    "backup_manifest": null
+  },
+  "retrieval": {
+    "eligible": false,
+    "reason": "Unbound example; requires source verification and consumer allowlist."
+  }
+}
