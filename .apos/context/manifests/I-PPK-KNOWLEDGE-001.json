@@ -1,0 +1,187 @@
+{
+  "id": "CM-I-PPK-KNOWLEDGE-001",
+  "protocol": "APOS v0.2",
+  "intent_id": "I-PPK-KNOWLEDGE-001",
+  "domains": [
+    "operating_model",
+    "session_memory"
+  ],
+  "sources": [
+    {
+      "path": ".apos/active-model.json",
+      "sha256": "37e2d7d71695af153c05560286d4acbd7622f4a0d6e15f0d4203f67ad2d9f0cd",
+      "bytes": 258
+    },
+    {
+      "path": ".apos/ai/ai-execution-profile.json",
+      "sha256": "a0cd8918c1184e41f4d3de9b3fe1b3695fd0b86609f022db96162509f186575a",
+      "bytes": 1372
+    },
+    {
+      "path": ".apos/architecture/architecture-profile.json",
+      "sha256": "7b1217ef8746d00c6f47700108637ae47f4c0d21868bc5870d13d38aeb9b664f",
+      "bytes": 1533
+    },
+    {
+      "path": ".apos/ceremony/adaptive-ceremony.json",
+      "sha256": "38913dad89253963fa354c4967dc5feda5c8fbd529e2a0ab787c68eef39f556b",
+      "bytes": 1260
+    },
+    {
+      "path": ".apos/context/context-profile.json",
+      "sha256": "bb14fbe061e2737dd36fb3b2b4ce2fcb1e4d858ccfc58292f1bc77600a78c4a2",
+      "bytes": 8848
+    },
+    {
+      "path": ".apos/contracts/kit-contracts.json",
+      "sha256": "6007ede3c7b419f83846e3236fe1f105a76acf44a08f8c05f8ae023f8b8ae1b3",
+      "bytes": 7978
+    },
+    {
+      "path": ".apos/coordination/workstreams.json",
+      "sha256": "8f4a69a86a8702fe7f5780ebe8a09373b19fb615d9d40e9f97a3bc85cc64f46a",
+      "bytes": 1315
+    },
+    {
+      "path": ".apos/decisions/D-PPK-KNOWLEDGE-001.json",
+      "sha256": "d7d1daefa3354740b7d1a1849b36a2b1252ca3cc9388144846287feae1018083",
+      "bytes": 1074
+    },
+    {
+      "path": ".apos/epistemic/registry.json",
+      "sha256": "a57381a5ed220d2ea3e06a1abdb84b1806cf51fa5e9fe5fccfc6d6d127d899ac",
+      "bytes": 10305
+    },
+    {
+      "path": ".apos/intents/I-PPK-KNOWLEDGE-001.json",
+      "sha256": "01b10bc310b4eaafee001e915e31671b39a73e383a036d5b6d0c9a2f56e24eb3",
+      "bytes": 2322
+    },
+    {
+      "path": ".apos/kernel/kernel.json",
+      "sha256": "2849ddf7fce25dc84e87b0f1ae13209a458a80cbde0d5e23a75c15491e86abe3",
+      "bytes": 1475
+    },
+    {
+      "path": ".apos/learning/learning-cost-loop.json",
+      "sha256": "c8bd5ba78a3db5c160f93c9feff4e83bd0fa9290790254a210c9652e2e8d8864",
+      "bytes": 987
+    },
+    {
+      "path": ".apos/state/product-state.json",
+      "sha256": "97f61c5b9fcd289ba426799ef48a364233571f235e334baf28e31064b793d12a",
+      "bytes": 3423
+    },
+    {
+      "path": ".apos/versions/product-platform-kit-apos-2.3.0/capabilities.json",
+      "sha256": "b82438058dfc484b57eee4333e3fe4abe529afe3082a59d9bf05474611f553b3",
+      "bytes": 2118
+    },
+    {
+      "path": ".apos/versions/product-platform-kit-apos-2.3.0/constitution.json",
+      "sha256": "34cade807c52867082d82155903ccf52a1f4843689164719ffa9defd88b0e469",
+      "bytes": 1910
+    },
+    {
+      "path": ".apos/versions/product-platform-kit-apos-2.3.0/memory.json",
+      "sha256": "36692469c9c7655ac55dfc57967afc29c94332c81e0883d05ef4f915633c8f88",
+      "bytes": 1564
+    },
+    {
+      "path": ".apos/versions/product-platform-kit-apos-2.3.0/policy.json",
+      "sha256": "2ed146dda7a83276528f5c184308aeef55f7642c2d4e02e5ed21f710bccb7d77",
+      "bytes": 3175
+    },
+    {
+      "path": "README.md",
+      "sha256": "9b36c229e1096567b6fcb8e22cf4e3c892ab2bb6bd78bf27523d449ceaada405",
+      "bytes": 8817
+    },
+    {
+      "path": "docs/APOS-GETTING-STARTED.md",
+      "sha256": "a5b2d3cc02e2f97792f9c4e040544c690b8b87009bf323070bb5b08f2a892bed",
+      "bytes": 11531
+    },
+    {
+      "path": "docs/APOS-v0.2.md",
+      "sha256": "6e234350d03b1187657e44935d080be811f6af53e574ad3a8df59b78939f094d",
+      "bytes": 7299
+    },
+    {
+      "path": "docs/apos/KNOWLEDGE-PROJECTIONS.md",
+      "sha256": "bf83a9a334e3d7edc7b2ddd839e4041dae22c5b6b07becccbad1754c185ab87a",
+      "bytes": 5271
+    },
+    {
+      "path": "docs/apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md",
+      "sha256": "b17e3a9699d872312ca72e23d916dca7236e4ec27e822a9885def50582f25635",
+      "bytes": 3532
+    },
+    {
+      "path": "packages/apos/README.md",
+      "sha256": "58851d20936a15685c7b7bea6bb082847311bc8dd42d0c1129cebe481c8f5903",
+      "bytes": 1913
+    },
+    {
+      "path": "scripts/bootstrap-apos-session.mjs",
+      "sha256": "5516facf3b50fa826e8c6e7ec07722e5f7cbd841e5eeef406d23ce61aa4c17bd",
+      "bytes": 5459
+    },
+    {
+      "path": "scripts/check-operating-model.mjs",
+      "sha256": "ee33c9f822728261baec98bd934ba9062e0cd573762744140e3a638bab7b79f7",
+      "bytes": 21523
+    },
+    {
+      "path": "scripts/compile-apos-context.mjs",
+      "sha256": "3961200c3746ea16a8535d60fe3bfc045da19bdaa8ea8864512460879a197c6e",
+      "bytes": 4262
+    },
+    {
+      "path": "scripts/tests/apos-session-bootstrap.test.mjs",
+      "sha256": "992891d316e9a21c551b598ea90a452b6a26a7cd55929bab1d5a1a4ab15e8b81",
+      "bytes": 3143
+    },
+    {
+      "path": "templates/apos/.apos/coordination/workstreams.json",
+      "sha256": "41aae196410dc44884cc05954125ef6fc356f1d23f9366e0c5021967fe496b0a",
+      "bytes": 319
+    },
+    {
+      "path": "templates/apos/AGENTS.md",
+      "sha256": "58c4b58f777fd97f9762a688291944f2ebb65f388c9edd71276cfbc93453ff8b",
+      "bytes": 2505
+    },
+    {
+      "path": "templates/apos/APOS-AGENT-BOOTSTRAP.md",
+      "sha256": "97cb263bba8d129b5df1c945e58c53fd7bea5023030e975b5020126cc19108c7",
+      "bytes": 3396
+    },
+    {
+      "path": "templates/apos/README.md",
+      "sha256": "04ee3ad1a894d5d9eaf69819d9c55a00cacfd925702797c0034fce634cfa7924",
+      "bytes": 6370
+    },
+    {
+      "path": "templates/apos/scripts/bootstrap-apos-session.mjs",
+      "sha256": "7e9fc47545b02fbc31628441bd9e5f7514070e62e4db99a0f620e34dff230067",
+      "bytes": 5179
+    },
+    {
+      "path": "templates/knowledge-projection/manifest.example.json",
+      "sha256": "979ca817e2fe95e536660d816e7e228f24d2d254d234df6e9f11a1f07c625668",
+      "bytes": 857
+    }
+  ],
+  "measurement": {
+    "method": "conservative_utf8_bytes_divided_by_4",
+    "total_bytes": 142293,
+    "estimated_input_tokens": 35574,
+    "exact_provider_tokens": "unavailable_without_model_request"
+  },
+  "budget": {
+    "max_estimated_input_tokens": 40000
+  },
+  "status": "within_budget",
+  "created_at": "2026-10-17"
+}
