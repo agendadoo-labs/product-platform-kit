@@ -1,8 +1,8 @@
 {
   "id": "DM-PPK-001",
-  "revision": 2,
+  "revision": 3,
   "protocol": "APOS v0.2",
-  "updated_at": "2026-09-12",
+  "updated_at": "2026-10-17",
   "purpose": "Mapear os registros de conhecimento e artefatos reutilizáveis do Product Platform Kit sem incorporar dados de consumidores.",
   "authority": {
     "schema_source": "repository",
@@ -66,6 +66,13 @@
       "purpose": "Contrato de experimento e promoção; resultados reais ficam no consumidor",
       "retention": "versionado em Git",
       "source": ".apos/llm/experiment-template.json"
+    },
+    {
+      "id": "knowledge.projection_manifest_template",
+      "classification": "public_template",
+      "purpose": "Optional source/projection provenance and reversible checkpoint contract; not a populated consumer catalog",
+      "source": "templates/knowledge-projection/manifest.example.json",
+      "retention": "versioned in Git"
     }
   ],
   "relationships": [
@@ -122,6 +129,12 @@
       "to": "starter.apos",
       "cardinality": "1:N template",
       "key": "neutralized_pattern"
+    },
+    {
+      "from": "apos.product_state",
+      "to": "knowledge.projection_manifest_template",
+      "cardinality": "1:N optional projection contract",
+      "key": "source commit + source path"
     }
   ],
   "access_principles": [
