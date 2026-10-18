@@ -45,11 +45,11 @@ Escolha o assunto e depois confira a autoridade e a revisão da fonte.
 - [APOS-v0.2-MEMORIAL](<apos/APOS-v0.2-MEMORIAL.md>) — Contextualizar Memorial de evolução — APOS v0.2.
 - [DATA-MAP-AND-HUMAN-PROJECTIONS](<apos/DATA-MAP-AND-HUMAN-PROJECTIONS.md>) — Descrever DataMap e projeções humanas no APOS.
 - [Product Platform Kit — Contrato — Database API contract release gate](<apos/Product Platform Kit — Contrato — Database API contract release gate.md>) — Definir Database/API contract release gate.
-- [Product Platform Kit — Referência — Migração operacional do Product Platform Kit para APOS](<apos/OPERATING-MODEL-MIGRATION.md>) — Consultar Migração operacional do Product Platform Kit para APOS.
-- [Product Platform Kit — Referência — Reconstrução e memória para organizações agênticas](<apos/RECONSTRUCTION-AND-AGENTIC-MEMORY.md>) — Consultar Reconstrução e memória para organizações agênticas.
-- [Product Platform Kit — Referência — Scope Preservation and Change Envelopes](<apos/SCOPE-PRESERVATION.md>) — Consultar Scope Preservation and Change Envelopes.
-- [Product Platform Kit — Guia — APOS Session Bootstrap e memória para múltiplos times](<apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md>) — Consultar APOS Session Bootstrap e memória para múltiplos times.
-- [Product Platform Kit — Referência — Fontes consultadas](<apos/VALORA-SOURCES.md>) — Consultar Fontes consultadas.
+- [Product Platform Kit — Referência — Migração operacional do Product Platform Kit para APOS](<apos/Product Platform Kit — Referência — Migração operacional do Product Platform Kit para APOS.md>) — Contextualizar Migração operacional do Product Platform Kit para APOS.
+- [Product Platform Kit — Referência — Reconstrução e memória para organizações agênticas](<apos/Product Platform Kit — Referência — Reconstrução e memória para organizações agênticas.md>) — Contextualizar Reconstrução e memória para organizações agênticas.
+- [Product Platform Kit — Referência — Scope Preservation and Change Envelopes](<apos/Product Platform Kit — Referência — Scope Preservation and Change Envelopes.md>) — Contextualizar Scope Preservation and Change Envelopes.
+- [SESSION-BOOTSTRAP-AND-MULTI-TEAM](<apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md>) — Orientar APOS Session Bootstrap e memória para múltiplos times.
+- [Product Platform Kit — Referência — Fontes consultadas](<apos/Product Platform Kit — Referência — Fontes consultadas.md>) — Contextualizar Fontes consultadas.
 - [Product Platform Kit — Referência — Valora — APOS aplicado à construção de produto](<apos/VALORA-OPERATING-MODE.md>) — Consultar Valora — APOS aplicado à construção de produto.
 - [Product Platform Kit — Referência — APOS — Product Platform Kit](<apos/CONTEXT.md>) — Consultar APOS — Product Platform Kit.
 - [Product Platform Kit — Arquitetura — Arquitetura de dados para mapas de mercado](<../packages/map-core/docs/DATA-ARCHITECTURE.md>) — Consultar Arquitetura de dados para mapas de mercado.
@@ -87,4 +87,4 @@ Escolha o assunto e depois confira a autoridade e a revisão da fonte.
 
 ## Cobertura
 
-Lote 3 de 9. Inventário explícito em documentation-inventory.json. Gerados, templates e histórico preservados. Registro da migração: CP-013. Reversão por PR; publicação documental não comprova runtime.
+Lote 4 de 9. Inventário explícito em documentation-inventory.json. Gerados, templates e histórico preservados. Registro da migração: CP-013. Reversão por PR; publicação documental não comprova runtime.
