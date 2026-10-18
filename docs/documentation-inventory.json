@@ -12,7 +12,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "b07f27a7eba12c4d819b839fd38db22d4051d9527a95865659048ae5af230c1c"
+      "sha256": "1d673f8871d2f12368c597b3004aa2328ad7eed3d22f07b2d3671db5fafc1536"
     },
     {
       "path": ".apos/README.md",
@@ -81,7 +81,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "cdac70d5a69a52ad20afd40aa3e953759ea21b44e6bbacf0a0b63872372db428"
+      "sha256": "f896153c3079b24f23f2fc33152d30a4cd13d98fc0aad4f296530ebf332a67c3"
     },
     {
       "path": "docs/AGENT-MODEL-ROUTING.md",
@@ -117,7 +117,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "9f4336915428eb79db62e69ac69660b4b78ccb4bbed938af7388c35cea86e79f"
+      "sha256": "989c5b0f7c028e79dc28bdcf021d5d8bbe4305651cf5d1ae14e096c54b0a08d1"
     },
     {
       "path": "Product Platform Kit — Início — Visão do produto.md",
@@ -1006,6 +1006,20 @@
         "Adotar ou manter gestão de conhecimento e especificações"
       ],
       "document_role": "plan",
+      "graph_scope": "vigente",
+      "path_policy": "descriptive_canonical"
+    },
+    {
+      "path": "docs/onboarding/APOS — Prompt — Início portátil de projeto.md",
+      "classification": "manual_document",
+      "display_name": "APOS — Prompt — Início portátil de projeto",
+      "id": "PPK-PROMPT-START-001",
+      "purpose": "Iniciar ou retomar um projeto com APOS usando fontes Git e integrações locais opcionais.",
+      "read_when": [
+        "Começar um projeto com um agente ou LLM",
+        "Compartilhar o método com outra pessoa"
+      ],
+      "document_role": "entrypoint",
       "graph_scope": "vigente",
       "path_policy": "descriptive_canonical"
     }

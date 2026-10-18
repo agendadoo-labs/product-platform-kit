@@ -175,3 +175,7 @@ Este kit é um ponto de partida versionado. Adote somente o necessário, preserv
 ## Gestão de conhecimento e especificações
 
 Para contratos, vigência, requisitos e evidências, comece pelo [domínio knowledge_governance](<docs/knowledge/Conhecimento — Início — Gestão de conhecimento e especificações.md>). Execute `python3 packages/knowledge_governance/validate.py` ao alterar seu catálogo.
+
+## Começar um projeto com um agente
+
+[Copiar o prompt APOS de início de projeto](<docs/onboarding/APOS — Prompt — Início portátil de projeto.md>). Funciona sem ambiente pessoal pré-configurado; inclui orientação opcional para Obsidian novo ou existente.
