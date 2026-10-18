@@ -51,10 +51,10 @@ Escolha o assunto e depois confira a autoridade e a revisão da fonte.
 - [SESSION-BOOTSTRAP-AND-MULTI-TEAM](<apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md>) — Orientar APOS Session Bootstrap e memória para múltiplos times.
 - [Product Platform Kit — Referência — Fontes consultadas](<apos/Product Platform Kit — Referência — Fontes consultadas.md>) — Contextualizar Fontes consultadas.
 - [Product Platform Kit — Referência — Valora — APOS aplicado à construção de produto](<apos/Product Platform Kit — Referência — Valora — APOS aplicado à construção de produto.md>) — Contextualizar Valora — APOS aplicado à construção de produto.
-- [Product Platform Kit — Referência — APOS — Product Platform Kit](<apos/CONTEXT.md>) — Consultar APOS — Product Platform Kit.
-- [Product Platform Kit — Arquitetura — Arquitetura de dados para mapas de mercado](<../packages/map-core/docs/DATA-ARCHITECTURE.md>) — Consultar Arquitetura de dados para mapas de mercado.
-- [Product Platform Kit — Plano — Roadmap priorizado de módulos](<capabilities/MODULE-PRIORITY-ROADMAP.md>) — Consultar Roadmap priorizado de módulos.
-- [Product Platform Kit — Evidência — Auditoria de cobertura de capacidades](<capabilities/CAPABILITY-COVERAGE-AUDIT.md>) — Consultar Auditoria de cobertura de capacidades.
+- [Product Platform Kit — Referência — APOS — Product Platform Kit](<apos/Product Platform Kit — Referência — APOS — Product Platform Kit.md>) — Contextualizar APOS — Product Platform Kit.
+- [DATA-ARCHITECTURE](<../packages/map-core/docs/DATA-ARCHITECTURE.md>) — Explicar Arquitetura de dados para mapas de mercado.
+- [MODULE-PRIORITY-ROADMAP](<capabilities/MODULE-PRIORITY-ROADMAP.md>) — Planejar Roadmap priorizado de módulos.
+- [CAPABILITY-COVERAGE-AUDIT](<capabilities/CAPABILITY-COVERAGE-AUDIT.md>) — Registrar evidências de Auditoria de cobertura de capacidades.
 - [Product Platform Kit — Referência — Digital Product Capability Map — v2](<capabilities/DIGITAL-PRODUCT-CAPABILITY-MAP-v2.md>) — Consultar Digital Product Capability Map — v2.
 - [Product Platform Kit — Referência — Commercial Model como Economic Control Plane](<capabilities/COMMERCIAL-MODEL-ECONOMIC-CONTROL-PLANE.md>) — Consultar Commercial Model como Economic Control Plane.
 - [Product Platform Kit — Arquitetura — Engenharia e otimização de LLMs](<architecture/LLM_ENGINEERING.md>) — Consultar Engenharia e otimização de LLMs.
@@ -87,4 +87,4 @@ Escolha o assunto e depois confira a autoridade e a revisão da fonte.
 
 ## Cobertura
 
-Lote 5 de 9. Inventário explícito em documentation-inventory.json. Gerados, templates e histórico preservados. Registro da migração: CP-013. Reversão por PR; publicação documental não comprova runtime.
+Lote 6 de 9. Inventário explícito em documentation-inventory.json. Gerados, templates e histórico preservados. Registro da migração: CP-013. Reversão por PR; publicação documental não comprova runtime.

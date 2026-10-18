@@ -442,44 +442,56 @@
       "path_policy": "canonical_descriptive"
     },
     {
-      "path": "docs/apos/CONTEXT.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/apos/Product Platform Kit — Referência — APOS — Product Platform Kit.md",
+      "compatibility_path": "docs/apos/CONTEXT.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Referência — APOS — Product Platform Kit",
-      "purpose": "Consultar APOS — Product Platform Kit.",
+      "id": "DOC-FB68E8445E77E9",
+      "purpose": "Contextualizar APOS — Product Platform Kit.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: APOS — Product Platform Kit"
       ],
-      "sha256": "a80d04d84d537fd46a85eeb85f973028c7a3202ccb27c5e54a3e38193a220c7b"
+      "document_role": "reference",
+      "path_policy": "canonical_descriptive"
     },
     {
       "path": "packages/map-core/docs/DATA-ARCHITECTURE.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Arquitetura — Arquitetura de dados para mapas de mercado",
-      "purpose": "Consultar Arquitetura de dados para mapas de mercado.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "DATA-ARCHITECTURE",
+      "id": "DOC-C1FCA53A582E92",
+      "purpose": "Explicar Arquitetura de dados para mapas de mercado.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Alterar componentes ou responsabilidades: Arquitetura de dados para mapas de mercado"
       ],
-      "sha256": "ca562dec9a4726ba89dba56ca021a553b30be8f5fba68007b7500a92cad904c6"
+      "document_role": "architecture",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/capabilities/MODULE-PRIORITY-ROADMAP.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Plano — Roadmap priorizado de módulos",
-      "purpose": "Consultar Roadmap priorizado de módulos.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "MODULE-PRIORITY-ROADMAP",
+      "id": "DOC-D131E4716F66DE",
+      "purpose": "Planejar Roadmap priorizado de módulos.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Planejar os próximos passos: Roadmap priorizado de módulos"
       ],
-      "sha256": "88c8bcc1c83c68056e9bdad9c1c6a791b0899b8ea56047148db6013fd29f8802"
+      "document_role": "plan",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/capabilities/CAPABILITY-COVERAGE-AUDIT.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Evidência — Auditoria de cobertura de capacidades",
-      "purpose": "Consultar Auditoria de cobertura de capacidades.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "CAPABILITY-COVERAGE-AUDIT",
+      "id": "DOC-CBDF5889FE61C1",
+      "purpose": "Registrar evidências de Auditoria de cobertura de capacidades.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Conferir resultados e seus limites: Auditoria de cobertura de capacidades"
       ],
-      "sha256": "e2cc7e4b9200bafa0985c0eedc3e8f74f3a730b331180986c912c05d948ac603"
+      "document_role": "evidence",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/capabilities/DIGITAL-PRODUCT-CAPABILITY-MAP-v2.md",
@@ -786,11 +798,12 @@
     "docs/apos/RECONSTRUCTION-AND-AGENTIC-MEMORY.md": "docs/apos/Product Platform Kit — Referência — Reconstrução e memória para organizações agênticas.md",
     "docs/apos/SCOPE-PRESERVATION.md": "docs/apos/Product Platform Kit — Referência — Scope Preservation and Change Envelopes.md",
     "docs/apos/VALORA-SOURCES.md": "docs/apos/Product Platform Kit — Referência — Fontes consultadas.md",
-    "docs/apos/VALORA-OPERATING-MODE.md": "docs/apos/Product Platform Kit — Referência — Valora — APOS aplicado à construção de produto.md"
+    "docs/apos/VALORA-OPERATING-MODE.md": "docs/apos/Product Platform Kit — Referência — Valora — APOS aplicado à construção de produto.md",
+    "docs/apos/CONTEXT.md": "docs/apos/Product Platform Kit — Referência — APOS — Product Platform Kit.md"
   },
   "migration": {
     "checkpoint": "CP-013",
-    "batch": 5,
+    "batch": 6,
     "batches": 9,
     "status": "partial"
   },
