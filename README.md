@@ -16,3 +16,5 @@ Apresentar Product Platform Kit — Entrada de compatibilidade.
 
 Este caminho convencional aponta para [Product Platform Kit — Início — Visão do produto](<Product Platform Kit — Início — Visão do produto.md>).
 
+
+Atalhos de início: [APOS em 30 minutos](docs/APOS-GETTING-STARTED.md), [APOS v0.2](docs/APOS-v0.2.md) e [Retomada de sessão](docs/apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md).
