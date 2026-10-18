@@ -29,9 +29,9 @@
         "knowledge_governance"
       ],
       "dependencies": [],
-      "branch": "feat/knowledge-governance-cp018",
+      "branch": "feat/knowledge-technical-controls",
       "updated_at": "2026-10-18",
-      "next_checkpoint": "CP-018 technical gate; CP-019 consumer pilot; CP-020 independent transfer; CP-021 expansion"
+      "next_checkpoint": "CP-KG-TECH-001 technical controls; CP-020 independent transfer pending"
     }
   ],
   "status_values": [

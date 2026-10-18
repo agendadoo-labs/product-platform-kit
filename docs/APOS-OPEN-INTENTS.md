@@ -5,11 +5,11 @@ updated: 2026-10-18
 
 # Intents abertos
 
-> Projeção da revisão 19 do ProductState. Não editar manualmente.
+> Projeção da revisão 20 do ProductState. Não editar manualmente.
 
 | Intent | Estado | Cerimônia | Próximo checkpoint |
 |---|---|---|---|
-| `I-PPK-KNOWLEDGE-001` | active | Strict | CP-018 technical gate; CP-019 consumer pilot; CP-020 independent transfer; CP-021 expansion |
+| `I-PPK-KNOWLEDGE-001` | active | Strict | CP-KG-TECH-001 technical controls; CP-020 independent transfer pending |
 | `I-PPK-DOC-ORG-001` | active | Strict | Não definido. |
 | `I-PPK-APOS-009` | active | standard | Não definido. |
 | `I-PPK-APOS-010` | active | standard | Não definido. |
@@ -22,8 +22,8 @@ updated: 2026-10-18
 - **Estado operacional:** active.
 - **Problema:** Human knowledge projections can mix published, local and historical states, duplicate context and lose provenance.
 - **Resultado esperado:** A reusable, reversible projection contract with pinned provenance, explicit relationships, checkpoints and measured retrieval adoption.
-- **Próximo checkpoint:** CP-018 technical gate; CP-019 consumer pilot; CP-020 independent transfer; CP-021 expansion
-- **Decisões:** `D-PPK-KG-018`, `D-PPK-KNOWLEDGE-001`, `D-PPK-KNOWLEDGE-002`, `D-PPK-START-001`.
+- **Próximo checkpoint:** CP-KG-TECH-001 technical controls; CP-020 independent transfer pending
+- **Decisões:** `D-PPK-KG-018`, `D-PPK-KG-TECH-001`, `D-PPK-KNOWLEDGE-001`, `D-PPK-KNOWLEDGE-002`, `D-PPK-START-001`.
 - **Última execução:** nenhuma.
 - **Última evidência:** `E-PPK-KNOWLEDGE-001` — passou.
 - **Incertezas:** nenhuma registrada.

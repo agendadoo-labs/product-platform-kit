@@ -1,0 +1,18 @@
+{
+  "id": "E-PPK-KG-TECH-001",
+  "intent_id": "I-PPK-KNOWLEDGE-001",
+  "observed_at": "2026-10-18",
+  "passed": true,
+  "checks": [
+    "35 knowledge tests passed (21 new, 14 compatibility)",
+    "12 APOS Python and 22 APOS Node tests passed",
+    "Catalog v2, projection consistency, metadata/inventory and reading routes passed",
+    "Context compiled at explicit 50000 session ceiling; default 30000 unchanged"
+  ],
+  "limits": [
+    "Technical verification only; independent business acceptance pending",
+    "Full Git/tag-dependent check requires CI checkout; local staging has no Git history",
+    "npm unavailable locally; underlying Python/Node tests executed directly",
+    "No automatic consumer migration, branch protection or runtime deployment"
+  ]
+}

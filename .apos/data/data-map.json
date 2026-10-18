@@ -1,6 +1,6 @@
 {
   "id": "DM-PPK-001",
-  "revision": 5,
+  "revision": 6,
   "protocol": "APOS v0.2",
   "updated_at": "2026-10-18",
   "purpose": "Mapear os registros de conhecimento e artefatos reutilizáveis do Product Platform Kit sem incorporar dados de consumidores.",
@@ -96,6 +96,11 @@
       "id": "knowledge.checkpoint",
       "classification": "public_metadata",
       "purpose": "Single structured source for current-state projections"
+    },
+    {
+      "id": "knowledge.dependency_fingerprint",
+      "classification": "internal_evidence",
+      "purpose": "Binds verified requirements to transitive specification inputs and declared implementation/tests; no automatic approval"
     }
   ],
   "relationships": [
@@ -158,6 +163,12 @@
       "to": "knowledge.projection_manifest_template",
       "cardinality": "1:N optional projection contract",
       "key": "source commit + source path"
+    },
+    {
+      "from": "apos.product_state",
+      "to": "human.project_memory",
+      "cardinality": "1:N generated knowledge blocks",
+      "key": "knowledge_checkpoint via catalog.current_state_ref"
     }
   ],
   "access_principles": [

@@ -1,0 +1,26 @@
+{
+  "id": "D-PPK-KG-TECH-001",
+  "intent_id": "I-PPK-KNOWLEDGE-001",
+  "created_at": "2026-10-18",
+  "decision": "Extend portable knowledge gate with dependency fingerprints, ProductState-backed projections and conservative risk-based checks; preserve v1 and immutable APOS models.",
+  "authority_source": "User explicitly authorized recommendation and ordered checkpoint implementation",
+  "change_envelope": {
+    "invariants": [
+      "Immutable APOS versions unchanged",
+      "No consumer secrets",
+      "No implicit runtime approval"
+    ],
+    "rollback": "Revert change commit and restore vault checkpoint after matching current hashes.",
+    "acceptance": [
+      "Relevant transitive changes invalidate verified evidence",
+      "Four state projections derive from one ProductState field",
+      "Git diff and both Intent revisions determine minimum technical checks"
+    ]
+  },
+  "context_budget_exception": {
+    "default": 30000,
+    "session_ceiling": 50000,
+    "reason": "Measured compilation requires 43931 estimated tokens including mandatory sources; preserve sources without changing the repository default. No provider request or cost.",
+    "measurement": "utf8_bytes_divided_by_4"
+  }
+}

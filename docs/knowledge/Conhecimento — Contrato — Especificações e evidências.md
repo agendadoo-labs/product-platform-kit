@@ -23,3 +23,9 @@ Implemented exige arquivos de implementação e testes existentes. Verified exig
 O catálogo verifica estrutura e vínculos, não prova qualidade do teste ou correção semântica. A aceitação de negócio requer revisão independente. Um teste gerado pelo mesmo agente pode verificar comportamento, mas não certifica adoção empresarial.
 
 Git indica estado publicado; deploy e operação exigem evidência de ambiente. Alteração da especificação invalida evidência da revisão anterior. ProductState só declara outcomes sustentados; manter o Intent aberto para avaliação e adoção pendentes.
+
+## Extensão técnica v2 — dependências e evidência
+
+O catálogo v2 exige `evidence.dependency_fingerprint` para cada requisito `verified`. A impressão SHA-256 cobre IDs, revisões, conteúdo real e estado das dependências transitivas da especificação, commits de origem, critério de aceite, implementação e testes declarados. Qualquer diferença exige nova verificação; atualizar apenas o hash do catálogo não renova evidência. Datas de observação continuam sujeitas à política de frescor do v1.
+
+`python3 scripts/knowledge-controls.py impact` informa requisitos que precisam de revalidação e a impressão atual. Esse relatório não cria evidência, não promove status e não identifica aprovação independente. O verificador só deve registrar a impressão depois da nova execução e avaliação. Dependências não inventariadas continuam fora da cobertura. O v1 permanece compatível; ele não oferece essa garantia adicional.

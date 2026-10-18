@@ -179,3 +179,15 @@ Este kit é um ponto de partida versionado. Adote somente o necessário, preserv
 ## Gestão de conhecimento e especificações
 
 Para contratos, vigência, requisitos e evidências, comece pelo [domínio knowledge_governance](<docs/knowledge/Conhecimento — Início — Gestão de conhecimento e especificações.md>). Execute `python3 packages/knowledge_governance/validate.py` ao alterar seu catálogo.
+
+## Estado atual do domínio de conhecimento
+
+<!-- knowledge-state:start -->
+
+Checkpoint: CP-KG-TECH-001
+
+Status: technical_controls_implemented_independent_acceptance_pending
+
+Next: Complete CP-020 independent transfer; apply v2 in a consumer with recorded before/after measurements.
+
+<!-- knowledge-state:end -->

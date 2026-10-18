@@ -6,6 +6,15 @@ import re
 from datetime import date
 from pathlib import Path
 
+try:
+    from .controls import dependency_fingerprint, project_state
+except ImportError:
+    import importlib.util
+    _spec = importlib.util.spec_from_file_location("knowledge_controls", Path(__file__).with_name("controls.py"))
+    _controls = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(_controls)
+    dependency_fingerprint, project_state = _controls.dependency_fingerprint, _controls.project_state
+
 SCOPES = {'vigente', 'historico', 'candidato', 'referencia'}
 STATES = {'draft', 'approved', 'superseded', 'retired'}
 
@@ -24,7 +33,7 @@ def validate(root, manifest, today=None):
         age = (today-date.fromisoformat(value)).days
         require(0 <= age <= days, label + ': observation expired or future dated')
     try:
-        require(manifest['schema_version'] == 1, 'unsupported schema version')
+        require(manifest['schema_version'] in (1, 2), 'unsupported schema version')
         documents = manifest['documents']
         by_id = {d['id']: d for d in documents}
         require(len(by_id) == len(documents), 'duplicate document id')
@@ -86,6 +95,8 @@ def validate(root, manifest, today=None):
                 for path in req['implementation']+req['tests']:require(file(path).is_file(),label + ': missing artifact '+path)
             if req['status'] == 'verified':
                 evidence=req['evidence']
+                if manifest['schema_version'] == 2:
+                    require(evidence.get('dependency_fingerprint') == dependency_fingerprint(root, manifest, req), label + ': dependency inputs changed; revalidation required')
                 require(evidence['result'] == 'passed',label + ': evidence failed')
                 require(evidence['spec_revision'] == by_id[req['specification']]['revision'],label + ': evidence refers to old specification')
                 require(bool(evidence['command'].strip()),label + ': missing verification command')
@@ -95,6 +106,10 @@ def validate(root, manifest, today=None):
                     require(hashlib.sha256(file(artifact['path']).read_bytes()).hexdigest()==artifact['sha256'],label+': evidence artifact changed')
                 require(bool(evidence['artifacts']),label + ': missing evidence artifacts')
         # Generated current-state views have exactly one structured authority.
+        if manifest['schema_version'] == 2:
+            require('current_state' not in manifest, 'v2 prohibits duplicate current_state')
+            for path in project_state(root, manifest):
+                errors.append(path + ': current-state projection drift')
         state=manifest.get('current_state')
         if state:
             expected=render_state(state)

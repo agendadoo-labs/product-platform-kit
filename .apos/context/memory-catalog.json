@@ -82,7 +82,7 @@
       ],
       "authority": "current",
       "sensitivity": "internal",
-      "source_sha256": "50667b0398d81a31554ccfc3a28e172069af606d717b6af7d8bb59926af04e50"
+      "source_sha256": "38b7bbf40c640afba9b91cf71bbfa34a6436d5fddc03ee7e16dcd88d09cdbb93"
     },
     {
       "id": "knowledge-governance-3",
@@ -95,7 +95,7 @@
       ],
       "authority": "current",
       "sensitivity": "internal",
-      "source_sha256": "9f6868cbfa04b2fdca7ff71654223b58fb4807dea414e8cc0d69e8005fa3dd39"
+      "source_sha256": "76782ef8d6308ff4f3cef8e30a0925e4e5ee454e3c6974264f77752d8a2a23be"
     },
     {
       "id": "knowledge-governance-4",
@@ -108,7 +108,7 @@
       ],
       "authority": "current",
       "sensitivity": "internal",
-      "source_sha256": "964b5a7d52c0de31a30272805140d7a72e52e40986f1856f2af8b498e644f397"
+      "source_sha256": "814d3e4244b5541cf14bdc1014e19a5f672eda42e439c19023ed45144f6f9433"
     }
   ]
 }
