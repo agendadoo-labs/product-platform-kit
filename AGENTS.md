@@ -1,4 +1,21 @@
+---
+id: "DOC-PRODUCT-PLATFORM-KIT-2"
+type: "guide"
+scope: "Product Platform Kit"
+document_role: "procedure"
+purpose: "Orientar agentes na manutenção de implementação, documentação e evidências."
+read_when: ["Iniciar ou retomar trabalho como agente"]
+status: "active"
+authority: "user_authorized_project_convention"
+tier: "hot"
+updated: "2026-10-17"
+---
+
 # Product Platform Kit — operação APOS
+
+Orientar agentes na manutenção de implementação, documentação e evidências.
+
+Leia o [guia de manutenção documental](<docs/Product Platform Kit — Guia — Manutenção documental.md>) ao iniciar ou retomar trabalho.
 
 **Início de agentes/LLMs:** leia o [guia de manutenção de implementação e documentação](templates/apos/APOS-MAINTENANCE.md) antes de alterar o projeto e ao retomar checkpoints.
 
