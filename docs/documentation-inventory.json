@@ -12,7 +12,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "16b91d559f64ece60aafad4ca4afaa46bf12289cc08e56d2805abbd6100d802b"
+      "sha256": "d870948db3a3c0a71daf2327231edf40b29c91e0ff4b132054ccd1cc06ca1762"
     },
     {
       "path": ".apos/README.md",
@@ -81,7 +81,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "d0788b66427f0d90bcbfb8f1883a8055a1896b4df01574c0bcd6b0f2b7b3dff4"
+      "sha256": "67b1532f9ce84ff98bcb5738709e70e7c36fea01a739bf883aa11a6ea138d6ff"
     },
     {
       "path": "docs/AGENT-MODEL-ROUTING.md",
@@ -117,7 +117,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "e2fa0e2c84467aa43927e9816a7306ef76cd52c5c83ba3e8a0770f2e7c161c0e"
+      "sha256": "3ee54e4383187492bcd2e4d1b04d9ff310bceea1b3f07906f60c3109aa4ad257"
     },
     {
       "path": "Product Platform Kit — Início — Visão do produto.md",
@@ -814,6 +814,135 @@
         "Executar ou verificar o procedimento: Percursos de leitura por domínio"
       ],
       "document_role": "procedure"
+    },
+    {
+      "path": "docs/apos/Product Platform Kit — Guia — Estado vigente e consulta ao histórico.md",
+      "compatibility_path": "docs/apos/ACTIVE-STATE-AND-HISTORY.md",
+      "classification": "manual_document",
+      "id": "DOC-727D8C2627F653",
+      "purpose": "Orientar APOS — Active State and History-on-Demand.",
+      "read_when": [
+        "Executar ou verificar o procedimento: APOS — Active State and History-on-Demand"
+      ],
+      "document_role": "procedure",
+      "graph_scope": "vigente",
+      "path_policy": "descriptive_canonical_with_redirect"
+    },
+    {
+      "path": "docs/apos/Product Platform Kit — Guia — Recuperação progressiva de memória.md",
+      "compatibility_path": "docs/apos/LAYERED-MEMORY.md",
+      "classification": "manual_document",
+      "id": "DOC-0A28D1EE3BC6B0",
+      "purpose": "Orientar APOS — recuperação progressiva Hot / Warm / Cold.",
+      "read_when": [
+        "Executar ou verificar o procedimento: APOS — recuperação progressiva Hot / Warm / Cold"
+      ],
+      "document_role": "procedure",
+      "graph_scope": "vigente",
+      "path_policy": "descriptive_canonical_with_redirect"
+    },
+    {
+      "path": "docs/apos/Product Platform Kit — Contrato — Publicação documental e projeção no vault.md",
+      "compatibility_path": "docs/apos/LEO-BRAIN-DOCUMENTATION-CONVENTION.md",
+      "classification": "manual_document",
+      "id": "DOC-313ECB14816F88",
+      "purpose": "Definir Convenção de documentação APOS.",
+      "read_when": [
+        "Verificar regras e limites aplicáveis: Convenção de documentação APOS"
+      ],
+      "document_role": "contract",
+      "graph_scope": "vigente",
+      "path_policy": "descriptive_canonical_with_redirect"
+    },
+    {
+      "path": "docs/apos/RETRIEVAL-REVIEW-2026-10-01.md",
+      "classification": "generated_or_reference_preserved",
+      "display_name": "Product Platform Kit — Evidência — Histórico — Revisão de recuperação em 2026-10-01",
+      "purpose": "Localizar o registro histórico de Revisão de recuperação em 2026-10-01.",
+      "read_when": [
+        "Auditar o registro histórico e sua data"
+      ],
+      "sha256": "903594362192b66dd84bf55e15df0195d2ac44ef8bb1f8eb489a8a37c87cf733"
+    },
+    {
+      "path": "docs/apos/Product Platform Kit — Evidência — Histórico — Revisão de recuperação em 2026-10-01.md",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "id": "DOC-13CA4CB8A0C8FE",
+      "purpose": "Localizar o registro histórico de Revisão de recuperação em 2026-10-01.",
+      "read_when": [
+        "Conferir resultados e seus limites: Product Platform Kit — Evidência — Histórico — Revisão de recuperação em 2026-10-01"
+      ],
+      "document_role": "evidence",
+      "graph_scope": "historico",
+      "path_policy": "descriptive_entry_preserving_evidence"
+    },
+    {
+      "path": "docs/apos/Product Platform Kit — Contrato — Conteúdo público para busca e IA.md",
+      "compatibility_path": "docs/apos/SEO-GEO.md",
+      "classification": "manual_document",
+      "id": "DOC-2BA5804AFC6C0C",
+      "purpose": "Definir Princípio permanente: conteúdo público preparado para SEO e GEO.",
+      "read_when": [
+        "Verificar regras e limites aplicáveis: Princípio permanente: conteúdo público preparado para SEO e GEO"
+      ],
+      "document_role": "contract",
+      "graph_scope": "vigente",
+      "path_policy": "descriptive_canonical_with_redirect"
+    },
+    {
+      "path": "docs/apos/Product Platform Kit — Guia — Cadastro e limites de skills.md",
+      "compatibility_path": "docs/apos/SKILL-REGISTRATION.md",
+      "classification": "manual_document",
+      "id": "DOC-04CA26F87CE0D3",
+      "purpose": "Orientar Como cadastrar skills no APOS.",
+      "read_when": [
+        "Executar ou verificar o procedimento: Como cadastrar skills no APOS"
+      ],
+      "document_role": "procedure",
+      "graph_scope": "vigente",
+      "path_policy": "descriptive_canonical_with_redirect"
+    },
+    {
+      "path": "docs/history/APOS — Referência — Compêndio de setembro de 2026.md",
+      "classification": "manual_document",
+      "id": "PPK-HISTORY-COMPENDIUM-20260906",
+      "purpose": "Preservar a edição histórica do compêndio APOS de setembro de 2026.",
+      "read_when": [
+        "Auditar a evolução histórica do método"
+      ],
+      "document_role": "reference",
+      "graph_scope": "historico"
+    },
+    {
+      "path": "templates/apos/SEO-GEO.md",
+      "classification": "generated_or_reference_preserved",
+      "display_name": "Product Platform Kit — Template — Template de conteúdo público para busca e IA",
+      "purpose": "Consultar Template de conteúdo público para busca e IA.",
+      "read_when": [
+        "Adotar o template em um consumidor"
+      ],
+      "sha256": "2ace6cddcf5c8cbe5b6e4cc6f5fa4ee27f19543f359e467b5c191a3e7b06ddc2"
+    },
+    {
+      "path": "templates/apos/docs/ACTIVE-STATE-AND-HISTORY.md",
+      "classification": "generated_or_reference_preserved",
+      "display_name": "Product Platform Kit — Template — Template de estado vigente e histórico",
+      "purpose": "Consultar Template de estado vigente e histórico.",
+      "read_when": [
+        "Adotar o template em um consumidor"
+      ],
+      "sha256": "1bda16cba375642f3de1629d6e1f00c586efd793167fec35f0b71953471e235e"
+    },
+    {
+      "path": "templates/apos/docs/LAYERED-MEMORY.md",
+      "classification": "generated_or_reference_preserved",
+      "display_name": "Product Platform Kit — Template — Template de recuperação progressiva",
+      "purpose": "Consultar Template de recuperação progressiva.",
+      "read_when": [
+        "Adotar o template em um consumidor"
+      ],
+      "sha256": "ca91c4caed1995c709024cf67ece65322ae9ba372a4e373ce3a3265308824955"
     }
   ],
   "renames": {
@@ -833,7 +962,12 @@
     "docs/apos/VALORA-OPERATING-MODE.md": "docs/apos/Product Platform Kit — Referência — Valora — APOS aplicado à construção de produto.md",
     "docs/apos/CONTEXT.md": "docs/apos/Product Platform Kit — Referência — APOS — Product Platform Kit.md",
     "packages/map-core/README.md": "packages/map-core/Product Platform Kit — Início — Map Core.md",
-    "packages/apos/README.md": "packages/apos/Product Platform Kit — Início — Runtime transacional experimental do APOS.md"
+    "packages/apos/README.md": "packages/apos/Product Platform Kit — Início — Runtime transacional experimental do APOS.md",
+    "docs/apos/ACTIVE-STATE-AND-HISTORY.md": "docs/apos/Product Platform Kit — Guia — Estado vigente e consulta ao histórico.md",
+    "docs/apos/LAYERED-MEMORY.md": "docs/apos/Product Platform Kit — Guia — Recuperação progressiva de memória.md",
+    "docs/apos/LEO-BRAIN-DOCUMENTATION-CONVENTION.md": "docs/apos/Product Platform Kit — Contrato — Publicação documental e projeção no vault.md",
+    "docs/apos/SEO-GEO.md": "docs/apos/Product Platform Kit — Contrato — Conteúdo público para busca e IA.md",
+    "docs/apos/SKILL-REGISTRATION.md": "docs/apos/Product Platform Kit — Guia — Cadastro e limites de skills.md"
   },
   "migration": {
     "checkpoint": "CP-013",
@@ -845,5 +979,17 @@
     "Coverage is limited to explicitly inventoried Markdown files",
     "Generated and historical sources are preserved byte-for-byte; manual stable paths retain tool compatibility",
     "Metadata is not evidence of runtime availability"
-  ]
+  ],
+  "cp017": {
+    "scope": "Documents newly integrated in CP-016",
+    "manual_entries_added": 7,
+    "canonical_renames": 5,
+    "preserved_sources": [
+      "docs/apos/RETRIEVAL-REVIEW-2026-10-01.md"
+    ],
+    "limitations": [
+      "No runtime, financial or production revalidation",
+      "Immutable versions and skill bundles unchanged"
+    ]
+  }
 }

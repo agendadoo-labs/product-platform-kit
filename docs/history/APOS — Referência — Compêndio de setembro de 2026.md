@@ -9,6 +9,7 @@ read_when: ["Auditar a evolução histórica do método"]
 authority: "historical_reference"
 tier: "cold"
 updated: "2026-10-18"
+graph_scope: "historico"
 ---
 
 # APOS — Referência — Compêndio de setembro de 2026

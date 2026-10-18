@@ -1,0 +1,15 @@
+{
+  "id": "D-PPK-DOC-017",
+  "intent_id": "I-PPK-DOC-ORG-001",
+  "created_at": "2026-10-18",
+  "decision": "Extend descriptive document taxonomy to CP-016 additions; preserve dated observations and locked skill bundles, add navigable historical entries and current metadata. Compatibility redirects retained; current retrieval catalog points to complete canonical sources.",
+  "authority_source": "User requested next roadmap step after CP-016",
+  "change_envelope": {
+    "invariants": [
+      "Runtime behavior unchanged",
+      "Historical evidence bytes and skill bundle hashes unchanged",
+      "Immutable model versions unchanged"
+    ],
+    "rollback": "Revert documentation commit via reviewed PR; source paths retained as redirects."
+  }
+}

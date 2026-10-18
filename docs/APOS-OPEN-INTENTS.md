@@ -5,7 +5,7 @@ updated: 2026-10-18
 
 # Intents abertos
 
-> Projeção da revisão 16 do ProductState. Não editar manualmente.
+> Projeção da revisão 17 do ProductState. Não editar manualmente.
 
 | Intent | Estado | Cerimônia | Próximo checkpoint |
 |---|---|---|---|
@@ -35,7 +35,7 @@ updated: 2026-10-18
 - **Problema:** Nomes genéricos e metadados incompletos dificultam selecionar documentação confiável.
 - **Resultado esperado:** Inventário explícito, nomes inteligíveis, metadados, compatibilidade e retomada verificáveis.
 - **Próximo checkpoint:** Não definido.
-- **Decisões:** `D-PPK-DOC-ORG-001`.
+- **Decisões:** `D-PPK-DOC-017`, `D-PPK-DOC-ORG-001`.
 - **Última execução:** nenhuma.
 - **Última evidência:** `E-PPK-DOC-ORG-001` — passou.
 - **Incertezas:** nenhuma registrada.

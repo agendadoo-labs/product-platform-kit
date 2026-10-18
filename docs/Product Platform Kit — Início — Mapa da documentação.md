@@ -90,3 +90,15 @@ Escolha o assunto e depois confira a autoridade e a revisão da fonte.
 Lote 9 de 9. Inventário explícito em documentation-inventory.json. Gerados, templates e histórico preservados. Registro da migração: CP-013. Reversão por PR; publicação documental não comprova runtime.
 
 [Percursos de leitura por domínio](<Product Platform Kit — Guia — Percursos de leitura por domínio.md>): selecione fontes conforme a tarefa e confira seus limites.
+
+## Documentos integrados — CP-017
+
+Escolha a finalidade e o estado explícito. Histórico não comprova funcionamento atual.
+
+- [Product Platform Kit — Guia — Estado vigente e consulta ao histórico](<apos/Product Platform Kit — Guia — Estado vigente e consulta ao histórico.md>).
+- [Product Platform Kit — Guia — Recuperação progressiva de memória](<apos/Product Platform Kit — Guia — Recuperação progressiva de memória.md>).
+- [Product Platform Kit — Contrato — Publicação documental e projeção no vault](<apos/Product Platform Kit — Contrato — Publicação documental e projeção no vault.md>).
+- [Product Platform Kit — Evidência — Histórico — Revisão de recuperação em 2026-10-01](<apos/Product Platform Kit — Evidência — Histórico — Revisão de recuperação em 2026-10-01.md>).
+- [Product Platform Kit — Contrato — Conteúdo público para busca e IA](<apos/Product Platform Kit — Contrato — Conteúdo público para busca e IA.md>).
+- [Product Platform Kit — Guia — Cadastro e limites de skills](<apos/Product Platform Kit — Guia — Cadastro e limites de skills.md>).
+- [APOS — Referência — Compêndio de setembro de 2026](<history/APOS — Referência — Compêndio de setembro de 2026.md>).

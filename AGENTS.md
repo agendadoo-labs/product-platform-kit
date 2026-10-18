@@ -59,4 +59,4 @@ A projeção para um vault pessoal é um efeito externo configurável do reposit
 
 ## Skills e conteúdo público
 
-Consulte [cadastro de skills](docs/apos/SKILL-REGISTRATION.md) e [contrato de conteúdo público](docs/apos/SEO-GEO.md). Fontes de consumidor citadas em guias podem estar em branches candidatas; confirme a revisão antes de assumir adoção.
+Consulte [cadastro de skills](<docs/apos/Product Platform Kit — Guia — Cadastro e limites de skills.md>) e [contrato de conteúdo público](<docs/apos/Product Platform Kit — Contrato — Conteúdo público para busca e IA.md>). Fontes de consumidor citadas em guias podem estar em branches candidatas; confirme a revisão antes de assumir adoção.
