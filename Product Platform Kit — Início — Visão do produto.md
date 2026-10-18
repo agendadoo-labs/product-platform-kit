@@ -169,3 +169,5 @@ Este kit é um ponto de partida versionado. Adote somente o necessário, preserv
 
 
 [Mapa da documentação](<docs/Product Platform Kit — Início — Mapa da documentação.md>).
+
+[Percursos de leitura por domínio](<docs/Product Platform Kit — Guia — Percursos de leitura por domínio.md>): selecione fontes conforme a tarefa e confira seus limites.

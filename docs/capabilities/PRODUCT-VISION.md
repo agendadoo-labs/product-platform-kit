@@ -1,4 +1,18 @@
+---
+id: "DOC-5D5990FA115D34"
+type: "reference"
+scope: "Product Platform Kit"
+document_role: "reference"
+purpose: "Contextualizar Visão de produto."
+read_when: ["Consultar contexto complementar: Visão de produto"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Visão de produto
+
+Contextualizar Visão de produto.
 
 ## Missão
 
@@ -48,4 +62,3 @@ O kit não é um ERP universal, uma cloud própria ou um gerador que publica sem
 ## Evolução
 
 O [catálogo legível por agentes](../../capabilities/catalog.json) é a ontologia de composição. A [auditoria de cobertura](CAPABILITY-COVERAGE-AUDIT.md) descreve o estado atual, o [roadmap](MODULE-PRIORITY-ROADMAP.md) ordena as próximas apostas e os [benchmarks](TOP-10-MODULE-BENCHMARKS.md) dão um caminho inicial de implementação.
-

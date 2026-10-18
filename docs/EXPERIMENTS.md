@@ -1,4 +1,18 @@
+---
+id: "DOC-C939FB438911A2"
+type: "evidence"
+scope: "Product Platform Kit"
+document_role: "evidence"
+purpose: "Registrar evidências de Testes A/B."
+read_when: ["Conferir resultados e seus limites: Testes A/B"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Testes A/B
+
+Registrar evidências de Testes A/B.
 
 ## Fluxo
 

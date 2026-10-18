@@ -8,9 +8,8 @@ read_when: ["Iniciar ou retomar trabalho como agente"]
 status: "active"
 authority: "user_authorized_project_convention"
 tier: "hot"
-updated: "2026-10-17"
+updated: "2026-10-18"
 ---
-
 # Product Platform Kit — operação APOS
 
 Orientar agentes na manutenção de implementação, documentação e evidências.
@@ -54,3 +53,5 @@ Preserve a origem de cada afirmação e diferencie definido, relatado, sugerido 
 O modelo anterior está congelado na tag `operating-model-v1-agent-starter` e inventariado em `.apos/archive/operating-model-v1/manifest.json`.
 
 A projeção para um vault pessoal é um efeito externo configurável do repositório, não requisito do template público. Quando previamente autorizada e acessível, copie somente documentação material, sem segredos ou caminhos internos.
+
+[Percursos de leitura por domínio](<docs/Product Platform Kit — Guia — Percursos de leitura por domínio.md>): selecione fontes conforme a tarefa e confira seus limites.

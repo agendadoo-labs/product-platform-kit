@@ -1,4 +1,18 @@
+---
+id: "DOC-A8186CFE0FE3B6"
+type: "reference"
+scope: "Product Platform Kit"
+document_role: "reference"
+purpose: "Contextualizar Digital Product Capability Map — v2."
+read_when: ["Consultar contexto complementar: Digital Product Capability Map — v2"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Digital Product Capability Map — v2
+
+Contextualizar Digital Product Capability Map — v2.
 
 > Segunda versão ampliada de uma ontologia computável para produtos digitais, pensada para exploração, evolução e uso por agentes de software.
 

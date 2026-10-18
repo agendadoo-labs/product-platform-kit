@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "status": "documentary_routes_not_runtime_retrieval",
+  "baseline": [
+    "AGENTS.md",
+    "templates/apos/APOS-MAINTENANCE.md",
+    ".apos/active-model.json",
+    ".apos/state/product-state.json"
+  ],
+  "routes": [
+    {
+      "id": "iniciar-produto",
+      "purpose": "Adotar o starter e identificar responsabilidades do consumidor.",
+      "domains": [
+        "operating_model",
+        "templates"
+      ],
+      "read_order": [
+        {
+          "path": "docs/APOS-GETTING-STARTED.md",
+          "role": "procedure"
+        },
+        {
+          "path": "docs/ADOPTION.md",
+          "role": "procedure"
+        },
+        {
+          "path": "templates/apos/README.md",
+          "role": "template"
+        }
+      ],
+      "stop_when": "Intent, contratos aplicáveis, modelo ativo e limites do consumidor identificados.",
+      "do_not_infer": "Template não comprova adoção, deploy ou implementação de todos os módulos."
+    },
+    {
+      "id": "retomar-sessao",
+      "purpose": "Reconstruir estado e pendências sem carregar todo o histórico.",
+      "domains": [
+        "session_memory"
+      ],
+      "read_order": [
+        {
+          "path": "docs/apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md",
+          "role": "procedure"
+        },
+        {
+          "path": "docs/APOS-PROJECT-MEMORY.md",
+          "role": "current_state"
+        },
+        {
+          "path": "docs/APOS-OPEN-INTENTS.md",
+          "role": "current_state"
+        }
+      ],
+      "stop_when": "Fontes e revisões do Intent conferidas e próxima ação verificável definida.",
+      "do_not_infer": "A memória gerada não substitui os registros .apos nem prova runtime."
+    },
+    {
+      "id": "compor-capacidades",
+      "purpose": "Escolher capacidades pelo problema e verificar maturidade.",
+      "domains": [
+        "capability_ontology",
+        "commercial_model"
+      ],
+      "read_order": [
+        {
+          "path": "docs/capabilities/PRODUCT-VISION.md",
+          "role": "reference"
+        },
+        {
+          "path": "capabilities/catalog.json",
+          "role": "reference"
+        },
+        {
+          "path": "docs/capabilities/CAPABILITY-COVERAGE-AUDIT.md",
+          "role": "evidence"
+        },
+        {
+          "path": "docs/capabilities/MODULE-PRIORITY-ROADMAP.md",
+          "role": "plan"
+        }
+      ],
+      "stop_when": "Capacidades necessárias e lacunas classificadas como referência, template ou implementação verificada.",
+      "do_not_infer": "Roadmap, benchmark e catálogo não são prova de disponibilidade em produção."
+    },
+    {
+      "id": "otimizar-llm",
+      "purpose": "Localizar fronteiras de harness, avaliação, contexto e custo.",
+      "domains": [
+        "llm_engineering"
+      ],
+      "read_order": [
+        {
+          "path": "docs/architecture/LLM_ENGINEERING.md",
+          "role": "architecture"
+        },
+        {
+          "path": ".apos/llm/evaluation-policy.json",
+          "role": "governing"
+        },
+        {
+          "path": ".apos/llm/experiment-template.json",
+          "role": "template"
+        }
+      ],
+      "stop_when": "Hipótese, baseline, verificador, isolamento do holdout e limites de custo definidos.",
+      "do_not_infer": "A rota não ativa modelos, amplia quotas nem comprova economia de tokens."
+    },
+    {
+      "id": "publicar-com-evidencia",
+      "purpose": "Identificar contratos e verificação para uma alteração autorizada.",
+      "domains": [
+        "quality",
+        "security",
+        "environments"
+      ],
+      "read_order": [
+        {
+          "path": "docs/apos/QUALITY-AND-ENVIRONMENT-GUARDRAILS.md",
+          "role": "governing"
+        },
+        {
+          "path": "docs/SECURITY-PRIVACY.md",
+          "role": "governing"
+        },
+        {
+          "path": "docs/ENVIRONMENTS.md",
+          "role": "reference"
+        },
+        {
+          "path": "docs/apos/Product Platform Kit — Contrato — Database API contract release gate.md",
+          "role": "governing"
+        }
+      ],
+      "stop_when": "Contratos pertinentes e evidências vigentes estão identificados; publicação tem autorização específica.",
+      "do_not_infer": "Ler esta rota não concede autorização de publicação nem obriga mudança de banco."
+    },
+    {
+      "id": "manter-conhecimento",
+      "purpose": "Manter nomes, metadados, proveniência e projeções verificáveis.",
+      "domains": [
+        "session_memory",
+        "operating_model"
+      ],
+      "read_order": [
+        {
+          "path": "docs/Product Platform Kit — Guia — Manutenção documental.md",
+          "role": "procedure"
+        },
+        {
+          "path": "templates/apos/DOCUMENT-METADATA.md",
+          "role": "reference"
+        },
+        {
+          "path": "docs/apos/KNOWLEDGE-PROJECTIONS.md",
+          "role": "governing"
+        }
+      ],
+      "stop_when": "Fonte governante, inventário, dependências, links, evidência e retomada reconciliados.",
+      "do_not_infer": "Um nome descritivo não promove histórico ou proposta a regra vigente."
+    }
+  ]
+}

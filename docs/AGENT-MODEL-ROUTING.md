@@ -1,4 +1,18 @@
+---
+id: "DOC-B64DF5FD43B9F7"
+type: "reference"
+scope: "Product Platform Kit"
+document_role: "reference"
+purpose: "Contextualizar Roteamento de modelos por capacidade e risco."
+read_when: ["Consultar contexto complementar: Roteamento de modelos por capacidade e risco"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Roteamento de modelos por capacidade e risco
+
+Contextualizar Roteamento de modelos por capacidade e risco.
 
 Modelos são recursos de execução, não papéis organizacionais. O roteamento acontece depois de interpretar o Intent e classificar a ação.
 

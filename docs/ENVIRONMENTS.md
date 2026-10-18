@@ -1,4 +1,18 @@
+---
+id: "DOC-EEDF06E962EF16"
+type: "reference"
+scope: "Product Platform Kit"
+document_role: "reference"
+purpose: "Contextualizar Configuração de ambientes."
+read_when: ["Consultar contexto complementar: Configuração de ambientes"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Configuração de ambientes
+
+Contextualizar Configuração de ambientes.
 
 ## Separação obrigatória
 

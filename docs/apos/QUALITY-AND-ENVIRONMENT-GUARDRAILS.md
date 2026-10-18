@@ -1,4 +1,18 @@
+---
+id: "DOC-C6C85347332AC2"
+type: "contract"
+scope: "Product Platform Kit"
+document_role: "contract"
+purpose: "Definir APOS Quality & Environment Guardrails."
+read_when: ["Verificar regras e limites aplicáveis: APOS Quality & Environment Guardrails"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # APOS Quality & Environment Guardrails
+
+Definir APOS Quality & Environment Guardrails.
 
 ## Proposta
 

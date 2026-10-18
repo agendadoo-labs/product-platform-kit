@@ -1,4 +1,18 @@
+---
+id: "DOC-CBDF5889FE61C1"
+type: "evidence"
+scope: "Product Platform Kit"
+document_role: "evidence"
+purpose: "Registrar evidências de Auditoria de cobertura de capacidades."
+read_when: ["Conferir resultados e seus limites: Auditoria de cobertura de capacidades"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Auditoria de cobertura de capacidades
+
+Registrar evidências de Auditoria de cobertura de capacidades.
 
 **Data:** 2026-09-13  
 **Intent:** `I-PPK-CAPABILITY-001`  

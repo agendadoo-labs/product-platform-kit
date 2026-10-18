@@ -1,4 +1,18 @@
+---
+id: "DOC-FB9E7BE5DE0947"
+type: "guide"
+scope: "Product Platform Kit"
+document_role: "procedure"
+purpose: "Orientar Operação agêntica por APOS."
+read_when: ["Executar ou verificar o procedimento: Operação agêntica por APOS"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Operação agêntica por APOS
+
+Orientar Operação agêntica por APOS.
 
 O Product Platform Kit governa mudanças pelo ciclo:
 

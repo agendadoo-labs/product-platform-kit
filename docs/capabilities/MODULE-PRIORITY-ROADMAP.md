@@ -1,4 +1,18 @@
+---
+id: "DOC-D131E4716F66DE"
+type: "roadmap"
+scope: "Product Platform Kit"
+document_role: "plan"
+purpose: "Planejar Roadmap priorizado de módulos."
+read_when: ["Planejar os próximos passos: Roadmap priorizado de módulos"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Roadmap priorizado de módulos
+
+Planejar Roadmap priorizado de módulos.
 
 **Data:** 2026-09-12  
 **Base:** missão do Product Platform Kit + auditoria `I-PPK-CAPABILITY-001`
@@ -75,4 +89,3 @@ Search aparece em 11 porque é muito valioso, mas não universal; produtos como 
 ## Regra de execução
 
 Cada módulo terá um Intent APOS próprio. A implementação começa somente após validar um piloto real em um produto consumidor. O Valora pode ser o piloto de Payments, Billing, Subscription e Entitlements; a generalização para o kit ocorre apenas depois que os contratos sobreviverem ao uso e forem despojados de regras específicas do Valora.
-

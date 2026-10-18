@@ -1,4 +1,18 @@
+---
+id: "DOC-73CAF477D37E06"
+type: "guide"
+scope: "Product Platform Kit"
+document_role: "procedure"
+purpose: "Orientar APOS Session Bootstrap e memória para múltiplos times."
+read_when: ["Executar ou verificar o procedimento: APOS Session Bootstrap e memória para múltiplos times"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # APOS Session Bootstrap e memória para múltiplos times
+
+Orientar APOS Session Bootstrap e memória para múltiplos times.
 
 ## Decisão
 

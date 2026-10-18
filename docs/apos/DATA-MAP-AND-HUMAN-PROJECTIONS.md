@@ -1,4 +1,18 @@
+---
+id: "DOC-605243B20D4B42"
+type: "reference"
+scope: "Product Platform Kit"
+document_role: "dictionary"
+purpose: "Descrever DataMap e projeções humanas no APOS."
+read_when: ["Interpretar entidades e campos: DataMap e projeções humanas no APOS"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # DataMap e projeções humanas no APOS
+
+Descrever DataMap e projeções humanas no APOS.
 
 O crescimento de um produto cria dois problemas diferentes: governar dados e recuperar decisões. O APOS mantém ambos como registros pequenos e relacionáveis, sem transformar documentos narrativos em fontes paralelas.
 

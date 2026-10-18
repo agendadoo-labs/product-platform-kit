@@ -1,4 +1,18 @@
+---
+id: "DOC-B82F3903C3C103"
+type: "reference"
+scope: "Product Platform Kit"
+document_role: "reference"
+purpose: "Contextualizar Telemetria de produto."
+read_when: ["Consultar contexto complementar: Telemetria de produto"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Telemetria de produto
+
+Contextualizar Telemetria de produto.
 
 Telemetria faz parte da definição de pronto de toda feature.
 

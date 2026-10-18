@@ -1,4 +1,18 @@
+---
+id: "DOC-B1DD0C427132F9"
+type: "reference"
+scope: "Product Platform Kit"
+document_role: "reference"
+purpose: "Contextualizar APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada."
+read_when: ["Consultar contexto complementar: APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada
+
+Contextualizar APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada.
 
 Status: modelo operacional vigente na `main` desde 2026-09-08. O runtime transacional de `packages/apos` permanece no perfil executável v0.1; o v0.2 amplia a governança e os perfis verificáveis sem alegar que todas as políticas já são automaticamente executadas.
 

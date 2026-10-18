@@ -1,4 +1,18 @@
+---
+id: "DOC-709C8DDF909CB4"
+type: "reference"
+scope: "Product Platform Kit"
+document_role: "reference"
+purpose: "Contextualizar APOS em 30 minutos."
+read_when: ["Consultar contexto complementar: APOS em 30 minutos"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # APOS em 30 minutos
+
+Contextualizar APOS em 30 minutos.
 
 Este guia é a porta de entrada para quem acabou de conhecer o Product Platform Kit. Ao final, você saberá ler o estado de um produto, escolher o nível de processo e registrar uma mudança sem confundir código produzido com resultado comprovado.
 

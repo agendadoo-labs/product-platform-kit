@@ -1,0 +1,21 @@
+{
+  "id": "E-PPK-DOC-ORG-001",
+  "intent_id": "I-PPK-DOC-ORG-001",
+  "created_at": "2026-10-18",
+  "environment": "isolated_documentation_candidate",
+  "passed": true,
+  "claim": "Lotes passam nas validações locais de inventário e metadados.",
+  "verification": [
+    "python3 scripts/verify_document_inventory.py",
+    "python3 scripts/verify_document_metadata.py",
+    "python3 scripts/verify_reading_routes.py",
+    "6 tests: test_reading_routes.py"
+  ],
+  "ci_observed_before_record": "39125898761",
+  "limitations": [
+    "CI deve ser repetido na revisão final",
+    "Grafo Obsidian não inspecionado visualmente",
+    "Sem deploy, inferência ou ganho de tokens medido"
+  ],
+  "negative_evidence": "CI inicial falhou: memorial fixado recebeu metadados. Bytes originais restaurados; nova verificação completa pendente."
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "agendadoo-labs/product-platform-kit",
-  "observed_base": "923dea1c19a28b5203f671f566b6faa06a64ffcd",
+  "observed_base": "6fd711efab07dadad64df8de725fba50cb9efed7",
   "scope": "entrypoint_and_reading_index_only",
   "records": [
     {
@@ -12,7 +12,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "093cb23c24e774475240686a64e13b9cd35baf4dbb4feb72c15a7d87ab4114c8"
+      "sha256": "6f161bc74ffe5476059676a48a0f732eebc7cd0dd81132d20d1759181cf56752"
     },
     {
       "path": ".apos/README.md",
@@ -26,33 +26,42 @@
     },
     {
       "path": "docs/ADOPTION.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Adoção em outro projeto",
-      "purpose": "Consultar Adoção em outro projeto.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "ADOPTION",
+      "id": "DOC-1B85FC9761A15D",
+      "purpose": "Contextualizar Adoção em outro projeto.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Adoção em outro projeto"
       ],
-      "sha256": "3fc43ee43b4f4ac62d79c18a00bc421656f0f8683df74b88e972ddc3e339c10f"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "AGENTS.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Guia — operação APOS",
-      "purpose": "Consultar Product Platform Kit — operação APOS.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "AGENTS",
+      "id": "DOC-PRODUCT-PLATFORM-KIT-2",
+      "purpose": "Orientar agentes na manutenção de implementação, documentação e evidências.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Iniciar ou retomar trabalho como agente"
       ],
-      "sha256": "5dacdb585c52aa541586abae4b1073033fa9717ba56f477663ff46dbf38812e3"
+      "document_role": "procedure",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/APOS-GETTING-STARTED.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — APOS em 30 minutos",
-      "purpose": "Consultar APOS em 30 minutos.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "APOS-GETTING-STARTED",
+      "id": "DOC-709C8DDF909CB4",
+      "purpose": "Contextualizar APOS em 30 minutos.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: APOS em 30 minutos"
       ],
-      "sha256": "a5b2d3cc02e2f97792f9c4e040544c690b8b87009bf323070bb5b08f2a892bed"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "CHANGELOG.md",
@@ -72,27 +81,33 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "f91bf1c2cb8e5e3262437084d1c3780efb8cdfe5d4cf8857c6f3983b6461c1af"
+      "sha256": "396471d3df50ee9a59f9df74aaa4805ef2051938258193188c92fda0286173a9"
     },
     {
       "path": "docs/AGENT-MODEL-ROUTING.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Roteamento de modelos por capacidade e risco",
-      "purpose": "Consultar Roteamento de modelos por capacidade e risco.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "AGENT-MODEL-ROUTING",
+      "id": "DOC-B64DF5FD43B9F7",
+      "purpose": "Contextualizar Roteamento de modelos por capacidade e risco.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Roteamento de modelos por capacidade e risco"
       ],
-      "sha256": "3a72e09d1b735ef690bb68169cc833781950b2adbc241af64acc70f9110fc23c"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
-      "path": "docs/AGENTIC-PRODUCT-MANIFESTO.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/Product Platform Kit — Referência — The Agentic Product Manifesto.md",
+      "compatibility_path": "docs/AGENTIC-PRODUCT-MANIFESTO.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Referência — The Agentic Product Manifesto",
-      "purpose": "Consultar The Agentic Product Manifesto.",
+      "id": "DOC-F3F5790E7DE4E1",
+      "purpose": "Contextualizar The Agentic Product Manifesto.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: The Agentic Product Manifesto"
       ],
-      "sha256": "e79e62306819a64013d4ad45ab8e54703cbcc0962d71d9206ef3a68af895e746"
+      "document_role": "reference",
+      "path_policy": "canonical_descriptive"
     },
     {
       "path": "docs/APOS-RESOLVED-INTENTS.md",
@@ -102,7 +117,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "29ae91d465fad1f01ba769a8d1a6432e410cb85355446f2dc8e4e3b2d60bb713"
+      "sha256": "75694cd27d4669e419ba297b72b8af0f3bcd16890d9615e3e4d88d2b0a5631ea"
     },
     {
       "path": "Product Platform Kit — Início — Visão do produto.md",
@@ -119,53 +134,68 @@
     },
     {
       "path": "docs/AGENTIC-WORKFLOW.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Guia — Operação agêntica por APOS",
-      "purpose": "Consultar Operação agêntica por APOS.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "AGENTIC-WORKFLOW",
+      "id": "DOC-FB9E7BE5DE0947",
+      "purpose": "Orientar Operação agêntica por APOS.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Executar ou verificar o procedimento: Operação agêntica por APOS"
       ],
-      "sha256": "e1a3f061856a5b6e49c3e760cede8cdf414ba257739c10fb2aba442bf6a39bdb"
+      "document_role": "procedure",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
-      "path": "docs/ARCHITECTURE.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/Product Platform Kit — Arquitetura — Arquitetura básica.md",
+      "compatibility_path": "docs/ARCHITECTURE.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Arquitetura — Arquitetura básica",
-      "purpose": "Consultar Arquitetura básica.",
+      "id": "DOC-3BB634559D0D1E",
+      "purpose": "Explicar Arquitetura básica.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Alterar componentes ou responsabilidades: Arquitetura básica"
       ],
-      "sha256": "1249cc5b92dcc94eba4578016497beb18ad52239e2def7c4aa9aeda68db5d8ea"
+      "document_role": "architecture",
+      "path_policy": "canonical_descriptive"
     },
     {
-      "path": "docs/APOS-v0.1.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/Product Platform Kit — Referência — APOS v0.1 — executable repository specification.md",
+      "compatibility_path": "docs/APOS-v0.1.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Referência — APOS v0.1 — executable repository specification",
-      "purpose": "Consultar APOS v0.1 — executable repository specification.",
+      "id": "DOC-A72DB51FA68AE7",
+      "purpose": "Contextualizar APOS v0.1 — executable repository specification.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: APOS v0.1 — executable repository specification"
       ],
-      "sha256": "44273f3a232e4e24fd85a5618c17bb1c561d7c88bbe68b9e9c9f0a8cbe75f46b"
+      "document_role": "reference",
+      "path_policy": "canonical_descriptive"
     },
     {
       "path": "docs/EXPERIMENTS.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Evidência — Testes A B",
-      "purpose": "Consultar Testes A/B.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "EXPERIMENTS",
+      "id": "DOC-C939FB438911A2",
+      "purpose": "Registrar evidências de Testes A/B.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Conferir resultados e seus limites: Testes A/B"
       ],
-      "sha256": "a432bb8cf0b345403adf6bf006e9b4b96975ee2a0ae9a4f301e5b3e00453d50b"
+      "document_role": "evidence",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/ENVIRONMENTS.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Configuração de ambientes",
-      "purpose": "Consultar Configuração de ambientes.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "ENVIRONMENTS",
+      "id": "DOC-EEDF06E962EF16",
+      "purpose": "Contextualizar Configuração de ambientes.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Configuração de ambientes"
       ],
-      "sha256": "c52d5c528cdebac60b9ce0d56ed027e6632bf0f15e0c3a47d379328796d37c62"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/Product Platform Kit — Guia — Manutenção documental.md",
@@ -178,254 +208,326 @@
       "sha256": "a9d48abb61bd32f323f3c995e40614dff8056d4f10d9fa0eb5e1cb94933d940f"
     },
     {
-      "path": "docs/TEST-ENVIRONMENT-STANDARD.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/Product Platform Kit — Evidência — Padrão de ambiente de teste.md",
+      "compatibility_path": "docs/TEST-ENVIRONMENT-STANDARD.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Evidência — Padrão de ambiente de teste",
-      "purpose": "Consultar Padrão de ambiente de teste.",
+      "id": "DOC-F72B25E602C159",
+      "purpose": "Registrar evidências de Padrão de ambiente de teste.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Conferir resultados e seus limites: Padrão de ambiente de teste"
       ],
-      "sha256": "394e0569ab01f4260ab7310b32a659ee3e374fde6cbf434d1d1772b46c792dea"
+      "document_role": "evidence",
+      "path_policy": "canonical_descriptive"
     },
     {
-      "path": "docs/SETUP-PLAYBOOK.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/Product Platform Kit — Guia — Manual de configuração da plataforma.md",
+      "compatibility_path": "docs/SETUP-PLAYBOOK.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Guia — Manual de configuração da plataforma",
-      "purpose": "Consultar Manual de configuração da plataforma.",
+      "id": "DOC-F2920DE19C637C",
+      "purpose": "Orientar Manual de configuração da plataforma.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Executar ou verificar o procedimento: Manual de configuração da plataforma"
       ],
-      "sha256": "2e2e6cedb911bbb6eb571359cc9664708339726bbdadd51c8a8872cbdd77ae58"
+      "document_role": "procedure",
+      "path_policy": "canonical_descriptive"
     },
     {
-      "path": "docs/apos/APOS-v0.2-CHECKPOINT.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/apos/Product Platform Kit — Referência — Checkpoint — APOS v0.2.md",
+      "compatibility_path": "docs/apos/APOS-v0.2-CHECKPOINT.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Referência — Checkpoint — APOS v0.2",
-      "purpose": "Consultar Checkpoint — APOS v0.2.",
+      "id": "DOC-424223B306F061",
+      "purpose": "Contextualizar Checkpoint — APOS v0.2.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Checkpoint — APOS v0.2"
       ],
-      "sha256": "1dd71974e2cf4bd9f17f165c36129457d08538ced632174d5d6cb11467842672"
+      "document_role": "reference",
+      "path_policy": "canonical_descriptive"
     },
     {
       "path": "docs/SECURITY-PRIVACY.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Segurança e privacidade",
-      "purpose": "Consultar Segurança e privacidade.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "SECURITY-PRIVACY",
+      "id": "DOC-1B8E7B7EEF392B",
+      "purpose": "Contextualizar Segurança e privacidade.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Segurança e privacidade"
       ],
-      "sha256": "3f9be4c97bb659b86c72f3a6b8b77dc90eb6a3248f874e26f04b87f046348552"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/APOS-v0.2.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada",
-      "purpose": "Consultar APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "APOS-v0.2",
+      "id": "DOC-B1DD0C427132F9",
+      "purpose": "Contextualizar APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada"
       ],
-      "sha256": "6e234350d03b1187657e44935d080be811f6af53e574ad3a8df59b78939f094d"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
-      "path": "docs/VALORA-RJ-MAPPING.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/Product Platform Kit — Referência — Mapeamento do Valora RJ.md",
+      "compatibility_path": "docs/VALORA-RJ-MAPPING.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Referência — Mapeamento do Valora RJ",
-      "purpose": "Consultar Mapeamento do Valora RJ.",
+      "id": "DOC-0A204D2F150D89",
+      "purpose": "Contextualizar Mapeamento do Valora RJ.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Mapeamento do Valora RJ"
       ],
-      "sha256": "e147afb1e1361e697feeb4612559e07fc39b2b3403252a11e1c25013602606e7"
+      "document_role": "reference",
+      "path_policy": "canonical_descriptive"
     },
     {
       "path": "docs/TELEMETRY.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Telemetria de produto",
-      "purpose": "Consultar Telemetria de produto.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "TELEMETRY",
+      "id": "DOC-B82F3903C3C103",
+      "purpose": "Contextualizar Telemetria de produto.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Telemetria de produto"
       ],
-      "sha256": "4acc1998cd95f2d5c37e74e5f3c28cfa73d0b7fef15329eb890c2752474f4202"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/apos/KNOWLEDGE-PROJECTIONS.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Evidência — Knowledge projections and reversible review",
-      "purpose": "Consultar Knowledge projections and reversible review.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "KNOWLEDGE-PROJECTIONS",
+      "id": "DOC-DC2E8BFA5C2E6F",
+      "purpose": "Registrar evidências de Knowledge projections and reversible review.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Conferir resultados e seus limites: Knowledge projections and reversible review"
       ],
-      "sha256": "bf83a9a334e3d7edc7b2ddd839e4041dae22c5b6b07becccbad1754c185ab87a"
+      "document_role": "evidence",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/apos/QUALITY-AND-ENVIRONMENT-GUARDRAILS.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Contrato — APOS Quality & Environment Guardrails",
-      "purpose": "Consultar APOS Quality & Environment Guardrails.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "QUALITY-AND-ENVIRONMENT-GUARDRAILS",
+      "id": "DOC-C6C85347332AC2",
+      "purpose": "Definir APOS Quality & Environment Guardrails.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Verificar regras e limites aplicáveis: APOS Quality & Environment Guardrails"
       ],
-      "sha256": "503a9c166193e295b1bbceaa3987e341d837557b7a36b24328b297d0c5e5cb16"
+      "document_role": "contract",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/apos/APOS-v0.2-MEMORIAL.md",
       "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Memorial de evolução — APOS v0.2",
-      "purpose": "Consultar Memorial de evolução — APOS v0.2.",
+      "display_name": "Product Platform Kit — Referência — Memorial APOS v0.2",
+      "purpose": "Consultar o memorial histórico preservado por hash.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Revisar a evidência da adoção APOS v0.2"
       ],
       "sha256": "c5083cf230df35f229f44b85f526c47c57d814853885c1d42cd0aca0c9368688"
     },
     {
       "path": "docs/apos/DATA-MAP-AND-HUMAN-PROJECTIONS.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Dicionário — DataMap e projeções humanas no APOS",
-      "purpose": "Consultar DataMap e projeções humanas no APOS.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "DATA-MAP-AND-HUMAN-PROJECTIONS",
+      "id": "DOC-605243B20D4B42",
+      "purpose": "Descrever DataMap e projeções humanas no APOS.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Interpretar entidades e campos: DataMap e projeções humanas no APOS"
       ],
-      "sha256": "d2fbb7aa6e6c9e913d9ff785e53d01b1abdaf729895e707cfc1ca2d85c56c03b"
+      "document_role": "dictionary",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
-      "path": "docs/apos/DATABASE-CONTRACT-RELEASE-GATE.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/apos/Product Platform Kit — Contrato — Database API contract release gate.md",
+      "compatibility_path": "docs/apos/DATABASE-CONTRACT-RELEASE-GATE.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Contrato — Database API contract release gate",
-      "purpose": "Consultar Database/API contract release gate.",
+      "id": "DOC-EF6F3642652019",
+      "purpose": "Definir Database/API contract release gate.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Verificar regras e limites aplicáveis: Database/API contract release gate"
       ],
-      "sha256": "b1bbcaa98aea26333cd6600af6e8cc8223b915003ef87def320ff3d3da8900f5"
+      "document_role": "contract",
+      "path_policy": "canonical_descriptive"
     },
     {
-      "path": "docs/apos/OPERATING-MODEL-MIGRATION.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/apos/Product Platform Kit — Referência — Migração operacional do Product Platform Kit para APOS.md",
+      "compatibility_path": "docs/apos/OPERATING-MODEL-MIGRATION.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Referência — Migração operacional do Product Platform Kit para APOS",
-      "purpose": "Consultar Migração operacional do Product Platform Kit para APOS.",
+      "id": "DOC-E38B692EB76603",
+      "purpose": "Contextualizar Migração operacional do Product Platform Kit para APOS.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Migração operacional do Product Platform Kit para APOS"
       ],
-      "sha256": "7430fde0e445b18c612fd34374f8f21d1a6816b2835b5e6605d7ce5e0f3ede73"
+      "document_role": "reference",
+      "path_policy": "canonical_descriptive"
     },
     {
-      "path": "docs/apos/RECONSTRUCTION-AND-AGENTIC-MEMORY.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/apos/Product Platform Kit — Referência — Reconstrução e memória para organizações agênticas.md",
+      "compatibility_path": "docs/apos/RECONSTRUCTION-AND-AGENTIC-MEMORY.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Referência — Reconstrução e memória para organizações agênticas",
-      "purpose": "Consultar Reconstrução e memória para organizações agênticas.",
+      "id": "DOC-7197104E21C948",
+      "purpose": "Contextualizar Reconstrução e memória para organizações agênticas.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Reconstrução e memória para organizações agênticas"
       ],
-      "sha256": "8547ea8f34c313935015e7e4d06fbe5ae07ef6cc89fb4d22d20c12df4bebb54e"
+      "document_role": "reference",
+      "path_policy": "canonical_descriptive"
     },
     {
-      "path": "docs/apos/SCOPE-PRESERVATION.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/apos/Product Platform Kit — Referência — Scope Preservation and Change Envelopes.md",
+      "compatibility_path": "docs/apos/SCOPE-PRESERVATION.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Referência — Scope Preservation and Change Envelopes",
-      "purpose": "Consultar Scope Preservation and Change Envelopes.",
+      "id": "DOC-DA87EA0F39ACC9",
+      "purpose": "Contextualizar Scope Preservation and Change Envelopes.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Scope Preservation and Change Envelopes"
       ],
-      "sha256": "ddd3eaef9b36b9cde2d9533f19d143eb39748983aef386c6a56215e4f2dfe362"
+      "document_role": "reference",
+      "path_policy": "canonical_descriptive"
     },
     {
       "path": "docs/apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Guia — APOS Session Bootstrap e memória para múltiplos times",
-      "purpose": "Consultar APOS Session Bootstrap e memória para múltiplos times.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "SESSION-BOOTSTRAP-AND-MULTI-TEAM",
+      "id": "DOC-73CAF477D37E06",
+      "purpose": "Orientar APOS Session Bootstrap e memória para múltiplos times.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Executar ou verificar o procedimento: APOS Session Bootstrap e memória para múltiplos times"
       ],
-      "sha256": "b17e3a9699d872312ca72e23d916dca7236e4ec27e822a9885def50582f25635"
+      "document_role": "procedure",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
-      "path": "docs/apos/VALORA-SOURCES.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/apos/Product Platform Kit — Referência — Fontes consultadas.md",
+      "compatibility_path": "docs/apos/VALORA-SOURCES.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Referência — Fontes consultadas",
-      "purpose": "Consultar Fontes consultadas.",
+      "id": "DOC-F425BDCFB931CC",
+      "purpose": "Contextualizar Fontes consultadas.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Fontes consultadas"
       ],
-      "sha256": "5afee072be884da1339f28a37a9c407a830e7f1fbc4c374bfa3cde29cf7c77d6"
+      "document_role": "reference",
+      "path_policy": "canonical_descriptive"
     },
     {
-      "path": "docs/apos/VALORA-OPERATING-MODE.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/apos/Product Platform Kit — Referência — Valora — APOS aplicado à construção de produto.md",
+      "compatibility_path": "docs/apos/VALORA-OPERATING-MODE.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Referência — Valora — APOS aplicado à construção de produto",
-      "purpose": "Consultar Valora — APOS aplicado à construção de produto.",
+      "id": "DOC-747E5A73DD12A3",
+      "purpose": "Contextualizar Valora — APOS aplicado à construção de produto.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Valora — APOS aplicado à construção de produto"
       ],
-      "sha256": "cec9ea5ec66e0c3e834c4e8ceb3b8f036c9b6c4866526b558ec341ad045c36c0"
+      "document_role": "reference",
+      "path_policy": "canonical_descriptive"
     },
     {
-      "path": "docs/apos/CONTEXT.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/apos/Product Platform Kit — Referência — APOS — Product Platform Kit.md",
+      "compatibility_path": "docs/apos/CONTEXT.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Referência — APOS — Product Platform Kit",
-      "purpose": "Consultar APOS — Product Platform Kit.",
+      "id": "DOC-FB68E8445E77E9",
+      "purpose": "Contextualizar APOS — Product Platform Kit.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: APOS — Product Platform Kit"
       ],
-      "sha256": "a80d04d84d537fd46a85eeb85f973028c7a3202ccb27c5e54a3e38193a220c7b"
+      "document_role": "reference",
+      "path_policy": "canonical_descriptive"
     },
     {
       "path": "packages/map-core/docs/DATA-ARCHITECTURE.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Arquitetura — Arquitetura de dados para mapas de mercado",
-      "purpose": "Consultar Arquitetura de dados para mapas de mercado.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "DATA-ARCHITECTURE",
+      "id": "DOC-C1FCA53A582E92",
+      "purpose": "Explicar Arquitetura de dados para mapas de mercado.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Alterar componentes ou responsabilidades: Arquitetura de dados para mapas de mercado"
       ],
-      "sha256": "ca562dec9a4726ba89dba56ca021a553b30be8f5fba68007b7500a92cad904c6"
+      "document_role": "architecture",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/capabilities/MODULE-PRIORITY-ROADMAP.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Plano — Roadmap priorizado de módulos",
-      "purpose": "Consultar Roadmap priorizado de módulos.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "MODULE-PRIORITY-ROADMAP",
+      "id": "DOC-D131E4716F66DE",
+      "purpose": "Planejar Roadmap priorizado de módulos.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Planejar os próximos passos: Roadmap priorizado de módulos"
       ],
-      "sha256": "88c8bcc1c83c68056e9bdad9c1c6a791b0899b8ea56047148db6013fd29f8802"
+      "document_role": "plan",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/capabilities/CAPABILITY-COVERAGE-AUDIT.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Evidência — Auditoria de cobertura de capacidades",
-      "purpose": "Consultar Auditoria de cobertura de capacidades.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "CAPABILITY-COVERAGE-AUDIT",
+      "id": "DOC-CBDF5889FE61C1",
+      "purpose": "Registrar evidências de Auditoria de cobertura de capacidades.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Conferir resultados e seus limites: Auditoria de cobertura de capacidades"
       ],
-      "sha256": "e2cc7e4b9200bafa0985c0eedc3e8f74f3a730b331180986c912c05d948ac603"
+      "document_role": "evidence",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/capabilities/DIGITAL-PRODUCT-CAPABILITY-MAP-v2.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Digital Product Capability Map — v2",
-      "purpose": "Consultar Digital Product Capability Map — v2.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "DIGITAL-PRODUCT-CAPABILITY-MAP-v2",
+      "id": "DOC-A8186CFE0FE3B6",
+      "purpose": "Contextualizar Digital Product Capability Map — v2.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Digital Product Capability Map — v2"
       ],
-      "sha256": "b359defdbe19f553bee9a71f10bf55d30835435e99f05761f9cf06c8fee6de0e"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/capabilities/COMMERCIAL-MODEL-ECONOMIC-CONTROL-PLANE.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Commercial Model como Economic Control Plane",
-      "purpose": "Consultar Commercial Model como Economic Control Plane.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "COMMERCIAL-MODEL-ECONOMIC-CONTROL-PLANE",
+      "id": "DOC-167B11D8233C16",
+      "purpose": "Contextualizar Commercial Model como Economic Control Plane.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Commercial Model como Economic Control Plane"
       ],
-      "sha256": "954c91ac4bf08ccae3dda00bb4cc4308591063c4cfa45659617dc5799c3fc308"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/architecture/LLM_ENGINEERING.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Arquitetura — Engenharia e otimização de LLMs",
-      "purpose": "Consultar Engenharia e otimização de LLMs.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "LLM_ENGINEERING",
+      "id": "DOC-2B8CFFA2D8B4EE",
+      "purpose": "Explicar Engenharia e otimização de LLMs.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Alterar componentes ou responsabilidades: Engenharia e otimização de LLMs"
       ],
-      "sha256": "4228b4b5693db879a1be04b24c09f97dbe4d3b0b442b09aa761368d435004f2e"
+      "document_role": "architecture",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "packages/apos/evidence/bootstrap/catalog.md",
@@ -439,53 +541,68 @@
     },
     {
       "path": "docs/capabilities/PRODUCT-VISION.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Visão de produto",
-      "purpose": "Consultar Visão de produto.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "PRODUCT-VISION",
+      "id": "DOC-5D5990FA115D34",
+      "purpose": "Contextualizar Visão de produto.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Visão de produto"
       ],
-      "sha256": "b829955165b00ba72397e3d054a61279e700b580156fd4f84954c9d5da14be07"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
-      "path": "packages/map-core/README.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "packages/map-core/Product Platform Kit — Início — Map Core.md",
+      "compatibility_path": "packages/map-core/README.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Início — Map Core",
-      "purpose": "Consultar Map Core.",
+      "id": "DOC-E91DF18002825A",
+      "purpose": "Apresentar Map Core.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Iniciar trabalho no assunto: Map Core"
       ],
-      "sha256": "220ec7226ff61bd94a310bb9a7a9f8ff11ad1c853b367957667594c3ac1fb42e"
+      "document_role": "entrypoint",
+      "path_policy": "canonical_descriptive"
     },
     {
-      "path": "packages/apos/README.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "packages/apos/Product Platform Kit — Início — Runtime transacional experimental do APOS.md",
+      "compatibility_path": "packages/apos/README.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Início — Runtime transacional experimental do APOS",
-      "purpose": "Consultar Runtime transacional experimental do APOS.",
+      "id": "DOC-4BAB032FAE6204",
+      "purpose": "Apresentar Runtime transacional experimental do APOS.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Iniciar trabalho no assunto: Runtime transacional experimental do APOS"
       ],
-      "sha256": "58851d20936a15685c7b7bea6bb082847311bc8dd42d0c1129cebe481c8f5903"
+      "document_role": "entrypoint",
+      "path_policy": "canonical_descriptive"
     },
     {
       "path": "packages/map-core/docs/PERFORMANCE-PLAYBOOK.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Playbook de desempenho para busca por mapa",
-      "purpose": "Consultar Playbook de desempenho para busca por mapa.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "PERFORMANCE-PLAYBOOK",
+      "id": "DOC-DB7BA84B280BF3",
+      "purpose": "Contextualizar Playbook de desempenho para busca por mapa.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Playbook de desempenho para busca por mapa"
       ],
-      "sha256": "437f1cd9609399c17a291e12bef2195e81eabc661bde8931d6849c1724ee8139"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/capabilities/TOP-10-MODULE-BENCHMARKS.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Evidência — Benchmarks e implementação dos dez módulos prioritários",
-      "purpose": "Consultar Benchmarks e implementação dos dez módulos prioritários.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "TOP-10-MODULE-BENCHMARKS",
+      "id": "DOC-B26ACB75B61850",
+      "purpose": "Registrar evidências de Benchmarks e implementação dos dez módulos prioritários.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Conferir resultados e seus limites: Benchmarks e implementação dos dez módulos prioritários"
       ],
-      "sha256": "dd9e674be723389380c38f5c1f07707275a47c82aa2a454aac34f4f109c29763"
+      "document_role": "evidence",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "templates/agents/.agents/roles/design.md",
@@ -686,9 +803,47 @@
         "Consultar a fonte conforme seu assunto e revisão"
       ],
       "sha256": "aef7a0e156a3b0ee27be96dbc6d161cfaadf4b6749072b9ca8daa27c517a7ac7"
+    },
+    {
+      "path": "docs/Product Platform Kit — Guia — Percursos de leitura por domínio.md",
+      "classification": "manual_document",
+      "id": "DOC-EAD8A7BA7034A9",
+      "display_name": "Product Platform Kit — Guia — Percursos de leitura por domínio",
+      "purpose": "Orientar Percursos de leitura por domínio.",
+      "read_when": [
+        "Executar ou verificar o procedimento: Percursos de leitura por domínio"
+      ],
+      "document_role": "procedure"
     }
   ],
   "renames": {
-    "README.md": "Product Platform Kit — Início — Visão do produto.md"
-  }
+    "README.md": "Product Platform Kit — Início — Visão do produto.md",
+    "docs/AGENTIC-PRODUCT-MANIFESTO.md": "docs/Product Platform Kit — Referência — The Agentic Product Manifesto.md",
+    "docs/ARCHITECTURE.md": "docs/Product Platform Kit — Arquitetura — Arquitetura básica.md",
+    "docs/APOS-v0.1.md": "docs/Product Platform Kit — Referência — APOS v0.1 — executable repository specification.md",
+    "docs/TEST-ENVIRONMENT-STANDARD.md": "docs/Product Platform Kit — Evidência — Padrão de ambiente de teste.md",
+    "docs/SETUP-PLAYBOOK.md": "docs/Product Platform Kit — Guia — Manual de configuração da plataforma.md",
+    "docs/apos/APOS-v0.2-CHECKPOINT.md": "docs/apos/Product Platform Kit — Referência — Checkpoint — APOS v0.2.md",
+    "docs/VALORA-RJ-MAPPING.md": "docs/Product Platform Kit — Referência — Mapeamento do Valora RJ.md",
+    "docs/apos/DATABASE-CONTRACT-RELEASE-GATE.md": "docs/apos/Product Platform Kit — Contrato — Database API contract release gate.md",
+    "docs/apos/OPERATING-MODEL-MIGRATION.md": "docs/apos/Product Platform Kit — Referência — Migração operacional do Product Platform Kit para APOS.md",
+    "docs/apos/RECONSTRUCTION-AND-AGENTIC-MEMORY.md": "docs/apos/Product Platform Kit — Referência — Reconstrução e memória para organizações agênticas.md",
+    "docs/apos/SCOPE-PRESERVATION.md": "docs/apos/Product Platform Kit — Referência — Scope Preservation and Change Envelopes.md",
+    "docs/apos/VALORA-SOURCES.md": "docs/apos/Product Platform Kit — Referência — Fontes consultadas.md",
+    "docs/apos/VALORA-OPERATING-MODE.md": "docs/apos/Product Platform Kit — Referência — Valora — APOS aplicado à construção de produto.md",
+    "docs/apos/CONTEXT.md": "docs/apos/Product Platform Kit — Referência — APOS — Product Platform Kit.md",
+    "packages/map-core/README.md": "packages/map-core/Product Platform Kit — Início — Map Core.md",
+    "packages/apos/README.md": "packages/apos/Product Platform Kit — Início — Runtime transacional experimental do APOS.md"
+  },
+  "migration": {
+    "checkpoint": "CP-013",
+    "batch": 9,
+    "batches": 9,
+    "status": "complete_inventory_scope"
+  },
+  "limitations": [
+    "Coverage is limited to explicitly inventoried Markdown files",
+    "Generated and historical sources are preserved byte-for-byte; manual stable paths retain tool compatibility",
+    "Metadata is not evidence of runtime availability"
+  ]
 }

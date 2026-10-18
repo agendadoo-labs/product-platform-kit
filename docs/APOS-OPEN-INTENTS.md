@@ -1,15 +1,16 @@
 ---
 title: APOS — Intents abertos
-updated: 2026-10-17
+updated: 2026-10-18
 ---
 
 # Intents abertos
 
-> Projeção da revisão 14 do ProductState. Não editar manualmente.
+> Projeção da revisão 15 do ProductState. Não editar manualmente.
 
 | Intent | Estado | Cerimônia | Próximo checkpoint |
 |---|---|---|---|
 | `I-PPK-KNOWLEDGE-001` | active | Strict | Review optional contract candidate and validation; implement generator separately before claiming retrieval or synchronization gains. |
+| `I-PPK-DOC-ORG-001` | active | Strict | Não definido. |
 
 ## I-PPK-KNOWLEDGE-001
 
@@ -21,6 +22,18 @@ updated: 2026-10-17
 - **Decisões:** `D-PPK-KNOWLEDGE-001`, `D-PPK-KNOWLEDGE-002`.
 - **Última execução:** nenhuma.
 - **Última evidência:** `E-PPK-KNOWLEDGE-001` — passou.
+- **Incertezas:** nenhuma registrada.
+
+## I-PPK-DOC-ORG-001
+
+- **Estado do Intent:** active.
+- **Estado operacional:** sem workstream.
+- **Problema:** Nomes genéricos e metadados incompletos dificultam selecionar documentação confiável.
+- **Resultado esperado:** Inventário explícito, nomes inteligíveis, metadados, compatibilidade e retomada verificáveis.
+- **Próximo checkpoint:** Não definido.
+- **Decisões:** `D-PPK-DOC-ORG-001`.
+- **Última execução:** nenhuma.
+- **Última evidência:** `E-PPK-DOC-ORG-001` — passou.
 - **Incertezas:** nenhuma registrada.
 
 ## Memória por Intent

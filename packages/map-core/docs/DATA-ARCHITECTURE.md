@@ -1,4 +1,18 @@
+---
+id: "DOC-C1FCA53A582E92"
+type: "reference"
+scope: "Product Platform Kit"
+document_role: "architecture"
+purpose: "Explicar Arquitetura de dados para mapas de mercado."
+read_when: ["Alterar componentes ou responsabilidades: Arquitetura de dados para mapas de mercado"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Arquitetura de dados para mapas de mercado
+
+Explicar Arquitetura de dados para mapas de mercado.
 
 ## Objetivo
 
