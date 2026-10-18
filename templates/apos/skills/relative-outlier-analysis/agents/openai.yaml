@@ -1,0 +1,4 @@
+interface:
+  display_name: "Análise relativa e outliers"
+  short_description: "Compare taxas com fontes e limites explícitos"
+  default_prompt: "Use $relative-outlier-analysis para analisar os dados agregados, verificar denominadores e identificar candidatos a revisão sem inferir irregularidade."

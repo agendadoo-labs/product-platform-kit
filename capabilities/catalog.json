@@ -15,20 +15,220 @@
     "not_covered": "Nenhuma evidência suficiente no repositório. É o padrão quando não existe claim explícito."
   },
   "domains": [
-    {"id": "business_growth", "label": "Business & Growth", "capabilities": ["business_model", "commercial_model", "economic_control_plane", "growth_acquisition", "monetization", "advertising_adtech", "partner_ecosystem", "revenue_operations"]},
-    {"id": "customer_identity", "label": "Customer & Identity", "capabilities": ["identity_access", "customer_account", "organization", "crm", "communication", "collaboration"]},
-    {"id": "commerce_offering", "label": "Commerce & Offering", "capabilities": ["catalog", "pricing", "product_configuration_cpq", "inventory", "cart", "order", "subscription", "entitlements"]},
-    {"id": "financial", "label": "Financial", "capabilities": ["payments", "billing", "ledger", "settlement", "fiscal", "credit_lending", "collections", "treasury"]},
-    {"id": "marketplace", "label": "Marketplace", "capabilities": ["supply", "demand", "matching", "leads", "liquidity", "reputation", "marketplace_governance"]},
-    {"id": "information_access_discovery", "label": "Information Access & Discovery", "capabilities": ["ingestion", "indexing", "query_understanding", "retrieval_lexical", "retrieval_semantic", "retrieval_structured", "retrieval_graph", "retrieval_hybrid", "candidate_generation", "ranking_reranking", "filtering_faceting", "geo_search", "multimodal_retrieval", "recommendation", "personalization", "knowledge_retrieval_rag", "relevance_evaluation"]},
-    {"id": "content_knowledge", "label": "Content & Knowledge", "capabilities": ["content_management", "document_management", "content_rights_licensing", "knowledge_management", "taxonomy_ontology", "master_data_management"]},
-    {"id": "physical_world_operations", "label": "Physical World & Operations", "capabilities": ["procurement", "supplier_management", "inventory", "warehousing", "fulfillment", "transportation", "last_mile", "reverse_logistics", "supply_chain", "geospatial", "asset_management", "iot_device_management"]},
-    {"id": "scheduling_resource_allocation", "label": "Scheduling & Resource Allocation", "capabilities": ["availability", "booking", "reservations", "capacity", "scheduling", "optimization"]},
-    {"id": "trust_risk_safety", "label": "Trust, Risk & Safety", "capabilities": ["identity_trust", "account_integrity", "content_safety", "behavioral_abuse", "fraud", "transaction_safety", "marketplace_integrity", "user_protection", "policy", "enforcement", "appeals", "moderation_operations", "investigation"]},
-    {"id": "enterprise_operations", "label": "Enterprise Operations", "capabilities": ["admin_backoffice", "erp", "workflow_bpm", "rules_engine", "decision_systems", "legal", "contract_lifecycle", "support_cx", "vendor_management"]},
-    {"id": "data_intelligence", "label": "Data & Intelligence", "capabilities": ["telemetry", "data_collection", "lake_warehouse_lakehouse", "semantic_layer", "bi", "experimentation", "data_governance", "ml_ai", "optimization", "simulation_digital_twins"]},
-    {"id": "platform_engineering", "label": "Platform Engineering", "capabilities": ["architecture", "apis", "integration", "devex", "internal_developer_platform", "cicd", "infrastructure", "observability", "sre", "security", "finops", "business_continuity_dr"]},
-    {"id": "governance_cross_cutting", "label": "Governance & Cross-Cutting Concerns", "capabilities": ["privacy", "compliance", "audit", "data_governance", "ai_governance", "accessibility", "localization_internationalization", "regulatory_overlays"]}
+    {
+      "id": "business_growth",
+      "label": "Business & Growth",
+      "capabilities": [
+        "business_model",
+        "commercial_model",
+        "economic_control_plane",
+        "growth_acquisition",
+        "monetization",
+        "advertising_adtech",
+        "partner_ecosystem",
+        "revenue_operations"
+      ]
+    },
+    {
+      "id": "customer_identity",
+      "label": "Customer & Identity",
+      "capabilities": [
+        "identity_access",
+        "customer_account",
+        "organization",
+        "crm",
+        "communication",
+        "collaboration"
+      ]
+    },
+    {
+      "id": "commerce_offering",
+      "label": "Commerce & Offering",
+      "capabilities": [
+        "catalog",
+        "pricing",
+        "product_configuration_cpq",
+        "inventory",
+        "cart",
+        "order",
+        "subscription",
+        "entitlements"
+      ]
+    },
+    {
+      "id": "financial",
+      "label": "Financial",
+      "capabilities": [
+        "payments",
+        "billing",
+        "ledger",
+        "settlement",
+        "fiscal",
+        "credit_lending",
+        "collections",
+        "treasury"
+      ]
+    },
+    {
+      "id": "marketplace",
+      "label": "Marketplace",
+      "capabilities": [
+        "supply",
+        "demand",
+        "matching",
+        "leads",
+        "liquidity",
+        "reputation",
+        "marketplace_governance"
+      ]
+    },
+    {
+      "id": "information_access_discovery",
+      "label": "Information Access & Discovery",
+      "capabilities": [
+        "ingestion",
+        "indexing",
+        "query_understanding",
+        "retrieval_lexical",
+        "retrieval_semantic",
+        "retrieval_structured",
+        "retrieval_graph",
+        "retrieval_hybrid",
+        "candidate_generation",
+        "ranking_reranking",
+        "filtering_faceting",
+        "geo_search",
+        "multimodal_retrieval",
+        "recommendation",
+        "personalization",
+        "knowledge_retrieval_rag",
+        "relevance_evaluation"
+      ]
+    },
+    {
+      "id": "content_knowledge",
+      "label": "Content & Knowledge",
+      "capabilities": [
+        "content_management",
+        "document_management",
+        "content_rights_licensing",
+        "knowledge_management",
+        "taxonomy_ontology",
+        "master_data_management"
+      ]
+    },
+    {
+      "id": "physical_world_operations",
+      "label": "Physical World & Operations",
+      "capabilities": [
+        "procurement",
+        "supplier_management",
+        "inventory",
+        "warehousing",
+        "fulfillment",
+        "transportation",
+        "last_mile",
+        "reverse_logistics",
+        "supply_chain",
+        "geospatial",
+        "asset_management",
+        "iot_device_management"
+      ]
+    },
+    {
+      "id": "scheduling_resource_allocation",
+      "label": "Scheduling & Resource Allocation",
+      "capabilities": [
+        "availability",
+        "booking",
+        "reservations",
+        "capacity",
+        "scheduling",
+        "optimization"
+      ]
+    },
+    {
+      "id": "trust_risk_safety",
+      "label": "Trust, Risk & Safety",
+      "capabilities": [
+        "identity_trust",
+        "account_integrity",
+        "content_safety",
+        "behavioral_abuse",
+        "fraud",
+        "transaction_safety",
+        "marketplace_integrity",
+        "user_protection",
+        "policy",
+        "enforcement",
+        "appeals",
+        "moderation_operations",
+        "investigation"
+      ]
+    },
+    {
+      "id": "enterprise_operations",
+      "label": "Enterprise Operations",
+      "capabilities": [
+        "admin_backoffice",
+        "erp",
+        "workflow_bpm",
+        "rules_engine",
+        "decision_systems",
+        "legal",
+        "contract_lifecycle",
+        "support_cx",
+        "vendor_management"
+      ]
+    },
+    {
+      "id": "data_intelligence",
+      "label": "Data & Intelligence",
+      "capabilities": [
+        "telemetry",
+        "data_collection",
+        "lake_warehouse_lakehouse",
+        "semantic_layer",
+        "bi",
+        "experimentation",
+        "data_governance",
+        "ml_ai",
+        "optimization",
+        "simulation_digital_twins"
+      ]
+    },
+    {
+      "id": "platform_engineering",
+      "label": "Platform Engineering",
+      "capabilities": [
+        "architecture",
+        "apis",
+        "integration",
+        "devex",
+        "internal_developer_platform",
+        "cicd",
+        "infrastructure",
+        "observability",
+        "sre",
+        "security",
+        "finops",
+        "business_continuity_dr"
+      ]
+    },
+    {
+      "id": "governance_cross_cutting",
+      "label": "Governance & Cross-Cutting Concerns",
+      "capabilities": [
+        "privacy",
+        "compliance",
+        "audit",
+        "data_governance",
+        "ai_governance",
+        "accessibility",
+        "localization_internationalization",
+        "regulatory_overlays"
+      ]
+    }
   ],
   "cross_domain_layers": [
     {
@@ -36,40 +236,280 @@
       "label": "Commercial Model / Economic Control Plane",
       "source": "docs/capabilities/COMMERCIAL-MODEL-ECONOMIC-CONTROL-PLANE.md",
       "machine_readable_example": "commercial-model/system.example.json",
-      "propagation_path": ["business_model", "commercial_model", "actor_objectives_and_incentives", "domain_objective_functions", "product_algorithm_operations_behavior", "market_equilibrium"],
-      "influences": ["business_growth", "customer_identity", "commerce_offering", "financial", "marketplace", "information_access_discovery", "content_knowledge", "physical_world_operations", "scheduling_resource_allocation", "trust_risk_safety", "enterprise_operations", "data_intelligence", "platform_engineering", "governance_cross_cutting"],
+      "propagation_path": [
+        "business_model",
+        "commercial_model",
+        "actor_objectives_and_incentives",
+        "domain_objective_functions",
+        "product_algorithm_operations_behavior",
+        "market_equilibrium"
+      ],
+      "influences": [
+        "business_growth",
+        "customer_identity",
+        "commerce_offering",
+        "financial",
+        "marketplace",
+        "information_access_discovery",
+        "content_knowledge",
+        "physical_world_operations",
+        "scheduling_resource_allocation",
+        "trust_risk_safety",
+        "enterprise_operations",
+        "data_intelligence",
+        "platform_engineering",
+        "governance_cross_cutting"
+      ],
       "rule": "Influence expands the APOS Change Envelope and evidence plan; it does not automatically activate or authorize a capability."
     }
   ],
   "coverage_claims": [
-    {"id": "business_growth.commercial_model", "level": "template_or_contract", "evidence": ["docs/capabilities/COMMERCIAL-MODEL-ECONOMIC-CONTROL-PLANE.md", "commercial-model/system.example.json"], "limit": "Contrato e exemplo provider-neutral; ainda não há simulador nem compilador de impacto executável."},
-    {"id": "business_growth.economic_control_plane", "level": "guidance_only", "evidence": ["docs/capabilities/COMMERCIAL-MODEL-ECONOMIC-CONTROL-PLANE.md"], "limit": "A difusão de impacto é uma regra operacional; pesos e simulação permanecem evolução futura."},
-    {"id": "customer_identity.identity_access", "level": "reference_implementation", "evidence": ["supabase/migrations/0001_identity_and_roles.sql", "docs/SECURITY-PRIVACY.md"], "limit": "Referência Supabase; ainda não há contrato provider-neutral de identidade."},
-    {"id": "customer_identity.customer_account", "level": "reference_implementation", "evidence": ["supabase/migrations/0001_identity_and_roles.sql"], "limit": "Perfil básico; ausência de lifecycle e organização reutilizáveis."},
-    {"id": "information_access_discovery.geo_search", "level": "template_or_contract", "evidence": ["packages/map-core/package.json", "packages/map-core/src", "packages/map-core/docs"], "limit": "Pacote de contratos sem suíte de testes própria; ainda não sustenta claim de módulo validado."},
-    {"id": "physical_world_operations.geospatial", "level": "template_or_contract", "evidence": ["packages/map-core/package.json", "packages/map-core/src", "packages/map-core/docs"], "limit": "Pacote de contratos sem suíte de testes própria; ainda não sustenta claim de módulo validado."},
-    {"id": "data_intelligence.telemetry", "level": "reference_implementation", "evidence": ["templates/web/telemetry.ts", "supabase/migrations/0002_product_telemetry.sql", "docs/TELEMETRY.md"], "limit": "Cliente e schema de referência; falta adaptador provider-neutral e exportação OpenTelemetry."},
-    {"id": "data_intelligence.data_collection", "level": "reference_implementation", "evidence": ["templates/web/telemetry.ts", "supabase/migrations/0002_product_telemetry.sql"]},
-    {"id": "data_intelligence.experimentation", "level": "reference_implementation", "evidence": ["templates/web/experiments.ts", "supabase/migrations/0003_ab_experiments.sql", "docs/EXPERIMENTS.md"]},
-    {"id": "data_intelligence.data_governance", "level": "guidance_only", "evidence": ["docs/apos/DATA-MAP-AND-HUMAN-PROJECTIONS.md", ".apos/data/data-map.json"]},
-    {"id": "platform_engineering.architecture", "level": "template_or_contract", "evidence": [".apos/architecture/architecture-profile.json", "docs/ARCHITECTURE.md"]},
-    {"id": "platform_engineering.apis", "level": "guidance_only", "evidence": ["docs/ARCHITECTURE.md", "docs/apos/SCOPE-PRESERVATION.md"]},
-    {"id": "platform_engineering.integration", "level": "guidance_only", "evidence": ["docs/ARCHITECTURE.md", "docs/SETUP-PLAYBOOK.md"]},
-    {"id": "platform_engineering.devex", "level": "validated_module", "evidence": ["packages/apos/package.json", "scripts/bootstrap-apos-session.mjs", "scripts/check-operating-model.mjs", "templates/apos"]},
-    {"id": "platform_engineering.internal_developer_platform", "level": "template_or_contract", "evidence": ["templates/apos", "templates/design-system", "templates/environments"]},
-    {"id": "platform_engineering.cicd", "level": "reference_implementation", "evidence": [".github/workflows/quality.yml"], "limit": "Workflow do próprio kit; ainda não é um workflow publicável e parametrizado para consumidores."},
-    {"id": "platform_engineering.infrastructure", "level": "template_or_contract", "evidence": ["templates/environments", "docs/ENVIRONMENTS.md"]},
-    {"id": "platform_engineering.observability", "level": "guidance_only", "evidence": ["docs/TELEMETRY.md", "docs/apos/QUALITY-AND-ENVIRONMENT-GUARDRAILS.md"]},
-    {"id": "platform_engineering.sre", "level": "guidance_only", "evidence": ["docs/apos/QUALITY-AND-ENVIRONMENT-GUARDRAILS.md", "templates/operations"]},
-    {"id": "platform_engineering.security", "level": "reference_implementation", "evidence": ["scripts/check-repository.mjs", "docs/SECURITY-PRIVACY.md"]},
-    {"id": "platform_engineering.finops", "level": "template_or_contract", "evidence": ["docs/AGENT-MODEL-ROUTING.md", ".apos/learning/learning-cost-loop.json"]},
-    {"id": "platform_engineering.business_continuity_dr", "level": "template_or_contract", "evidence": ["templates/operations/reconstruction-manifest.example.json", "templates/operations/disaster-recovery-plan.example.md", "docs/apos/RECONSTRUCTION-AND-AGENTIC-MEMORY.md"]},
-    {"id": "governance_cross_cutting.privacy", "level": "guidance_only", "evidence": ["docs/SECURITY-PRIVACY.md", "supabase/migrations/0004_retention.sql"], "limit": "Não há módulo provider-neutral de consentimento, direitos do titular e trilha de finalidade."},
-    {"id": "governance_cross_cutting.compliance", "level": "guidance_only", "evidence": ["docs/SECURITY-PRIVACY.md"]},
-    {"id": "governance_cross_cutting.audit", "level": "template_or_contract", "evidence": [".apos/evidence", ".apos/runs", ".apos/decisions"]},
-    {"id": "governance_cross_cutting.data_governance", "level": "template_or_contract", "evidence": ["templates/apos/.apos/data/data-map.json", "docs/apos/DATA-MAP-AND-HUMAN-PROJECTIONS.md"]},
-    {"id": "governance_cross_cutting.ai_governance", "level": "validated_module", "evidence": ["packages/apos", ".apos/ai/ai-execution-profile.json", "docs/APOS-v0.2.md"]},
-    {"id": "governance_cross_cutting.accessibility", "level": "template_or_contract", "evidence": ["templates/design-system/README.md", "templates/design-system/components.css"]}
+    {
+      "id": "business_growth.commercial_model",
+      "level": "template_or_contract",
+      "evidence": [
+        "docs/capabilities/COMMERCIAL-MODEL-ECONOMIC-CONTROL-PLANE.md",
+        "commercial-model/system.example.json"
+      ],
+      "limit": "Contrato e exemplo provider-neutral; ainda não há simulador nem compilador de impacto executável."
+    },
+    {
+      "id": "business_growth.economic_control_plane",
+      "level": "guidance_only",
+      "evidence": [
+        "docs/capabilities/COMMERCIAL-MODEL-ECONOMIC-CONTROL-PLANE.md"
+      ],
+      "limit": "A difusão de impacto é uma regra operacional; pesos e simulação permanecem evolução futura."
+    },
+    {
+      "id": "customer_identity.identity_access",
+      "level": "reference_implementation",
+      "evidence": [
+        "supabase/migrations/0001_identity_and_roles.sql",
+        "docs/SECURITY-PRIVACY.md"
+      ],
+      "limit": "Referência Supabase; ainda não há contrato provider-neutral de identidade."
+    },
+    {
+      "id": "customer_identity.customer_account",
+      "level": "reference_implementation",
+      "evidence": [
+        "supabase/migrations/0001_identity_and_roles.sql"
+      ],
+      "limit": "Perfil básico; ausência de lifecycle e organização reutilizáveis."
+    },
+    {
+      "id": "information_access_discovery.geo_search",
+      "level": "template_or_contract",
+      "evidence": [
+        "packages/map-core/package.json",
+        "packages/map-core/src",
+        "packages/map-core/docs"
+      ],
+      "limit": "Pacote de contratos sem suíte de testes própria; ainda não sustenta claim de módulo validado."
+    },
+    {
+      "id": "physical_world_operations.geospatial",
+      "level": "template_or_contract",
+      "evidence": [
+        "packages/map-core/package.json",
+        "packages/map-core/src",
+        "packages/map-core/docs"
+      ],
+      "limit": "Pacote de contratos sem suíte de testes própria; ainda não sustenta claim de módulo validado."
+    },
+    {
+      "id": "data_intelligence.telemetry",
+      "level": "reference_implementation",
+      "evidence": [
+        "templates/web/telemetry.ts",
+        "supabase/migrations/0002_product_telemetry.sql",
+        "docs/TELEMETRY.md"
+      ],
+      "limit": "Cliente e schema de referência; falta adaptador provider-neutral e exportação OpenTelemetry."
+    },
+    {
+      "id": "data_intelligence.data_collection",
+      "level": "reference_implementation",
+      "evidence": [
+        "templates/web/telemetry.ts",
+        "supabase/migrations/0002_product_telemetry.sql",
+        ".apos/domains/data-intelligence.json",
+        ".apos/skills/data-skills.json",
+        "templates/apos/skills/public-data-ingestion/scripts/ingest.py",
+        "templates/apos/skills/public-data-ingestion/scripts/test_ingest.py"
+      ],
+      "limit": "External ingestion is a bounded single-resource local reference; source-family skills are procedures, not certified connectors."
+    },
+    {
+      "id": "data_intelligence.experimentation",
+      "level": "reference_implementation",
+      "evidence": [
+        "templates/web/experiments.ts",
+        "supabase/migrations/0003_ab_experiments.sql",
+        "docs/EXPERIMENTS.md"
+      ]
+    },
+    {
+      "id": "data_intelligence.data_governance",
+      "level": "template_or_contract",
+      "evidence": [
+        "docs/apos/DATA-MAP-AND-HUMAN-PROJECTIONS.md",
+        ".apos/data/data-map.json",
+        ".apos/domains/data-intelligence.json",
+        "docs/architecture/DATA-INTELLIGENCE.md"
+      ]
+    },
+    {
+      "id": "platform_engineering.architecture",
+      "level": "template_or_contract",
+      "evidence": [
+        ".apos/architecture/architecture-profile.json",
+        "docs/ARCHITECTURE.md"
+      ]
+    },
+    {
+      "id": "platform_engineering.apis",
+      "level": "guidance_only",
+      "evidence": [
+        "docs/ARCHITECTURE.md",
+        "docs/apos/SCOPE-PRESERVATION.md"
+      ]
+    },
+    {
+      "id": "platform_engineering.integration",
+      "level": "guidance_only",
+      "evidence": [
+        "docs/ARCHITECTURE.md",
+        "docs/SETUP-PLAYBOOK.md"
+      ]
+    },
+    {
+      "id": "platform_engineering.devex",
+      "level": "validated_module",
+      "evidence": [
+        "packages/apos/package.json",
+        "scripts/bootstrap-apos-session.mjs",
+        "scripts/check-operating-model.mjs",
+        "templates/apos"
+      ]
+    },
+    {
+      "id": "platform_engineering.internal_developer_platform",
+      "level": "template_or_contract",
+      "evidence": [
+        "templates/apos",
+        "templates/design-system",
+        "templates/environments"
+      ]
+    },
+    {
+      "id": "platform_engineering.cicd",
+      "level": "reference_implementation",
+      "evidence": [
+        ".github/workflows/quality.yml"
+      ],
+      "limit": "Workflow do próprio kit; ainda não é um workflow publicável e parametrizado para consumidores."
+    },
+    {
+      "id": "platform_engineering.infrastructure",
+      "level": "template_or_contract",
+      "evidence": [
+        "templates/environments",
+        "docs/ENVIRONMENTS.md"
+      ]
+    },
+    {
+      "id": "platform_engineering.observability",
+      "level": "guidance_only",
+      "evidence": [
+        "docs/TELEMETRY.md",
+        "docs/apos/QUALITY-AND-ENVIRONMENT-GUARDRAILS.md"
+      ]
+    },
+    {
+      "id": "platform_engineering.sre",
+      "level": "guidance_only",
+      "evidence": [
+        "docs/apos/QUALITY-AND-ENVIRONMENT-GUARDRAILS.md",
+        "templates/operations"
+      ]
+    },
+    {
+      "id": "platform_engineering.security",
+      "level": "reference_implementation",
+      "evidence": [
+        "scripts/check-repository.mjs",
+        "docs/SECURITY-PRIVACY.md"
+      ]
+    },
+    {
+      "id": "platform_engineering.finops",
+      "level": "template_or_contract",
+      "evidence": [
+        "docs/AGENT-MODEL-ROUTING.md",
+        ".apos/learning/learning-cost-loop.json"
+      ]
+    },
+    {
+      "id": "platform_engineering.business_continuity_dr",
+      "level": "template_or_contract",
+      "evidence": [
+        "templates/operations/reconstruction-manifest.example.json",
+        "templates/operations/disaster-recovery-plan.example.md",
+        "docs/apos/RECONSTRUCTION-AND-AGENTIC-MEMORY.md"
+      ]
+    },
+    {
+      "id": "governance_cross_cutting.privacy",
+      "level": "guidance_only",
+      "evidence": [
+        "docs/SECURITY-PRIVACY.md",
+        "supabase/migrations/0004_retention.sql"
+      ],
+      "limit": "Não há módulo provider-neutral de consentimento, direitos do titular e trilha de finalidade."
+    },
+    {
+      "id": "governance_cross_cutting.compliance",
+      "level": "guidance_only",
+      "evidence": [
+        "docs/SECURITY-PRIVACY.md"
+      ]
+    },
+    {
+      "id": "governance_cross_cutting.audit",
+      "level": "template_or_contract",
+      "evidence": [
+        ".apos/evidence",
+        ".apos/runs",
+        ".apos/decisions"
+      ]
+    },
+    {
+      "id": "governance_cross_cutting.data_governance",
+      "level": "template_or_contract",
+      "evidence": [
+        "templates/apos/.apos/data/data-map.json",
+        "docs/apos/DATA-MAP-AND-HUMAN-PROJECTIONS.md"
+      ]
+    },
+    {
+      "id": "governance_cross_cutting.ai_governance",
+      "level": "validated_module",
+      "evidence": [
+        "packages/apos",
+        ".apos/ai/ai-execution-profile.json",
+        "docs/APOS-v0.2.md"
+      ]
+    },
+    {
+      "id": "governance_cross_cutting.accessibility",
+      "level": "template_or_contract",
+      "evidence": [
+        "templates/design-system/README.md",
+        "templates/design-system/components.css"
+      ]
+    }
   ],
   "coverage_rule": "Uma capability sem coverage_claim explícito é not_covered. O nível só pode subir com evidência versionada e teste proporcional ao claim.",
   "updated_at": "2026-09-13"

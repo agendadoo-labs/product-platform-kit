@@ -1,0 +1,14 @@
+{
+  "id": "D-PPK-DATA-001",
+  "intent_id": "I-PPK-DATA-001",
+  "run_id": "AR-PPK-DATA-001",
+  "date": "2026-10-18",
+  "authority": "Explicit builder request to update existing data domain and register skills",
+  "outcome": "extend_existing_domain",
+  "decision": [
+    "One core for ingestion reliability; source-family procedures for semantic differences; separate relative analysis",
+    "Kit owns reusable code; consumers own data, cadence and domain decisions",
+    "No change to immutable model, dispatcher, production or schedules"
+  ],
+  "supersedes": []
+}

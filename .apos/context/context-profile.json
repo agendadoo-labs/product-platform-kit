@@ -331,6 +331,23 @@
       "dependencies": [
         "operating_model"
       ]
+    },
+    {
+      "id": "data_intelligence",
+      "match_terms": [
+        "ingestion",
+        "data collection",
+        "lineage",
+        "outlier",
+        "data quality",
+        "retry"
+      ],
+      "sources": [
+        ".apos/domains/data-intelligence.json",
+        ".apos/skills/data-skills.json",
+        "docs/architecture/DATA-INTELLIGENCE.md"
+      ],
+      "dependencies": []
     }
   ],
   "source_priority": [

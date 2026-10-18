@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "PPK-DATA-SKILLS-001",
+  "intent_id": "I-PPK-DATA-001",
+  "contract_ids": [
+    "C-PPK-DATA-001"
+  ],
+  "owner": "product-platform-kit",
+  "status": "local_candidate",
+  "skills": [
+    {
+      "id": "ibge-municipal-data",
+      "path": "templates/apos/skills/ibge-municipal-data",
+      "status": "source_procedure_not_live_connector",
+      "files": {
+        "SKILL.md": "9d56a9935fd81a1b4ccc4bcc55ec13c8664c3fa4c92aa55f618f3899e50680d5",
+        "agents/openai.yaml": "16c58647bd22cb8fe8357b1d0a8656abfb9dd877c711798fd142ac5196a61e6f"
+      }
+    },
+    {
+      "id": "municipal-transparency-data",
+      "path": "templates/apos/skills/municipal-transparency-data",
+      "status": "source_procedure_not_live_connector",
+      "files": {
+        "SKILL.md": "fd50b7114c3b2945eb04e90a3c70a98f83f1e688f9a80fc407d40fbcd7a6b5b9",
+        "agents/openai.yaml": "93e9049393ab3587dd0ed59c4a7625bda0dba7c99983cb8034a44d69f4889298",
+        "references/portal-adapters.md": "73cc8f4925d47493afff5ab2d7cd9d01ae4cfc7d3289214eccc700b64323b18a"
+      }
+    },
+    {
+      "id": "pncp-procurement-data",
+      "path": "templates/apos/skills/pncp-procurement-data",
+      "status": "source_procedure_not_live_connector",
+      "files": {
+        "SKILL.md": "f26eab1c9f8bfaeae885e3894efed0677a1f62100de41995f12bd83e8ba2d378",
+        "agents/openai.yaml": "4b52dfb32bad120d067296de7bea4245866779046696b67a0ba396923be7ee05"
+      }
+    },
+    {
+      "id": "public-data-ingestion",
+      "path": "templates/apos/skills/public-data-ingestion",
+      "status": "tested_reference",
+      "files": {
+        "SKILL.md": "1b43c553ef3d35e5909a1ff4626f2bdf4566fff47f1dbd412c678929a3b39d20",
+        "agents/openai.yaml": "9d45e91c3ce255ad1fd799abb4a11705960a0249b3c4aa72abf8d7c0a55ded2e",
+        "references/reliability-contract.md": "67e4a51cf25ba0dd3e831e61e934d3d988c4a5fe0a457b684b28e6bbb8550620",
+        "scripts/ingest.py": "e36d65e6dea04862f52eadc2ef8171c284b0c852499ff66031a21cda5456fa77",
+        "scripts/test_ingest.py": "50f66d65e5b8e4f1498b063ed8366c70b6d56bec87a7b559728d15e740d83b5a"
+      }
+    },
+    {
+      "id": "relative-outlier-analysis",
+      "path": "templates/apos/skills/relative-outlier-analysis",
+      "status": "tested_reference",
+      "files": {
+        "SKILL.md": "1b5325d64264c978ff22ae4c760c9fa36279cad76f5d98326f4b034b4c396b27",
+        "agents/openai.yaml": "bc565e86af2fd1d90e0af6bae3daf8782ba477d486a280800bee708767f4a325",
+        "references/input-contract.md": "3e9c5c3d6d7db28305508d5e6a584e52a2779d1656b3552ae72e05371a391ed8",
+        "references/method.md": "1331041209279ded31257dfa95c195094b34a1733947bcc44db24a6e226813a0",
+        "scripts/analyze.py": "d736db0fb17434f4a9dbe04b890230611584951b92dbb5e58d56bd7d6f66d1dc",
+        "scripts/test_analyze.py": "bdefb6183c1287c7b34e8f1823b6bf9934f2a9f36e17a459152f47de70c02471"
+      }
+    },
+    {
+      "id": "sus-municipal-data",
+      "path": "templates/apos/skills/sus-municipal-data",
+      "status": "source_procedure_not_live_connector",
+      "files": {
+        "SKILL.md": "45302df53baf8d667837da98ac4bf54b00cb99c01693a6f211a71cbfae639ff6",
+        "agents/openai.yaml": "633b376e4abc0031cf43a2c0a0a8b05375f40dcd52e9e1b94a26ab84c7e4b342",
+        "references/subsystems.md": "cc3fc4befbdc96ae6ba8da6e070a28fac156317f7fad0735e4e10c44f6a5826a"
+      }
+    }
+  ]
+}

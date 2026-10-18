@@ -1,0 +1,4 @@
+interface:
+  display_name: "População e municípios IBGE"
+  short_description: "Consuma fontes com rastreabilidade e limites"
+  default_prompt: "Use $ibge-municipal-data para executar a etapa adequada, registrar fontes e informar cobertura e limitações."

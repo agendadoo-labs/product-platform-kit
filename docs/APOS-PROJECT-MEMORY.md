@@ -7,10 +7,10 @@ updated: 2026-10-18
 
 > Projeção determinística. Fontes operacionais: `.apos/`. Não editar manualmente.
 
-- ProductState: `PS-PRODUCT-PLATFORM-KIT`, revisão 17.
+- ProductState: `PS-PRODUCT-PLATFORM-KIT`, revisão 18.
 - Modelo ativo: `product-platform-kit-apos-2.3.0`.
 - Intents satisfeitos: 10.
-- Intents abertos: 6.
+- Intents abertos: 7.
 - Mapa de dados: `DM-PPK-001`, revisão 4.
 
 ## Trabalho aberto
@@ -23,6 +23,7 @@ updated: 2026-10-18
 | `I-PPK-APOS-010` | active | standard | Não definido. |
 | `I-PPK-SKILLS-001` | active | standard | Não definido. |
 | `I-PPK-SEO-001` | active | standard | Não definido. |
+| `I-PPK-DATA-001` | active | standard | Não definido. |
 
 ## Decisões recentes
 

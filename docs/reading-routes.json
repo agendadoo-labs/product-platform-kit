@@ -158,6 +158,29 @@
       ],
       "stop_when": "Fonte governante, inventário, dependências, links, evidência e retomada reconciliados.",
       "do_not_infer": "Um nome descritivo não promove histórico ou proposta a regra vigente."
+    },
+    {
+      "id": "ingerir-dados",
+      "purpose": "Consumir fontes externas com rastreabilidade e limites verificáveis.",
+      "domains": [
+        "data_intelligence"
+      ],
+      "read_order": [
+        {
+          "path": ".apos/domains/data-intelligence.json",
+          "role": "governing"
+        },
+        {
+          "path": "docs/architecture/DATA-INTELLIGENCE.md",
+          "role": "architecture"
+        },
+        {
+          "path": ".apos/skills/data-skills.json",
+          "role": "reference"
+        }
+      ],
+      "stop_when": "Fonte, contrato, maturidade, versão e critérios de qualidade identificados.",
+      "do_not_infer": "Skill procedural não comprova conector operacional."
     }
   ]
 }

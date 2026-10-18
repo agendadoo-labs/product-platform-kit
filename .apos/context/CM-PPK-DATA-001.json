@@ -1,0 +1,104 @@
+{
+  "id": "CM-I-PPK-DATA-001",
+  "protocol": "APOS v0.2",
+  "intent_id": "I-PPK-DATA-001",
+  "domains": [
+    "data_intelligence"
+  ],
+  "sources": [
+    {
+      "path": ".apos/active-model.json",
+      "sha256": "37e2d7d71695af153c05560286d4acbd7622f4a0d6e15f0d4203f67ad2d9f0cd",
+      "bytes": 258
+    },
+    {
+      "path": ".apos/context/memory-catalog.json",
+      "sha256": "d7bc0f8c59c096eda125eb7166498bdc7f26507901371239fdf72f05376c2bc8",
+      "bytes": 1678
+    },
+    {
+      "path": ".apos/decisions/D-PPK-DATA-001.json",
+      "sha256": "0ca534c53012792b67eea85e3811273a95104cb74f04290697bb713c026cc5d2",
+      "bytes": 564
+    },
+    {
+      "path": ".apos/domains/data-intelligence.json",
+      "sha256": "eac968eb81c0539e66c19f1b99f6f57a4d3ce1d6895e1db42da7db2f7cbb05f9",
+      "bytes": 1505
+    },
+    {
+      "path": ".apos/intents/I-PPK-DATA-001.json",
+      "sha256": "68546f678300dd82ae4da7608ce0d63f7fc24531391e6c91e6f32652f99f9bf0",
+      "bytes": 2615
+    },
+    {
+      "path": ".apos/kernel/kernel.json",
+      "sha256": "2849ddf7fce25dc84e87b0f1ae13209a458a80cbde0d5e23a75c15491e86abe3",
+      "bytes": 1475
+    },
+    {
+      "path": ".apos/skills/data-skills.json",
+      "sha256": "e7bb95823068c18882ef9a0540fa57152500d319a5c19cf72411df1bac171122",
+      "bytes": 3383
+    },
+    {
+      "path": "docs/architecture/DATA-INTELLIGENCE.md",
+      "sha256": "209a85e9db50d7b13fc2418ddb237e0b7c453fa381cd5b615bb1eea743f5f98b",
+      "bytes": 6226
+    }
+  ],
+  "retrieval": {
+    "historical_context": "excluded_from_baseline",
+    "historical_path_markers": [
+      ".apos/archive/",
+      "/archive/",
+      "/history/",
+      "/incidents/",
+      "docs/agent-runs/",
+      "docs/checkpoints/"
+    ],
+    "layered": {
+      "version": "layered-memory-1",
+      "method": "metadata_lexical_baseline",
+      "as_of": "2026-10-18",
+      "query": "",
+      "cold_trigger": null,
+      "trigger_reason": null,
+      "selected": [],
+      "deferred": [
+        {
+          "id": "memory-design",
+          "path": "docs/apos/Product Platform Kit — Guia — Recuperação progressiva de memória.md",
+          "tier": "hot",
+          "reason": "other_domain"
+        },
+        {
+          "id": "previous-lifecycle-decision",
+          "path": ".apos/decisions/D-PPK-APOS-009.json",
+          "tier": "cold",
+          "reason": "other_domain"
+        },
+        {
+          "id": "retrieval-research",
+          "path": "docs/apos/RETRIEVAL-REVIEW-2026-10-01.md",
+          "tier": "warm",
+          "reason": "other_domain"
+        }
+      ],
+      "issues": [],
+      "assessment": "retrieval_complete_not_semantic_sufficiency",
+      "fingerprint": "90cde811aae2e3ae4c8d5eab62fdb36a3685662d3eba04ade5f17b0fb4987a8c"
+    }
+  },
+  "measurement": {
+    "method": "conservative_utf8_bytes_divided_by_4",
+    "total_bytes": 17704,
+    "estimated_input_tokens": 4426,
+    "exact_provider_tokens": "unavailable_without_model_request"
+  },
+  "budget": {
+    "max_estimated_input_tokens": 30000
+  },
+  "status": "within_budget",
+  "created_at": "2026-10-18"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "I-PPK-DATA-001",
+  "revision": 1,
+  "status": "active",
+  "problem": "External data ingestion lacks a shared reliability contract and source-family skills.",
+  "population": "Kit maintainers and consumer builders",
+  "outcome": "Reusable ingestion and relative-analysis references with bounded tests and honest maturity.",
+  "capabilities": [
+    "recover-context",
+    "design-reusable-contract",
+    "change-package",
+    "verify-package",
+    "publish-authorized-version"
+  ],
+  "required_contract_ids": [
+    "C-PPK-SCOPE-001",
+    "C-PPK-EVID-001",
+    "C-PPK-REV-001",
+    "C-PPK-DATA-001"
+  ],
+  "classification": {
+    "impact": "low",
+    "uncertainty": "low",
+    "reversibility": "reversible",
+    "environment": "repository_documentation"
+  },
+  "ceremony_selection": {
+    "level": "standard",
+    "triggers": [
+      "published_documentation"
+    ],
+    "downgrade_allowed": false
+  },
+  "change_envelope": {
+    "delta": [
+      "Extend existing data_intelligence domain; shared core plus source-family skills"
+    ],
+    "affected_surfaces": [
+      ".apos/domains/data-intelligence.json",
+      ".apos/skills/data-skills.json",
+      "docs/architecture/DATA-INTELLIGENCE.md",
+      "templates/apos/skills"
+    ],
+    "affected_domains": [
+      "data_intelligence"
+    ],
+    "invariants": [
+      "No runtime dispatch changes",
+      "Published models immutable",
+      "Consumer branding remains outside templates"
+    ],
+    "out_of_scope": [
+      "runtime features",
+      "model version change",
+      "release",
+      "main merge"
+    ],
+    "compatibility": [
+      "Guidance explains existing catalogs and the consumer adapter index"
+    ],
+    "regression_surface": [
+      "APOS projections",
+      "skill integrity",
+      "retry/cache behavior",
+      "outlier semantics"
+    ],
+    "rollback": "Revert documentation branch commit",
+    "component_reuse_assessment": {
+      "decision": "extend_existing",
+      "components_reviewed": [
+        "capabilities/catalog.json",
+        "packages/map-core/docs/DATA-ARCHITECTURE.md",
+        "templates/apos/.apos/data/data-map.json"
+      ],
+      "rationale": "Reuse existing data domain, raw/hash/staging and DataMap; add external ingestion contracts without new macro domain.",
+      "reuse_surfaces": [
+        "templates/apos/skills"
+      ]
+    }
+  },
+  "source": {
+    "type": "builder_conversation",
+    "date": "2026-10-18"
+  },
+  "acceptance_criteria": [
+    "32 deterministic tests pass",
+    "All six skill bundles validate",
+    "Registry hashes match files",
+    "No source adapter claimed production-ready"
+  ]
+}

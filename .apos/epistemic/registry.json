@@ -417,6 +417,36 @@
         "policy",
         "runtime_environment"
       ]
+    },
+    {
+      "domain": "data_intelligence",
+      "authoritative_sources": [
+        ".apos/domains/data-intelligence.json",
+        ".apos/skills/data-skills.json",
+        "docs/architecture/DATA-INTELLIGENCE.md"
+      ],
+      "methods": [
+        "hash_verification",
+        "deterministic_failure_tests",
+        "source_reconciliation"
+      ],
+      "known_uncertainties": [
+        "municipal export completeness",
+        "SUS connector coverage",
+        "production throughput and recovery"
+      ],
+      "relationships": [
+        "security",
+        "telemetry",
+        "quality"
+      ],
+      "owner": "builder",
+      "refresh_triggers": [
+        "source_schema_change",
+        "data_revision",
+        "connector_change",
+        "quality_failure"
+      ]
     }
   ],
   "admission_rule": "A source becomes authoritative only through explicit registry review; semantic retrieval cannot promote its authority.",
