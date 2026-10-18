@@ -248,93 +248,120 @@
     },
     {
       "path": "docs/SECURITY-PRIVACY.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Segurança e privacidade",
-      "purpose": "Consultar Segurança e privacidade.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "SECURITY-PRIVACY",
+      "id": "DOC-1B8E7B7EEF392B",
+      "purpose": "Contextualizar Segurança e privacidade.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Segurança e privacidade"
       ],
-      "sha256": "3f9be4c97bb659b86c72f3a6b8b77dc90eb6a3248f874e26f04b87f046348552"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/APOS-v0.2.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada",
-      "purpose": "Consultar APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "APOS-v0.2",
+      "id": "DOC-B1DD0C427132F9",
+      "purpose": "Contextualizar APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada"
       ],
-      "sha256": "6e234350d03b1187657e44935d080be811f6af53e574ad3a8df59b78939f094d"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
-      "path": "docs/VALORA-RJ-MAPPING.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/Product Platform Kit — Referência — Mapeamento do Valora RJ.md",
+      "compatibility_path": "docs/VALORA-RJ-MAPPING.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Referência — Mapeamento do Valora RJ",
-      "purpose": "Consultar Mapeamento do Valora RJ.",
+      "id": "DOC-0A204D2F150D89",
+      "purpose": "Contextualizar Mapeamento do Valora RJ.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Mapeamento do Valora RJ"
       ],
-      "sha256": "e147afb1e1361e697feeb4612559e07fc39b2b3403252a11e1c25013602606e7"
+      "document_role": "reference",
+      "path_policy": "canonical_descriptive"
     },
     {
       "path": "docs/TELEMETRY.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Telemetria de produto",
-      "purpose": "Consultar Telemetria de produto.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "TELEMETRY",
+      "id": "DOC-B82F3903C3C103",
+      "purpose": "Contextualizar Telemetria de produto.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Telemetria de produto"
       ],
-      "sha256": "4acc1998cd95f2d5c37e74e5f3c28cfa73d0b7fef15329eb890c2752474f4202"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/apos/KNOWLEDGE-PROJECTIONS.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Evidência — Knowledge projections and reversible review",
-      "purpose": "Consultar Knowledge projections and reversible review.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "KNOWLEDGE-PROJECTIONS",
+      "id": "DOC-DC2E8BFA5C2E6F",
+      "purpose": "Registrar evidências de Knowledge projections and reversible review.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Conferir resultados e seus limites: Knowledge projections and reversible review"
       ],
-      "sha256": "bf83a9a334e3d7edc7b2ddd839e4041dae22c5b6b07becccbad1754c185ab87a"
+      "document_role": "evidence",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/apos/QUALITY-AND-ENVIRONMENT-GUARDRAILS.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Contrato — APOS Quality & Environment Guardrails",
-      "purpose": "Consultar APOS Quality & Environment Guardrails.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "QUALITY-AND-ENVIRONMENT-GUARDRAILS",
+      "id": "DOC-C6C85347332AC2",
+      "purpose": "Definir APOS Quality & Environment Guardrails.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Verificar regras e limites aplicáveis: APOS Quality & Environment Guardrails"
       ],
-      "sha256": "503a9c166193e295b1bbceaa3987e341d837557b7a36b24328b297d0c5e5cb16"
+      "document_role": "contract",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/apos/APOS-v0.2-MEMORIAL.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Memorial de evolução — APOS v0.2",
-      "purpose": "Consultar Memorial de evolução — APOS v0.2.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "APOS-v0.2-MEMORIAL",
+      "id": "DOC-46625402898B30",
+      "purpose": "Contextualizar Memorial de evolução — APOS v0.2.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Memorial de evolução — APOS v0.2"
       ],
-      "sha256": "c5083cf230df35f229f44b85f526c47c57d814853885c1d42cd0aca0c9368688"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/apos/DATA-MAP-AND-HUMAN-PROJECTIONS.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Dicionário — DataMap e projeções humanas no APOS",
-      "purpose": "Consultar DataMap e projeções humanas no APOS.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "DATA-MAP-AND-HUMAN-PROJECTIONS",
+      "id": "DOC-605243B20D4B42",
+      "purpose": "Descrever DataMap e projeções humanas no APOS.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Interpretar entidades e campos: DataMap e projeções humanas no APOS"
       ],
-      "sha256": "d2fbb7aa6e6c9e913d9ff785e53d01b1abdaf729895e707cfc1ca2d85c56c03b"
+      "document_role": "dictionary",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
-      "path": "docs/apos/DATABASE-CONTRACT-RELEASE-GATE.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/apos/Product Platform Kit — Contrato — Database API contract release gate.md",
+      "compatibility_path": "docs/apos/DATABASE-CONTRACT-RELEASE-GATE.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Contrato — Database API contract release gate",
-      "purpose": "Consultar Database/API contract release gate.",
+      "id": "DOC-EF6F3642652019",
+      "purpose": "Definir Database/API contract release gate.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Verificar regras e limites aplicáveis: Database/API contract release gate"
       ],
-      "sha256": "b1bbcaa98aea26333cd6600af6e8cc8223b915003ef87def320ff3d3da8900f5"
+      "document_role": "contract",
+      "path_policy": "canonical_descriptive"
     },
     {
       "path": "docs/apos/OPERATING-MODEL-MIGRATION.md",
@@ -734,11 +761,13 @@
     "docs/APOS-v0.1.md": "docs/Product Platform Kit — Referência — APOS v0.1 — executable repository specification.md",
     "docs/TEST-ENVIRONMENT-STANDARD.md": "docs/Product Platform Kit — Evidência — Padrão de ambiente de teste.md",
     "docs/SETUP-PLAYBOOK.md": "docs/Product Platform Kit — Guia — Manual de configuração da plataforma.md",
-    "docs/apos/APOS-v0.2-CHECKPOINT.md": "docs/apos/Product Platform Kit — Referência — Checkpoint — APOS v0.2.md"
+    "docs/apos/APOS-v0.2-CHECKPOINT.md": "docs/apos/Product Platform Kit — Referência — Checkpoint — APOS v0.2.md",
+    "docs/VALORA-RJ-MAPPING.md": "docs/Product Platform Kit — Referência — Mapeamento do Valora RJ.md",
+    "docs/apos/DATABASE-CONTRACT-RELEASE-GATE.md": "docs/apos/Product Platform Kit — Contrato — Database API contract release gate.md"
   },
   "migration": {
     "checkpoint": "CP-013",
-    "batch": 2,
+    "batch": 3,
     "batches": 9,
     "status": "partial"
   },

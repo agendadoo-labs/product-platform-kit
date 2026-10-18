@@ -1,4 +1,18 @@
+---
+id: "DOC-DC2E8BFA5C2E6F"
+type: "evidence"
+scope: "Product Platform Kit"
+document_role: "evidence"
+purpose: "Registrar evidências de Knowledge projections and reversible review."
+read_when: ["Conferir resultados e seus limites: Knowledge projections and reversible review"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Knowledge projections and reversible review
+
+Registrar evidências de Knowledge projections and reversible review.
 
 Status: optional contract candidate. Intent I-PPK-KNOWLEDGE-001 remains open. This document does not implement synchronization or retrieval and makes no claim of token savings.
 

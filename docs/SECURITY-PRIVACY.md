@@ -1,4 +1,18 @@
+---
+id: "DOC-1B8E7B7EEF392B"
+type: "reference"
+scope: "Product Platform Kit"
+document_role: "reference"
+purpose: "Contextualizar Segurança e privacidade."
+read_when: ["Consultar contexto complementar: Segurança e privacidade"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Segurança e privacidade
+
+Contextualizar Segurança e privacidade.
 
 - RLS é obrigatória em toda tabela acessível pela API.
 - Escritas de telemetria passam por RPC `security definer` com `search_path` vazio.

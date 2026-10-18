@@ -36,15 +36,15 @@ Escolha o assunto e depois confira a autoridade e a revisão da fonte.
 - [Product Platform Kit — Evidência — Padrão de ambiente de teste](<Product Platform Kit — Evidência — Padrão de ambiente de teste.md>) — Registrar evidências de Padrão de ambiente de teste.
 - [Product Platform Kit — Guia — Manual de configuração da plataforma](<Product Platform Kit — Guia — Manual de configuração da plataforma.md>) — Orientar Manual de configuração da plataforma.
 - [Product Platform Kit — Referência — Checkpoint — APOS v0.2](<apos/Product Platform Kit — Referência — Checkpoint — APOS v0.2.md>) — Contextualizar Checkpoint — APOS v0.2.
-- [Product Platform Kit — Referência — Segurança e privacidade](<SECURITY-PRIVACY.md>) — Consultar Segurança e privacidade.
-- [Product Platform Kit — Referência — APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada](<APOS-v0.2.md>) — Consultar APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada.
-- [Product Platform Kit — Referência — Mapeamento do Valora RJ](<VALORA-RJ-MAPPING.md>) — Consultar Mapeamento do Valora RJ.
-- [Product Platform Kit — Referência — Telemetria de produto](<TELEMETRY.md>) — Consultar Telemetria de produto.
-- [Product Platform Kit — Evidência — Knowledge projections and reversible review](<apos/KNOWLEDGE-PROJECTIONS.md>) — Consultar Knowledge projections and reversible review.
-- [Product Platform Kit — Contrato — APOS Quality & Environment Guardrails](<apos/QUALITY-AND-ENVIRONMENT-GUARDRAILS.md>) — Consultar APOS Quality & Environment Guardrails.
-- [Product Platform Kit — Referência — Memorial de evolução — APOS v0.2](<apos/APOS-v0.2-MEMORIAL.md>) — Consultar Memorial de evolução — APOS v0.2.
-- [Product Platform Kit — Dicionário — DataMap e projeções humanas no APOS](<apos/DATA-MAP-AND-HUMAN-PROJECTIONS.md>) — Consultar DataMap e projeções humanas no APOS.
-- [Product Platform Kit — Contrato — Database API contract release gate](<apos/DATABASE-CONTRACT-RELEASE-GATE.md>) — Consultar Database/API contract release gate.
+- [SECURITY-PRIVACY](<SECURITY-PRIVACY.md>) — Contextualizar Segurança e privacidade.
+- [APOS-v0.2](<APOS-v0.2.md>) — Contextualizar APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada.
+- [Product Platform Kit — Referência — Mapeamento do Valora RJ](<Product Platform Kit — Referência — Mapeamento do Valora RJ.md>) — Contextualizar Mapeamento do Valora RJ.
+- [TELEMETRY](<TELEMETRY.md>) — Contextualizar Telemetria de produto.
+- [KNOWLEDGE-PROJECTIONS](<apos/KNOWLEDGE-PROJECTIONS.md>) — Registrar evidências de Knowledge projections and reversible review.
+- [QUALITY-AND-ENVIRONMENT-GUARDRAILS](<apos/QUALITY-AND-ENVIRONMENT-GUARDRAILS.md>) — Definir APOS Quality & Environment Guardrails.
+- [APOS-v0.2-MEMORIAL](<apos/APOS-v0.2-MEMORIAL.md>) — Contextualizar Memorial de evolução — APOS v0.2.
+- [DATA-MAP-AND-HUMAN-PROJECTIONS](<apos/DATA-MAP-AND-HUMAN-PROJECTIONS.md>) — Descrever DataMap e projeções humanas no APOS.
+- [Product Platform Kit — Contrato — Database API contract release gate](<apos/Product Platform Kit — Contrato — Database API contract release gate.md>) — Definir Database/API contract release gate.
 - [Product Platform Kit — Referência — Migração operacional do Product Platform Kit para APOS](<apos/OPERATING-MODEL-MIGRATION.md>) — Consultar Migração operacional do Product Platform Kit para APOS.
 - [Product Platform Kit — Referência — Reconstrução e memória para organizações agênticas](<apos/RECONSTRUCTION-AND-AGENTIC-MEMORY.md>) — Consultar Reconstrução e memória para organizações agênticas.
 - [Product Platform Kit — Referência — Scope Preservation and Change Envelopes](<apos/SCOPE-PRESERVATION.md>) — Consultar Scope Preservation and Change Envelopes.
@@ -87,4 +87,4 @@ Escolha o assunto e depois confira a autoridade e a revisão da fonte.
 
 ## Cobertura
 
-Lote 2 de 9. Inventário explícito em documentation-inventory.json. Gerados, templates e histórico preservados. Registro da migração: CP-013. Reversão por PR; publicação documental não comprova runtime.
+Lote 3 de 9. Inventário explícito em documentation-inventory.json. Gerados, templates e histórico preservados. Registro da migração: CP-013. Reversão por PR; publicação documental não comprova runtime.

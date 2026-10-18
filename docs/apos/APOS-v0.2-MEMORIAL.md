@@ -1,4 +1,18 @@
+---
+id: "DOC-46625402898B30"
+type: "reference"
+scope: "Product Platform Kit"
+document_role: "reference"
+purpose: "Contextualizar Memorial de evolução — APOS v0.2."
+read_when: ["Consultar contexto complementar: Memorial de evolução — APOS v0.2"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Memorial de evolução — APOS v0.2
+
+Contextualizar Memorial de evolução — APOS v0.2.
 
 Data: 2026-09-08
 Origem: aprendizado acumulado durante a construção e operação inicial do Valora.
