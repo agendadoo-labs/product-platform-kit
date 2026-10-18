@@ -1,5 +1,7 @@
 # Product Platform Kit — operação APOS
 
+**Início de agentes/LLMs:** leia o [guia de manutenção de implementação e documentação](templates/apos/APOS-MAINTENANCE.md) antes de alterar o projeto e ao retomar checkpoints.
+
 O modelo operacional ativo está em [`.apos/active-model.json`](.apos/active-model.json). Se o agente não conhece APOS, leia primeiro `templates/apos/APOS-AGENT-BOOTSTRAP.md`. Ao iniciar ou retomar uma sessão, execute `npm run apos:bootstrap`, relacione o pedido atual a um Intent aberto ou novo e só então compile o contexto daquele Intent. Este repositório desenvolve infraestrutura reutilizável; não imponha organogramas, papéis profissionais ou regras de um produto consumidor.
 
 ## Protocolo
