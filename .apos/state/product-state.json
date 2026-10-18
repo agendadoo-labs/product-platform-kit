@@ -1,6 +1,6 @@
 {
   "id": "PS-PRODUCT-PLATFORM-KIT",
-  "revision": 16,
+  "revision": 17,
   "active_operating_model": "product-platform-kit-apos-2.3.0",
   "satisfied_intents": [
     "I-PPK-APOS-001",
@@ -41,7 +41,8 @@
     "E-PPK-CAPABILITY-001",
     "E-PPK-CAPABILITY-002",
     "E-PPK-LLM-001",
-    "E-PPK-INTEGRATION-016"
+    "E-PPK-INTEGRATION-016",
+    "E-PPK-DOC-017"
   ],
   "data_map": {
     "id": "DM-PPK-001",
@@ -65,7 +66,8 @@
     "capability_ontology": "The v2 map contains 14 macro domains and 130 capabilities plus a Commercial Model cross-domain layer; composition ontology is separate from epistemic source authority; coverage defaults to absent and rises only with versioned evidence",
     "commercial_model": "Commercial Model is an Economic Control Plane that propagates actor incentives, billable events, entitlements, guardrails and second-order impacts through the domain graph without granting implicit authority",
     "mission": "Reduce technological entry barriers for new businesses to practically zero through reusable, secure and verifiable agentic product foundations",
-    "llm_engineering": "Domínio definido com política, template, contexto e registro epistêmico; não altera enforcement nem promove modelos."
+    "llm_engineering": "Domínio definido com política, template, contexto e registro epistêmico; não altera enforcement nem promove modelos.",
+    "cp017_documentation": "CP-016 additions classified with descriptive canonical names, purpose, reading triggers and explicit graph_scope. Historical records and skill bundles remain intact; broader product outcomes remain separate."
   },
   "updated_at": "2026-10-18",
   "documentation_organization": {

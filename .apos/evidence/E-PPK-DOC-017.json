@@ -1,0 +1,16 @@
+{
+  "id": "E-PPK-DOC-017",
+  "intent_id": "I-PPK-DOC-ORG-001",
+  "observed_at": "2026-10-18",
+  "passed": true,
+  "checks": [
+    "Documentation inventory passed",
+    "Entrypoint metadata passed"
+  ],
+  "manual_entries_added": 7,
+  "canonical_renames": 5,
+  "limits": [
+    "Documentary validation only; no new runtime or production claim",
+    "Git publication and vault graph verification recorded in CP-017 checkpoint"
+  ]
+}
