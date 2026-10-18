@@ -1,5 +1,7 @@
 # ADAPTAR — operação APOS
 
+**Início de agentes/LLMs:** leia o [guia de manutenção de implementação e documentação](APOS-MAINTENANCE.md) antes de alterar o projeto e ao retomar checkpoints.
+
 Se você não conhece o APOS, leia `APOS-AGENT-BOOTSTRAP.md`. Ao iniciar ou retomar uma sessão, execute `npm run apos:bootstrap` (ou `node scripts/bootstrap-apos-session.mjs`), relacione o pedido a um Intent aberto ou novo e só então compile o contexto do Intent. Leia `.apos/active-model.json` antes de trabalhar.
 
 O APOS v0.2 usa Kernel, Context Compiler, Epistemic Registry, Adaptive Ceremony e Learning and Cost Loop. A cerimônia segue o pior risco e não pode ser reduzida pelo executor.
