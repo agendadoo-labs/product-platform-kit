@@ -1,4 +1,18 @@
+---
+id: "DOC-B26ACB75B61850"
+type: "evidence"
+scope: "Product Platform Kit"
+document_role: "evidence"
+purpose: "Registrar evidências de Benchmarks e implementação dos dez módulos prioritários."
+read_when: ["Conferir resultados e seus limites: Benchmarks e implementação dos dez módulos prioritários"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Benchmarks e implementação dos dez módulos prioritários
+
+Registrar evidências de Benchmarks e implementação dos dez módulos prioritários.
 
 **Data de pesquisa:** 2026-09-12  
 **Princípio:** referências externas orientam contratos e testes; não tornam nenhum fornecedor obrigatório.
@@ -265,4 +279,3 @@ Cada módulo deve conter:
 - Evidence APOS e claim atualizado no catálogo.
 
 O benchmark serve para aprender com interfaces maduras. Copiar a arquitetura inteira de um fornecedor antes da necessidade comprovada seria overengineering e contrariaria a missão do kit.
-

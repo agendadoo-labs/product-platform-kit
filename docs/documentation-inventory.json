@@ -596,13 +596,16 @@
     },
     {
       "path": "docs/capabilities/TOP-10-MODULE-BENCHMARKS.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Evidência — Benchmarks e implementação dos dez módulos prioritários",
-      "purpose": "Consultar Benchmarks e implementação dos dez módulos prioritários.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "TOP-10-MODULE-BENCHMARKS",
+      "id": "DOC-B26ACB75B61850",
+      "purpose": "Registrar evidências de Benchmarks e implementação dos dez módulos prioritários.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Conferir resultados e seus limites: Benchmarks e implementação dos dez módulos prioritários"
       ],
-      "sha256": "dd9e674be723389380c38f5c1f07707275a47c82aa2a454aac34f4f109c29763"
+      "document_role": "evidence",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "templates/agents/.agents/roles/design.md",
@@ -826,9 +829,9 @@
   },
   "migration": {
     "checkpoint": "CP-013",
-    "batch": 8,
+    "batch": 9,
     "batches": 9,
-    "status": "partial"
+    "status": "complete_inventory_scope"
   },
   "limitations": [
     "Coverage is limited to explicitly inventoried Markdown files",

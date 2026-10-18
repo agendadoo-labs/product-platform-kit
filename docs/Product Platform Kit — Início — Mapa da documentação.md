@@ -63,7 +63,7 @@ Escolha o assunto e depois confira a autoridade e a revisão da fonte.
 - [Product Platform Kit — Início — Map Core](<../packages/map-core/Product Platform Kit — Início — Map Core.md>) — Apresentar Map Core.
 - [Product Platform Kit — Início — Runtime transacional experimental do APOS](<../packages/apos/Product Platform Kit — Início — Runtime transacional experimental do APOS.md>) — Apresentar Runtime transacional experimental do APOS.
 - [PERFORMANCE-PLAYBOOK](<../packages/map-core/docs/PERFORMANCE-PLAYBOOK.md>) — Contextualizar Playbook de desempenho para busca por mapa.
-- [Product Platform Kit — Evidência — Benchmarks e implementação dos dez módulos prioritários](<capabilities/TOP-10-MODULE-BENCHMARKS.md>) — Consultar Benchmarks e implementação dos dez módulos prioritários.
+- [TOP-10-MODULE-BENCHMARKS](<capabilities/TOP-10-MODULE-BENCHMARKS.md>) — Registrar evidências de Benchmarks e implementação dos dez módulos prioritários.
 - [Product Platform Kit — Arquitetura — Design](<../templates/agents/.agents/roles/design.md>) — Consultar Design.
 - [Product Platform Kit — Guia — ADAPTAR — operação APOS](<../templates/apos/AGENTS.md>) — Consultar ADAPTAR — operação APOS.
 - [Product Platform Kit — Referência — Relatório de execução agêntica](<../templates/agents/.agents/TOKEN-REPORT.md>) — Consultar Relatório de execução agêntica.
@@ -87,4 +87,4 @@ Escolha o assunto e depois confira a autoridade e a revisão da fonte.
 
 ## Cobertura
 
-Lote 8 de 9. Inventário explícito em documentation-inventory.json. Gerados, templates e histórico preservados. Registro da migração: CP-013. Reversão por PR; publicação documental não comprova runtime.
+Lote 9 de 9. Inventário explícito em documentation-inventory.json. Gerados, templates e histórico preservados. Registro da migração: CP-013. Reversão por PR; publicação documental não comprova runtime.
