@@ -171,3 +171,7 @@ Este kit é um ponto de partida versionado. Adote somente o necessário, preserv
 [Mapa da documentação](<docs/Product Platform Kit — Início — Mapa da documentação.md>).
 
 [Percursos de leitura por domínio](<docs/Product Platform Kit — Guia — Percursos de leitura por domínio.md>): selecione fontes conforme a tarefa e confira seus limites.
+
+## Gestão de conhecimento e especificações
+
+Para contratos, vigência, requisitos e evidências, comece pelo [domínio knowledge_governance](<docs/knowledge/Conhecimento — Início — Gestão de conhecimento e especificações.md>). Execute `python3 packages/knowledge_governance/validate.py` ao alterar seu catálogo.

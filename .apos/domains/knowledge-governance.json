@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "id": "knowledge_governance",
+  "name": "Gestão de conhecimento e especificações",
+  "status": "defined",
+  "owner": "builder",
+  "scope": "Reusable contracts and explicit-inventory validation",
+  "capabilities": [
+    "document_lifecycle",
+    "provenance",
+    "specification_traceability",
+    "dependency_invalidation",
+    "current_state_projection",
+    "enterprise_adoption"
+  ],
+  "authority_limits": [
+    "Does not authorize publishing",
+    "Does not implement permissions",
+    "Does not certify runtime or business outcomes"
+  ],
+  "interfaces": {
+    "kit": "contracts and validators",
+    "worker": "authorized execution and retrieval",
+    "product": "specifications and evidence",
+    "vault": "derived navigation",
+    "llm_engineering": "independent retrieval evaluation"
+  },
+  "artifacts": [
+    "docs/knowledge/Conhecimento — Início — Gestão de conhecimento e especificações.md",
+    "docs/knowledge/Conhecimento — Contrato — Ciclo de vida e autoridade.md",
+    "docs/knowledge/Conhecimento — Contrato — Especificações e evidências.md",
+    "docs/knowledge/Conhecimento — Guia — Validação e retomada.md",
+    "docs/knowledge/Conhecimento — Plano — Adoção e maturidade empresarial.md",
+    "packages/knowledge_governance/validate.py"
+  ]
+}

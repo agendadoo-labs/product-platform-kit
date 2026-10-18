@@ -1,6 +1,6 @@
 {
   "id": "I-PPK-KNOWLEDGE-001",
-  "revision": 1,
+  "revision": 2,
   "problem": "Human knowledge projections can mix published, local and historical states, duplicate context and lose provenance.",
   "population": "Maintainers and product consumers",
   "outcome": "A reusable, reversible projection contract with pinned provenance, explicit relationships, checkpoints and measured retrieval adoption.",
@@ -14,11 +14,13 @@
   "change_envelope": {
     "delta": [
       "Optional knowledge-projection contract and manifest template",
-      "Adoption roadmap and restart checkpoint"
+      "Adoption roadmap and restart checkpoint",
+      "Knowledge governance domain, portable validation and staged adoption"
     ],
     "affected_domains": [
       "session_memory",
-      "operating_model"
+      "operating_model",
+      "knowledge_governance"
     ],
     "affected_surfaces": [
       "documentation",
@@ -52,7 +54,8 @@
     "C-PPK-REV-001",
     "C-PPK-PRES-001",
     "C-PPK-SEC-001",
-    "C-PPK-CONTEXT-001"
+    "C-PPK-CONTEXT-001",
+    "C-PPK-KG-001"
   ],
   "classification": {
     "impact": "shared_documentation",

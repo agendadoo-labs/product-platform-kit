@@ -12,7 +12,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "d870948db3a3c0a71daf2327231edf40b29c91e0ff4b132054ccd1cc06ca1762"
+      "sha256": "b07f27a7eba12c4d819b839fd38db22d4051d9527a95865659048ae5af230c1c"
     },
     {
       "path": ".apos/README.md",
@@ -81,7 +81,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "67b1532f9ce84ff98bcb5738709e70e7c36fea01a739bf883aa11a6ea138d6ff"
+      "sha256": "cdac70d5a69a52ad20afd40aa3e953759ea21b44e6bbacf0a0b63872372db428"
     },
     {
       "path": "docs/AGENT-MODEL-ROUTING.md",
@@ -117,7 +117,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "3ee54e4383187492bcd2e4d1b04d9ff310bceea1b3f07906f60c3109aa4ad257"
+      "sha256": "9f4336915428eb79db62e69ac69660b4b78ccb4bbed938af7388c35cea86e79f"
     },
     {
       "path": "Product Platform Kit — Início — Visão do produto.md",
@@ -943,6 +943,71 @@
         "Adotar o template em um consumidor"
       ],
       "sha256": "ca91c4caed1995c709024cf67ece65322ae9ba372a4e373ce3a3265308824955"
+    },
+    {
+      "path": "docs/knowledge/Conhecimento — Início — Gestão de conhecimento e especificações.md",
+      "classification": "manual_document",
+      "display_name": "Conhecimento — Início — Gestão de conhecimento e especificações",
+      "id": "KG-ENTRY-001",
+      "purpose": "Orientar a adoção do domínio knowledge_governance.",
+      "read_when": [
+        "Adotar ou manter gestão de conhecimento e especificações"
+      ],
+      "document_role": "entrypoint",
+      "graph_scope": "vigente",
+      "path_policy": "descriptive_canonical"
+    },
+    {
+      "path": "docs/knowledge/Conhecimento — Contrato — Ciclo de vida e autoridade.md",
+      "classification": "manual_document",
+      "display_name": "Conhecimento — Contrato — Ciclo de vida e autoridade",
+      "id": "KG-LIFECYCLE-001",
+      "purpose": "Separar navegação, aprovação, origem e evidência operacional.",
+      "read_when": [
+        "Adotar ou manter gestão de conhecimento e especificações"
+      ],
+      "document_role": "contract",
+      "graph_scope": "vigente",
+      "path_policy": "descriptive_canonical"
+    },
+    {
+      "path": "docs/knowledge/Conhecimento — Contrato — Especificações e evidências.md",
+      "classification": "manual_document",
+      "display_name": "Conhecimento — Contrato — Especificações e evidências",
+      "id": "KG-SDD-001",
+      "purpose": "Vincular requisitos a critérios de aceite, implementação, testes e evidências.",
+      "read_when": [
+        "Adotar ou manter gestão de conhecimento e especificações"
+      ],
+      "document_role": "contract",
+      "graph_scope": "vigente",
+      "path_policy": "descriptive_canonical"
+    },
+    {
+      "path": "docs/knowledge/Conhecimento — Guia — Validação e retomada.md",
+      "classification": "manual_document",
+      "display_name": "Conhecimento — Guia — Validação e retomada",
+      "id": "KG-OPERATIONS-001",
+      "purpose": "Executar controles portáteis e retomar sem duplicar fontes de estado.",
+      "read_when": [
+        "Adotar ou manter gestão de conhecimento e especificações"
+      ],
+      "document_role": "procedure",
+      "graph_scope": "vigente",
+      "path_policy": "descriptive_canonical"
+    },
+    {
+      "path": "docs/knowledge/Conhecimento — Plano — Adoção e maturidade empresarial.md",
+      "classification": "manual_document",
+      "display_name": "Conhecimento — Plano — Adoção e maturidade empresarial",
+      "id": "KG-ADOPTION-001",
+      "purpose": "Definir etapas e evidência para adoção empresarial sem confundir piloto com certificação.",
+      "read_when": [
+        "Adotar ou manter gestão de conhecimento e especificações"
+      ],
+      "document_role": "plan",
+      "graph_scope": "vigente",
+      "path_policy": "descriptive_canonical"
     }
   ],
   "renames": {
