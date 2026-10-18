@@ -50,7 +50,7 @@ Escolha o assunto e depois confira a autoridade e a revisão da fonte.
 - [Product Platform Kit — Referência — Scope Preservation and Change Envelopes](<apos/Product Platform Kit — Referência — Scope Preservation and Change Envelopes.md>) — Contextualizar Scope Preservation and Change Envelopes.
 - [SESSION-BOOTSTRAP-AND-MULTI-TEAM](<apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md>) — Orientar APOS Session Bootstrap e memória para múltiplos times.
 - [Product Platform Kit — Referência — Fontes consultadas](<apos/Product Platform Kit — Referência — Fontes consultadas.md>) — Contextualizar Fontes consultadas.
-- [Product Platform Kit — Referência — Valora — APOS aplicado à construção de produto](<apos/VALORA-OPERATING-MODE.md>) — Consultar Valora — APOS aplicado à construção de produto.
+- [Product Platform Kit — Referência — Valora — APOS aplicado à construção de produto](<apos/Product Platform Kit — Referência — Valora — APOS aplicado à construção de produto.md>) — Contextualizar Valora — APOS aplicado à construção de produto.
 - [Product Platform Kit — Referência — APOS — Product Platform Kit](<apos/CONTEXT.md>) — Consultar APOS — Product Platform Kit.
 - [Product Platform Kit — Arquitetura — Arquitetura de dados para mapas de mercado](<../packages/map-core/docs/DATA-ARCHITECTURE.md>) — Consultar Arquitetura de dados para mapas de mercado.
 - [Product Platform Kit — Plano — Roadmap priorizado de módulos](<capabilities/MODULE-PRIORITY-ROADMAP.md>) — Consultar Roadmap priorizado de módulos.
@@ -87,4 +87,4 @@ Escolha o assunto e depois confira a autoridade e a revisão da fonte.
 
 ## Cobertura
 
-Lote 4 de 9. Inventário explícito em documentation-inventory.json. Gerados, templates e histórico preservados. Registro da migração: CP-013. Reversão por PR; publicação documental não comprova runtime.
+Lote 5 de 9. Inventário explícito em documentation-inventory.json. Gerados, templates e histórico preservados. Registro da migração: CP-013. Reversão por PR; publicação documental não comprova runtime.
