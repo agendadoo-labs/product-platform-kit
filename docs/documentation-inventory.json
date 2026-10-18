@@ -12,7 +12,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "6f161bc74ffe5476059676a48a0f732eebc7cd0dd81132d20d1759181cf56752"
+      "sha256": "16b91d559f64ece60aafad4ca4afaa46bf12289cc08e56d2805abbd6100d802b"
     },
     {
       "path": ".apos/README.md",
@@ -81,7 +81,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "396471d3df50ee9a59f9df74aaa4805ef2051938258193188c92fda0286173a9"
+      "sha256": "d0788b66427f0d90bcbfb8f1883a8055a1896b4df01574c0bcd6b0f2b7b3dff4"
     },
     {
       "path": "docs/AGENT-MODEL-ROUTING.md",
@@ -117,7 +117,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "75694cd27d4669e419ba297b72b8af0f3bcd16890d9615e3e4d88d2b0a5631ea"
+      "sha256": "e2fa0e2c84467aa43927e9816a7306ef76cd52c5c83ba3e8a0770f2e7c161c0e"
     },
     {
       "path": "Product Platform Kit — Início — Visão do produto.md",
@@ -622,7 +622,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "6ae33976f975c0860b0819b4d3335fb1897482fa27d182c97150bef7a02f5daa"
+      "sha256": "58607a56d90780bdfcb60c3402c8c00905c6eed98f488fe4fd8dbe0249c497f9"
     },
     {
       "path": "templates/agents/.agents/TOKEN-REPORT.md",
@@ -692,7 +692,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "f59d1f66de1d4c86dfa751a14c2161fce6affb6b1d90c3c89e6118cedcb5e6dc"
+      "sha256": "52424765bf98d9f6bda1983d98fdb375529c2b89e30deec5e4ed8d2c64ae9300"
     },
     {
       "path": "templates/apos/DOCUMENT-METADATA.md",

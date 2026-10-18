@@ -1,0 +1,9 @@
+{
+  "id": "D-PPK-SEO-001",
+  "intent_id": "I-PPK-SEO-001",
+  "date": "2026-09-15",
+  "outcome": "approved_for_documentation_publication",
+  "authority": "Builder solicitou registrar princípio permanente no product kit.",
+  "decision": "Adicionar diretriz de implementação, contrato ativo e template genérico; preservar snapshots imutáveis do modelo.",
+  "supersedes": []
+}

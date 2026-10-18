@@ -1,0 +1,78 @@
+{
+  "id": "I-PPK-SEO-001",
+  "revision": 2,
+  "status": "active",
+  "problem": "SEO e GEO precisam ser princípio recuperável desde a criação do conteúdo público.",
+  "population": "Kit maintainers and consumer builders",
+  "outcome": "Princípio permanente e template genérico com critérios verificáveis de SEO/GEO.",
+  "capabilities": [
+    "recover-context",
+    "design-reusable-contract",
+    "change-package",
+    "verify-package",
+    "publish-authorized-version"
+  ],
+  "required_contract_ids": [
+    "C-PPK-SCOPE-001",
+    "C-PPK-EVID-001",
+    "C-PPK-REV-001",
+    "C-PPK-SEO-001"
+  ],
+  "classification": {
+    "impact": "low",
+    "uncertainty": "low",
+    "reversibility": "reversible",
+    "environment": "repository_documentation"
+  },
+  "ceremony_selection": {
+    "level": "standard",
+    "triggers": [
+      "published_documentation"
+    ],
+    "downgrade_allowed": false
+  },
+  "change_envelope": {
+    "delta": [
+      "Princípio SEO/GEO",
+      "Contrato e template de publicação"
+    ],
+    "affected_surfaces": [
+      "AGENTS.md",
+      "docs/apos/SEO-GEO.md",
+      "templates/apos/SEO-GEO.md",
+      "templates/apos/AGENTS.md",
+      ".apos"
+    ],
+    "affected_domains": [
+      "session_memory"
+    ],
+    "invariants": [
+      "No runtime dispatch changes",
+      "Published models immutable",
+      "Consumer branding remains outside templates"
+    ],
+    "out_of_scope": [
+      "Mudança de runtime",
+      "Reescrita de versões publicadas"
+    ],
+    "compatibility": [
+      "Guidance explains existing catalogs and the consumer adapter index"
+    ],
+    "regression_surface": [
+      "documentation links",
+      "APOS projections"
+    ],
+    "rollback": "Revert documentation branch commit",
+    "component_reuse_assessment": {
+      "decision": "not_applicable",
+      "components_reviewed": [],
+      "rationale": "Documentation only",
+      "reuse_surfaces": []
+    }
+  },
+  "source": {
+    "type": "builder_conversation",
+    "date": "2026-09-15"
+  },
+  "integration_checkpoint": "CP-016: candidate reconciled on current main; current CI and publication must be observed before closure."
+}

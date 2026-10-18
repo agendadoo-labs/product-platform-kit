@@ -10,6 +10,8 @@ Se esta é sua primeira adoção, leia antes o [guia APOS em 30 minutos](../../d
 
 Ao terminar a adoção, seu repositório terá um modelo ativo, um Intent ligado a uma Decision, um ContextManifest dentro do orçamento, um AgentRun, Evidence independente e um ProductState atualizado somente após a verificação.
 
+Leia também [`docs/ACTIVE-STATE-AND-HISTORY.md`](docs/ACTIVE-STATE-AND-HISTORY.md): runbooks mantêm apenas o último procedimento validado, enquanto incidentes, checkpoints e fontes substituídas ficam fora do contexto padrão.
+
 ## Adoção
 
 1. Copie `AGENTS.md`, `APOS-AGENT-BOOTSTRAP.md`, as pastas `.apos/` e `docs/`, e os scripts do starter para o repositório consumidor.

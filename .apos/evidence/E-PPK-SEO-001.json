@@ -1,0 +1,38 @@
+{
+  "id": "E-PPK-SEO-001",
+  "intent_id": "I-PPK-SEO-001",
+  "run_id": "AR-PPK-SEO-001",
+  "contract_ids": [
+    "C-PPK-SCOPE-001",
+    "C-PPK-EVID-001",
+    "C-PPK-REV-001",
+    "C-PPK-SEO-001"
+  ],
+  "kind": "documentation_and_template_validation",
+  "passed": true,
+  "environment": "repository",
+  "observed_at": "2026-09-15",
+  "checks": [
+    {
+      "name": "operating_model",
+      "passed": true
+    },
+    {
+      "name": "repository_and_capability_catalog",
+      "passed": true
+    },
+    {
+      "name": "consumer_neutral_template",
+      "passed": true,
+      "observed": "No consumer domain, credentials, business data or thresholds; evidence remains consumer-owned."
+    },
+    {
+      "name": "published_version_preservation",
+      "passed": true,
+      "observed": "No edits in .apos/versions; implementation guideline is referenced through active contract and AGENTS."
+    }
+  ],
+  "limitations": [
+    "No claim of consumer adoption or search performance."
+  ]
+}

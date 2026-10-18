@@ -1,0 +1,14 @@
+{
+  "id": "D-PPK-APOS-009",
+  "intent_id": "I-PPK-APOS-009",
+  "run_id": "AR-PPK-APOS-009",
+  "outcome": "reusable_active_state_history_contract_added",
+  "decision": "Use active-only retrieval by default. Runbooks are replace-in-place projections of the latest validated procedure; incidents, cases, checkpoints and superseded sources are preserved in historical paths and loaded only through explicit Intent opt-in.",
+  "rationale": "The separation lowers token cost and stale-context risk while retaining auditability, reconstruction and rollback.",
+  "alternatives": ["append all history to runbooks", "delete old history", "rely on semantic similarity without lifecycle metadata"],
+  "actor": "builder",
+  "authority_source": "Explicit builder request on 2026-10-01 to update APOS in Valora, Product Platform Kit and leo-brain.",
+  "scope": "Repository documentation, context compiler and reusable starter; no release or external service effect.",
+  "created_at": "2026-10-01"
+}
+

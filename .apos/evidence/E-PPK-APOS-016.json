@@ -1,0 +1,13 @@
+{
+  "id": "E-PPK-APOS-016",
+  "intent_id": "I-PPK-APOS-009",
+  "run_id": "AR-PPK-APOS-009",
+  "contract_ids": ["C-PPK-CONTEXT-001", "C-PPK-GOV-001", "C-PPK-PRES-001", "C-PPK-EPI-001"],
+  "passed": true,
+  "observed": "The Product Platform Kit and consumer starter define active-only document retrieval, preserve historical paths, expose explicit Intent opt-in, record the choice in ContextManifest, and pass a regression test proving default exclusion plus justified inclusion.",
+  "verifier": "scripts/tests/apos-context-compiler.test.mjs and repository documentation checks",
+  "environment": "repository",
+  "created_at": "2026-10-01",
+  "expires_at": null
+}
+

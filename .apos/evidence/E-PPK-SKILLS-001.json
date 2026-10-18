@@ -1,0 +1,18 @@
+{
+  "id": "E-PPK-SKILLS-001",
+  "intent_id": "I-PPK-SKILLS-001",
+  "run_id": "AR-PPK-SKILLS-001",
+  "contract_ids": [
+    "C-PPK-SCOPE-001",
+    "C-PPK-REV-001"
+  ],
+  "passed": true,
+  "observed_at": "2026-09-15",
+  "verifier": "Repository diff and byte comparison",
+  "observed": "Guide is byte-identical in both repositories; templates and runtime are unchanged. New branch preserves base commit.",
+  "artifact": "docs/apos/SKILL-REGISTRATION.md",
+  "artifact_digest": "7f3d5c8b6b6474fc6d2e82675c6e2aa1dbff26d55353853a29fca8d1ec28407b",
+  "limits": [
+    "Documentation only; no generic registration dispatcher implemented"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "E-PPK-INTEGRATION-016",
+  "intent_id": "I-PPK-APOS-010",
+  "passed": true,
+  "observed_at": "2026-10-18",
+  "environment": "isolated local checkout",
+  "checks": {
+    "node_tests": 22,
+    "python_tests": 12,
+    "repository_check": "passed",
+    "operating_model": "passed",
+    "capability_catalog": "passed",
+    "reading_routes": 6
+  },
+  "limitations": [
+    "No real-task token or quality gain measured",
+    "Remote CI and publication tracked separately",
+    "Consumer adoption not implied"
+  ],
+  "artifact_sha256": {
+    "scripts/apos-layered-memory.mjs": "7eab0171ddd22c611f07c7f1a88d0ff55b1395344129fdd5a9f5454cda20b18b",
+    "scripts/compile-apos-context.mjs": "a7faef1d04a0d7a9f1244741f2391de4134229fc9c8d6aca3c4dc7be05f37545",
+    "scripts/tests/apos-layered-memory.test.mjs": "9ea36fa260c762f51803c582ced61f3b736e25c5217f0b4c4f11cc0f5c7ac3e1"
+  }
+}

@@ -7,11 +7,11 @@ updated: 2026-10-18
 
 > Projeção determinística. Fontes operacionais: `.apos/`. Não editar manualmente.
 
-- ProductState: `PS-PRODUCT-PLATFORM-KIT`, revisão 15.
+- ProductState: `PS-PRODUCT-PLATFORM-KIT`, revisão 16.
 - Modelo ativo: `product-platform-kit-apos-2.3.0`.
 - Intents satisfeitos: 10.
-- Intents abertos: 2.
-- Mapa de dados: `DM-PPK-001`, revisão 3.
+- Intents abertos: 6.
+- Mapa de dados: `DM-PPK-001`, revisão 4.
 
 ## Trabalho aberto
 
@@ -19,19 +19,23 @@ updated: 2026-10-18
 |---|---|---|---|
 | `I-PPK-KNOWLEDGE-001` | active | Strict | Review optional contract candidate and validation; implement generator separately before claiming retrieval or synchronization gains. |
 | `I-PPK-DOC-ORG-001` | active | Strict | Não definido. |
+| `I-PPK-APOS-009` | active | standard | Não definido. |
+| `I-PPK-APOS-010` | active | standard | Não definido. |
+| `I-PPK-SKILLS-001` | active | standard | Não definido. |
+| `I-PPK-SEO-001` | active | standard | Não definido. |
 
 ## Decisões recentes
 
 - **2026-10-18 · D-PPK-DOC-ORG-001:** Aplicar taxonomia em lotes limitados, conservar caminhos técnicos necessários e metadados externos para referências imutáveis.
+- **2026-10-18 · D-PPK-INTEGRATION-016:** Reconcile layered-memory, skill guide and SEO contract on current main; defer stale and temporally invalid current sources; retain historical provenance.
 - **2026-10-17 · D-PPK-KNOWLEDGE-001:** Treat a knowledge vault as a provenance-preserving projection of published Git state, with separate local deltas and historical checkpoints.
 - **2026-10-17 · D-PPK-KNOWLEDGE-002:** Consolidar manutenção documental e implementação em guia portátil de entrada, ligado ao README, AGENTS e bootstrap APOS.
 - **2026-10-17 · D-PPK-LLM-001:** Registrar llm_engineering como domínio transversal; separar contrato reutilizável, runtime compartilhado e oracle de negócio.
+- **2026-10-01 · D-PPK-APOS-009:** Use active-only retrieval by default. Runbooks are replace-in-place projections of the latest validated procedure; incidents, cases, checkpoints and superseded sources are preserved in historical paths and loaded only through explicit Intent opt-in.
+- **2026-10-01 · D-PPK-APOS-010:** Mandatory current baseline plus lexical Warm catalog; justified relevant Cold retrieval with authority and provenance. No source truncation. External retrieval services require measured benefit.
 - **2026-09-14 · D-PPK-RELEASE-001:** Adicionar ao APOS um gate semântico de release que observa o ambiente-alvo antes de promover qualquer cliente dependente.
 - **2026-09-13 · D-PPK-CAPABILITY-002:** Modelar Commercial Model como uma camada transversal Economic Control Plane sobre os 14 macrodomínios, adicionar commercial_model e economic_control_plane ao domínio Business & Growth e registrar o grafo de influência sem criar autoridade implícita sobre os domínios afetados.
 - **2026-09-12 · D-PPK-APOS-007:** Adicionar ao starter um DataMap dedicado e projeções determinísticas de memória e Intents abertos, verificadas em checkpoint; ProductState conserva apenas um ponteiro tipado para o mapa.
-- **2026-09-12 · D-PPK-APOS-008:** Tratar reconstrução como cadeia de estados heterogêneos, gerar Intents resolvidos do subgrafo APOS e oferecer um Recovery Manifest que referencia segredos sem armazená-los.
-- **2026-09-12 · D-PPK-CAPABILITY-001:** Usar o Digital Product Capability Map v2 como ontologia de composição do kit, separado do Epistemic Registry, e governar a evolução por cobertura evidenciada, regras de ativação e prioridade por valor reutilizável.
-- **2026-09-09 · D-PPK-APOS-006:** Adicionar um Session Bootstrap determinístico antes da inferência: ler ponteiro ativo, ProductState, Intents abertos, decisões e coordenação; depois compilar o subgrafo completo somente para o Intent em foco.
 
 ## Fontes para aprofundar
 

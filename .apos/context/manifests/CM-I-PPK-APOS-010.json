@@ -1,0 +1,274 @@
+{
+  "id": "CM-I-PPK-APOS-010",
+  "protocol": "APOS v0.2",
+  "intent_id": "I-PPK-APOS-010",
+  "domains": [
+    "operating_model",
+    "session_memory"
+  ],
+  "sources": [
+    {
+      "path": ".apos/active-model.json",
+      "sha256": "37e2d7d71695af153c05560286d4acbd7622f4a0d6e15f0d4203f67ad2d9f0cd",
+      "bytes": 258
+    },
+    {
+      "path": ".apos/ai/ai-execution-profile.json",
+      "sha256": "a0cd8918c1184e41f4d3de9b3fe1b3695fd0b86609f022db96162509f186575a",
+      "bytes": 1372
+    },
+    {
+      "path": ".apos/architecture/architecture-profile.json",
+      "sha256": "7b1217ef8746d00c6f47700108637ae47f4c0d21868bc5870d13d38aeb9b664f",
+      "bytes": 1533
+    },
+    {
+      "path": ".apos/ceremony/adaptive-ceremony.json",
+      "sha256": "38913dad89253963fa354c4967dc5feda5c8fbd529e2a0ab787c68eef39f556b",
+      "bytes": 1260
+    },
+    {
+      "path": ".apos/context/context-profile.json",
+      "sha256": "58cc61bbbc2b8f188a3ed62d43831edc39fcce2b12fa0a775c8083b004f265e1",
+      "bytes": 9079
+    },
+    {
+      "path": ".apos/context/layered-memory-policy-v1.json",
+      "sha256": "ad5495f3a7723357653cd2bc9abb820fac41db0bdfee20592e6635a181b5b7bb",
+      "bytes": 379
+    },
+    {
+      "path": ".apos/context/memory-catalog.json",
+      "sha256": "2993d4d63631e17401bcc0f328ab149531d93b27d49751e375942472ca87c2ae",
+      "bytes": 1621
+    },
+    {
+      "path": ".apos/contracts/kit-contracts.json",
+      "sha256": "6007ede3c7b419f83846e3236fe1f105a76acf44a08f8c05f8ae023f8b8ae1b3",
+      "bytes": 7978
+    },
+    {
+      "path": ".apos/coordination/workstreams.json",
+      "sha256": "a679951e4865ca2636082ae8403258c4cb9a020f058cf3af1e70fda896e79830",
+      "bytes": 743
+    },
+    {
+      "path": ".apos/decisions/D-PPK-APOS-009.json",
+      "sha256": "0da182fd261d835919590670f5465e017322f1ea16473fb94a1923fe0afaa812",
+      "bytes": 985
+    },
+    {
+      "path": ".apos/decisions/D-PPK-APOS-010.json",
+      "sha256": "7b6a9d2505df7c4ba0164149827c4246d96c6f6cc2a933700884dab11fa1a563",
+      "bytes": 691
+    },
+    {
+      "path": ".apos/epistemic/registry.json",
+      "sha256": "d066c6cc7f9c7dcd102e43130a9fc7b6d42170bffae6fd9da0fcfae61a4ab8ef",
+      "bytes": 6741
+    },
+    {
+      "path": ".apos/intents/I-PPK-APOS-010.json",
+      "sha256": "a9850efc167af30c0a85237ea7554c99523e91b063e8f8583c8bb80154b087f6",
+      "bytes": 3040
+    },
+    {
+      "path": ".apos/kernel/kernel.json",
+      "sha256": "2849ddf7fce25dc84e87b0f1ae13209a458a80cbde0d5e23a75c15491e86abe3",
+      "bytes": 1475
+    },
+    {
+      "path": ".apos/learning/learning-cost-loop.json",
+      "sha256": "c8bd5ba78a3db5c160f93c9feff4e83bd0fa9290790254a210c9652e2e8d8864",
+      "bytes": 987
+    },
+    {
+      "path": ".apos/state/product-state.json",
+      "sha256": "0d642c1e64d10fcd51dac394714797a5282ec313a08bf7d30baa4ec2ab3d41cd",
+      "bytes": 3487
+    },
+    {
+      "path": ".apos/versions/product-platform-kit-apos-2.3.0/capabilities.json",
+      "sha256": "b82438058dfc484b57eee4333e3fe4abe529afe3082a59d9bf05474611f553b3",
+      "bytes": 2118
+    },
+    {
+      "path": ".apos/versions/product-platform-kit-apos-2.3.0/constitution.json",
+      "sha256": "34cade807c52867082d82155903ccf52a1f4843689164719ffa9defd88b0e469",
+      "bytes": 1910
+    },
+    {
+      "path": ".apos/versions/product-platform-kit-apos-2.3.0/memory.json",
+      "sha256": "36692469c9c7655ac55dfc57967afc29c94332c81e0883d05ef4f915633c8f88",
+      "bytes": 1564
+    },
+    {
+      "path": ".apos/versions/product-platform-kit-apos-2.3.0/policy.json",
+      "sha256": "2ed146dda7a83276528f5c184308aeef55f7642c2d4e02e5ed21f710bccb7d77",
+      "bytes": 3175
+    },
+    {
+      "path": "README.md",
+      "sha256": "47e41ac8dfb7bf2150bf3d16871304c9d49057733323f1569475610bbdc6f854",
+      "bytes": 8387
+    },
+    {
+      "path": "docs/APOS-GETTING-STARTED.md",
+      "sha256": "a5b2d3cc02e2f97792f9c4e040544c690b8b87009bf323070bb5b08f2a892bed",
+      "bytes": 11531
+    },
+    {
+      "path": "docs/APOS-v0.2.md",
+      "sha256": "e2b80564350d3dbcabb025c8d84719c047c7c22524e638491847af43e9f2fea4",
+      "bytes": 7937
+    },
+    {
+      "path": "docs/apos/LAYERED-MEMORY.md",
+      "sha256": "401bf18cf629120c1313a10b671cffcd35709aa1e7a9a62c5179774f3b138f3d",
+      "bytes": 3588
+    },
+    {
+      "path": "docs/apos/RETRIEVAL-REVIEW-2026-10-01.md",
+      "sha256": "903594362192b66dd84bf55e15df0195d2ac44ef8bb1f8eb489a8a37c87cf733",
+      "bytes": 11993
+    },
+    {
+      "path": "docs/apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md",
+      "sha256": "b17e3a9699d872312ca72e23d916dca7236e4ec27e822a9885def50582f25635",
+      "bytes": 3532
+    },
+    {
+      "path": "packages/apos/README.md",
+      "sha256": "58851d20936a15685c7b7bea6bb082847311bc8dd42d0c1129cebe481c8f5903",
+      "bytes": 1913
+    },
+    {
+      "path": "scripts/bootstrap-apos-session.mjs",
+      "sha256": "73dbdb3f5aa71616a0785720c95c83803810f02efb9145999493455b9c3cb84b",
+      "bytes": 5696
+    },
+    {
+      "path": "scripts/check-operating-model.mjs",
+      "sha256": "78aa3add40a941134f1d9af1f2162e4ddaa69e4e3cd6d3ad2620fc23fcc89636",
+      "bytes": 22006
+    },
+    {
+      "path": "scripts/compile-apos-context.mjs",
+      "sha256": "a7faef1d04a0d7a9f1244741f2391de4134229fc9c8d6aca3c4dc7be05f37545",
+      "bytes": 5428
+    },
+    {
+      "path": "scripts/tests/apos-session-bootstrap.test.mjs",
+      "sha256": "992891d316e9a21c551b598ea90a452b6a26a7cd55929bab1d5a1a4ab15e8b81",
+      "bytes": 3143
+    },
+    {
+      "path": "templates/apos/.apos/coordination/workstreams.json",
+      "sha256": "41aae196410dc44884cc05954125ef6fc356f1d23f9366e0c5021967fe496b0a",
+      "bytes": 319
+    },
+    {
+      "path": "templates/apos/AGENTS.md",
+      "sha256": "c08708a428a797cf957efab1f00c3ad94cee18386de3bfee25dbe2da572cbef6",
+      "bytes": 2903
+    },
+    {
+      "path": "templates/apos/APOS-AGENT-BOOTSTRAP.md",
+      "sha256": "97cb263bba8d129b5df1c945e58c53fd7bea5023030e975b5020126cc19108c7",
+      "bytes": 3396
+    },
+    {
+      "path": "templates/apos/README.md",
+      "sha256": "e39ecd4e42329e74c642771123b42e91582854522ef579d1eb03fee8bc1c0c32",
+      "bytes": 6601
+    },
+    {
+      "path": "templates/apos/scripts/bootstrap-apos-session.mjs",
+      "sha256": "5b27e0da4ec0539709734ae45f69c1995f40b796cb4e0d77d969fc241ca4de7a",
+      "bytes": 5409
+    }
+  ],
+  "retrieval": {
+    "historical_context": "excluded_from_baseline",
+    "historical_path_markers": [
+      ".apos/archive/",
+      "/archive/",
+      "/history/",
+      "/incidents/",
+      "docs/agent-runs/",
+      "docs/checkpoints/"
+    ],
+    "layered": {
+      "version": "layered-memory-1",
+      "method": "metadata_lexical_baseline",
+      "query": "memória recuperação",
+      "cold_trigger": "historical_question",
+      "trigger_reason": "Revisão da política anterior e implementação de recuperação progressiva",
+      "selected": [
+        {
+          "id": "memory-design",
+          "path": "docs/apos/LAYERED-MEMORY.md",
+          "tier": "hot",
+          "authority": "current",
+          "sha256": "401bf18cf629120c1313a10b671cffcd35709aa1e7a9a62c5179774f3b138f3d",
+          "bytes": 3588,
+          "matched_terms": [
+            "memoria",
+            "recuperacao"
+          ],
+          "reason": "hot_baseline",
+          "valid_from": null,
+          "valid_until": null,
+          "superseded_by": null
+        },
+        {
+          "id": "previous-lifecycle-decision",
+          "path": ".apos/decisions/D-PPK-APOS-009.json",
+          "tier": "cold",
+          "authority": "historical",
+          "sha256": "0da182fd261d835919590670f5465e017322f1ea16473fb94a1923fe0afaa812",
+          "bytes": 985,
+          "matched_terms": [
+            "memoria",
+            "recuperacao"
+          ],
+          "reason": "cold_lexical_match",
+          "valid_from": null,
+          "valid_until": null,
+          "superseded_by": "D-PPK-APOS-010"
+        },
+        {
+          "id": "retrieval-research",
+          "path": "docs/apos/RETRIEVAL-REVIEW-2026-10-01.md",
+          "tier": "warm",
+          "authority": "current",
+          "sha256": "903594362192b66dd84bf55e15df0195d2ac44ef8bb1f8eb489a8a37c87cf733",
+          "bytes": 11993,
+          "matched_terms": [
+            "memoria",
+            "recuperacao"
+          ],
+          "reason": "warm_lexical_match",
+          "valid_from": null,
+          "valid_until": null,
+          "superseded_by": null
+        }
+      ],
+      "deferred": [],
+      "issues": [],
+      "assessment": "retrieval_complete_not_semantic_sufficiency",
+      "fingerprint": "bfa962602287031a432ebcd9ad2b0435d8cbc7599a5b8ef59f7bb98540601b3f"
+    }
+  },
+  "measurement": {
+    "method": "conservative_utf8_bytes_divided_by_4",
+    "total_bytes": 154178,
+    "estimated_input_tokens": 38545,
+    "exact_provider_tokens": "unavailable_without_model_request"
+  },
+  "budget": {
+    "max_estimated_input_tokens": 60000
+  },
+  "status": "within_budget",
+  "created_at": "2026-10-01"
+}

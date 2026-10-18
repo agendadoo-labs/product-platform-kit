@@ -1,0 +1,9 @@
+{
+  "id": "D-PPK-INTEGRATION-016",
+  "intent_id": "I-PPK-APOS-010",
+  "decision": "Reconcile layered-memory, skill guide and SEO contract on current main; defer stale and temporally invalid current sources; retain historical provenance.",
+  "authority_source": "Explicit user request to execute CP-015 branch decisions",
+  "preserved_main": "0af4804ee0aac2352c9c33e69a8fc9a63e2411ea",
+  "created_at": "2026-10-18",
+  "rollback": "Revert integration commit, preserving later changes."
+}

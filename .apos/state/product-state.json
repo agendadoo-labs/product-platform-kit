@@ -1,6 +1,6 @@
 {
   "id": "PS-PRODUCT-PLATFORM-KIT",
-  "revision": 15,
+  "revision": 16,
   "active_operating_model": "product-platform-kit-apos-2.3.0",
   "satisfied_intents": [
     "I-PPK-APOS-001",
@@ -16,7 +16,11 @@
   ],
   "candidate_intents": [
     "I-PPK-KNOWLEDGE-001",
-    "I-PPK-DOC-ORG-001"
+    "I-PPK-DOC-ORG-001",
+    "I-PPK-APOS-009",
+    "I-PPK-APOS-010",
+    "I-PPK-SKILLS-001",
+    "I-PPK-SEO-001"
   ],
   "evidence_ids": [
     "E-PPK-APOS-001",
@@ -36,11 +40,12 @@
     "E-PPK-APOS-015",
     "E-PPK-CAPABILITY-001",
     "E-PPK-CAPABILITY-002",
-    "E-PPK-LLM-001"
+    "E-PPK-LLM-001",
+    "E-PPK-INTEGRATION-016"
   ],
   "data_map": {
     "id": "DM-PPK-001",
-    "revision": 3,
+    "revision": 4,
     "path": ".apos/data/data-map.json",
     "human_projection": "docs/apos/DATA-MAP-AND-HUMAN-PROJECTIONS.md"
   },
@@ -51,7 +56,7 @@
     "starter": "consumer-apos-1.3.0 includes all five v0.2 components, evidence-calibrated context budgets, deterministic session bootstrap, DataMap and generated human projections",
     "runtime": "APOS v0.1 transactional bootstrap remains unchanged; APOS v0.2 profiles are governed configuration until native runtime support",
     "architecture": "maturity and complexity are evaluated per domain",
-    "context": "session bootstrap indexes current state and open work before selective compilation; checkpoint generates project memory plus open and resolved Intent reports without replacing canonical records",
+    "context": "Layered lexical retrieval tested with validity and hash deferral; dated historical evidence stays historical. No measured token or accuracy gain.",
     "coordination": "optional workstreams expose ownership and dependencies across teams without granting authority or duplicating Intent details",
     "data_governance": "ProductState carries a typed pointer to a dedicated versioned DataMap for entities, relationships, lineage, classification and retention",
     "recovery": "reconstruction is governed as a chain across Git, IaC, data, objects, identity, secrets, external configuration and tested restore; the starter includes a provider-neutral Recovery Manifest",

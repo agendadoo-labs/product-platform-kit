@@ -1,0 +1,103 @@
+{
+  "id": "I-PPK-APOS-010",
+  "revision": 2,
+  "problem": "Recuperação binária de histórico não atende memória organizacional crescente; precisamos avaliar literatura, recuperação progressiva e maturidade com evidências.",
+  "population": "Builders, agents and multi-team products adopting APOS",
+  "outcome": "Revisão primária documentada, memória local em camadas integrada e testada, comparação de maturidade com limites explícitos.",
+  "constraints": [
+    "preserve provenance and history",
+    "exclude history by default without deleting it",
+    "never omit active governing context for token savings",
+    "keep the starter consumer-neutral"
+  ],
+  "context_request": {
+    "query": "memória recuperação",
+    "trigger": "historical_question",
+    "reason": "Revisão da política anterior e implementação de recuperação progressiva"
+  },
+  "change_envelope": {
+    "delta": [
+      "review bibliography",
+      "layered retrieval",
+      "catalog and provenance",
+      "adversarial and integration tests",
+      "maturity assessment"
+    ],
+    "affected_surfaces": [
+      "Context Compiler",
+      "ContextProfile",
+      "starter",
+      "APOS documentation",
+      "leo-brain projection"
+    ],
+    "affected_domains": [
+      "operating_model",
+      "session_memory"
+    ],
+    "invariants": [
+      "active sources remain sufficient",
+      "history remains versioned",
+      "authority and provenance gates remain",
+      "no consumer-specific data in starter"
+    ],
+    "out_of_scope": [
+      "paid API",
+      "vector database deployment",
+      "changes to product behavior",
+      "full corpus migration"
+    ],
+    "compatibility": [
+      "existing Intents compile active sources",
+      "historical inclusion is additive and explicit"
+    ],
+    "regression_surface": [
+      "root compiler",
+      "starter compiler",
+      "ContextManifest",
+      "session bootstrap",
+      "documentation links"
+    ],
+    "rollback": "Remove layered_memory profile pointer to restore baseline; retain source history and research.",
+    "component_reuse_assessment": {
+      "components_reviewed": [],
+      "decision": "not_applicable",
+      "rationale": "No product interface is changed.",
+      "reuse_surfaces": []
+    }
+  },
+  "required_contract_ids": [
+    "C-PPK-CONTEXT-001",
+    "C-PPK-GOV-001",
+    "C-PPK-PRES-001",
+    "C-PPK-EPI-001"
+  ],
+  "capabilities": [
+    "recover-context",
+    "compile-context",
+    "design-reusable-contract",
+    "change-package",
+    "verify-package"
+  ],
+  "classification": {
+    "impact": "medium",
+    "uncertainty": "low",
+    "reversibility": "reversible",
+    "environment": "repository",
+    "external_cost": "none"
+  },
+  "ceremony_selection": {
+    "level": "standard",
+    "triggers": [
+      "operating_model_change",
+      "starter_behavior"
+    ],
+    "authority": "explicit_builder_request_2026_10_01",
+    "downgrade_allowed": false
+  },
+  "status": "active",
+  "source": {
+    "type": "builder_conversation",
+    "date": "2026-10-01"
+  },
+  "integration_checkpoint": "CP-016: candidate reconciled on current main; current CI and publication must be observed before closure."
+}

@@ -1,0 +1,42 @@
+{
+  "id": "AR-PPK-SEO-001",
+  "intent_id": "I-PPK-SEO-001",
+  "status": "succeeded",
+  "environment": "repository_documentation",
+  "ceremony": {
+    "selected": "standard",
+    "required": "standard"
+  },
+  "context_manifest_id": "CM-I-PPK-SEO-001",
+  "budget": {
+    "parallel_fanout": 0,
+    "new_paid_services": 0,
+    "context": "selective, no silent omission"
+  },
+  "consumption": {
+    "input_tokens": "unavailable",
+    "output_tokens": "unavailable",
+    "monetary_cost": "unavailable"
+  },
+  "started_at": "2026-09-15",
+  "outputs": [
+    "AGENTS.md",
+    "docs/apos/SEO-GEO.md",
+    "templates/apos/SEO-GEO.md",
+    "templates/apos/AGENTS.md",
+    ".apos"
+  ],
+  "remaining_uncertainties": [
+    "Downstream adoption not measured"
+  ],
+  "completed_at": "2026-09-15",
+  "verification": {
+    "local_checks": "passed",
+    "remote_publication": "git_push_succeeded"
+  },
+  "publication": {
+    "branch": "docs/seo-geo-principle-20260915",
+    "observed_commit": "e42667d",
+    "merged_to_main": false
+  }
+}

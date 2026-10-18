@@ -1,0 +1,12 @@
+{
+  "id": "layered-memory-ppk-1",
+  "version": 1,
+  "decision_id": "D-PPK-APOS-010",
+  "supersedes": "binary_history_opt_in",
+  "catalog": ".apos/context/memory-catalog.json",
+  "retention": "unchanged",
+  "authority": "independent_of_tier",
+  "semantic_sufficiency": "requires_agent_review",
+  "implementation": "scripts/apos-layered-memory.mjs",
+  "created_at": "2026-10-01"
+}
