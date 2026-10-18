@@ -134,53 +134,68 @@
     },
     {
       "path": "docs/AGENTIC-WORKFLOW.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Guia — Operação agêntica por APOS",
-      "purpose": "Consultar Operação agêntica por APOS.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "AGENTIC-WORKFLOW",
+      "id": "DOC-FB9E7BE5DE0947",
+      "purpose": "Orientar Operação agêntica por APOS.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Executar ou verificar o procedimento: Operação agêntica por APOS"
       ],
-      "sha256": "e1a3f061856a5b6e49c3e760cede8cdf414ba257739c10fb2aba442bf6a39bdb"
+      "document_role": "procedure",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
-      "path": "docs/ARCHITECTURE.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/Product Platform Kit — Arquitetura — Arquitetura básica.md",
+      "compatibility_path": "docs/ARCHITECTURE.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Arquitetura — Arquitetura básica",
-      "purpose": "Consultar Arquitetura básica.",
+      "id": "DOC-3BB634559D0D1E",
+      "purpose": "Explicar Arquitetura básica.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Alterar componentes ou responsabilidades: Arquitetura básica"
       ],
-      "sha256": "1249cc5b92dcc94eba4578016497beb18ad52239e2def7c4aa9aeda68db5d8ea"
+      "document_role": "architecture",
+      "path_policy": "canonical_descriptive"
     },
     {
-      "path": "docs/APOS-v0.1.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/Product Platform Kit — Referência — APOS v0.1 — executable repository specification.md",
+      "compatibility_path": "docs/APOS-v0.1.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Referência — APOS v0.1 — executable repository specification",
-      "purpose": "Consultar APOS v0.1 — executable repository specification.",
+      "id": "DOC-A72DB51FA68AE7",
+      "purpose": "Contextualizar APOS v0.1 — executable repository specification.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: APOS v0.1 — executable repository specification"
       ],
-      "sha256": "44273f3a232e4e24fd85a5618c17bb1c561d7c88bbe68b9e9c9f0a8cbe75f46b"
+      "document_role": "reference",
+      "path_policy": "canonical_descriptive"
     },
     {
       "path": "docs/EXPERIMENTS.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Evidência — Testes A B",
-      "purpose": "Consultar Testes A/B.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "EXPERIMENTS",
+      "id": "DOC-C939FB438911A2",
+      "purpose": "Registrar evidências de Testes A/B.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Conferir resultados e seus limites: Testes A/B"
       ],
-      "sha256": "a432bb8cf0b345403adf6bf006e9b4b96975ee2a0ae9a4f301e5b3e00453d50b"
+      "document_role": "evidence",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/ENVIRONMENTS.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Configuração de ambientes",
-      "purpose": "Consultar Configuração de ambientes.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "ENVIRONMENTS",
+      "id": "DOC-EEDF06E962EF16",
+      "purpose": "Contextualizar Configuração de ambientes.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Configuração de ambientes"
       ],
-      "sha256": "c52d5c528cdebac60b9ce0d56ed027e6632bf0f15e0c3a47d379328796d37c62"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/Product Platform Kit — Guia — Manutenção documental.md",
@@ -193,34 +208,43 @@
       "sha256": "a9d48abb61bd32f323f3c995e40614dff8056d4f10d9fa0eb5e1cb94933d940f"
     },
     {
-      "path": "docs/TEST-ENVIRONMENT-STANDARD.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/Product Platform Kit — Evidência — Padrão de ambiente de teste.md",
+      "compatibility_path": "docs/TEST-ENVIRONMENT-STANDARD.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Evidência — Padrão de ambiente de teste",
-      "purpose": "Consultar Padrão de ambiente de teste.",
+      "id": "DOC-F72B25E602C159",
+      "purpose": "Registrar evidências de Padrão de ambiente de teste.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Conferir resultados e seus limites: Padrão de ambiente de teste"
       ],
-      "sha256": "394e0569ab01f4260ab7310b32a659ee3e374fde6cbf434d1d1772b46c792dea"
+      "document_role": "evidence",
+      "path_policy": "canonical_descriptive"
     },
     {
-      "path": "docs/SETUP-PLAYBOOK.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/Product Platform Kit — Guia — Manual de configuração da plataforma.md",
+      "compatibility_path": "docs/SETUP-PLAYBOOK.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Guia — Manual de configuração da plataforma",
-      "purpose": "Consultar Manual de configuração da plataforma.",
+      "id": "DOC-F2920DE19C637C",
+      "purpose": "Orientar Manual de configuração da plataforma.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Executar ou verificar o procedimento: Manual de configuração da plataforma"
       ],
-      "sha256": "2e2e6cedb911bbb6eb571359cc9664708339726bbdadd51c8a8872cbdd77ae58"
+      "document_role": "procedure",
+      "path_policy": "canonical_descriptive"
     },
     {
-      "path": "docs/apos/APOS-v0.2-CHECKPOINT.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/apos/Product Platform Kit — Referência — Checkpoint — APOS v0.2.md",
+      "compatibility_path": "docs/apos/APOS-v0.2-CHECKPOINT.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Referência — Checkpoint — APOS v0.2",
-      "purpose": "Consultar Checkpoint — APOS v0.2.",
+      "id": "DOC-424223B306F061",
+      "purpose": "Contextualizar Checkpoint — APOS v0.2.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Checkpoint — APOS v0.2"
       ],
-      "sha256": "1dd71974e2cf4bd9f17f165c36129457d08538ced632174d5d6cb11467842672"
+      "document_role": "reference",
+      "path_policy": "canonical_descriptive"
     },
     {
       "path": "docs/SECURITY-PRIVACY.md",
@@ -705,11 +729,16 @@
   ],
   "renames": {
     "README.md": "Product Platform Kit — Início — Visão do produto.md",
-    "docs/AGENTIC-PRODUCT-MANIFESTO.md": "docs/Product Platform Kit — Referência — The Agentic Product Manifesto.md"
+    "docs/AGENTIC-PRODUCT-MANIFESTO.md": "docs/Product Platform Kit — Referência — The Agentic Product Manifesto.md",
+    "docs/ARCHITECTURE.md": "docs/Product Platform Kit — Arquitetura — Arquitetura básica.md",
+    "docs/APOS-v0.1.md": "docs/Product Platform Kit — Referência — APOS v0.1 — executable repository specification.md",
+    "docs/TEST-ENVIRONMENT-STANDARD.md": "docs/Product Platform Kit — Evidência — Padrão de ambiente de teste.md",
+    "docs/SETUP-PLAYBOOK.md": "docs/Product Platform Kit — Guia — Manual de configuração da plataforma.md",
+    "docs/apos/APOS-v0.2-CHECKPOINT.md": "docs/apos/Product Platform Kit — Referência — Checkpoint — APOS v0.2.md"
   },
   "migration": {
     "checkpoint": "CP-013",
-    "batch": 1,
+    "batch": 2,
     "batches": 9,
     "status": "partial"
   },

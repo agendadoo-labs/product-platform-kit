@@ -27,15 +27,15 @@ Escolha o assunto e depois confira a autoridade e a revisão da fonte.
 - [Product Platform Kit — Referência — The Agentic Product Manifesto](<Product Platform Kit — Referência — The Agentic Product Manifesto.md>) — Contextualizar The Agentic Product Manifesto.
 - [Product Platform Kit — Referência — Intents resolvidos](<APOS-RESOLVED-INTENTS.md>) — Consultar Intents resolvidos.
 - [Product Platform Kit — Início — Visão do produto](<../Product Platform Kit — Início — Visão do produto.md>) — Apresentar o produto e indicar fontes, execução e limitações.
-- [Product Platform Kit — Guia — Operação agêntica por APOS](<AGENTIC-WORKFLOW.md>) — Consultar Operação agêntica por APOS.
-- [Product Platform Kit — Arquitetura — Arquitetura básica](<ARCHITECTURE.md>) — Consultar Arquitetura básica.
-- [Product Platform Kit — Referência — APOS v0.1 — executable repository specification](<APOS-v0.1.md>) — Consultar APOS v0.1 — executable repository specification.
-- [Product Platform Kit — Evidência — Testes A B](<EXPERIMENTS.md>) — Consultar Testes A/B.
-- [Product Platform Kit — Referência — Configuração de ambientes](<ENVIRONMENTS.md>) — Consultar Configuração de ambientes.
+- [AGENTIC-WORKFLOW](<AGENTIC-WORKFLOW.md>) — Orientar Operação agêntica por APOS.
+- [Product Platform Kit — Arquitetura — Arquitetura básica](<Product Platform Kit — Arquitetura — Arquitetura básica.md>) — Explicar Arquitetura básica.
+- [Product Platform Kit — Referência — APOS v0.1 — executable repository specification](<Product Platform Kit — Referência — APOS v0.1 — executable repository specification.md>) — Contextualizar APOS v0.1 — executable repository specification.
+- [EXPERIMENTS](<EXPERIMENTS.md>) — Registrar evidências de Testes A/B.
+- [ENVIRONMENTS](<ENVIRONMENTS.md>) — Contextualizar Configuração de ambientes.
 - [Product Platform Kit — Guia — Guia — Manutenção documental](<Product Platform Kit — Guia — Manutenção documental.md>) — Consultar Product Platform Kit — Guia — Manutenção documental.
-- [Product Platform Kit — Evidência — Padrão de ambiente de teste](<TEST-ENVIRONMENT-STANDARD.md>) — Consultar Padrão de ambiente de teste.
-- [Product Platform Kit — Guia — Manual de configuração da plataforma](<SETUP-PLAYBOOK.md>) — Consultar Manual de configuração da plataforma.
-- [Product Platform Kit — Referência — Checkpoint — APOS v0.2](<apos/APOS-v0.2-CHECKPOINT.md>) — Consultar Checkpoint — APOS v0.2.
+- [Product Platform Kit — Evidência — Padrão de ambiente de teste](<Product Platform Kit — Evidência — Padrão de ambiente de teste.md>) — Registrar evidências de Padrão de ambiente de teste.
+- [Product Platform Kit — Guia — Manual de configuração da plataforma](<Product Platform Kit — Guia — Manual de configuração da plataforma.md>) — Orientar Manual de configuração da plataforma.
+- [Product Platform Kit — Referência — Checkpoint — APOS v0.2](<apos/Product Platform Kit — Referência — Checkpoint — APOS v0.2.md>) — Contextualizar Checkpoint — APOS v0.2.
 - [Product Platform Kit — Referência — Segurança e privacidade](<SECURITY-PRIVACY.md>) — Consultar Segurança e privacidade.
 - [Product Platform Kit — Referência — APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada](<APOS-v0.2.md>) — Consultar APOS v0.2 — evolução econômica, contexto seletivo e execução de IA governada.
 - [Product Platform Kit — Referência — Mapeamento do Valora RJ](<VALORA-RJ-MAPPING.md>) — Consultar Mapeamento do Valora RJ.
@@ -87,4 +87,4 @@ Escolha o assunto e depois confira a autoridade e a revisão da fonte.
 
 ## Cobertura
 
-Lote 1 de 9. Inventário explícito em documentation-inventory.json. Gerados, templates e histórico preservados. Registro da migração: CP-013. Reversão por PR; publicação documental não comprova runtime.
+Lote 2 de 9. Inventário explícito em documentation-inventory.json. Gerados, templates e histórico preservados. Registro da migração: CP-013. Reversão por PR; publicação documental não comprova runtime.
