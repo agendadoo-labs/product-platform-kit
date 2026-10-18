@@ -1,4 +1,18 @@
+---
+id: "DOC-DB7BA84B280BF3"
+type: "reference"
+scope: "Product Platform Kit"
+document_role: "reference"
+purpose: "Contextualizar Playbook de desempenho para busca por mapa."
+read_when: ["Consultar contexto complementar: Playbook de desempenho para busca por mapa"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Playbook de desempenho para busca por mapa
+
+Contextualizar Playbook de desempenho para busca por mapa.
 
 ## Caminho crítico
 

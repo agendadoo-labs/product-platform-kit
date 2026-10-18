@@ -508,23 +508,29 @@
     },
     {
       "path": "docs/capabilities/COMMERCIAL-MODEL-ECONOMIC-CONTROL-PLANE.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Commercial Model como Economic Control Plane",
-      "purpose": "Consultar Commercial Model como Economic Control Plane.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "COMMERCIAL-MODEL-ECONOMIC-CONTROL-PLANE",
+      "id": "DOC-167B11D8233C16",
+      "purpose": "Contextualizar Commercial Model como Economic Control Plane.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Commercial Model como Economic Control Plane"
       ],
-      "sha256": "954c91ac4bf08ccae3dda00bb4cc4308591063c4cfa45659617dc5799c3fc308"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/architecture/LLM_ENGINEERING.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Arquitetura — Engenharia e otimização de LLMs",
-      "purpose": "Consultar Engenharia e otimização de LLMs.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "LLM_ENGINEERING",
+      "id": "DOC-2B8CFFA2D8B4EE",
+      "purpose": "Explicar Engenharia e otimização de LLMs.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Alterar componentes ou responsabilidades: Engenharia e otimização de LLMs"
       ],
-      "sha256": "4228b4b5693db879a1be04b24c09f97dbe4d3b0b442b09aa761368d435004f2e"
+      "document_role": "architecture",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "packages/apos/evidence/bootstrap/catalog.md",
@@ -538,43 +544,55 @@
     },
     {
       "path": "docs/capabilities/PRODUCT-VISION.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Visão de produto",
-      "purpose": "Consultar Visão de produto.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "PRODUCT-VISION",
+      "id": "DOC-5D5990FA115D34",
+      "purpose": "Contextualizar Visão de produto.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Visão de produto"
       ],
-      "sha256": "b829955165b00ba72397e3d054a61279e700b580156fd4f84954c9d5da14be07"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
-      "path": "packages/map-core/README.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "packages/map-core/Product Platform Kit — Início — Map Core.md",
+      "compatibility_path": "packages/map-core/README.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Início — Map Core",
-      "purpose": "Consultar Map Core.",
+      "id": "DOC-E91DF18002825A",
+      "purpose": "Apresentar Map Core.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Iniciar trabalho no assunto: Map Core"
       ],
-      "sha256": "220ec7226ff61bd94a310bb9a7a9f8ff11ad1c853b367957667594c3ac1fb42e"
+      "document_role": "entrypoint",
+      "path_policy": "canonical_descriptive"
     },
     {
-      "path": "packages/apos/README.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "packages/apos/Product Platform Kit — Início — Runtime transacional experimental do APOS.md",
+      "compatibility_path": "packages/apos/README.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Início — Runtime transacional experimental do APOS",
-      "purpose": "Consultar Runtime transacional experimental do APOS.",
+      "id": "DOC-4BAB032FAE6204",
+      "purpose": "Apresentar Runtime transacional experimental do APOS.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Iniciar trabalho no assunto: Runtime transacional experimental do APOS"
       ],
-      "sha256": "58851d20936a15685c7b7bea6bb082847311bc8dd42d0c1129cebe481c8f5903"
+      "document_role": "entrypoint",
+      "path_policy": "canonical_descriptive"
     },
     {
       "path": "packages/map-core/docs/PERFORMANCE-PLAYBOOK.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Playbook de desempenho para busca por mapa",
-      "purpose": "Consultar Playbook de desempenho para busca por mapa.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "PERFORMANCE-PLAYBOOK",
+      "id": "DOC-DB7BA84B280BF3",
+      "purpose": "Contextualizar Playbook de desempenho para busca por mapa.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Playbook de desempenho para busca por mapa"
       ],
-      "sha256": "437f1cd9609399c17a291e12bef2195e81eabc661bde8931d6849c1724ee8139"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/capabilities/TOP-10-MODULE-BENCHMARKS.md",
@@ -802,11 +820,13 @@
     "docs/apos/SCOPE-PRESERVATION.md": "docs/apos/Product Platform Kit — Referência — Scope Preservation and Change Envelopes.md",
     "docs/apos/VALORA-SOURCES.md": "docs/apos/Product Platform Kit — Referência — Fontes consultadas.md",
     "docs/apos/VALORA-OPERATING-MODE.md": "docs/apos/Product Platform Kit — Referência — Valora — APOS aplicado à construção de produto.md",
-    "docs/apos/CONTEXT.md": "docs/apos/Product Platform Kit — Referência — APOS — Product Platform Kit.md"
+    "docs/apos/CONTEXT.md": "docs/apos/Product Platform Kit — Referência — APOS — Product Platform Kit.md",
+    "packages/map-core/README.md": "packages/map-core/Product Platform Kit — Início — Map Core.md",
+    "packages/apos/README.md": "packages/apos/Product Platform Kit — Início — Runtime transacional experimental do APOS.md"
   },
   "migration": {
     "checkpoint": "CP-013",
-    "batch": 7,
+    "batch": 8,
     "batches": 9,
     "status": "partial"
   },

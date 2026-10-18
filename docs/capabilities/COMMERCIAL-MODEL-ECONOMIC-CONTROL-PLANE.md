@@ -1,4 +1,18 @@
+---
+id: "DOC-167B11D8233C16"
+type: "reference"
+scope: "Product Platform Kit"
+document_role: "reference"
+purpose: "Contextualizar Commercial Model como Economic Control Plane."
+read_when: ["Consultar contexto complementar: Commercial Model como Economic Control Plane"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Commercial Model como Economic Control Plane
+
+Contextualizar Commercial Model como Economic Control Plane.
 
 ## Decisão
 
@@ -120,4 +134,3 @@ Uma implementação comercial só pode ser considerada pronta quando:
 - falhas e disputas possuem estado recuperável;
 - custo e consumo podem ser reconciliados com o resultado;
 - o grafo de influência foi revisado e os impactos fora de escopo foram preservados.
-

@@ -1,4 +1,18 @@
+---
+id: "DOC-2B8CFFA2D8B4EE"
+type: "reference"
+scope: "Product Platform Kit"
+document_role: "architecture"
+purpose: "Explicar Engenharia e otimização de LLMs."
+read_when: ["Alterar componentes ou responsabilidades: Engenharia e otimização de LLMs"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Engenharia e otimização de LLMs
+
+Explicar Engenharia e otimização de LLMs.
 
 O domínio `llm_engineering` reúne harness, prompts, contexto, recuperação, memória, ferramentas, avaliações, custo e latência. É uma fronteira de conhecimento e responsabilidade; não exige um agente ou time dedicado.
 
