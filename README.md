@@ -1,5 +1,7 @@
 # Product Platform Kit
 
+**Início de agentes/LLMs:** leia o [guia de manutenção de implementação e documentação](templates/apos/APOS-MAINTENANCE.md) antes de alterar o projeto e ao retomar checkpoints.
+
 ## Missão
 
 **Transformar as barreiras tecnológicas de entrada de novos negócios em praticamente zero, permitindo que mentes criativas coloquem projetos e produtos em prática com a ajuda de organizações agênticas.**
