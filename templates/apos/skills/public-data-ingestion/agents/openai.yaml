@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ingestão de dados públicos"
+  short_description: "Consuma fontes com rastreabilidade e limites"
+  default_prompt: "Use $public-data-ingestion para executar a etapa adequada, registrar fontes e informar cobertura e limitações."

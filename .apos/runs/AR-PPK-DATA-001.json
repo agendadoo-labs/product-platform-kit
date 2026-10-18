@@ -1,0 +1,30 @@
+{
+  "id": "AR-PPK-DATA-001",
+  "intent_id": "I-PPK-DATA-001",
+  "status": "succeeded",
+  "environment": "local_reference",
+  "ceremony": {
+    "selected": "standard",
+    "required": "standard"
+  },
+  "consumption": {
+    "input_tokens": "unavailable",
+    "output_tokens": "unavailable",
+    "monetary_cost": "unavailable"
+  },
+  "outputs": [
+    ".apos/skills/data-skills.json",
+    "docs/architecture/DATA-INTELLIGENCE.md"
+  ],
+  "remaining_uncertainties": [
+    "Deterministic tests use controlled transports; no end-to-end certification of source adapters",
+    "No main merge, production deployment or scheduler",
+    "Worker adoption and consumer rollout separately tracked"
+  ],
+  "started_at": "2026-10-18",
+  "completed_at": "2026-10-18",
+  "verification": {
+    "local_checks": "passed",
+    "remote_publication": "pending"
+  }
+}

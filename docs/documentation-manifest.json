@@ -19,6 +19,11 @@
       "id": "DOC-PRODUCT-PLATFORM-KIT-3",
       "path": "docs/Product Platform Kit — Guia — Manutenção documental.md",
       "role": "procedure"
+    },
+    {
+      "id": "DOC-PPK-DATA-001",
+      "path": "docs/architecture/DATA-INTELLIGENCE.md",
+      "role": "architecture"
     }
   ],
   "preserved": "Generated APOS docs, versioned history, vendored skills and runtime code are unchanged."

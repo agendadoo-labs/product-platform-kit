@@ -1,6 +1,6 @@
 {
   "id": "PS-PRODUCT-PLATFORM-KIT",
-  "revision": 17,
+  "revision": 18,
   "active_operating_model": "product-platform-kit-apos-2.3.0",
   "satisfied_intents": [
     "I-PPK-APOS-001",
@@ -20,7 +20,8 @@
     "I-PPK-APOS-009",
     "I-PPK-APOS-010",
     "I-PPK-SKILLS-001",
-    "I-PPK-SEO-001"
+    "I-PPK-SEO-001",
+    "I-PPK-DATA-001"
   ],
   "evidence_ids": [
     "E-PPK-APOS-001",
@@ -42,7 +43,8 @@
     "E-PPK-CAPABILITY-002",
     "E-PPK-LLM-001",
     "E-PPK-INTEGRATION-016",
-    "E-PPK-DOC-017"
+    "E-PPK-DOC-017",
+    "E-PPK-DATA-001"
   ],
   "data_map": {
     "id": "DM-PPK-001",
@@ -67,7 +69,8 @@
     "commercial_model": "Commercial Model is an Economic Control Plane that propagates actor incentives, billable events, entitlements, guardrails and second-order impacts through the domain graph without granting implicit authority",
     "mission": "Reduce technological entry barriers for new businesses to practically zero through reusable, secure and verifiable agentic product foundations",
     "llm_engineering": "Domínio definido com política, template, contexto e registro epistêmico; não altera enforcement nem promove modelos.",
-    "cp017_documentation": "CP-016 additions classified with descriptive canonical names, purpose, reading triggers and explicit graph_scope. Historical records and skill bundles remain intact; broader product outcomes remain separate."
+    "cp017_documentation": "CP-016 additions classified with descriptive canonical names, purpose, reading triggers and explicit graph_scope. Historical records and skill bundles remain intact; broader product outcomes remain separate.",
+    "external_data": "Six candidate skill bundles; 32 deterministic tests and registry checks passed. Source procedures remain unvalidated as operational connectors."
   },
   "updated_at": "2026-10-18",
   "documentation_organization": {

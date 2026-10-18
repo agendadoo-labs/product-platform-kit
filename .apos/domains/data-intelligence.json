@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "id": "data_intelligence",
+  "status": "candidate_reference",
+  "owner": "builder",
+  "scope": "Existing capability domain, extended with external data consumption",
+  "contracts": [
+    "C-PPK-DATA-001"
+  ],
+  "artifacts": [
+    ".apos/skills/data-skills.json",
+    "docs/architecture/DATA-INTELLIGENCE.md"
+  ],
+  "required_controls": [
+    "source license and owner",
+    "classification and minimization",
+    "timeouts and retry budget with jitter and Retry-After",
+    "rate limit and concurrency",
+    "idempotent ingestion and deduplication",
+    "immutable raw snapshots and SHA-256",
+    "schema compatibility and quarantine",
+    "pagination completeness and reconciliation",
+    "atomic promotion and rollback",
+    "reference period distinct from retrieval time",
+    "late revisions and bounded backfill",
+    "run/dataset lineage and transformation version",
+    "freshness quality SLOs and observable failures",
+    "retention and restore verification"
+  ],
+  "maturity_limits": [
+    "Local single JSON-resource reference, no distributed guarantees",
+    "No automatic pagination, scheduling or complete connector certification",
+    "Custom lineage manifest is not certified OpenLineage",
+    "Outlier is a review candidate, not fraud evidence"
+  ],
+  "interfaces": {
+    "kit": "contracts and reusable skills",
+    "worker": "explicit pinned adoption and execution",
+    "consumer": "source configuration, authorized data, frequency and semantics"
+  }
+}

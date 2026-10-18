@@ -5,7 +5,7 @@ updated: 2026-10-18
 
 # Intents abertos
 
-> Projeção da revisão 17 do ProductState. Não editar manualmente.
+> Projeção da revisão 18 do ProductState. Não editar manualmente.
 
 | Intent | Estado | Cerimônia | Próximo checkpoint |
 |---|---|---|---|
@@ -15,6 +15,7 @@ updated: 2026-10-18
 | `I-PPK-APOS-010` | active | standard | Não definido. |
 | `I-PPK-SKILLS-001` | active | standard | Não definido. |
 | `I-PPK-SEO-001` | active | standard | Não definido. |
+| `I-PPK-DATA-001` | active | standard | Não definido. |
 
 ## I-PPK-KNOWLEDGE-001
 
@@ -87,6 +88,18 @@ updated: 2026-10-18
 - **Última execução:** `AR-PPK-SEO-001` — succeeded.
 - **Última evidência:** `E-PPK-SEO-001` — passou.
 - **Incertezas:** Downstream adoption not measured.
+
+## I-PPK-DATA-001
+
+- **Estado do Intent:** active.
+- **Estado operacional:** sem workstream.
+- **Problema:** External data ingestion lacks a shared reliability contract and source-family skills.
+- **Resultado esperado:** Reusable ingestion and relative-analysis references with bounded tests and honest maturity.
+- **Próximo checkpoint:** Não definido.
+- **Decisões:** `D-PPK-DATA-001`.
+- **Última execução:** `AR-PPK-DATA-001` — succeeded.
+- **Última evidência:** `E-PPK-DATA-001` — passou.
+- **Incertezas:** Deterministic tests use controlled transports; no end-to-end certification of source adapters; No main merge, production deployment or scheduler; Worker adoption and consumer rollout separately tracked.
 
 ## Memória por Intent
 

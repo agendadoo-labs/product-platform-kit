@@ -315,6 +315,19 @@
         "status": "specified",
         "required_evidence": "Consumidor comprova HTML, indexabilidade, fontes, privacidade e qualidade editorial conforme docs/apos/SEO-GEO.md."
       }
+    },
+    {
+      "id": "C-PPK-DATA-001",
+      "family": "engineering",
+      "description": "External ingestion preserves source, period, schema, hashes, last good version and explicit completeness; failed or empty retrieval never proves absence. Relative analysis requires comparable units, populations, periods and stages.",
+      "applies_when": [
+        "external_data_ingestion",
+        "relative_analysis"
+      ],
+      "verification": {
+        "status": "specified",
+        "required_evidence": "retry/cache/schema tests, manifest hashes, source-specific reconciliation and human review before operational adoption"
+      }
     }
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "id": "E-PPK-DATA-001",
+  "intent_id": "I-PPK-DATA-001",
+  "observed_at": "2026-10-18",
+  "passed": true,
+  "checks": [
+    "18 ingestion failure/cache/schema tests passed",
+    "14 relative-analysis tests passed",
+    "Six skills passed official quick_validate",
+    "Exact bundle SHA-256 registry verified",
+    "APOS operating-model check passed",
+    "Capability catalog: 14 domains, 130 capabilities",
+    "Seven reading routes validated",
+    "Four documentary entrypoints validated"
+  ],
+  "limits": [
+    "Deterministic tests use controlled transports; no end-to-end certification of source adapters",
+    "No main merge, production deployment or scheduler",
+    "Worker adoption and consumer rollout separately tracked"
+  ],
+  "negative_evidence": [
+    "Initial retry-event keyword collision fixed and all tests rerun",
+    "Initial model check lacked historical Git tag; fetched official tags and reran successfully",
+    "Reading-route roles corrected to allowed schema"
+  ]
+}
