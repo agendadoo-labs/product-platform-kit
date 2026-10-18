@@ -417,6 +417,39 @@
         "policy",
         "runtime_environment"
       ]
+    },
+    {
+      "domain": "knowledge_governance",
+      "owner": "builder",
+      "authoritative_sources": [
+        ".apos/domains/knowledge-governance.json",
+        ".apos/knowledge/catalog.json",
+        "docs/knowledge/Conhecimento — Início — Gestão de conhecimento e especificações.md",
+        "docs/knowledge/Conhecimento — Contrato — Ciclo de vida e autoridade.md",
+        "docs/knowledge/Conhecimento — Contrato — Especificações e evidências.md",
+        "docs/knowledge/Conhecimento — Guia — Validação e retomada.md",
+        "docs/knowledge/Conhecimento — Plano — Adoção e maturidade empresarial.md"
+      ],
+      "methods": [
+        "contract_validation",
+        "fault_injection",
+        "independent_acceptance"
+      ],
+      "known_uncertainties": [
+        "No independent enterprise adoption evidence",
+        "Offline validation cannot detect unobserved remote changes"
+      ],
+      "relationships": [
+        "operating_model",
+        "llm_engineering"
+      ],
+      "refresh_triggers": [
+        "specification_revision",
+        "source_commit",
+        "dependency_revision",
+        "permission_change",
+        "verifier_change"
+      ]
     }
   ],
   "admission_rule": "A source becomes authoritative only through explicit registry review; semantic retrieval cannot promote its authority.",

@@ -315,6 +315,20 @@
         "status": "specified",
         "required_evidence": "Consumidor comprova HTML, indexabilidade, fontes, privacidade e qualidade editorial conforme docs/apos/SEO-GEO.md."
       }
+    },
+    {
+      "id": "C-PPK-KG-001",
+      "family": "knowledge_governance",
+      "description": "Explicit knowledge catalog must preserve lifecycle, dependencies and specification traceability; current-state projections derive from one source.",
+      "applies_when": [
+        "knowledge_catalog_change",
+        "specification_change"
+      ],
+      "verification": {
+        "status": "implemented",
+        "verifier": "packages/knowledge_governance/validate.py",
+        "limits": "No runtime, permission or independent business acceptance certification"
+      }
     }
   ]
 }

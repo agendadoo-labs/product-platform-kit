@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "scope": "knowledge_governance_contracts_only",
+  "documents": [
+    {
+      "id": "KG-ENTRY-001",
+      "path": "docs/knowledge/Conhecimento — Início — Gestão de conhecimento e especificações.md",
+      "revision": 1,
+      "sha256": "f2bdfab8a39d0adf70e73a47a90b990b3142c7b3b30bfbd4d748f5d7aeecbc3a",
+      "graph_scope": "vigente",
+      "lifecycle": "approved",
+      "owner": "builder",
+      "purpose": "Orientar a adoção do domínio knowledge_governance.",
+      "read_when": [
+        "Adotar ou manter gestão de conhecimento e especificações"
+      ],
+      "classification": "public",
+      "depends_on": []
+    },
+    {
+      "id": "KG-LIFECYCLE-001",
+      "path": "docs/knowledge/Conhecimento — Contrato — Ciclo de vida e autoridade.md",
+      "revision": 1,
+      "sha256": "72d3e0b271b2f7f66c6e775b9eb8099398661835092e16c3f92712fb146d9ad8",
+      "graph_scope": "vigente",
+      "lifecycle": "approved",
+      "owner": "builder",
+      "purpose": "Separar navegação, aprovação, origem e evidência operacional.",
+      "read_when": [
+        "Adotar ou manter gestão de conhecimento e especificações"
+      ],
+      "classification": "public",
+      "depends_on": []
+    },
+    {
+      "id": "KG-SDD-001",
+      "path": "docs/knowledge/Conhecimento — Contrato — Especificações e evidências.md",
+      "revision": 1,
+      "sha256": "50667b0398d81a31554ccfc3a28e172069af606d717b6af7d8bb59926af04e50",
+      "graph_scope": "vigente",
+      "lifecycle": "approved",
+      "owner": "builder",
+      "purpose": "Vincular requisitos a critérios de aceite, implementação, testes e evidências.",
+      "read_when": [
+        "Adotar ou manter gestão de conhecimento e especificações"
+      ],
+      "classification": "public",
+      "depends_on": [
+        {
+          "id": "KG-LIFECYCLE-001",
+          "revision": 1
+        }
+      ]
+    },
+    {
+      "id": "KG-OPERATIONS-001",
+      "path": "docs/knowledge/Conhecimento — Guia — Validação e retomada.md",
+      "revision": 1,
+      "sha256": "9f6868cbfa04b2fdca7ff71654223b58fb4807dea414e8cc0d69e8005fa3dd39",
+      "graph_scope": "vigente",
+      "lifecycle": "approved",
+      "owner": "builder",
+      "purpose": "Executar controles portáteis e retomar sem duplicar fontes de estado.",
+      "read_when": [
+        "Adotar ou manter gestão de conhecimento e especificações"
+      ],
+      "classification": "public",
+      "depends_on": []
+    },
+    {
+      "id": "KG-ADOPTION-001",
+      "path": "docs/knowledge/Conhecimento — Plano — Adoção e maturidade empresarial.md",
+      "revision": 1,
+      "sha256": "964b5a7d52c0de31a30272805140d7a72e52e40986f1856f2af8b498e644f397",
+      "graph_scope": "vigente",
+      "lifecycle": "approved",
+      "owner": "builder",
+      "purpose": "Definir etapas e evidência para adoção empresarial sem confundir piloto com certificação.",
+      "read_when": [
+        "Adotar ou manter gestão de conhecimento e especificações"
+      ],
+      "classification": "public",
+      "depends_on": []
+    }
+  ],
+  "requirements": [
+    {
+      "id": "R-KG-001",
+      "specification": "KG-LIFECYCLE-001",
+      "acceptance": "Changed document, dependency revision or observed source is rejected.",
+      "status": "implemented",
+      "implementation": [
+        "packages/knowledge_governance/validate.py"
+      ],
+      "tests": [
+        "scripts/tests/test_knowledge_governance.py"
+      ]
+    },
+    {
+      "id": "R-KG-002",
+      "specification": "KG-SDD-001",
+      "acceptance": "Implemented requirements without tests and invalid verified evidence are rejected.",
+      "status": "implemented",
+      "implementation": [
+        "packages/knowledge_governance/validate.py"
+      ],
+      "tests": [
+        "scripts/tests/test_knowledge_governance.py"
+      ]
+    },
+    {
+      "id": "R-KG-003",
+      "specification": "KG-OPERATIONS-001",
+      "acceptance": "A changed generated checkpoint projection is rejected.",
+      "status": "implemented",
+      "implementation": [
+        "packages/knowledge_governance/validate.py"
+      ],
+      "tests": [
+        "scripts/tests/test_knowledge_governance.py"
+      ]
+    }
+  ],
+  "current_state": {
+    "checkpoint": "CP-018",
+    "status": "technical_pilot_implemented_independent_adoption_pending",
+    "next_action": "CP-019: apply to one real consumer change, then CP-020 independent transfer"
+  },
+  "state_projections": [
+    "docs/knowledge/CURRENT.md"
+  ]
+}

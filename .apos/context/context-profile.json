@@ -331,6 +331,25 @@
       "dependencies": [
         "operating_model"
       ]
+    },
+    {
+      "id": "knowledge_governance",
+      "match_terms": [
+        "knowledge governance",
+        "spec driven",
+        "vigência",
+        "rastreabilidade"
+      ],
+      "sources": [
+        ".apos/domains/knowledge-governance.json",
+        ".apos/knowledge/catalog.json",
+        "docs/knowledge/Conhecimento — Início — Gestão de conhecimento e especificações.md",
+        "docs/knowledge/Conhecimento — Contrato — Ciclo de vida e autoridade.md",
+        "docs/knowledge/Conhecimento — Contrato — Especificações e evidências.md",
+        "docs/knowledge/Conhecimento — Guia — Validação e retomada.md",
+        "docs/knowledge/Conhecimento — Plano — Adoção e maturidade empresarial.md"
+      ],
+      "dependencies": []
     }
   ],
   "source_priority": [

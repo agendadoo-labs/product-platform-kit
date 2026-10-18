@@ -44,6 +44,71 @@
       "superseded_by": "D-PPK-APOS-010",
       "sensitivity": "internal",
       "source_sha256": "0da182fd261d835919590670f5465e017322f1ea16473fb94a1923fe0afaa812"
+    },
+    {
+      "id": "knowledge-governance-0",
+      "tier": "warm",
+      "path": "docs/knowledge/Conhecimento — Início — Gestão de conhecimento e especificações.md",
+      "title": "Conhecimento — Início — Gestão de conhecimento e especificações",
+      "summary": "knowledge governance especificações vigência rastreabilidade",
+      "domains": [
+        "knowledge_governance"
+      ],
+      "authority": "current",
+      "sensitivity": "internal",
+      "source_sha256": "f2bdfab8a39d0adf70e73a47a90b990b3142c7b3b30bfbd4d748f5d7aeecbc3a"
+    },
+    {
+      "id": "knowledge-governance-1",
+      "tier": "warm",
+      "path": "docs/knowledge/Conhecimento — Contrato — Ciclo de vida e autoridade.md",
+      "title": "Conhecimento — Contrato — Ciclo de vida e autoridade",
+      "summary": "knowledge governance especificações vigência rastreabilidade",
+      "domains": [
+        "knowledge_governance"
+      ],
+      "authority": "current",
+      "sensitivity": "internal",
+      "source_sha256": "72d3e0b271b2f7f66c6e775b9eb8099398661835092e16c3f92712fb146d9ad8"
+    },
+    {
+      "id": "knowledge-governance-2",
+      "tier": "warm",
+      "path": "docs/knowledge/Conhecimento — Contrato — Especificações e evidências.md",
+      "title": "Conhecimento — Contrato — Especificações e evidências",
+      "summary": "knowledge governance especificações vigência rastreabilidade",
+      "domains": [
+        "knowledge_governance"
+      ],
+      "authority": "current",
+      "sensitivity": "internal",
+      "source_sha256": "50667b0398d81a31554ccfc3a28e172069af606d717b6af7d8bb59926af04e50"
+    },
+    {
+      "id": "knowledge-governance-3",
+      "tier": "warm",
+      "path": "docs/knowledge/Conhecimento — Guia — Validação e retomada.md",
+      "title": "Conhecimento — Guia — Validação e retomada",
+      "summary": "knowledge governance especificações vigência rastreabilidade",
+      "domains": [
+        "knowledge_governance"
+      ],
+      "authority": "current",
+      "sensitivity": "internal",
+      "source_sha256": "9f6868cbfa04b2fdca7ff71654223b58fb4807dea414e8cc0d69e8005fa3dd39"
+    },
+    {
+      "id": "knowledge-governance-4",
+      "tier": "warm",
+      "path": "docs/knowledge/Conhecimento — Plano — Adoção e maturidade empresarial.md",
+      "title": "Conhecimento — Plano — Adoção e maturidade empresarial",
+      "summary": "knowledge governance especificações vigência rastreabilidade",
+      "domains": [
+        "knowledge_governance"
+      ],
+      "authority": "current",
+      "sensitivity": "internal",
+      "source_sha256": "964b5a7d52c0de31a30272805140d7a72e52e40986f1856f2af8b498e644f397"
     }
   ]
 }

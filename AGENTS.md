@@ -60,3 +60,7 @@ A projeção para um vault pessoal é um efeito externo configurável do reposit
 ## Skills e conteúdo público
 
 Consulte [cadastro de skills](<docs/apos/Product Platform Kit — Guia — Cadastro e limites de skills.md>) e [contrato de conteúdo público](<docs/apos/Product Platform Kit — Contrato — Conteúdo público para busca e IA.md>). Fontes de consumidor citadas em guias podem estar em branches candidatas; confirme a revisão antes de assumir adoção.
+
+## Gestão de conhecimento e especificações
+
+Para contratos, vigência, requisitos e evidências, comece pelo [domínio knowledge_governance](<docs/knowledge/Conhecimento — Início — Gestão de conhecimento e especificações.md>). Execute `python3 packages/knowledge_governance/validate.py` ao alterar seu catálogo.

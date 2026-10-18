@@ -25,12 +25,13 @@
       "owner": "builder",
       "collaborators": [],
       "affected_domains": [
-        "session_memory"
+        "session_memory",
+        "knowledge_governance"
       ],
       "dependencies": [],
-      "branch": "feat/knowledge-projection-contract-20261017",
-      "updated_at": "2026-10-17",
-      "next_checkpoint": "Review optional contract candidate and validation; implement generator separately before claiming retrieval or synchronization gains."
+      "branch": "feat/knowledge-governance-cp018",
+      "updated_at": "2026-10-18",
+      "next_checkpoint": "CP-018 technical gate; CP-019 consumer pilot; CP-020 independent transfer; CP-021 expansion"
     }
   ],
   "status_values": [
