@@ -1,0 +1,14 @@
+{
+  "id": "D-PPK-KNOWLEDGE-002",
+  "intent_id": "I-PPK-KNOWLEDGE-001",
+  "created_at": "2026-10-17",
+  "decision": "Consolidar manutenção documental e implementação em guia portátil de entrada, ligado ao README, AGENTS e bootstrap APOS.",
+  "rationale": "As regras existentes estão dispersas; um fluxo único deve explicitar fontes, estados, artefatos, verificação, projeção e retomada sem alterar o modelo normativo.",
+  "authority_source": "Pedido explícito do usuário para incluir guia inicial no APOS, kit e Leo Brain.",
+  "compatibility": "Documentação explicativa; nenhuma versão publicada, runtime, permissão ou budget global alterado.",
+  "context_budget_exception": {
+    "max_estimated_tokens": 40000,
+    "scope": "documentary review only; same exception as D-PPK-KNOWLEDGE-001",
+    "no_inference": true
+  }
+}
