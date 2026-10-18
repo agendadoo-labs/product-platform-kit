@@ -12,7 +12,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "d870948db3a3c0a71daf2327231edf40b29c91e0ff4b132054ccd1cc06ca1762"
+      "sha256": "fdb6cdb1274741c13401f11c017652932984039d4d39ead96187dc43f62f680b"
     },
     {
       "path": ".apos/README.md",
@@ -81,7 +81,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "67b1532f9ce84ff98bcb5738709e70e7c36fea01a739bf883aa11a6ea138d6ff"
+      "sha256": "261f41d9be845b3218633735a735769a4512169caa0b99370927490b6927e187"
     },
     {
       "path": "docs/AGENT-MODEL-ROUTING.md",
@@ -117,7 +117,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "3ee54e4383187492bcd2e4d1b04d9ff310bceea1b3f07906f60c3109aa4ad257"
+      "sha256": "9f4336915428eb79db62e69ac69660b4b78ccb4bbed938af7388c35cea86e79f"
     },
     {
       "path": "Product Platform Kit — Início — Visão do produto.md",
@@ -943,6 +943,17 @@
         "Adotar o template em um consumidor"
       ],
       "sha256": "ca91c4caed1995c709024cf67ece65322ae9ba372a4e373ce3a3265308824955"
+    },
+    {
+      "path": "docs/architecture/DATA-INTELLIGENCE.md",
+      "classification": "manual_document",
+      "id": "DOC-PPK-DATA-001",
+      "purpose": "Orientar consumo confiável de fontes externas no domínio existente de dados.",
+      "read_when": [
+        "Criar ou alterar ingestão, qualidade, lineage ou análise relativa"
+      ],
+      "document_role": "architecture",
+      "graph_scope": "candidato"
     }
   ],
   "renames": {
