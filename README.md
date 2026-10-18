@@ -18,3 +18,7 @@ Este caminho convencional aponta para [Product Platform Kit — Início — Vis�
 
 
 Atalhos de início: [APOS em 30 minutos](docs/APOS-GETTING-STARTED.md), [APOS v0.2](docs/APOS-v0.2.md) e [Retomada de sessão](docs/apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md).
+
+## Começar um projeto com um agente
+
+[Copiar o prompt APOS de início de projeto](<docs/onboarding/APOS — Prompt — Início portátil de projeto.md>). Funciona sem ambiente pessoal pré-configurado; inclui orientação opcional para Obsidian novo ou existente.

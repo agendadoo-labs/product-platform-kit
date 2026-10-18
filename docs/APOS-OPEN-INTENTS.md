@@ -5,7 +5,7 @@ updated: 2026-10-18
 
 # Intents abertos
 
-> Projeção da revisão 18 do ProductState. Não editar manualmente.
+> Projeção da revisão 19 do ProductState. Não editar manualmente.
 
 | Intent | Estado | Cerimônia | Próximo checkpoint |
 |---|---|---|---|
@@ -23,7 +23,7 @@ updated: 2026-10-18
 - **Problema:** Human knowledge projections can mix published, local and historical states, duplicate context and lose provenance.
 - **Resultado esperado:** A reusable, reversible projection contract with pinned provenance, explicit relationships, checkpoints and measured retrieval adoption.
 - **Próximo checkpoint:** CP-018 technical gate; CP-019 consumer pilot; CP-020 independent transfer; CP-021 expansion
-- **Decisões:** `D-PPK-KG-018`, `D-PPK-KNOWLEDGE-001`, `D-PPK-KNOWLEDGE-002`.
+- **Decisões:** `D-PPK-KG-018`, `D-PPK-KNOWLEDGE-001`, `D-PPK-KNOWLEDGE-002`, `D-PPK-START-001`.
 - **Última execução:** nenhuma.
 - **Última evidência:** `E-PPK-KNOWLEDGE-001` — passou.
 - **Incertezas:** nenhuma registrada.

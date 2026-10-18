@@ -1,0 +1,15 @@
+{
+  "id": "E-PPK-START-001",
+  "intent_id": "I-PPK-KNOWLEDGE-001",
+  "observed_at": "2026-10-18",
+  "passed": true,
+  "checks": [
+    "Manual review of portability and optional-vault paths",
+    "Documentation metadata and inventory validation"
+  ],
+  "limits": [
+    "Instructions do not guarantee agent compliance",
+    "No execution claim for every model",
+    "CI and publication verified separately"
+  ]
+}
