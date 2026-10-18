@@ -495,13 +495,16 @@
     },
     {
       "path": "docs/capabilities/DIGITAL-PRODUCT-CAPABILITY-MAP-v2.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Digital Product Capability Map — v2",
-      "purpose": "Consultar Digital Product Capability Map — v2.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "DIGITAL-PRODUCT-CAPABILITY-MAP-v2",
+      "id": "DOC-A8186CFE0FE3B6",
+      "purpose": "Contextualizar Digital Product Capability Map — v2.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Digital Product Capability Map — v2"
       ],
-      "sha256": "b359defdbe19f553bee9a71f10bf55d30835435e99f05761f9cf06c8fee6de0e"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/capabilities/COMMERCIAL-MODEL-ECONOMIC-CONTROL-PLANE.md",
@@ -803,7 +806,7 @@
   },
   "migration": {
     "checkpoint": "CP-013",
-    "batch": 6,
+    "batch": 7,
     "batches": 9,
     "status": "partial"
   },

@@ -55,7 +55,7 @@ Escolha o assunto e depois confira a autoridade e a revisão da fonte.
 - [DATA-ARCHITECTURE](<../packages/map-core/docs/DATA-ARCHITECTURE.md>) — Explicar Arquitetura de dados para mapas de mercado.
 - [MODULE-PRIORITY-ROADMAP](<capabilities/MODULE-PRIORITY-ROADMAP.md>) — Planejar Roadmap priorizado de módulos.
 - [CAPABILITY-COVERAGE-AUDIT](<capabilities/CAPABILITY-COVERAGE-AUDIT.md>) — Registrar evidências de Auditoria de cobertura de capacidades.
-- [Product Platform Kit — Referência — Digital Product Capability Map — v2](<capabilities/DIGITAL-PRODUCT-CAPABILITY-MAP-v2.md>) — Consultar Digital Product Capability Map — v2.
+- [DIGITAL-PRODUCT-CAPABILITY-MAP-v2](<capabilities/DIGITAL-PRODUCT-CAPABILITY-MAP-v2.md>) — Contextualizar Digital Product Capability Map — v2.
 - [Product Platform Kit — Referência — Commercial Model como Economic Control Plane](<capabilities/COMMERCIAL-MODEL-ECONOMIC-CONTROL-PLANE.md>) — Consultar Commercial Model como Economic Control Plane.
 - [Product Platform Kit — Arquitetura — Engenharia e otimização de LLMs](<architecture/LLM_ENGINEERING.md>) — Consultar Engenharia e otimização de LLMs.
 - [Product Platform Kit — Guia — APOS Domain Catalog](<../packages/apos/evidence/bootstrap/catalog.md>) — Consultar APOS Domain Catalog.
@@ -87,4 +87,4 @@ Escolha o assunto e depois confira a autoridade e a revisão da fonte.
 
 ## Cobertura
 
-Lote 6 de 9. Inventário explícito em documentation-inventory.json. Gerados, templates e histórico preservados. Registro da migração: CP-013. Reversão por PR; publicação documental não comprova runtime.
+Lote 7 de 9. Inventário explícito em documentation-inventory.json. Gerados, templates e histórico preservados. Registro da migração: CP-013. Reversão por PR; publicação documental não comprova runtime.
