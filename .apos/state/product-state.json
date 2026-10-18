@@ -1,6 +1,6 @@
 {
   "id": "PS-PRODUCT-PLATFORM-KIT",
-  "revision": 13,
+  "revision": 14,
   "active_operating_model": "product-platform-kit-apos-2.3.0",
   "satisfied_intents": [
     "I-PPK-APOS-001",
@@ -14,7 +14,9 @@
     "I-PPK-CAPABILITY-001",
     "I-PPK-LLM-001"
   ],
-  "candidate_intents": [],
+  "candidate_intents": [
+    "I-PPK-KNOWLEDGE-001"
+  ],
   "evidence_ids": [
     "E-PPK-APOS-001",
     "E-PPK-APOS-002",
@@ -37,7 +39,7 @@
   ],
   "data_map": {
     "id": "DM-PPK-001",
-    "revision": 2,
+    "revision": 3,
     "path": ".apos/data/data-map.json",
     "human_projection": "docs/apos/DATA-MAP-AND-HUMAN-PROJECTIONS.md"
   },

@@ -1,0 +1,14 @@
+{
+  "intent_id": "I-PPK-KNOWLEDGE-001",
+  "status": "budget_exceeded",
+  "measurement": {
+    "method": "conservative_utf8_bytes_divided_by_4",
+    "total_bytes": 135561,
+    "estimated_input_tokens": 33891,
+    "exact_provider_tokens": "unavailable_without_model_request"
+  },
+  "budget": {
+    "max_estimated_input_tokens": 30000
+  },
+  "observation": "Default compilation stopped without dropping sources; not provider-measured usage."
+}

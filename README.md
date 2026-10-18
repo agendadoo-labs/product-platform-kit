@@ -1,5 +1,7 @@
 # Product Platform Kit
 
+**Início de agentes/LLMs:** leia o [guia de manutenção de implementação e documentação](templates/apos/APOS-MAINTENANCE.md) antes de alterar o projeto e ao retomar checkpoints.
+
 ## Missão
 
 **Transformar as barreiras tecnológicas de entrada de novos negócios em praticamente zero, permitindo que mentes criativas coloquem projetos e produtos em prática com a ajuda de organizações agênticas.**
@@ -144,3 +146,7 @@ Este kit é um ponto de partida versionado. Adote somente o necessário, preserv
 ## Engenharia de LLMs
 
 [Domínio, harness, avaliação e otimização](docs/architecture/LLM_ENGINEERING.md): contrato entre kit, runtime e consumidores; experimentos com evidência e promoção explícita.
+
+## Projeções de conhecimento
+
+[Contrato opcional, proveniência e checkpoints retornáveis](docs/apos/KNOWLEDGE-PROJECTIONS.md): proposta de adoção com separação entre estado publicado, trabalho local e histórico.

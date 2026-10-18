@@ -71,7 +71,9 @@
         "templates/apos/AGENTS.md",
         "templates/apos/README.md",
         "templates/apos/scripts/bootstrap-apos-session.mjs",
-        "templates/apos/.apos/coordination/workstreams.json"
+        "templates/apos/.apos/coordination/workstreams.json",
+        "docs/apos/KNOWLEDGE-PROJECTIONS.md",
+        "templates/knowledge-projection/manifest.example.json"
       ],
       "dependencies": []
     },

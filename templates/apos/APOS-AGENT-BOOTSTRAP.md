@@ -1,5 +1,7 @@
 # APOS Agent Bootstrap
 
+**Início de agentes/LLMs:** leia o [guia de manutenção de implementação e documentação](APOS-MAINTENANCE.md) antes de alterar o projeto e ao retomar checkpoints.
+
 Leia este arquivo quando você não conhece o APOS. Ele é um primer operacional, não substitui os registros vigentes do produto.
 
 ## O que é APOS

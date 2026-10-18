@@ -1,5 +1,7 @@
 # Starter APOS para repositórios consumidores
 
+**Comece aqui:** [guia de manutenção para agentes e LLMs](APOS-MAINTENANCE.md).
+
 Este starter substitui o antigo modelo de equipe fixa. Ele fornece uma estrutura mínima para governar agentes por intenção, contratos, capacidades e evidência.
 
 Se esta é sua primeira adoção, leia antes o [guia APOS em 30 minutos](../../docs/APOS-GETTING-STARTED.md). Ele contém um exemplo completo e explica a ordem de criação dos registros.
