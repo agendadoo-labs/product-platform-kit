@@ -1,0 +1,12 @@
+{
+  "id": "E-PPK-KNOWLEDGE-002",
+  "intent_id": "I-PPK-KNOWLEDGE-001",
+  "created_at": "2026-10-17",
+  "passed": true,
+  "environment": "local_documentary_review",
+  "scope": "Guide and five initial entrypoints; repository and operating-model checks passed; no runtime or normative model changes",
+  "limitations": [
+    "Candidate branch not merged",
+    "No claim of agent compliance or retrieval improvement"
+  ]
+}
