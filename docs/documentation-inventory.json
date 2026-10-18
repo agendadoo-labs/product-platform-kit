@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "agendadoo-labs/product-platform-kit",
-  "observed_base": "923dea1c19a28b5203f671f566b6faa06a64ffcd",
+  "observed_base": "6fd711efab07dadad64df8de725fba50cb9efed7",
   "scope": "entrypoint_and_reading_index_only",
   "records": [
     {
@@ -26,33 +26,42 @@
     },
     {
       "path": "docs/ADOPTION.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Adoção em outro projeto",
-      "purpose": "Consultar Adoção em outro projeto.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "ADOPTION",
+      "id": "DOC-1B85FC9761A15D",
+      "purpose": "Contextualizar Adoção em outro projeto.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Adoção em outro projeto"
       ],
-      "sha256": "3fc43ee43b4f4ac62d79c18a00bc421656f0f8683df74b88e972ddc3e339c10f"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "AGENTS.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Guia — operação APOS",
-      "purpose": "Consultar Product Platform Kit — operação APOS.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "AGENTS",
+      "id": "DOC-PRODUCT-PLATFORM-KIT-2",
+      "purpose": "Orientar agentes na manutenção de implementação, documentação e evidências.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Iniciar ou retomar trabalho como agente"
       ],
-      "sha256": "5dacdb585c52aa541586abae4b1073033fa9717ba56f477663ff46dbf38812e3"
+      "document_role": "procedure",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "docs/APOS-GETTING-STARTED.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — APOS em 30 minutos",
-      "purpose": "Consultar APOS em 30 minutos.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "APOS-GETTING-STARTED",
+      "id": "DOC-709C8DDF909CB4",
+      "purpose": "Contextualizar APOS em 30 minutos.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: APOS em 30 minutos"
       ],
-      "sha256": "a5b2d3cc02e2f97792f9c4e040544c690b8b87009bf323070bb5b08f2a892bed"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
       "path": "CHANGELOG.md",
@@ -76,23 +85,29 @@
     },
     {
       "path": "docs/AGENT-MODEL-ROUTING.md",
-      "classification": "generated_or_reference_preserved",
-      "display_name": "Product Platform Kit — Referência — Roteamento de modelos por capacidade e risco",
-      "purpose": "Consultar Roteamento de modelos por capacidade e risco.",
+      "compatibility_path": null,
+      "classification": "manual_document",
+      "display_name": "AGENT-MODEL-ROUTING",
+      "id": "DOC-B64DF5FD43B9F7",
+      "purpose": "Contextualizar Roteamento de modelos por capacidade e risco.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: Roteamento de modelos por capacidade e risco"
       ],
-      "sha256": "3a72e09d1b735ef690bb68169cc833781950b2adbc241af64acc70f9110fc23c"
+      "document_role": "reference",
+      "path_policy": "stable_path_metadata_enriched"
     },
     {
-      "path": "docs/AGENTIC-PRODUCT-MANIFESTO.md",
-      "classification": "generated_or_reference_preserved",
+      "path": "docs/Product Platform Kit — Referência — The Agentic Product Manifesto.md",
+      "compatibility_path": "docs/AGENTIC-PRODUCT-MANIFESTO.md",
+      "classification": "manual_document",
       "display_name": "Product Platform Kit — Referência — The Agentic Product Manifesto",
-      "purpose": "Consultar The Agentic Product Manifesto.",
+      "id": "DOC-F3F5790E7DE4E1",
+      "purpose": "Contextualizar The Agentic Product Manifesto.",
       "read_when": [
-        "Consultar a fonte conforme seu assunto e revisão"
+        "Consultar contexto complementar: The Agentic Product Manifesto"
       ],
-      "sha256": "e79e62306819a64013d4ad45ab8e54703cbcc0962d71d9206ef3a68af895e746"
+      "document_role": "reference",
+      "path_policy": "canonical_descriptive"
     },
     {
       "path": "docs/APOS-RESOLVED-INTENTS.md",
@@ -689,6 +704,18 @@
     }
   ],
   "renames": {
-    "README.md": "Product Platform Kit — Início — Visão do produto.md"
-  }
+    "README.md": "Product Platform Kit — Início — Visão do produto.md",
+    "docs/AGENTIC-PRODUCT-MANIFESTO.md": "docs/Product Platform Kit — Referência — The Agentic Product Manifesto.md"
+  },
+  "migration": {
+    "checkpoint": "CP-013",
+    "batch": 1,
+    "batches": 9,
+    "status": "partial"
+  },
+  "limitations": [
+    "Coverage is limited to explicitly inventoried Markdown files",
+    "Generated and historical sources are preserved byte-for-byte; manual stable paths retain tool compatibility",
+    "Metadata is not evidence of runtime availability"
+  ]
 }

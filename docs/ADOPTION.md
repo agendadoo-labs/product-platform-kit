@@ -1,4 +1,18 @@
+---
+id: "DOC-1B85FC9761A15D"
+type: "reference"
+scope: "Product Platform Kit"
+document_role: "reference"
+purpose: "Contextualizar Adoção em outro projeto."
+read_when: ["Consultar contexto complementar: Adoção em outro projeto"]
+status: "documented"
+authority: "documented_source_not_runtime_verification"
+tier: "warm"
+updated: "2026-10-18"
+---
 # Adoção em outro projeto
+
+Contextualizar Adoção em outro projeto.
 
 O objetivo é iniciar com o menor conjunto suficiente, não copiar toda a plataforma.
 

@@ -8,9 +8,8 @@ read_when: ["Iniciar ou retomar trabalho como agente"]
 status: "active"
 authority: "user_authorized_project_convention"
 tier: "hot"
-updated: "2026-10-17"
+updated: "2026-10-18"
 ---
-
 # Product Platform Kit — operação APOS
 
 Orientar agentes na manutenção de implementação, documentação e evidências.
