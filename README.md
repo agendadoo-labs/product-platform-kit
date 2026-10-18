@@ -1,4 +1,21 @@
+---
+id: "DOC-PRODUCT-PLATFORM-KIT-1"
+type: "index"
+scope: "Product Platform Kit"
+document_role: "entrypoint"
+purpose: "Apresentar o produto e indicar fontes, execução e limitações."
+read_when: ["Iniciar trabalho neste projeto"]
+status: "active"
+authority: "user_authorized_project_convention"
+tier: "hot"
+updated: "2026-10-17"
+---
+
 # Product Platform Kit
+
+Apresentar o produto e indicar fontes, execução e limitações.
+
+Leia o [guia de manutenção documental](<docs/Product Platform Kit — Guia — Manutenção documental.md>) ao iniciar ou retomar trabalho.
 
 **Início de agentes/LLMs:** leia o [guia de manutenção de implementação e documentação](templates/apos/APOS-MAINTENANCE.md) antes de alterar o projeto e ao retomar checkpoints.
 
