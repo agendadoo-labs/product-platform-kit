@@ -18,7 +18,7 @@ updated: 2026-10-17
 - **Problema:** Human knowledge projections can mix published, local and historical states, duplicate context and lose provenance.
 - **Resultado esperado:** A reusable, reversible projection contract with pinned provenance, explicit relationships, checkpoints and measured retrieval adoption.
 - **Próximo checkpoint:** Review optional contract candidate and validation; implement generator separately before claiming retrieval or synchronization gains.
-- **Decisões:** `D-PPK-KNOWLEDGE-001`.
+- **Decisões:** `D-PPK-KNOWLEDGE-001`, `D-PPK-KNOWLEDGE-002`.
 - **Última execução:** nenhuma.
 - **Última evidência:** `E-PPK-KNOWLEDGE-001` — passou.
 - **Incertezas:** nenhuma registrada.
