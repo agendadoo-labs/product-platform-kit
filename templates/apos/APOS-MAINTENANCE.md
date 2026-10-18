@@ -70,3 +70,7 @@ Retome lendo esse checkpoint e reconfirmando as revisões remotas e locais. Não
 Só declare o escopo entregue quando fonte, implementação, documentação e evidência forem consistentes; links resolverem; verificações adequadas passarem; destinos autorizados refletirem o mesmo estado; e pendências/reversão estiverem explícitas. Não declare merge, deploy, melhoria de qualidade, integração conversacional ou ativação de modelo sem evidência específica.
 
 Exemplo: uma nova busca pode ter código e testes aprovados em um PR, mas continua candidata. A memória publicada do produto permanece no commit da main observado. O vault aponta para ambos com seus estados, e o próximo checkpoint registra revisão/integração — não “busca em produção”.
+
+## Nomes, finalidade e momento de leitura
+
+Adote o esquema [Nomes e metadados de documentos](DOCUMENT-METADATA.md). Registre `scope`, `document_role`, `purpose` e `read_when`, além da identidade, estado, autoridade e datas. A finalidade deve aparecer também abaixo do título. Renomeie com mapa reversível e atualize consumidores antes de retirar caminhos antigos.
