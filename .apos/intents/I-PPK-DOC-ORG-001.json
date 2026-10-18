@@ -1,0 +1,42 @@
+{
+  "id": "I-PPK-DOC-ORG-001",
+  "revision": 1,
+  "status": "active",
+  "problem": "Nomes genéricos e metadados incompletos dificultam selecionar documentação confiável.",
+  "population": "Mantenedores e agentes do projeto",
+  "outcome": "Inventário explícito, nomes inteligíveis, metadados, compatibilidade e retomada verificáveis.",
+  "constraints": [
+    "Preservar fontes fixadas por hash e versões publicadas",
+    "Não alterar runtime ou dados",
+    "Não declarar ganho de recuperação sem avaliação"
+  ],
+  "change_envelope": {
+    "affected_domains": [
+      "session_memory"
+    ],
+    "affected_surfaces": [
+      "documentation",
+      "documentation_inventory"
+    ],
+    "invariants": [
+      "Git define estado publicado",
+      "Referências históricas preservadas"
+    ],
+    "out_of_scope": [
+      "Runtime",
+      "Deploy",
+      "Ativação de modelo"
+    ],
+    "rollback": "Novo PR de reversão, preservando edições posteriores."
+  },
+  "ceremony_selection": {
+    "level": "Strict",
+    "authority": "Pedido explícito do builder para aplicar lotes e aprofundar o kit em 2026-10-18",
+    "downgrade_allowed": false
+  },
+  "required_contract_ids": [],
+  "source": {
+    "type": "builder_conversation",
+    "date": "2026-10-18"
+  }
+}

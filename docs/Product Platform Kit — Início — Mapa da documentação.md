@@ -88,3 +88,5 @@ Escolha o assunto e depois confira a autoridade e a revisão da fonte.
 ## Cobertura
 
 Lote 9 de 9. Inventário explícito em documentation-inventory.json. Gerados, templates e histórico preservados. Registro da migração: CP-013. Reversão por PR; publicação documental não comprova runtime.
+
+[Percursos de leitura por domínio](<Product Platform Kit — Guia — Percursos de leitura por domínio.md>): selecione fontes conforme a tarefa e confira seus limites.

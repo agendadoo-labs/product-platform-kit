@@ -81,7 +81,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "f91bf1c2cb8e5e3262437084d1c3780efb8cdfe5d4cf8857c6f3983b6461c1af"
+      "sha256": "2e72a77a5e583881588dde2aad0626333e699c5a760c81e28e577200bc6731ac"
     },
     {
       "path": "docs/AGENT-MODEL-ROUTING.md",
@@ -326,16 +326,13 @@
     },
     {
       "path": "docs/apos/APOS-v0.2-MEMORIAL.md",
-      "compatibility_path": null,
-      "classification": "manual_document",
-      "display_name": "APOS-v0.2-MEMORIAL",
-      "id": "DOC-46625402898B30",
-      "purpose": "Contextualizar Memorial de evolução — APOS v0.2.",
+      "classification": "generated_or_reference_preserved",
+      "display_name": "Product Platform Kit — Referência — Memorial APOS v0.2",
+      "purpose": "Consultar o memorial histórico preservado por hash.",
       "read_when": [
-        "Consultar contexto complementar: Memorial de evolução — APOS v0.2"
+        "Revisar a evidência da adoção APOS v0.2"
       ],
-      "document_role": "reference",
-      "path_policy": "stable_path_metadata_enriched"
+      "sha256": "c5083cf230df35f229f44b85f526c47c57d814853885c1d42cd0aca0c9368688"
     },
     {
       "path": "docs/apos/DATA-MAP-AND-HUMAN-PROJECTIONS.md",
@@ -806,6 +803,17 @@
         "Consultar a fonte conforme seu assunto e revisão"
       ],
       "sha256": "aef7a0e156a3b0ee27be96dbc6d161cfaadf4b6749072b9ca8daa27c517a7ac7"
+    },
+    {
+      "path": "docs/Product Platform Kit — Guia — Percursos de leitura por domínio.md",
+      "classification": "manual_document",
+      "id": "DOC-EAD8A7BA7034A9",
+      "display_name": "Product Platform Kit — Guia — Percursos de leitura por domínio",
+      "purpose": "Orientar Percursos de leitura por domínio.",
+      "read_when": [
+        "Executar ou verificar o procedimento: Percursos de leitura por domínio"
+      ],
+      "document_role": "procedure"
     }
   ],
   "renames": {

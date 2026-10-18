@@ -1,0 +1,10 @@
+{
+  "id": "D-PPK-DOC-ORG-001",
+  "intent_id": "I-PPK-DOC-ORG-001",
+  "created_at": "2026-10-18",
+  "decision": "Aplicar taxonomia em lotes limitados, conservar caminhos técnicos necessários e metadados externos para referências imutáveis.",
+  "rationale": "Seleção de leitura precisa de finalidade e origem, sem quebrar consumidores de caminhos ou evidências fixadas.",
+  "authority_source": "Solicitação explícita do builder para lotes em 2026-10-18",
+  "scope": "Inventário documental explícito; não certifica arquivos fora dele",
+  "rollback": "Reverter os commits documentais em novo PR; comparar hashes antes de restaurar cópias locais."
+}
