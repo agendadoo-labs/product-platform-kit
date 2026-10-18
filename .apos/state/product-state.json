@@ -1,6 +1,6 @@
 {
   "id": "PS-PRODUCT-PLATFORM-KIT",
-  "revision": 14,
+  "revision": 15,
   "active_operating_model": "product-platform-kit-apos-2.3.0",
   "satisfied_intents": [
     "I-PPK-APOS-001",
@@ -15,7 +15,8 @@
     "I-PPK-LLM-001"
   ],
   "candidate_intents": [
-    "I-PPK-KNOWLEDGE-001"
+    "I-PPK-KNOWLEDGE-001",
+    "I-PPK-DOC-ORG-001"
   ],
   "evidence_ids": [
     "E-PPK-APOS-001",
@@ -61,5 +62,12 @@
     "mission": "Reduce technological entry barriers for new businesses to practically zero through reusable, secure and verifiable agentic product foundations",
     "llm_engineering": "Domínio definido com política, template, contexto e registro epistêmico; não altera enforcement nem promove modelos."
   },
-  "updated_at": "2026-10-17"
+  "updated_at": "2026-10-18",
+  "documentation_organization": {
+    "intent_id": "I-PPK-DOC-ORG-001",
+    "inventory": "docs/documentation-inventory.json",
+    "scope": "explicit_inventory_only",
+    "status": "documentary_validation_passed_runtime_not_evaluated",
+    "next_checkpoint": "Validate published revision and vault projection; evaluate real retrieval before closing overall knowledge adoption."
+  }
 }

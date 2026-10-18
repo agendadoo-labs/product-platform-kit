@@ -1,16 +1,16 @@
 ---
 title: APOS — memória atual do projeto
-updated: 2026-10-17
+updated: 2026-10-18
 ---
 
 # Memória atual do projeto
 
 > Projeção determinística. Fontes operacionais: `.apos/`. Não editar manualmente.
 
-- ProductState: `PS-PRODUCT-PLATFORM-KIT`, revisão 14.
+- ProductState: `PS-PRODUCT-PLATFORM-KIT`, revisão 15.
 - Modelo ativo: `product-platform-kit-apos-2.3.0`.
 - Intents satisfeitos: 10.
-- Intents abertos: 1.
+- Intents abertos: 2.
 - Mapa de dados: `DM-PPK-001`, revisão 3.
 
 ## Trabalho aberto
@@ -18,6 +18,7 @@ updated: 2026-10-17
 | Intent | Estado | Cerimônia | Próximo checkpoint |
 |---|---|---|---|
 | `I-PPK-KNOWLEDGE-001` | active | Strict | Review optional contract candidate and validation; implement generator separately before claiming retrieval or synchronization gains. |
+| `I-PPK-DOC-ORG-001` | active | Strict | Não definido. |
 
 ## Decisões recentes
 

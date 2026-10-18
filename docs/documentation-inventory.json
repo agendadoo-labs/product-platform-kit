@@ -12,7 +12,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "093cb23c24e774475240686a64e13b9cd35baf4dbb4feb72c15a7d87ab4114c8"
+      "sha256": "6f161bc74ffe5476059676a48a0f732eebc7cd0dd81132d20d1759181cf56752"
     },
     {
       "path": ".apos/README.md",
@@ -81,7 +81,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "2e72a77a5e583881588dde2aad0626333e699c5a760c81e28e577200bc6731ac"
+      "sha256": "396471d3df50ee9a59f9df74aaa4805ef2051938258193188c92fda0286173a9"
     },
     {
       "path": "docs/AGENT-MODEL-ROUTING.md",
@@ -117,7 +117,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "29ae91d465fad1f01ba769a8d1a6432e410cb85355446f2dc8e4e3b2d60bb713"
+      "sha256": "75694cd27d4669e419ba297b72b8af0f3bcd16890d9615e3e4d88d2b0a5631ea"
     },
     {
       "path": "Product Platform Kit — Início — Visão do produto.md",
