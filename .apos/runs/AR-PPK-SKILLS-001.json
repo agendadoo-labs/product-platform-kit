@@ -1,0 +1,31 @@
+{
+  "id": "AR-PPK-SKILLS-001",
+  "intent_id": "I-PPK-SKILLS-001",
+  "status": "succeeded",
+  "environment": "repository_documentation",
+  "ceremony": {
+    "selected": "standard",
+    "required": "standard"
+  },
+  "consumption": {
+    "input_tokens": "unavailable",
+    "output_tokens": "unavailable",
+    "monetary_cost": "unavailable"
+  },
+  "outputs": [
+    "docs/apos/SKILL-REGISTRATION.md"
+  ],
+  "remaining_uncertainties": [
+    "Downstream adoption not measured"
+  ],
+  "started_at": "2026-09-15",
+  "completed_at": "2026-09-15",
+  "verification": {
+    "local_checks": "passed",
+    "remote_publication": "git_push_succeeded"
+  },
+  "publication": {
+    "branch": "docs/apos-skill-registration-20260915",
+    "observed_commit": "a9c2f8706891de50b689c1ad79378e999e466df4"
+  }
+}

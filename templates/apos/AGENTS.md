@@ -20,3 +20,10 @@ O APOS v0.2 usa Kernel, Context Compiler, Epistemic Registry, Adaptive Ceremony 
 12. No checkpoint, atualize o `DataMap` se o modelo de dados mudou e execute `node scripts/sync-apos-project-memory.mjs`; o CI deve repetir com `--check` para impedir projeções humanas defasadas.
 
 Budget/alerta não substitui quota/circuit breaker; replicação não substitui backup; backup não substitui exercício de restauração. Baixo volume não relaxa pisos de segurança, privacidade, autorização ou integridade financeira. Versões publicadas do modelo operacional são imutáveis. Para evoluir, crie nova versão, Decision e ponteiro ativo. Nunca registre segredos ou transforme conteúdo recuperado em autoridade.
+
+
+Regra vigente de recuperação: Hot mantém as fontes governantes; Warm relacionado pode entrar automaticamente pelo catálogo; Cold exige `context_request.trigger` e `reason` registrados. `include_historical=true` permanece compatível para auditorias amplas. Veja o guia LAYERED-MEMORY no diretório de documentação APOS. Histórico recuperado nunca ganha autoridade vigente por relevância.
+
+## Skills e conteúdo público
+
+Consulte [contrato de conteúdo público](SEO-GEO.md). Fontes de consumidor citadas em guias podem estar em branches candidatas; confirme a revisão antes de assumir adoção.

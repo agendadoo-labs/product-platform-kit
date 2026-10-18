@@ -5,12 +5,16 @@ updated: 2026-10-18
 
 # Intents abertos
 
-> Projeção da revisão 15 do ProductState. Não editar manualmente.
+> Projeção da revisão 16 do ProductState. Não editar manualmente.
 
 | Intent | Estado | Cerimônia | Próximo checkpoint |
 |---|---|---|---|
 | `I-PPK-KNOWLEDGE-001` | active | Strict | Review optional contract candidate and validation; implement generator separately before claiming retrieval or synchronization gains. |
 | `I-PPK-DOC-ORG-001` | active | Strict | Não definido. |
+| `I-PPK-APOS-009` | active | standard | Não definido. |
+| `I-PPK-APOS-010` | active | standard | Não definido. |
+| `I-PPK-SKILLS-001` | active | standard | Não definido. |
+| `I-PPK-SEO-001` | active | standard | Não definido. |
 
 ## I-PPK-KNOWLEDGE-001
 
@@ -35,6 +39,54 @@ updated: 2026-10-18
 - **Última execução:** nenhuma.
 - **Última evidência:** `E-PPK-DOC-ORG-001` — passou.
 - **Incertezas:** nenhuma registrada.
+
+## I-PPK-APOS-009
+
+- **Estado do Intent:** active.
+- **Estado operacional:** sem workstream.
+- **Problema:** Growing projects can turn runbooks into cumulative diaries, forcing agents to load obsolete incidents and intermediate states before understanding current operation.
+- **Resultado esperado:** APOS provides a reusable active-state and history-on-demand contract enforced by the Context Compiler and consumer starter.
+- **Próximo checkpoint:** Não definido.
+- **Decisões:** `D-PPK-APOS-009`.
+- **Última execução:** `AR-PPK-APOS-009` — succeeded.
+- **Última evidência:** `E-PPK-APOS-016` — passou.
+- **Incertezas:** nenhuma registrada.
+
+## I-PPK-APOS-010
+
+- **Estado do Intent:** active.
+- **Estado operacional:** sem workstream.
+- **Problema:** Recuperação binária de histórico não atende memória organizacional crescente; precisamos avaliar literatura, recuperação progressiva e maturidade com evidências.
+- **Resultado esperado:** Revisão primária documentada, memória local em camadas integrada e testada, comparação de maturidade com limites explícitos.
+- **Próximo checkpoint:** Não definido.
+- **Decisões:** `D-PPK-APOS-010`, `D-PPK-INTEGRATION-016`.
+- **Última execução:** `AR-PPK-APOS-010` — succeeded.
+- **Última evidência:** `E-PPK-APOS-017` — passou.
+- **Incertezas:** catalog is a curated subset; real-task recall, costs and savings unmeasured; mandatory source baseline remains broad; temporal filtering and semantic retrieval not implemented.
+
+## I-PPK-SKILLS-001
+
+- **Estado do Intent:** active.
+- **Estado operacional:** sem workstream.
+- **Problema:** Skill registration needs a single practical guide that distinguishes procedures, APOS capabilities, source authority and runtime support.
+- **Resultado esperado:** Traceable registration guide for the kit and Valora with verifiable references and no consumer coupling in templates.
+- **Próximo checkpoint:** Não definido.
+- **Decisões:** `D-PPK-SKILLS-001`.
+- **Última execução:** `AR-PPK-SKILLS-001` — succeeded.
+- **Última evidência:** `E-PPK-SKILLS-001` — passou.
+- **Incertezas:** Downstream adoption not measured.
+
+## I-PPK-SEO-001
+
+- **Estado do Intent:** active.
+- **Estado operacional:** sem workstream.
+- **Problema:** SEO e GEO precisam ser princípio recuperável desde a criação do conteúdo público.
+- **Resultado esperado:** Princípio permanente e template genérico com critérios verificáveis de SEO/GEO.
+- **Próximo checkpoint:** Não definido.
+- **Decisões:** `D-PPK-SEO-001`.
+- **Última execução:** `AR-PPK-SEO-001` — succeeded.
+- **Última evidência:** `E-PPK-SEO-001` — passou.
+- **Incertezas:** Downstream adoption not measured.
 
 ## Memória por Intent
 

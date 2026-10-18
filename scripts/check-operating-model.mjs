@@ -134,12 +134,14 @@ check(starterExposure.non_relaxable_floors.includes('security') && starterExposu
 check(architecture.protocol === 'APOS v0.2' && architecture.default_style === 'modular_monolith_and_managed_services', 'kit architecture profile defaults to economical evolutionary architecture')
 check(['observed_problem', 'fitness_function', 'rollback', 'removal_condition'].every((field) => architecture.admission_requirements.includes(field)), 'kit complexity admission requires evidence, fitness, rollback and removal')
 check(contextProfile.protocol === 'APOS v0.2' && contextProfile.compile_steps.includes('record_context_manifest'), 'kit context profile compiles and records selective context')
+check(contextProfile.document_lifecycle?.default_reading === 'active_only' && contextProfile.document_lifecycle?.historical_access === 'progressive_retrieval_with_provenance', 'kit uses progressive historical retrieval with provenance')
 check(contextProfile.source_priority[0] === 'active_machine_readable_state' && contextProfile.retrieval_rule.includes('provenance'), 'kit context retrieval preserves authority and provenance')
 check(aiExecution.protocol === 'APOS v0.2' && aiExecution.current_mode === 'human_assisted_codex_orchestration', 'kit AI profile starts with human-assisted Codex orchestration')
 check(['eval_baseline', 'hard_limits', 'request_traceability'].every((field) => aiExecution.provider_admission.includes(field)), 'kit AI provider admission requires evals, limits and traceability')
 check(aiExecution.run_usage_fields.includes('input_tokens') && aiExecution.run_usage_fields.includes('estimated_cost') && aiExecution.cost_rule.includes('reconciled'), 'kit AI accounting records usage and reconciles billing')
 check(starterArchitecture.protocol === 'APOS v0.2' && starterArchitecture.domain_profiles.length > 0, 'starter exposes adaptable architecture maturity by domain')
 check(starterContext.compile_steps.includes('record_context_manifest'), 'starter exposes selective context compilation')
+check(starterContext.document_lifecycle?.default_reading === 'active_only' && starterContext.document_lifecycle?.historical_access === 'progressive_retrieval_with_provenance', 'starter ships the active-state and opt-in history retrieval policy')
 check(starterAIExecution.current_mode === 'human_assisted' && starterAIExecution.approved_routes.length === 0, 'starter begins provider-neutral and human-assisted')
 
 const kernelBytes = readFileSync(resolve(root, kernelPath)).byteLength

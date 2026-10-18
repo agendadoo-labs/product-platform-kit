@@ -1,0 +1,55 @@
+{
+  "id": "CM-I-PPK-SEO-001",
+  "protocol": "APOS v0.2",
+  "intent_id": "I-PPK-SEO-001",
+  "domains": [
+    "session_memory"
+  ],
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "1407f18130be92f823b50678614e20415ec2aa7daa00e4d2e63b64bcad822a07",
+      "bytes": 4434
+    },
+    {
+      "path": ".apos/active-model.json",
+      "sha256": "37e2d7d71695af153c05560286d4acbd7622f4a0d6e15f0d4203f67ad2d9f0cd",
+      "bytes": 258
+    },
+    {
+      "path": ".apos/contracts/kit-contracts.json",
+      "sha256": "41b2aaa11a0deb7c4c9bd11adddab4b1293f2f621d3b952034afd5887de6fb49",
+      "bytes": 10541
+    },
+    {
+      "path": ".apos/state/product-state.json",
+      "sha256": "852171aa16bbfd75b21056085d494113e00080baedaaacd1ac25009836bb2f67",
+      "bytes": 3009
+    },
+    {
+      "path": ".apos/intents/I-PPK-SEO-001.json",
+      "sha256": "9eb45b9065375bf70e98431f4502d5419c444de2845909a7949ccfb9b2488040",
+      "bytes": 2006
+    },
+    {
+      "path": ".apos/decisions/D-PPK-SEO-001.json",
+      "sha256": "ff8f113166ccff17760ebec1b51dca8c5b4f6ad1d41e84b7cc13e3d607674fc7",
+      "bytes": 378
+    },
+    {
+      "path": "docs/apos/SEO-GEO.md",
+      "sha256": "2ace6cddcf5c8cbe5b6e4cc6f5fa4ee27f19543f359e467b5c191a3e7b06ddc2",
+      "bytes": 3192
+    }
+  ],
+  "measurement": {
+    "method": "conservative_utf8_bytes_divided_by_4",
+    "total_bytes": 23818,
+    "estimated_input_tokens": 5954
+  },
+  "budget": {
+    "max_estimated_input_tokens": 30000
+  },
+  "status": "within_budget",
+  "created_at": "2026-09-15"
+}

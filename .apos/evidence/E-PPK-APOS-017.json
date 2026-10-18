@@ -1,0 +1,17 @@
+{
+  "id": "E-PPK-APOS-017",
+  "intent_id": "I-PPK-APOS-010",
+  "run_id": "AR-PPK-APOS-010",
+  "contract_ids": [
+    "C-PPK-CONTEXT-001",
+    "C-PPK-GOV-001",
+    "C-PPK-PRES-001",
+    "C-PPK-EPI-001"
+  ],
+  "passed": true,
+  "observed": "Local layered retrieval module and compiler integration verified: warm/cold routing, missing references, stale hash, no-match review, replay fingerprint, authority separation, restricted catalog, traversal/symlink rejection and budget fail without clipping. Kit 18 JS tests and 12 experimental runtime tests passed; Valora 11 memory tests passed. No real-task recall or token savings claimed.",
+  "verifier": "node --test scripts/tests/apos-layered-memory.test.mjs; kit compiler integration and Python runtime suite",
+  "environment": "local_repository",
+  "created_at": "2026-10-01",
+  "expires_at": null
+}

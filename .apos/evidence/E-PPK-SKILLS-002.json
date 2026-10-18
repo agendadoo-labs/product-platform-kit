@@ -1,0 +1,15 @@
+{
+  "id": "E-PPK-SKILLS-002",
+  "intent_id": "I-PPK-SKILLS-001",
+  "run_id": "AR-PPK-SKILLS-001",
+  "contract_ids": [
+    "C-PPK-EVID-001"
+  ],
+  "passed": true,
+  "observed_at": "2026-09-15",
+  "verifier": "scripts/check-operating-model.mjs",
+  "observed": "APOS checks and human projections pass; immutable model versions preserved.",
+  "limits": [
+    "Verification of current source snapshot; not proof of user acceptance or production runtime support"
+  ]
+}

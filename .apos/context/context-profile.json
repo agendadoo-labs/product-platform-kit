@@ -355,5 +355,25 @@
   "retrieval_rule": "Semantic retrieval proposes candidates; authority, provenance, version and freshness determine inclusion.",
   "token_rule": "Load the smallest sufficient dependency subgraph and declare input, output, tool and fanout ceilings before material runs.",
   "information_preservation_rule": "A budget breach stops or escalates compilation; it never silently removes authoritative sources, applicable contracts, safety constraints or known uncertainties.",
-  "projection_rule": "Human documentation and knowledge vaults are derived projections and must link back to operational identifiers."
+  "projection_rule": "Human documentation and knowledge vaults are derived projections and must link back to operational identifiers.",
+  "document_lifecycle": {
+    "default_reading": "active_only",
+    "historical_access": "progressive_retrieval_with_provenance",
+    "historical_path_markers": [
+      ".apos/archive/",
+      "/archive/",
+      "/history/",
+      "/incidents/",
+      "docs/agent-runs/",
+      "docs/checkpoints/"
+    ],
+    "rule": "Active baseline is mandatory. Relevant catalogued Warm history is automatic; Cold requires a recorded trigger and reason. Legacy include_historical remains supported. Never delete or truncate a source for context budget."
+  },
+  "layered_memory": {
+    "version": 1,
+    "catalog": ".apos/context/memory-catalog.json",
+    "strategy": "mandatory_baseline_plus_progressive_catalog",
+    "coverage": "curated_subset",
+    "semantic_retrieval": "not_implemented"
+  }
 }

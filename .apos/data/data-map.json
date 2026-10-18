@@ -1,8 +1,8 @@
 {
   "id": "DM-PPK-001",
-  "revision": 3,
+  "revision": 4,
   "protocol": "APOS v0.2",
-  "updated_at": "2026-10-17",
+  "updated_at": "2026-10-18",
   "purpose": "Mapear os registros de conhecimento e artefatos reutilizáveis do Product Platform Kit sem incorporar dados de consumidores.",
   "authority": {
     "schema_source": "repository",
@@ -73,6 +73,14 @@
       "purpose": "Optional source/projection provenance and reversible checkpoint contract; not a populated consumer catalog",
       "source": "templates/knowledge-projection/manifest.example.json",
       "retention": "versioned in Git"
+    },
+    {
+      "id": "apos.memory_catalog",
+      "classification": "internal_metadata",
+      "domain": "operating_model",
+      "purpose": "Curated Hot/Warm/Cold source metadata and provenance; no credentials or personal records",
+      "retention": "versioned_with_repository_no_new_deletion_policy",
+      "authoritative_source": ".apos/context/memory-catalog.json"
     }
   ],
   "relationships": [

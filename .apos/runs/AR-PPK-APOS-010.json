@@ -1,0 +1,30 @@
+{
+  "id": "AR-PPK-APOS-010",
+  "intent_id": "I-PPK-APOS-010",
+  "status": "succeeded",
+  "environment": "repository",
+  "completed_at": "2026-10-01",
+  "context_manifest_id": "CM-I-PPK-APOS-010",
+  "outputs": [
+    "layered retrieval baseline",
+    "primary literature review",
+    "maturity assessment",
+    "consumer template and tests"
+  ],
+  "remaining_uncertainties": [
+    "catalog is a curated subset",
+    "real-task recall, costs and savings unmeasured",
+    "mandatory source baseline remains broad",
+    "temporal filtering and semantic retrieval not implemented"
+  ],
+  "budget": {
+    "context_limit_tokens": 60000,
+    "exception_reason": "Measured existing mandatory subgraph exceeds 30000 during governance review; preserve governing sources; global default remains unchanged"
+  },
+  "consumption": {
+    "input_tokens": "unavailable",
+    "output_tokens": "unavailable",
+    "monetary_cost": "unavailable",
+    "external_model_calls": 0
+  }
+}

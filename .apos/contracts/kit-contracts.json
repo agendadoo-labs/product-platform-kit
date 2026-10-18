@@ -1,26 +1,320 @@
 {
   "contracts": [
-    {"id": "C-PPK-SCOPE-001", "family": "product", "description": "Templates reutilizáveis não incorporam dados, regras de negócio, identidade ou decisões de um consumidor específico.", "applies_when": ["template", "package", "shared_documentation"], "verification": {"status": "specified", "required_evidence": "consumer coupling scan and review"}},
-    {"id": "C-PPK-CAP-001", "family": "engineering", "description": "A operação compõe capabilities conforme o Intent e não exige organograma, papel ou conjunto fixo de agentes.", "applies_when": ["operating_model", "starter"], "verification": {"status": "specified", "required_evidence": "starter structure and prohibited-reference checks"}},
-    {"id": "C-PPK-EVID-001", "family": "operations", "description": "Executor e verificador são semanticamente separados; falha e ausência de evidência não produzem satisfação.", "applies_when": ["runtime", "verification", "product_state"], "verification": {"status": "specified", "required_evidence": "runtime tests or independent artifact checks"}},
-    {"id": "C-PPK-REV-001", "family": "operations", "description": "Mudanças materiais preservam versão anterior identificável, hashes e caminho de restauração.", "applies_when": ["migration", "release", "material_change"], "verification": {"status": "specified", "required_evidence": "tag, manifest and digest verification"}},
-    {"id": "C-PPK-PRES-001", "family": "change_control", "description": "Mudanças materiais declaram delta, superfícies afetadas, invariantes, fora de escopo, compatibilidade, regressão proporcional e rollback; elementos não relacionados permanecem inalterados.", "applies_when": ["all_changes", "api", "backend", "data", "configuration", "telemetry", "environment"], "verification": {"status": "implemented", "verifier": "scripts/check-operating-model.mjs"}},
-    {"id": "C-PPK-SEC-001", "family": "engineering", "description": "Repositório, templates e evidências não contêm segredos, dados pessoais ou arquivos reais de ambiente.", "applies_when": ["all_changes"], "verification": {"status": "implemented", "verifier": "scripts/check-repository.mjs"}},
-    {"id": "C-PPK-GOV-001", "family": "operations", "description": "Publicação na main, releases, custos, permissões e ações destrutivas exigem autorização específica vinculada à revisão.", "applies_when": ["external_effect", "critical_boundary"], "verification": {"status": "specified", "required_evidence": "scoped authorization recorded before effect"}},
-    {"id": "C-PPK-NFR-001", "family": "quality", "description": "O starter representa requisitos não funcionais como cenários mensuráveis com limite, verificador, validade e gatilhos de invalidação.", "applies_when": ["operating_model", "starter", "material_change"], "verification": {"status": "implemented", "verifier": "scripts/check-operating-model.mjs"}},
-    {"id": "C-PPK-ENV-001", "family": "operations", "description": "O starter separa ambientes por exposição, dados, credenciais, custo e gates sem impor fornecedor.", "applies_when": ["environment", "starter"], "verification": {"status": "implemented", "verifier": "scripts/check-operating-model.mjs"}},
-    {"id": "C-PPK-COST-001", "family": "finops", "description": "Templates distinguem medição, budget, alerta e contenção rígida; serviço pago sem quota ou circuit breaker não fica pronto para uso.", "applies_when": ["paid_service", "starter"], "verification": {"status": "specified", "required_evidence": "consumer-specific cost meter and containment test"}},
-    {"id": "C-PPK-AI-COST-001", "family": "agent_operations", "description": "Runs materiais declaram roteamento e tetos de contexto, saída, fanout e ferramentas; uso indisponível nunca é zero.", "applies_when": ["agent_run", "model_api"], "verification": {"status": "specified", "required_evidence": "run budget and provider usage/cost evidence when available"}},
-    {"id": "C-PPK-REL-001", "family": "reliability", "description": "Templates distinguem disponibilidade, replicação, backup e recuperação e exigem objetivos proporcionais ao impacto.", "applies_when": ["persistent_service", "critical_dependency"], "verification": {"status": "specified", "required_evidence": "consumer failure-mode and capacity evidence"}},
-    {"id": "C-PPK-DR-001", "family": "recoverability", "description": "Templates exigem RTO/RPO, ordem, responsáveis e exercício; backup não testado não satisfaz recuperação.", "applies_when": ["persistent_data", "critical_service"], "verification": {"status": "specified", "required_evidence": "fresh consumer restore exercise"}},
-    {"id": "C-PPK-EXPOSURE-001", "family": "operational_risk", "description": "O starter mede separadamente pessoas, operações, valor econômico e dados expostos durante RTO/RPO, usa a pior dimensão para evolução e preserva pisos não relaxáveis.", "applies_when": ["availability_target", "growth", "critical_flow", "starter"], "verification": {"status": "implemented", "verifier": "scripts/check-operating-model.mjs"}},
-    {"id": "C-PPK-ARCH-001", "family": "architecture", "description": "Arquitetura evolui por domínio, problema observado, fitness function e custo de ciclo de vida; complexidade especulativa não é maturidade.", "applies_when": ["architecture", "new_dependency", "scale_change", "starter"], "verification": {"status": "implemented", "verifier": "scripts/check-operating-model.mjs"}},
-    {"id": "C-PPK-CONTEXT-001", "family": "knowledge", "description": "Runs materiais compilam e registram o menor subgrafo autoritativo suficiente; similaridade não substitui proveniência, versão e validade.", "applies_when": ["agent_run", "context_retrieval", "starter"], "verification": {"status": "implemented", "verifier": "scripts/check-operating-model.mjs"}},
-    {"id": "C-PPK-AI-ROUTE-001", "family": "agent_operations", "description": "Roteamento de modelos é provider-neutral, allowlisted, limitado e baseado em eval, risco, dados e custo por resultado validado.", "applies_when": ["model_api", "agent_run", "starter"], "verification": {"status": "implemented", "verifier": "scripts/check-operating-model.mjs"}},
-    {"id": "C-PPK-KERNEL-001", "family": "operating_model", "description": "O starter fornece Kernel compacto com autoridade, preservação, pisos de segurança, conclusão, evidência e economia.", "applies_when": ["operating_model", "starter"], "verification": {"status": "implemented", "verifier": "scripts/check-operating-model.mjs"}},
-    {"id": "C-PPK-EPI-001", "family": "knowledge", "description": "Domínios de contexto resolvem em um Epistemic Registry com fontes, métodos, incertezas, relações, owner e refresh triggers.", "applies_when": ["context_retrieval", "starter"], "verification": {"status": "implemented", "verifier": "scripts/check-operating-model.mjs"}},
-    {"id": "C-PPK-CEREMONY-001", "family": "governance", "description": "Intents materiais selecionam Lite, Standard ou Strict pela pior dimensão de risco sem downgrade autônomo.", "applies_when": ["material_change", "starter"], "verification": {"status": "implemented", "verifier": "scripts/check-operating-model.mjs"}},
-    {"id": "C-PPK-LEARN-001", "family": "agent_operations", "description": "Runs materiais registram contexto, saída, chamadas, tempo, retrabalho, regressões e evidência reutilizada por etapa.", "applies_when": ["agent_run", "starter"], "verification": {"status": "implemented", "verifier": "scripts/check-operating-model.mjs"}},
-    {"id": "C-PPK-RELEASE-001", "family": "release_engineering", "description": "Clientes dependentes de schema, API ou configuração só são promovidos depois que o ambiente-alvo comprova um contrato semântico versionado; arquivos declarados não provam estado aplicado.", "applies_when": ["deployment", "migration", "api_contract", "starter"], "verification": {"status": "implemented", "verifier": "scripts/check-repository.mjs"}}
+    {
+      "id": "C-PPK-SCOPE-001",
+      "family": "product",
+      "description": "Templates reutilizáveis não incorporam dados, regras de negócio, identidade ou decisões de um consumidor específico.",
+      "applies_when": [
+        "template",
+        "package",
+        "shared_documentation"
+      ],
+      "verification": {
+        "status": "specified",
+        "required_evidence": "consumer coupling scan and review"
+      }
+    },
+    {
+      "id": "C-PPK-CAP-001",
+      "family": "engineering",
+      "description": "A operação compõe capabilities conforme o Intent e não exige organograma, papel ou conjunto fixo de agentes.",
+      "applies_when": [
+        "operating_model",
+        "starter"
+      ],
+      "verification": {
+        "status": "specified",
+        "required_evidence": "starter structure and prohibited-reference checks"
+      }
+    },
+    {
+      "id": "C-PPK-EVID-001",
+      "family": "operations",
+      "description": "Executor e verificador são semanticamente separados; falha e ausência de evidência não produzem satisfação.",
+      "applies_when": [
+        "runtime",
+        "verification",
+        "product_state"
+      ],
+      "verification": {
+        "status": "specified",
+        "required_evidence": "runtime tests or independent artifact checks"
+      }
+    },
+    {
+      "id": "C-PPK-REV-001",
+      "family": "operations",
+      "description": "Mudanças materiais preservam versão anterior identificável, hashes e caminho de restauração.",
+      "applies_when": [
+        "migration",
+        "release",
+        "material_change"
+      ],
+      "verification": {
+        "status": "specified",
+        "required_evidence": "tag, manifest and digest verification"
+      }
+    },
+    {
+      "id": "C-PPK-PRES-001",
+      "family": "change_control",
+      "description": "Mudanças materiais declaram delta, superfícies afetadas, invariantes, fora de escopo, compatibilidade, regressão proporcional e rollback; elementos não relacionados permanecem inalterados.",
+      "applies_when": [
+        "all_changes",
+        "api",
+        "backend",
+        "data",
+        "configuration",
+        "telemetry",
+        "environment"
+      ],
+      "verification": {
+        "status": "implemented",
+        "verifier": "scripts/check-operating-model.mjs"
+      }
+    },
+    {
+      "id": "C-PPK-SEC-001",
+      "family": "engineering",
+      "description": "Repositório, templates e evidências não contêm segredos, dados pessoais ou arquivos reais de ambiente.",
+      "applies_when": [
+        "all_changes"
+      ],
+      "verification": {
+        "status": "implemented",
+        "verifier": "scripts/check-repository.mjs"
+      }
+    },
+    {
+      "id": "C-PPK-GOV-001",
+      "family": "operations",
+      "description": "Publicação na main, releases, custos, permissões e ações destrutivas exigem autorização específica vinculada à revisão.",
+      "applies_when": [
+        "external_effect",
+        "critical_boundary"
+      ],
+      "verification": {
+        "status": "specified",
+        "required_evidence": "scoped authorization recorded before effect"
+      }
+    },
+    {
+      "id": "C-PPK-NFR-001",
+      "family": "quality",
+      "description": "O starter representa requisitos não funcionais como cenários mensuráveis com limite, verificador, validade e gatilhos de invalidação.",
+      "applies_when": [
+        "operating_model",
+        "starter",
+        "material_change"
+      ],
+      "verification": {
+        "status": "implemented",
+        "verifier": "scripts/check-operating-model.mjs"
+      }
+    },
+    {
+      "id": "C-PPK-ENV-001",
+      "family": "operations",
+      "description": "O starter separa ambientes por exposição, dados, credenciais, custo e gates sem impor fornecedor.",
+      "applies_when": [
+        "environment",
+        "starter"
+      ],
+      "verification": {
+        "status": "implemented",
+        "verifier": "scripts/check-operating-model.mjs"
+      }
+    },
+    {
+      "id": "C-PPK-COST-001",
+      "family": "finops",
+      "description": "Templates distinguem medição, budget, alerta e contenção rígida; serviço pago sem quota ou circuit breaker não fica pronto para uso.",
+      "applies_when": [
+        "paid_service",
+        "starter"
+      ],
+      "verification": {
+        "status": "specified",
+        "required_evidence": "consumer-specific cost meter and containment test"
+      }
+    },
+    {
+      "id": "C-PPK-AI-COST-001",
+      "family": "agent_operations",
+      "description": "Runs materiais declaram roteamento e tetos de contexto, saída, fanout e ferramentas; uso indisponível nunca é zero.",
+      "applies_when": [
+        "agent_run",
+        "model_api"
+      ],
+      "verification": {
+        "status": "specified",
+        "required_evidence": "run budget and provider usage/cost evidence when available"
+      }
+    },
+    {
+      "id": "C-PPK-REL-001",
+      "family": "reliability",
+      "description": "Templates distinguem disponibilidade, replicação, backup e recuperação e exigem objetivos proporcionais ao impacto.",
+      "applies_when": [
+        "persistent_service",
+        "critical_dependency"
+      ],
+      "verification": {
+        "status": "specified",
+        "required_evidence": "consumer failure-mode and capacity evidence"
+      }
+    },
+    {
+      "id": "C-PPK-DR-001",
+      "family": "recoverability",
+      "description": "Templates exigem RTO/RPO, ordem, responsáveis e exercício; backup não testado não satisfaz recuperação.",
+      "applies_when": [
+        "persistent_data",
+        "critical_service"
+      ],
+      "verification": {
+        "status": "specified",
+        "required_evidence": "fresh consumer restore exercise"
+      }
+    },
+    {
+      "id": "C-PPK-EXPOSURE-001",
+      "family": "operational_risk",
+      "description": "O starter mede separadamente pessoas, operações, valor econômico e dados expostos durante RTO/RPO, usa a pior dimensão para evolução e preserva pisos não relaxáveis.",
+      "applies_when": [
+        "availability_target",
+        "growth",
+        "critical_flow",
+        "starter"
+      ],
+      "verification": {
+        "status": "implemented",
+        "verifier": "scripts/check-operating-model.mjs"
+      }
+    },
+    {
+      "id": "C-PPK-ARCH-001",
+      "family": "architecture",
+      "description": "Arquitetura evolui por domínio, problema observado, fitness function e custo de ciclo de vida; complexidade especulativa não é maturidade.",
+      "applies_when": [
+        "architecture",
+        "new_dependency",
+        "scale_change",
+        "starter"
+      ],
+      "verification": {
+        "status": "implemented",
+        "verifier": "scripts/check-operating-model.mjs"
+      }
+    },
+    {
+      "id": "C-PPK-CONTEXT-001",
+      "family": "knowledge",
+      "description": "Runs materiais compilam e registram o menor subgrafo autoritativo suficiente; similaridade não substitui proveniência, versão e validade.",
+      "applies_when": [
+        "agent_run",
+        "context_retrieval",
+        "starter"
+      ],
+      "verification": {
+        "status": "implemented",
+        "verifier": "scripts/check-operating-model.mjs"
+      }
+    },
+    {
+      "id": "C-PPK-AI-ROUTE-001",
+      "family": "agent_operations",
+      "description": "Roteamento de modelos é provider-neutral, allowlisted, limitado e baseado em eval, risco, dados e custo por resultado validado.",
+      "applies_when": [
+        "model_api",
+        "agent_run",
+        "starter"
+      ],
+      "verification": {
+        "status": "implemented",
+        "verifier": "scripts/check-operating-model.mjs"
+      }
+    },
+    {
+      "id": "C-PPK-KERNEL-001",
+      "family": "operating_model",
+      "description": "O starter fornece Kernel compacto com autoridade, preservação, pisos de segurança, conclusão, evidência e economia.",
+      "applies_when": [
+        "operating_model",
+        "starter"
+      ],
+      "verification": {
+        "status": "implemented",
+        "verifier": "scripts/check-operating-model.mjs"
+      }
+    },
+    {
+      "id": "C-PPK-EPI-001",
+      "family": "knowledge",
+      "description": "Domínios de contexto resolvem em um Epistemic Registry com fontes, métodos, incertezas, relações, owner e refresh triggers.",
+      "applies_when": [
+        "context_retrieval",
+        "starter"
+      ],
+      "verification": {
+        "status": "implemented",
+        "verifier": "scripts/check-operating-model.mjs"
+      }
+    },
+    {
+      "id": "C-PPK-CEREMONY-001",
+      "family": "governance",
+      "description": "Intents materiais selecionam Lite, Standard ou Strict pela pior dimensão de risco sem downgrade autônomo.",
+      "applies_when": [
+        "material_change",
+        "starter"
+      ],
+      "verification": {
+        "status": "implemented",
+        "verifier": "scripts/check-operating-model.mjs"
+      }
+    },
+    {
+      "id": "C-PPK-LEARN-001",
+      "family": "agent_operations",
+      "description": "Runs materiais registram contexto, saída, chamadas, tempo, retrabalho, regressões e evidência reutilizada por etapa.",
+      "applies_when": [
+        "agent_run",
+        "starter"
+      ],
+      "verification": {
+        "status": "implemented",
+        "verifier": "scripts/check-operating-model.mjs"
+      }
+    },
+    {
+      "id": "C-PPK-RELEASE-001",
+      "family": "release_engineering",
+      "description": "Clientes dependentes de schema, API ou configuração só são promovidos depois que o ambiente-alvo comprova um contrato semântico versionado; arquivos declarados não provam estado aplicado.",
+      "applies_when": [
+        "deployment",
+        "migration",
+        "api_contract",
+        "starter"
+      ],
+      "verification": {
+        "status": "implemented",
+        "verifier": "scripts/check-repository.mjs"
+      }
+    },
+    {
+      "id": "C-PPK-SEO-001",
+      "family": "content_quality",
+      "description": "Todo conteúdo público nasce otimizado para SEO e GEO: útil, acessível, rastreável, com fontes e limites verificáveis; áreas privadas permanecem protegidas.",
+      "applies_when": [
+        "public_content",
+        "public_website",
+        "content_generation"
+      ],
+      "verification": {
+        "status": "specified",
+        "required_evidence": "Consumidor comprova HTML, indexabilidade, fontes, privacidade e qualidade editorial conforme docs/apos/SEO-GEO.md."
+      }
+    }
   ]
 }

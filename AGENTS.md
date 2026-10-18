@@ -41,6 +41,7 @@ O APOS v0.2 é composto por Kernel, Context Compiler, Epistemic Registry, Adapti
 - Artefatos gerais vivem no kit; dados, contratos de negócio e evidências de consumidores ficam nos repositórios consumidores.
 - O starter ativo está em `templates/apos/`. `templates/agents/` é legado consultável e não deve iniciar novos projetos.
 - Documentos são projeções humanas úteis, não fontes de verdade paralelas obrigatórias.
+Regra vigente de recuperação: Hot mantém as fontes governantes; Warm relacionado pode entrar automaticamente pelo catálogo; Cold exige `context_request.trigger` e `reason` registrados. `include_historical=true` permanece compatível para auditorias amplas. Veja o guia LAYERED-MEMORY no diretório de documentação APOS. Histórico recuperado nunca ganha autoridade vigente por relevância.
 - Requisitos não funcionais vivem em Contracts e cenários mensuráveis do `QualityProfile`; o starter não fixa metas de consumidores.
 - O `ExposureBudget` usa a pior dimensão entre pessoas, operações, valor econômico e dados para evoluir RTO ou reduzir impacto; baixo volume não relaxa segurança, privacidade, autorização ou integridade financeira.
 - Budget, alerta, quota e circuit breaker são controles diferentes. Replicação, backup e restauração testada também são controles diferentes.
@@ -55,3 +56,7 @@ O modelo anterior está congelado na tag `operating-model-v1-agent-starter` e in
 A projeção para um vault pessoal é um efeito externo configurável do repositório, não requisito do template público. Quando previamente autorizada e acessível, copie somente documentação material, sem segredos ou caminhos internos.
 
 [Percursos de leitura por domínio](<docs/Product Platform Kit — Guia — Percursos de leitura por domínio.md>): selecione fontes conforme a tarefa e confira seus limites.
+
+## Skills e conteúdo público
+
+Consulte [cadastro de skills](docs/apos/SKILL-REGISTRATION.md) e [contrato de conteúdo público](docs/apos/SEO-GEO.md). Fontes de consumidor citadas em guias podem estar em branches candidatas; confirme a revisão antes de assumir adoção.

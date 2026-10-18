@@ -1,0 +1,14 @@
+{
+  "id": "AR-PPK-APOS-009",
+  "intent_id": "I-PPK-APOS-009",
+  "status": "succeeded",
+  "capabilities": ["recover-context", "compile-context", "design-reusable-contract", "change-package", "verify-package"],
+  "environment": "repository",
+  "ceremony": {"selected": "standard", "required": "standard", "triggers": ["operating_model_change", "starter_behavior"], "authorization_source": "builder_conversation_2026_10_01"},
+  "context_manifest_id": "CM-I-PPK-APOS-009",
+  "completed_at": "2026-10-01",
+  "budget": {"routing": "single_orchestrator", "parallel_fanout": 0, "external_cost": 0, "context_limit_tokens": 60000, "exception_reason": "one-time explicit historical migration; normal retrieval remains active-only", "compiled_context_estimate": 35769},
+  "consumption": {"input_tokens": "unavailable", "output_tokens": "unavailable", "monetary_cost": 0, "source": "desktop runtime does not expose exact per-run token usage"},
+  "outputs": ["reusable lifecycle standard", "compiler enforcement", "starter documentation", "compiler regression test"],
+  "remaining_uncertainties": []
+}
