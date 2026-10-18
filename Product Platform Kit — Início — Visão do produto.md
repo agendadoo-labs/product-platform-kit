@@ -18,6 +18,10 @@ Leia o [guia de manutenção documental](<docs/Product Platform Kit — Guia —
 
 **Início de agentes/LLMs:** leia o [guia de manutenção de implementação e documentação](templates/apos/APOS-MAINTENANCE.md) antes de alterar o projeto e ao retomar checkpoints.
 
+## Começar um projeto com um agente
+
+[Copiar o prompt APOS de início de projeto](<docs/onboarding/APOS — Prompt — Início portátil de projeto.md>). Funciona sem ambiente pessoal pré-configurado; inclui orientação opcional para Obsidian novo ou existente.
+
 ## Missão
 
 **Transformar as barreiras tecnológicas de entrada de novos negócios em praticamente zero, permitindo que mentes criativas coloquem projetos e produtos em prática com a ajuda de organizações agênticas.**
@@ -175,7 +179,3 @@ Este kit é um ponto de partida versionado. Adote somente o necessário, preserv
 ## Gestão de conhecimento e especificações
 
 Para contratos, vigência, requisitos e evidências, comece pelo [domínio knowledge_governance](<docs/knowledge/Conhecimento — Início — Gestão de conhecimento e especificações.md>). Execute `python3 packages/knowledge_governance/validate.py` ao alterar seu catálogo.
-
-## Começar um projeto com um agente
-
-[Copiar o prompt APOS de início de projeto](<docs/onboarding/APOS — Prompt — Início portátil de projeto.md>). Funciona sem ambiente pessoal pré-configurado; inclui orientação opcional para Obsidian novo ou existente.
