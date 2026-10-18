@@ -22,6 +22,7 @@ updated: 2026-10-17
 ## Decisões recentes
 
 - **2026-10-17 · D-PPK-KNOWLEDGE-001:** Treat a knowledge vault as a provenance-preserving projection of published Git state, with separate local deltas and historical checkpoints.
+- **2026-10-17 · D-PPK-KNOWLEDGE-002:** Consolidar manutenção documental e implementação em guia portátil de entrada, ligado ao README, AGENTS e bootstrap APOS.
 - **2026-10-17 · D-PPK-LLM-001:** Registrar llm_engineering como domínio transversal; separar contrato reutilizável, runtime compartilhado e oracle de negócio.
 - **2026-09-14 · D-PPK-RELEASE-001:** Adicionar ao APOS um gate semântico de release que observa o ambiente-alvo antes de promover qualquer cliente dependente.
 - **2026-09-13 · D-PPK-CAPABILITY-002:** Modelar Commercial Model como uma camada transversal Economic Control Plane sobre os 14 macrodomínios, adicionar commercial_model e economic_control_plane ao domínio Business & Growth e registrar o grafo de influência sem criar autoridade implícita sobre os domínios afetados.
@@ -30,7 +31,6 @@ updated: 2026-10-17
 - **2026-09-12 · D-PPK-CAPABILITY-001:** Usar o Digital Product Capability Map v2 como ontologia de composição do kit, separado do Epistemic Registry, e governar a evolução por cobertura evidenciada, regras de ativação e prioridade por valor reutilizável.
 - **2026-09-09 · D-PPK-APOS-006:** Adicionar um Session Bootstrap determinístico antes da inferência: ler ponteiro ativo, ProductState, Intents abertos, decisões e coordenação; depois compilar o subgrafo completo somente para o Intent em foco.
 - **2026-09-08 · D-PPK-APOS-005:** Publicar APOS v0.2 primeiro e, em seguida, criar uma trilha de onboarding executável e coerente na main do toolkit.
-- **2026-09-07 · D-PPK-APOS-003:** Add preservation-by-default and a reusable Change Envelope in product-platform-kit-apos-2.2.0 and consumer-apos-1.2.0.
 
 ## Fontes para aprofundar
 
