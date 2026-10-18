@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "repository": "agendadoo-labs/product-platform-kit",
+  "source_base_commit": "9c191fc3fccc01eeb288c56bcdcda711a5eeae7b",
+  "upstream_commit": "9c191fc3fccc01eeb288c56bcdcda711a5eeae7b",
+  "scope": "documentation_entrypoints_only",
+  "documents": [
+    {
+      "id": "DOC-PRODUCT-PLATFORM-KIT-1",
+      "path": "README.md",
+      "role": "entrypoint"
+    },
+    {
+      "id": "DOC-PRODUCT-PLATFORM-KIT-2",
+      "path": "AGENTS.md",
+      "role": "procedure"
+    },
+    {
+      "id": "DOC-PRODUCT-PLATFORM-KIT-3",
+      "path": "docs/Product Platform Kit — Guia — Manutenção documental.md",
+      "role": "procedure"
+    }
+  ],
+  "preserved": "Generated APOS docs, versioned history, vendored skills and runtime code are unchanged."
+}
