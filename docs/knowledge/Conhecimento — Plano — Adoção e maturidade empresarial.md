@@ -28,3 +28,15 @@ Métricas: cobertura dos requisitos do piloto; documentos com origem verificáve
 Papéis são responsabilidades atribuídas pelo consumidor: owner da especificação, revisor de aceite, executor e mantenedor da plataforma. Não impor organograma. Empresa deve escolher nível de separação conforme risco.
 
 Projeto separado somente se houver serviço com API, implantação, identidade e operação próprias. Contratos permanecem versionados no kit.
+
+## Estado atual do domínio de conhecimento
+
+<!-- knowledge-state:start -->
+
+Checkpoint: CP-KG-TECH-001
+
+Status: technical_controls_implemented_independent_acceptance_pending
+
+Next: Complete CP-020 independent transfer; apply v2 in a consumer with recorded before/after measurements.
+
+<!-- knowledge-state:end -->

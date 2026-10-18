@@ -7,8 +7,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python packages/knowledge_governance/validate.py
-      - run: python -m unittest discover -s scripts/tests -p test_knowledge_governance.py -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python scripts/knowledge-controls.py check
+      - name: Proportional checks (knowledge Intent has Strict minimum)
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          if [ -z "$BASE_SHA" ] || [ "$BASE_SHA" = "0000000000000000000000000000000000000000" ]; then
+            BASE_SHA=$(git rev-parse HEAD^)
+          fi
+          python scripts/knowledge-controls.py gate --base "$BASE_SHA"

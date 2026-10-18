@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "scope": "knowledge_governance_contracts_only",
   "documents": [
     {
@@ -35,8 +35,8 @@
     {
       "id": "KG-SDD-001",
       "path": "docs/knowledge/Conhecimento — Contrato — Especificações e evidências.md",
-      "revision": 1,
-      "sha256": "50667b0398d81a31554ccfc3a28e172069af606d717b6af7d8bb59926af04e50",
+      "revision": 2,
+      "sha256": "38b7bbf40c640afba9b91cf71bbfa34a6436d5fddc03ee7e16dcd88d09cdbb93",
       "graph_scope": "vigente",
       "lifecycle": "approved",
       "owner": "builder",
@@ -55,8 +55,8 @@
     {
       "id": "KG-OPERATIONS-001",
       "path": "docs/knowledge/Conhecimento — Guia — Validação e retomada.md",
-      "revision": 1,
-      "sha256": "9f6868cbfa04b2fdca7ff71654223b58fb4807dea414e8cc0d69e8005fa3dd39",
+      "revision": 3,
+      "sha256": "76782ef8d6308ff4f3cef8e30a0925e4e5ee454e3c6974264f77752d8a2a23be",
       "graph_scope": "vigente",
       "lifecycle": "approved",
       "owner": "builder",
@@ -70,8 +70,8 @@
     {
       "id": "KG-ADOPTION-001",
       "path": "docs/knowledge/Conhecimento — Plano — Adoção e maturidade empresarial.md",
-      "revision": 1,
-      "sha256": "964b5a7d52c0de31a30272805140d7a72e52e40986f1856f2af8b498e644f397",
+      "revision": 2,
+      "sha256": "814d3e4244b5541cf14bdc1014e19a5f672eda42e439c19023ed45144f6f9433",
       "graph_scope": "vigente",
       "lifecycle": "approved",
       "owner": "builder",
@@ -90,10 +90,12 @@
       "acceptance": "Changed document, dependency revision or observed source is rejected.",
       "status": "implemented",
       "implementation": [
-        "packages/knowledge_governance/validate.py"
+        "packages/knowledge_governance/validate.py",
+        "packages/knowledge_governance/controls.py"
       ],
       "tests": [
-        "scripts/tests/test_knowledge_governance.py"
+        "scripts/tests/test_knowledge_governance.py",
+        "scripts/tests/test_knowledge_controls.py"
       ]
     },
     {
@@ -102,10 +104,12 @@
       "acceptance": "Implemented requirements without tests and invalid verified evidence are rejected.",
       "status": "implemented",
       "implementation": [
-        "packages/knowledge_governance/validate.py"
+        "packages/knowledge_governance/validate.py",
+        "packages/knowledge_governance/controls.py"
       ],
       "tests": [
-        "scripts/tests/test_knowledge_governance.py"
+        "scripts/tests/test_knowledge_governance.py",
+        "scripts/tests/test_knowledge_controls.py"
       ]
     },
     {
@@ -114,19 +118,38 @@
       "acceptance": "A changed generated checkpoint projection is rejected.",
       "status": "implemented",
       "implementation": [
-        "packages/knowledge_governance/validate.py"
+        "packages/knowledge_governance/validate.py",
+        "packages/knowledge_governance/controls.py"
       ],
       "tests": [
-        "scripts/tests/test_knowledge_governance.py"
+        "scripts/tests/test_knowledge_governance.py",
+        "scripts/tests/test_knowledge_controls.py"
+      ]
+    },
+    {
+      "id": "R-KG-004",
+      "specification": "KG-OPERATIONS-001",
+      "acceptance": "Risk checks honor both base and current Intent floors, use actual Git diff and conservatively classify unknown/governance paths.",
+      "status": "implemented",
+      "implementation": [
+        "scripts/knowledge-controls.py",
+        "packages/knowledge_governance/controls.py"
+      ],
+      "tests": [
+        "scripts/tests/test_knowledge_controls.py"
       ]
     }
   ],
-  "current_state": {
-    "checkpoint": "CP-018",
-    "status": "technical_pilot_implemented_independent_adoption_pending",
-    "next_action": "CP-019: apply to one real consumer change, then CP-020 independent transfer"
-  },
   "state_projections": [
-    "docs/knowledge/CURRENT.md"
-  ]
+    "docs/knowledge/CURRENT.md",
+    "docs/knowledge/Conhecimento — Plano — Adoção e maturidade empresarial.md",
+    "docs/knowledge/Conhecimento — Guia — Validação e retomada.md",
+    "Product Platform Kit — Início — Visão do produto.md"
+  ],
+  "current_state_ref": {
+    "path": ".apos/state/product-state.json",
+    "keys": [
+      "knowledge_checkpoint"
+    ]
+  }
 }
