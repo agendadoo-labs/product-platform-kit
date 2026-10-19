@@ -1,11 +1,11 @@
 ---
 title: APOS — Intents resolvidos
-updated: 2026-10-18
+updated: 2026-10-19
 ---
 
 # Intents resolvidos
 
-> Projeção determinística da revisão 20. “Resolvido” exige consistência entre ProductState e o registro do Intent; validade para reuso ainda depende da revisão, do ambiente e da Evidence.
+> Projeção determinística da revisão 21. “Resolvido” exige consistência entre ProductState e o registro do Intent; validade para reuso ainda depende da revisão, do ambiente e da Evidence.
 
 ## I-PPK-APOS-001
 

@@ -158,6 +158,38 @@
       ],
       "stop_when": "Fonte governante, inventário, dependências, links, evidência e retomada reconciliados.",
       "do_not_infer": "Um nome descritivo não promove histórico ou proposta a regra vigente."
+    },
+    {
+      "id": "projetar-experiencia",
+      "purpose": "Definir tarefa, resultado, estados e evidência antes de construir a interface.",
+      "domains": [
+        "design_system",
+        "product_discovery"
+      ],
+      "read_order": [
+        {
+          "path": ".apos/design/experience-principles.json",
+          "role": "governing"
+        },
+        {
+          "path": ".apos/product/discovery-principles.json",
+          "role": "governing"
+        },
+        {
+          "path": "docs/design/Design — Guia — Interfaces orientadas a tarefas.md",
+          "role": "procedure"
+        },
+        {
+          "path": "docs/product/Produto — Guia — Descoberta e resultados verificáveis.md",
+          "role": "procedure"
+        },
+        {
+          "path": "templates/apos/product/screen-brief.template.json",
+          "role": "template"
+        }
+      ],
+      "stop_when": "Tarefas, estados e critérios do consumidor definidos com lacunas explícitas.",
+      "do_not_infer": "Princípios e checks técnicos não comprovam usabilidade nem conformidade WCAG."
     }
   ]
 }

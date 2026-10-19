@@ -22,3 +22,7 @@ Atalhos de início: [APOS em 30 minutos](docs/APOS-GETTING-STARTED.md), [APOS v0
 ## Começar um projeto com um agente
 
 [Copiar o prompt APOS de início de projeto](<docs/onboarding/APOS — Prompt — Início portátil de projeto.md>). Funciona sem ambiente pessoal pré-configurado; inclui orientação opcional para Obsidian novo ou existente.
+
+### Experiência e descoberta
+
+Candidato reutilizável: [interfaces orientadas a tarefas](docs/design/Design%20—%20Guia%20—%20Interfaces%20orientadas%20a%20tarefas.md), [descoberta e resultados](docs/product/Produto%20—%20Guia%20—%20Descoberta%20e%20resultados%20verificáveis.md) e rota `projetar-experiencia` em `docs/reading-routes.json`. Sem semântica de produtos consumidores.

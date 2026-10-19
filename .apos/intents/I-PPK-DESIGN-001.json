@@ -1,0 +1,43 @@
+{
+  "id": "I-PPK-DESIGN-001",
+  "revision": 1,
+  "problem": "Starter de componentes não define tarefa/resultado por tela nem contrato de consulta e recuperação.",
+  "population": "Mantenedores e consumidores do Kit",
+  "outcome": "Princípios reutilizáveis de design e descoberta, registrados com template e verificação documental.",
+  "status": "candidate",
+  "constraints": [
+    "Não certifica conformidade WCAG por checklist.",
+    "Não impõe marca, framework ou dados de um consumidor a outro.",
+    "Nenhuma melhoria de usabilidade é comprovada apenas por aprovação de testes de código."
+  ],
+  "change_envelope": {
+    "affected_domains": [
+      "design_system",
+      "product_discovery"
+    ],
+    "out_of_scope": [
+      "alterar modelos publicados",
+      "certificar acessibilidade",
+      "impor semântica do consumidor"
+    ]
+  },
+  "ceremony_selection": {
+    "level": "Strict",
+    "authority": "Pedido explícito do usuário em 2026-10-19"
+  },
+  "required_contract_ids": [],
+  "acceptance": [
+    "Fontes primárias e limites registrados",
+    "Domínios recuperáveis no contexto e registro epistêmico",
+    "Template e projeções verificáveis",
+    "Checks documentais e modelo aprovados"
+  ],
+  "rollback": "Reverter somente o commit candidato em nova alteração; versões publicadas preservadas.",
+  "context_request": {
+    "budget_exception": {
+      "max_estimated_input_tokens": 45000,
+      "reason": "Dependências templates e operating_model exigem 42016 tokens estimados. Exceção local para preservar fontes obrigatórias; limite global 30000 não alterado.",
+      "authority": "Maintainer judgment within authorized documentation change"
+    }
+  }
+}

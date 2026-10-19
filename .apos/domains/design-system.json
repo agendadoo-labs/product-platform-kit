@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "design_system",
+  "name": "design_system",
+  "status": "defined_candidate",
+  "owner": "builder",
+  "scope": "Princípios e contratos reutilizáveis; adoção explícita por consumidor",
+  "capabilities": [
+    "task_oriented_screen_contract",
+    "data_query_states",
+    "accessible_interaction",
+    "responsive_verification"
+  ],
+  "authority_limits": [
+    "Não certifica conformidade WCAG por checklist.",
+    "Não impõe marca, framework ou dados de um consumidor a outro.",
+    "Nenhuma melhoria de usabilidade é comprovada apenas por aprovação de testes de código."
+  ],
+  "interfaces": {
+    "kit": "método e templates",
+    "consumer": "público, semântica, metas e evidência real"
+  },
+  "artifacts": [
+    ".apos/design/experience-principles.json"
+  ],
+  "freshness_triggers": [
+    "user_feedback",
+    "task_change",
+    "accessibility_failure"
+  ]
+}

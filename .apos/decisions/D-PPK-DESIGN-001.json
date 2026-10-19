@@ -1,0 +1,9 @@
+{
+  "id": "D-PPK-DESIGN-001",
+  "intent_id": "I-PPK-DESIGN-001",
+  "created_at": "2026-10-19",
+  "decision": "Estender design_system e registrar product_discovery com contrato por tela, estados de dados e evidência de tarefa.",
+  "rationale": "Heurísticas, acessibilidade e descoberta complementam tokens e componentes já existentes.",
+  "authority_source": "Solicitação do usuário para avaliar e atualizar domínios do Kit",
+  "compatibility": "Extensão dos registros operacionais, sem reescrever versões do método ou ontologia de capabilities."
+}

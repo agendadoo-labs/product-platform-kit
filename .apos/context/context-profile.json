@@ -262,10 +262,15 @@
       "match_terms": [
         "design system",
         "component",
-        "interface"
+        "interface",
+        "usabilidade",
+        "design",
+        "tarefa"
       ],
       "sources": [
-        "templates/design-system"
+        "templates/design-system",
+        ".apos/domains/design-system.json",
+        ".apos/design/experience-principles.json"
       ],
       "dependencies": [
         "templates"
@@ -350,6 +355,23 @@
         "docs/knowledge/Conhecimento — Plano — Adoção e maturidade empresarial.md"
       ],
       "dependencies": []
+    },
+    {
+      "id": "product_discovery",
+      "match_terms": [
+        "discovery",
+        "descoberta",
+        "necessidades",
+        "jobs to be done",
+        "resultado de produto"
+      ],
+      "sources": [
+        ".apos/domains/product-discovery.json",
+        ".apos/product/discovery-principles.json"
+      ],
+      "dependencies": [
+        "design_system"
+      ]
     }
   ],
   "source_priority": [
