@@ -307,13 +307,18 @@
     {
       "domain": "design_system",
       "authoritative_sources": [
-        "templates/design-system"
+        "templates/design-system",
+        ".apos/design/experience-principles.json",
+        ".apos/domains/design-system.json"
       ],
       "methods": [
-        "component_inventory"
+        "component_inventory",
+        "heuristic_review",
+        "responsive_task_verification"
       ],
       "known_uncertainties": [
-        "consumer_brand"
+        "consumer_brand",
+        "consumer_usability_until_observed"
       ],
       "relationships": [
         "templates"
@@ -449,6 +454,28 @@
         "dependency_revision",
         "permission_change",
         "verifier_change"
+      ]
+    },
+    {
+      "domain": "product_discovery",
+      "authoritative_sources": [
+        ".apos/product/discovery-principles.json",
+        ".apos/domains/product-discovery.json"
+      ],
+      "methods": [
+        "needs_research",
+        "task_observation"
+      ],
+      "known_uncertainties": [
+        "consumer_audience_and_targets"
+      ],
+      "relationships": [
+        "design_system"
+      ],
+      "owner": "builder",
+      "refresh_triggers": [
+        "new_user_evidence",
+        "outcome_change"
       ]
     }
   ],

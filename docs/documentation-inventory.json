@@ -12,7 +12,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "a3f118b1b58d1b7956372d502fa10ad1981b1880a995cab484f3c05d7cd79254"
+      "sha256": "9be2ff784491d54a7dfb587f9a411d9e58ec23d666168d3da634084c7a76c61d"
     },
     {
       "path": ".apos/README.md",
@@ -81,7 +81,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "57ce36cd4822c5720104a6b0fd7ffa5aec419a9ce0a5e032bc2c35324e7adc2e"
+      "sha256": "6fbffa33df74385fa1fa74c0e474b045eb2d175fbff1b86548217ddc2b70f369"
     },
     {
       "path": "docs/AGENT-MODEL-ROUTING.md",
@@ -117,7 +117,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "48195870b8fc42b01322942cb888628bec3f034739afaa11683b805d8b18afb6"
+      "sha256": "e597caf30570f52f59658ea6663b4225b1ab8fd7e18df378bcdb7de90de6a3aa"
     },
     {
       "path": "Product Platform Kit — Início — Visão do produto.md",
@@ -752,7 +752,7 @@
       "read_when": [
         "Consultar a fonte conforme seu assunto e revisão"
       ],
-      "sha256": "8612360feb1cd26a66f3a91003db6dd09ba876b6b947f75c8e70111b98e44ef5"
+      "sha256": "2279486babecbbc2ab4e47ca0e919ebd8e1de0ce4ee8c246f432863a3a9ecdf5"
     },
     {
       "path": "templates/operations/disaster-recovery-plan.example.md",
@@ -1022,6 +1022,30 @@
       "document_role": "entrypoint",
       "graph_scope": "vigente",
       "path_policy": "descriptive_canonical"
+    },
+    {
+      "path": "docs/design/Design — Guia — Interfaces orientadas a tarefas.md",
+      "classification": "manual_document",
+      "id": "DOC-PPK-DESIGN-001",
+      "display_name": "Design — Guia — Interfaces orientadas a tarefas",
+      "purpose": "Orientar interfaces em que cada tela permite uma tarefa clara e produz resultado verificável.",
+      "read_when": [
+        "Projetar ou revisar jornadas e interfaces"
+      ],
+      "document_role": "procedure",
+      "path_policy": "generated_from_operational_source"
+    },
+    {
+      "path": "docs/product/Produto — Guia — Descoberta e resultados verificáveis.md",
+      "classification": "manual_document",
+      "id": "DOC-PPK-DISCOVERY-001",
+      "display_name": "Produto — Guia — Descoberta e resultados verificáveis",
+      "purpose": "Ligar necessidades, hipóteses e evidência de uso aos Intents do produto.",
+      "read_when": [
+        "Projetar ou revisar jornadas e interfaces"
+      ],
+      "document_role": "procedure",
+      "path_policy": "generated_from_operational_source"
     }
   ],
   "renames": {

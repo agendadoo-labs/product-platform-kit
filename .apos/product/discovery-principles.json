@@ -1,0 +1,46 @@
+{
+  "id": "PD-PPK-001",
+  "revision": 1,
+  "status": "candidate",
+  "purpose": "Ligar necessidades, hipóteses e evidência de uso aos Intents do produto.",
+  "cycle": [
+    {
+      "stage": "Descobrir",
+      "output": "Situação observada, público, tarefa e obstáculos; classificar relato, observação e hipótese."
+    },
+    {
+      "stage": "Definir",
+      "output": "Intent com resultado e critérios; definir o que sucesso significa para a pessoa, antes de medir cliques."
+    },
+    {
+      "stage": "Desenvolver",
+      "output": "Alternativas proporcionais ao risco, protótipo e contrato de cada tela; registrar Decision e tradeoffs."
+    },
+    {
+      "stage": "Verificar",
+      "output": "Evidence técnica e de uso separadas; medir conclusão, compreensão e erros com recorte e revisão."
+    },
+    {
+      "stage": "Aprender",
+      "output": "Atualizar ProductState apenas no alcance da evidência, preservar hipótese refutada e próxima experiência."
+    }
+  ],
+  "measures": [
+    "Conclusão da tarefa sem assistência",
+    "Compreensão correta do resultado e dos seus limites",
+    "Erros críticos e possibilidade de recuperação",
+    "Tempo de tarefa como diagnóstico, nunca objetivo isolado"
+  ],
+  "research_contract": [
+    "Recrutar pessoas do público e incluir necessidades de acessibilidade pertinentes.",
+    "Definir tarefas realistas sem antecipar os cliques; preservar consentimento e minimizar dados pessoais.",
+    "Definir antes do teste critérios, método, amostra e decisão; não impor um tamanho universal de amostra.",
+    "Não generalizar um teste pequeno; feedback do solicitante e teste automatizado não são validação independente."
+  ],
+  "sources": [
+    "gov-needs",
+    "gov-simple",
+    "diamond"
+  ],
+  "source_registry": ".apos/design/experience-principles.json"
+}

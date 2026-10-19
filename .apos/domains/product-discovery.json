@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "id": "product_discovery",
+  "name": "product_discovery",
+  "status": "defined_candidate",
+  "owner": "builder",
+  "scope": "Princípios e contratos reutilizáveis; adoção explícita por consumidor",
+  "capabilities": [
+    "needs_and_hypotheses",
+    "outcome_definition",
+    "usability_evidence"
+  ],
+  "authority_limits": [
+    "Não certifica conformidade WCAG por checklist.",
+    "Não impõe marca, framework ou dados de um consumidor a outro.",
+    "Nenhuma melhoria de usabilidade é comprovada apenas por aprovação de testes de código."
+  ],
+  "interfaces": {
+    "kit": "método e templates",
+    "consumer": "público, semântica, metas e evidência real"
+  },
+  "artifacts": [
+    ".apos/product/discovery-principles.json"
+  ],
+  "freshness_triggers": [
+    "user_feedback",
+    "task_change",
+    "accessibility_failure"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "UX-PPK-001",
+  "revision": 1,
+  "status": "candidate",
+  "purpose": "Orientar interfaces em que cada tela permite uma tarefa clara e produz resultado verificável.",
+  "authority": "explicit_consumer_adoption_required",
+  "principles": [
+    {
+      "id": "UX-01",
+      "rule": "Definir situação, pessoa, tarefa, resultado e ação principal antes de escolher componentes."
+    },
+    {
+      "id": "UX-02",
+      "rule": "Exibir o objeto da tarefa primeiro; contexto secundário deve ser progressivo e recuperável."
+    },
+    {
+      "id": "UX-03",
+      "rule": "Expor filtros aplicados, unidade, período, cobertura e origem junto do resultado."
+    },
+    {
+      "id": "UX-04",
+      "rule": "Distinguir carregando, resultado, vazio, dado ausente, erro e insuficiência; cada estado indica próximo passo."
+    },
+    {
+      "id": "UX-05",
+      "rule": "Preservar entrada e filtros no erro; permitir nova tentativa sem reiniciar a jornada."
+    },
+    {
+      "id": "UX-06",
+      "rule": "Não cortar preços, quantidades e valores essenciais. Detalhes recuperam textos abreviados e evidências."
+    },
+    {
+      "id": "UX-07",
+      "rule": "Tabelas pesquisáveis/paginadas têm escopo explícito; exportação declara página ou conjunto, sem truncamento silencioso."
+    },
+    {
+      "id": "UX-08",
+      "rule": "Teclado, foco visível, nomes acessíveis e tabela alternativa a gráficos fazem parte da implementação."
+    },
+    {
+      "id": "UX-09",
+      "rule": "Componentes usam tokens compartilhados de tipografia, altura, padding e raio. Ações do mesmo grupo alinham altura e estado; em pouco espaço, empilhar antes de comprimir ou quebrar rótulos de forma desigual."
+    }
+  ],
+  "required_screen_fields": [
+    "id",
+    "audience",
+    "situation",
+    "job",
+    "outcome",
+    "primary_action",
+    "input",
+    "applied_scope",
+    "states",
+    "evidence",
+    "acceptance",
+    "rollback"
+  ],
+  "states": [
+    "loading",
+    "success",
+    "empty",
+    "missing",
+    "error",
+    "insufficient"
+  ],
+  "verification": [
+    "Verificar 320, 390, 768 e 1280 CSS px, valores longos e textos extensos; página sem overflow horizontal; tabela com região rolável nomeada e acesso por teclado.",
+    "Exercitar busca, detalhe, paginação, troca de filtros, erro e recuperação; comparar resultado com fonte.",
+    "Verificar foco na abertura e fechamento de modal, escape, contraste e alvos; inspeção parcial não certifica WCAG.",
+    "Medir conclusão e compreensão da tarefa com pessoas do público; registrar amostra, ajuda recebida, erros, limitações e revisão testada.",
+    "Comparar dimensões dos controles equivalentes em cada breakpoint e com zoom; justificar variantes semânticas em vez de ajustes por tela."
+  ],
+  "authority_limits": [
+    "Não certifica conformidade WCAG por checklist.",
+    "Não impõe marca, framework ou dados de um consumidor a outro.",
+    "Nenhuma melhoria de usabilidade é comprovada apenas por aprovação de testes de código."
+  ],
+  "sources": [
+    {
+      "id": "nielsen",
+      "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+      "use": "Estado visível, linguagem familiar, controle, consistência, prevenção e recuperação de erros; revisão heurística não substitui pesquisa."
+    },
+    {
+      "id": "gov-needs",
+      "url": "https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs",
+      "use": "Necessidade deve partir de pesquisa; separar hipótese de necessidade observada."
+    },
+    {
+      "id": "gov-simple",
+      "url": "https://www.gov.uk/service-manual/service-standard/point-4-make-the-service-simple-to-use",
+      "use": "Concluir a tarefa com pouca ajuda e testar o serviço com pessoas."
+    },
+    {
+      "id": "wcag-reflow",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html",
+      "use": "Verificar reflow a 320 CSS px; tabelas bidimensionais podem ter rolagem própria sem transbordar a página."
+    },
+    {
+      "id": "wcag-target",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html",
+      "use": "WCAG 2.2 AA define 24 CSS px com exceções; 44 px é o baseline de componentes do Kit, não o mínimo AA."
+    },
+    {
+      "id": "wcag-contrast",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "use": "Verificar contraste 4,5:1 para texto comum e 3:1 para texto grande."
+    },
+    {
+      "id": "diamond",
+      "url": "https://www.designcouncil.org.uk/resources/the-double-diamond/",
+      "use": "Alternar descoberta/definição e desenvolvimento/entrega; voltar às hipóteses quando a evidência contrariar a solução."
+    }
+  ],
+  "reviewed_at": "2026-10-19"
+}

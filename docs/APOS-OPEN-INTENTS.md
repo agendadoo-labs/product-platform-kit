@@ -1,11 +1,11 @@
 ---
 title: APOS — Intents abertos
-updated: 2026-10-18
+updated: 2026-10-19
 ---
 
 # Intents abertos
 
-> Projeção da revisão 20 do ProductState. Não editar manualmente.
+> Projeção da revisão 21 do ProductState. Não editar manualmente.
 
 | Intent | Estado | Cerimônia | Próximo checkpoint |
 |---|---|---|---|
@@ -15,6 +15,7 @@ updated: 2026-10-18
 | `I-PPK-APOS-010` | active | standard | Não definido. |
 | `I-PPK-SKILLS-001` | active | standard | Não definido. |
 | `I-PPK-SEO-001` | active | standard | Não definido. |
+| `I-PPK-DESIGN-001` | candidate | Strict | Não definido. |
 
 ## I-PPK-KNOWLEDGE-001
 
@@ -87,6 +88,18 @@ updated: 2026-10-18
 - **Última execução:** `AR-PPK-SEO-001` — succeeded.
 - **Última evidência:** `E-PPK-SEO-001` — passou.
 - **Incertezas:** Downstream adoption not measured.
+
+## I-PPK-DESIGN-001
+
+- **Estado do Intent:** candidate.
+- **Estado operacional:** sem workstream.
+- **Problema:** Starter de componentes não define tarefa/resultado por tela nem contrato de consulta e recuperação.
+- **Resultado esperado:** Princípios reutilizáveis de design e descoberta, registrados com template e verificação documental.
+- **Próximo checkpoint:** Não definido.
+- **Decisões:** `D-PPK-DESIGN-001`.
+- **Última execução:** nenhuma.
+- **Última evidência:** `E-PPK-DESIGN-001` — passou.
+- **Incertezas:** nenhuma registrada.
 
 ## Memória por Intent
 

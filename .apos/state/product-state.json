@@ -1,6 +1,6 @@
 {
   "id": "PS-PRODUCT-PLATFORM-KIT",
-  "revision": 20,
+  "revision": 21,
   "active_operating_model": "product-platform-kit-apos-2.3.0",
   "satisfied_intents": [
     "I-PPK-APOS-001",
@@ -20,7 +20,8 @@
     "I-PPK-APOS-009",
     "I-PPK-APOS-010",
     "I-PPK-SKILLS-001",
-    "I-PPK-SEO-001"
+    "I-PPK-SEO-001",
+    "I-PPK-DESIGN-001"
   ],
   "evidence_ids": [
     "E-PPK-APOS-001",
@@ -45,7 +46,8 @@
     "E-PPK-DOC-017",
     "E-PPK-KG-018",
     "E-PPK-START-001",
-    "E-PPK-KG-TECH-001"
+    "E-PPK-KG-TECH-001",
+    "E-PPK-DESIGN-001"
   ],
   "data_map": {
     "id": "DM-PPK-001",
@@ -72,9 +74,10 @@
     "llm_engineering": "Domínio definido com política, template, contexto e registro epistêmico; não altera enforcement nem promove modelos.",
     "cp017_documentation": "CP-016 additions classified with descriptive canonical names, purpose, reading triggers and explicit graph_scope. Historical records and skill bundles remain intact; broader product outcomes remain separate.",
     "knowledge_governance": "Technical controls and technical consumer adoption implemented; see knowledge_checkpoint for current checkpoint and next action. Independent acceptance remains pending.",
-    "portable_project_start": "Single reusable project-start prompt with optional Obsidian setup; no personal vault required."
+    "portable_project_start": "Single reusable project-start prompt with optional Obsidian setup; no personal vault required.",
+    "experience_design": "UX-PPK-001 e PD-PPK-001 candidatos: tarefas, estados e pesquisa; sem validação de usabilidade dos consumidores."
   },
-  "updated_at": "2026-10-18",
+  "updated_at": "2026-10-19",
   "documentation_organization": {
     "intent_id": "I-PPK-DOC-ORG-001",
     "inventory": "docs/documentation-inventory.json",

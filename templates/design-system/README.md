@@ -59,3 +59,7 @@ Fundação visual neutra para novos produtos. Ela não replica marca, fontes ou 
 ## Limite entre kit e produto
 
 O kit fornece estrutura e contratos. Logo, ícones proprietários, ilustrações, voz, paleta definitiva, fontes licenciadas e componentes ligados ao domínio ficam no repositório do produto.
+
+## Tarefa, resultado e consistência
+
+Antes de compor uma tela, use o [guia de experiência](../../docs/design/Design%20—%20Guia%20—%20Interfaces%20orientadas%20a%20tarefas.md) e o [template de contrato por tela](../apos/product/screen-brief.template.json). Componentes equivalentes compartilham tokens de tamanho, tipografia, espaçamento, estados e foco; grupos de ações preservam alinhamento e se reorganizam em telas estreitas. Os princípios são candidatos reutilizáveis, com adoção explícita no consumidor.

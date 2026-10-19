@@ -1,0 +1,40 @@
+{
+  "id": "REPLACE_WITH_CONSUMER_ID",
+  "status": "template_not_adopted",
+  "audience": null,
+  "situation": null,
+  "job": null,
+  "outcome": null,
+  "primary_action": null,
+  "input": [],
+  "applied_scope": null,
+  "states": {
+    "loading": {
+      "message": null,
+      "next_action": null
+    },
+    "success": {
+      "message": null,
+      "next_action": null
+    },
+    "empty": {
+      "message": null,
+      "next_action": null
+    },
+    "missing": {
+      "message": null,
+      "next_action": null
+    },
+    "error": {
+      "message": null,
+      "next_action": null
+    },
+    "insufficient": {
+      "message": null,
+      "next_action": null
+    }
+  },
+  "evidence": [],
+  "acceptance": [],
+  "rollback": null
+}

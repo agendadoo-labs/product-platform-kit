@@ -1,0 +1,24 @@
+{
+  "id": "E-PPK-DESIGN-001",
+  "intent_id": "I-PPK-DESIGN-001",
+  "created_at": "2026-10-19",
+  "passed": true,
+  "scope": "Documentary candidate; no consumer usability claim",
+  "checks": [
+    "Seven reading routes resolve",
+    "Repository and active operating model checks pass",
+    "Primary sources reviewed; generic principles only"
+  ],
+  "artifacts": [
+    ".apos/design/experience-principles.json",
+    ".apos/product/discovery-principles.json",
+    "templates/apos/product/screen-brief.template.json",
+    "docs/design/Design — Guia — Interfaces orientadas a tarefas.md",
+    "docs/product/Produto — Guia — Descoberta e resultados verificáveis.md"
+  ],
+  "limitations": [
+    "Candidate branch; not integrated into main",
+    "Consumer adoption and independent usability evidence required"
+  ],
+  "rollback": "Revert candidate commit; published operating model versions unchanged."
+}
