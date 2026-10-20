@@ -1,0 +1,192 @@
+{
+  "id": "CM-I-PPK-ANALYTICS-001",
+  "protocol": "APOS v0.2",
+  "intent_id": "I-PPK-ANALYTICS-001",
+  "domains": [
+    "session_memory"
+  ],
+  "sources": [
+    {
+      "path": ".apos/active-model.json",
+      "sha256": "37e2d7d71695af153c05560286d4acbd7622f4a0d6e15f0d4203f67ad2d9f0cd",
+      "bytes": 258
+    },
+    {
+      "path": ".apos/context/memory-catalog.json",
+      "sha256": "da4df398bb541b68cc00dadbd33c81249d3fda1f1d34b2aa0d06dc3595f5414e",
+      "bytes": 4388
+    },
+    {
+      "path": ".apos/coordination/workstreams.json",
+      "sha256": "547d59e12b4731372a424da6d689f6ab256cabf7f1cb505d7e03254c5d684009",
+      "bytes": 1274
+    },
+    {
+      "path": ".apos/decisions/D-PPK-ANALYTICS-001.json",
+      "sha256": "8bb92437776c302809e30e51dfd02138792b281e8a1b185961ca515f429249e4",
+      "bytes": 393
+    },
+    {
+      "path": ".apos/intents/I-PPK-ANALYTICS-001.json",
+      "sha256": "cf2ee800dbe240fc953f3f4cd580f4e7097d0e53bfe6af30a844bc015f1c10c5",
+      "bytes": 2005
+    },
+    {
+      "path": ".apos/kernel/kernel.json",
+      "sha256": "2849ddf7fce25dc84e87b0f1ae13209a458a80cbde0d5e23a75c15491e86abe3",
+      "bytes": 1475
+    },
+    {
+      "path": ".apos/state/product-state.json",
+      "sha256": "95c71d3615c741890a64f736517b1c3443267cd3c0e112f8a7be2feadb0c42ad",
+      "bytes": 4994
+    },
+    {
+      "path": "docs/apos/KNOWLEDGE-PROJECTIONS.md",
+      "sha256": "47b0c26030bb9574878568bb9fef3660b805265a24e3b26df65a532bbd514fd6",
+      "bytes": 5736
+    },
+    {
+      "path": "docs/apos/Product Platform Kit — Guia — Recuperação progressiva de memória.md",
+      "sha256": "e2eee032f541aafb2e608ae052c7bf0046224b12d66fc11e5f12997ceabfd907",
+      "bytes": 4284
+    },
+    {
+      "path": "docs/apos/SESSION-BOOTSTRAP-AND-MULTI-TEAM.md",
+      "sha256": "afd4047db56a9ba4deb8bfd3408f3e01b75ceadb9f796b7624f4c121edbc72d5",
+      "bytes": 4001
+    },
+    {
+      "path": "scripts/bootstrap-apos-session.mjs",
+      "sha256": "73dbdb3f5aa71616a0785720c95c83803810f02efb9145999493455b9c3cb84b",
+      "bytes": 5696
+    },
+    {
+      "path": "scripts/tests/apos-session-bootstrap.test.mjs",
+      "sha256": "992891d316e9a21c551b598ea90a452b6a26a7cd55929bab1d5a1a4ab15e8b81",
+      "bytes": 3143
+    },
+    {
+      "path": "templates/apos/.apos/coordination/workstreams.json",
+      "sha256": "41aae196410dc44884cc05954125ef6fc356f1d23f9366e0c5021967fe496b0a",
+      "bytes": 319
+    },
+    {
+      "path": "templates/apos/AGENTS.md",
+      "sha256": "58607a56d90780bdfcb60c3402c8c00905c6eed98f488fe4fd8dbe0249c497f9",
+      "bytes": 3282
+    },
+    {
+      "path": "templates/apos/APOS-AGENT-BOOTSTRAP.md",
+      "sha256": "79c3547887d52a9d17033e61957a3c7bf7459aac98e7194409c571aa3d9f04f2",
+      "bytes": 3566
+    },
+    {
+      "path": "templates/apos/README.md",
+      "sha256": "52424765bf98d9f6bda1983d98fdb375529c2b89e30deec5e4ed8d2c64ae9300",
+      "bytes": 6684
+    },
+    {
+      "path": "templates/apos/scripts/bootstrap-apos-session.mjs",
+      "sha256": "5b27e0da4ec0539709734ae45f69c1995f40b796cb4e0d77d969fc241ca4de7a",
+      "bytes": 5409
+    },
+    {
+      "path": "templates/knowledge-projection/manifest.example.json",
+      "sha256": "979ca817e2fe95e536660d816e7e228f24d2d254d234df6e9f11a1f07c625668",
+      "bytes": 857
+    }
+  ],
+  "retrieval": {
+    "historical_context": "excluded_from_baseline",
+    "historical_path_markers": [
+      ".apos/archive/",
+      "/archive/",
+      "/history/",
+      "/incidents/",
+      "docs/agent-runs/",
+      "docs/checkpoints/"
+    ],
+    "layered": {
+      "version": "layered-memory-1",
+      "method": "metadata_lexical_baseline",
+      "as_of": "2026-10-20",
+      "query": "",
+      "cold_trigger": null,
+      "trigger_reason": null,
+      "selected": [
+        {
+          "id": "memory-design",
+          "path": "docs/apos/Product Platform Kit — Guia — Recuperação progressiva de memória.md",
+          "tier": "hot",
+          "authority": "current",
+          "sha256": "e2eee032f541aafb2e608ae052c7bf0046224b12d66fc11e5f12997ceabfd907",
+          "bytes": 4284,
+          "matched_terms": [],
+          "reason": "hot_baseline",
+          "valid_from": null,
+          "valid_until": null,
+          "superseded_by": null
+        }
+      ],
+      "deferred": [
+        {
+          "id": "knowledge-governance-0",
+          "path": "docs/knowledge/Conhecimento — Início — Gestão de conhecimento e especificações.md",
+          "tier": "warm",
+          "reason": "other_domain"
+        },
+        {
+          "id": "knowledge-governance-1",
+          "path": "docs/knowledge/Conhecimento — Contrato — Ciclo de vida e autoridade.md",
+          "tier": "warm",
+          "reason": "other_domain"
+        },
+        {
+          "id": "knowledge-governance-2",
+          "path": "docs/knowledge/Conhecimento — Contrato — Especificações e evidências.md",
+          "tier": "warm",
+          "reason": "other_domain"
+        },
+        {
+          "id": "knowledge-governance-3",
+          "path": "docs/knowledge/Conhecimento — Guia — Validação e retomada.md",
+          "tier": "warm",
+          "reason": "other_domain"
+        },
+        {
+          "id": "knowledge-governance-4",
+          "path": "docs/knowledge/Conhecimento — Plano — Adoção e maturidade empresarial.md",
+          "tier": "warm",
+          "reason": "other_domain"
+        },
+        {
+          "id": "previous-lifecycle-decision",
+          "path": ".apos/decisions/D-PPK-APOS-009.json",
+          "tier": "cold",
+          "reason": "other_domain"
+        },
+        {
+          "id": "retrieval-research",
+          "path": "docs/apos/RETRIEVAL-REVIEW-2026-10-01.md",
+          "tier": "warm",
+          "reason": "no_lexical_match"
+        }
+      ],
+      "issues": [],
+      "assessment": "retrieval_complete_not_semantic_sufficiency",
+      "fingerprint": "19cab119e5087da0b0d9352ede99c19b57e08de4a11396779d8c9f60d0d64903"
+    }
+  },
+  "measurement": {
+    "method": "conservative_utf8_bytes_divided_by_4",
+    "total_bytes": 57764,
+    "estimated_input_tokens": 14441,
+    "exact_provider_tokens": "unavailable_without_model_request"
+  },
+  "budget": {
+    "max_estimated_input_tokens": 30000
+  },
+  "status": "within_budget",
+  "created_at": "2026-10-20"
+}

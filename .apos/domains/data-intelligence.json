@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "id": "data_intelligence",
+  "status": "candidate_reference",
+  "owner": "builder",
+  "scope": "Existing capability domain, extended with external data consumption",
+  "contracts": [
+    "C-PPK-SCOPE-001",
+    "C-PPK-EVID-001",
+    "C-PPK-REV-001"
+  ],
+  "artifacts": [
+    ".apos/analytics/portable-skill.json",
+    "templates/apos/skills/analyze-governed-data/SKILL.md",
+    "templates/analytics"
+  ],
+  "required_controls": [
+    "source license and owner",
+    "classification and minimization",
+    "timeouts and retry budget with jitter and Retry-After",
+    "rate limit and concurrency",
+    "idempotent ingestion and deduplication",
+    "immutable raw snapshots and SHA-256",
+    "schema compatibility and quarantine",
+    "pagination completeness and reconciliation",
+    "atomic promotion and rollback",
+    "reference period distinct from retrieval time",
+    "late revisions and bounded backfill",
+    "run/dataset lineage and transformation version",
+    "freshness quality SLOs and observable failures",
+    "retention and restore verification",
+    "Versioned semantic context and host-neutral typed plan",
+    "Server-side query compilation and read-only bounded execution",
+    "Query and transformation evidence with immutable snapshots",
+    "Grain and cardinality reconciliation before aggregation",
+    "Independent numeric oracle and uncertainty-aware interpretation"
+  ],
+  "maturity_limits": [
+    "Local single JSON-resource reference, no distributed guarantees",
+    "No automatic pagination, scheduling or complete connector certification",
+    "Custom lineage manifest is not certified OpenLineage",
+    "Outlier is a review candidate, not fraud evidence"
+  ],
+  "interfaces": {
+    "kit": "contracts and reusable skills",
+    "worker": "explicit pinned adoption and execution",
+    "consumer": "source configuration, authorized data, frequency and semantics"
+  },
+  "prior_candidate_reference": {
+    "pr": 9,
+    "commit": "af3dfd22fe31d8f27442d7c3dc05c49b79082a26",
+    "adoption": "Controls reconciled as candidate reference; ingestion implementation not included"
+  }
+}

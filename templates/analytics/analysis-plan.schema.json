@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Governed analysis plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "context_hash",
+    "operation",
+    "metric",
+    "filters",
+    "group_by"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0"
+    },
+    "context_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "operation": {
+      "enum": [
+        "compare",
+        "trend"
+      ]
+    },
+    "metric": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "filters": {
+      "type": "object",
+      "maxProperties": 20
+    },
+    "group_by": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true,
+      "maxItems": 5
+    }
+  }
+}
