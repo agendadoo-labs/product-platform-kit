@@ -1,0 +1,76 @@
+{
+  "id": "I-PPK-ANALYTICS-001",
+  "revision": 1,
+  "status": "candidate",
+  "problem": "Analytical procedures need portable contracts and provider-owned semantics",
+  "population": "Clients and maintainers of governed analytical providers",
+  "outcome": "Git-versioned neutral skill and schemas, independently loadable without a proprietary host",
+  "capabilities": [
+    "recover-context",
+    "design-reusable-contract",
+    "change-package",
+    "verify-package",
+    "publish-authorized-version"
+  ],
+  "required_contract_ids": [
+    "C-PPK-SCOPE-001",
+    "C-PPK-EVID-001",
+    "C-PPK-REV-001"
+  ],
+  "classification": {
+    "impact": "low",
+    "uncertainty": "low",
+    "reversibility": "reversible",
+    "environment": "repository_documentation"
+  },
+  "ceremony_selection": {
+    "level": "standard",
+    "triggers": [
+      "published_documentation"
+    ],
+    "downgrade_allowed": false
+  },
+  "change_envelope": {
+    "delta": [
+      "Portable analytical skill",
+      "Context/plan/evidence schemas",
+      "Data-domain analytical controls"
+    ],
+    "affected_surfaces": [
+      "templates/apos/skills/analyze-governed-data",
+      "templates/analytics",
+      ".apos"
+    ],
+    "affected_domains": [
+      "session_memory"
+    ],
+    "invariants": [
+      "No consumer names or data",
+      "No arbitrary SQL from model",
+      "No silent context drift"
+    ],
+    "out_of_scope": [
+      "Provider runtime",
+      "Main merge",
+      "Paid services"
+    ],
+    "compatibility": [
+      "Guidance explains existing catalogs and the consumer adapter index"
+    ],
+    "regression_surface": [
+      "documentation links",
+      "APOS projections"
+    ],
+    "rollback": "Revert candidate commit preserving consumer locks",
+    "component_reuse_assessment": {
+      "decision": "not_applicable",
+      "components_reviewed": [],
+      "rationale": "Documentation only",
+      "reuse_surfaces": []
+    }
+  },
+  "source": {
+    "type": "builder_conversation",
+    "date": "2026-09-15"
+  }
+}

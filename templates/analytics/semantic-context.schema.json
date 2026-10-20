@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Semantic context envelope",
+  "type": "object",
+  "required": [
+    "version",
+    "id",
+    "context_hash",
+    "metrics",
+    "dimensions",
+    "filters",
+    "limitations"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string"
+    },
+    "context_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "metrics": {
+      "type": "object",
+      "minProperties": 1
+    },
+    "dimensions": {
+      "type": "array"
+    },
+    "filters": {
+      "type": "object"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

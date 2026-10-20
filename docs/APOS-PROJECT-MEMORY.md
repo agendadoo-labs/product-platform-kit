@@ -7,10 +7,10 @@ updated: 2026-10-18
 
 > Projeção determinística. Fontes operacionais: `.apos/`. Não editar manualmente.
 
-- ProductState: `PS-PRODUCT-PLATFORM-KIT`, revisão 20.
+- ProductState: `PS-PRODUCT-PLATFORM-KIT`, revisão 21.
 - Modelo ativo: `product-platform-kit-apos-2.3.0`.
 - Intents satisfeitos: 10.
-- Intents abertos: 6.
+- Intents abertos: 7.
 - Mapa de dados: `DM-PPK-001`, revisão 6.
 
 ## Trabalho aberto
@@ -23,9 +23,11 @@ updated: 2026-10-18
 | `I-PPK-APOS-010` | active | standard | Não definido. |
 | `I-PPK-SKILLS-001` | active | standard | Não definido. |
 | `I-PPK-SEO-001` | active | standard | Não definido. |
+| `I-PPK-ANALYTICS-001` | candidate | standard | Não definido. |
 
 ## Decisões recentes
 
+- **2026-10-20 · D-PPK-ANALYTICS-001:** Place neutral skill under templates/apos/skills per existing registration guide; keep host and domain semantics outside package
 - **2026-10-18 · D-PPK-DOC-017:** Extend descriptive document taxonomy to CP-016 additions; preserve dated observations and locked skill bundles, add navigable historical entries and current metadata. Compatibility redirects retained; current retrieval catalog points to complete canonical sources.
 - **2026-10-18 · D-PPK-DOC-ORG-001:** Aplicar taxonomia em lotes limitados, conservar caminhos técnicos necessários e metadados externos para referências imutáveis.
 - **2026-10-18 · D-PPK-INTEGRATION-016:** Reconcile layered-memory, skill guide and SEO contract on current main; defer stale and temporally invalid current sources; retain historical provenance.
@@ -35,7 +37,6 @@ updated: 2026-10-18
 - **2026-10-17 · D-PPK-KNOWLEDGE-001:** Treat a knowledge vault as a provenance-preserving projection of published Git state, with separate local deltas and historical checkpoints.
 - **2026-10-17 · D-PPK-KNOWLEDGE-002:** Consolidar manutenção documental e implementação em guia portátil de entrada, ligado ao README, AGENTS e bootstrap APOS.
 - **2026-10-17 · D-PPK-LLM-001:** Registrar llm_engineering como domínio transversal; separar contrato reutilizável, runtime compartilhado e oracle de negócio.
-- **2026-10-01 · D-PPK-APOS-009:** Use active-only retrieval by default. Runbooks are replace-in-place projections of the latest validated procedure; incidents, cases, checkpoints and superseded sources are preserved in historical paths and loaded only through explicit Intent opt-in.
 
 ## Fontes para aprofundar
 
