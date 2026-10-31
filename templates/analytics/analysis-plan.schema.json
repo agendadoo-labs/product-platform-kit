@@ -22,7 +22,8 @@
     "operation": {
       "enum": [
         "compare",
-        "trend"
+        "trend",
+        "search"
       ]
     },
     "metric": {

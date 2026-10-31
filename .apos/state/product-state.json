@@ -1,6 +1,6 @@
 {
   "id": "PS-PRODUCT-PLATFORM-KIT",
-  "revision": 21,
+  "revision": 24,
   "active_operating_model": "product-platform-kit-apos-2.3.0",
   "satisfied_intents": [
     "I-PPK-APOS-001",
@@ -47,11 +47,12 @@
     "E-PPK-KG-018",
     "E-PPK-START-001",
     "E-PPK-KG-TECH-001",
-    "E-PPK-ANALYTICS-001"
+    "E-PPK-ANALYTICS-001",
+    "E-PPK-ANALYTICS-004"
   ],
   "data_map": {
     "id": "DM-PPK-001",
-    "revision": 6,
+    "revision": 7,
     "path": ".apos/data/data-map.json",
     "human_projection": "docs/apos/DATA-MAP-AND-HUMAN-PROJECTIONS.md"
   },
@@ -75,9 +76,9 @@
     "cp017_documentation": "CP-016 additions classified with descriptive canonical names, purpose, reading triggers and explicit graph_scope. Historical records and skill bundles remain intact; broader product outcomes remain separate.",
     "knowledge_governance": "Technical controls and technical consumer adoption implemented; see knowledge_checkpoint for current checkpoint and next action. Independent acceptance remains pending.",
     "portable_project_start": "Single reusable project-start prompt with optional Obsidian setup; no personal vault required.",
-    "portable_analytics": "Candidate neutral skill and envelopes; providers own semantics and enforce execution"
+    "portable_analytics": "Local recovered skill and reconstructed schemas verified; generic runtime admission, peer population and interpretation controls; provider acceptance separate"
   },
-  "updated_at": "2026-10-18",
+  "updated_at": "2026-10-30",
   "documentation_organization": {
     "intent_id": "I-PPK-DOC-ORG-001",
     "inventory": "docs/documentation-inventory.json",
@@ -89,5 +90,14 @@
     "checkpoint": "CP-KG-TECH-001",
     "status": "technical_controls_implemented_independent_acceptance_pending",
     "next_action": "Complete CP-020 independent transfer; apply v2 in a consumer with recorded before/after measurements."
+  },
+  "recovery_lineage": {
+    "base_revision": 21,
+    "unavailable_recorded_local_revisions": [
+      22,
+      23
+    ],
+    "new_revision": 24,
+    "reason": "Reserve historical revision identities; reconstruction does not assert recovery of unavailable states"
   }
 }

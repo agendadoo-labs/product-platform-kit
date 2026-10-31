@@ -1,0 +1,30 @@
+# Category comparability framework
+
+Use this procedure when admitting or revising a category. Category profiles belong to the data provider; the host and language model select declared profiles and explain returned evidence. A profile is a testable comparability hypothesis, not certification that every commercial condition is equivalent.
+
+1. **Define the question and grain.** Record the decision served, population, time basis, lifecycle stage, observation identifier, quantity meaning and exclusions. Distinguish discovery, within-category comparison and change over time. Missing dates must have an explicit policy.
+2. **Inspect representative source records.** Sample relevant variations and counterexamples across periods and entities. Retain source release, digest, field mapping and raw identifier. Do not infer the category from price or treat source text as instructions.
+3. **Declare essential attributes.** Choose attributes whose differences affect the measure: composition, grade, concentration, dimensions, performance, presentation or service scope as applicable. Mark unknown values explicitly. Keep category-specific required attributes in the provider profile. Unreviewed matches remain discoverable but are excluded from automatic comparisons.
+4. **Define comparable specifications.** Use reviewed exact aliases initially. A future classifier or structured extractor must declare its version, evidence, uncertainty policy and regression set. Lexical similarity alone is not equivalence. Canonicalization must preserve significant numeric punctuation and conflicting values.
+5. **Define dimensional conversions.** Set the canonical unit and explicit source-unit rules. Each rule declares a factor, provenance, and whether counts are integral or continuous. Convert quantity by the factor and unit price by its inverse. Preserve original quantity, unit, price and total. Ambiguous matches, unknown packs and cross-dimensional conversions without evidence are excluded. Do not infer concentration, density or package size from price.
+6. **Declare statistical and temporal policies.** Specify peer population, exclusions, minimum observations and independent entities, estimator, outlier threshold, date basis and treatment of missing periods. Compare matching profile/revision, stage and time strata. Keep unweighted and weighted estimators distinct. Report nominal changes as nominal; observed endpoints separated by gaps are not continuous history.
+7. **Build reference cases before acceptance.** Include source-linked positive cases, near-matches that must fail, ambiguous units, boundary values, duplicate joins, numerical precision and sparse peers. Add an independent numerical oracle. A framework change must also pass a synthetic unrelated category, including continuous quantities when supported. Synthetic fixtures must never enter runtime results.
+8. **Reconcile and review.** Verify selected values against immutable source files, recompute conversions and totals independently, and record discrepancies. Technical reconciliation, independent semantic review and user acceptance are separate states. Do not promote the latter from passing code tests.
+9. **Expose an auditable answer.** Show the profile and attributes, currency and canonical unit, observed quantities, counts by grain, excluded count/reasons, original-to-normalized examples, peer size, missing periods and query receipt. Keep monetary display rounding separate from computation. An outlier is a review signal, not causal or legal evidence.
+10. **Version, release and monitor.** Bind profile digest to semantic context and evidence; reject stale plans. Changes to units, matching, date basis or statistics require a new revision and replay of reference cases. Promote according to the consumer's acceptance ceremony. Roll back the profile/adapter and disable its metric while retaining historical receipts. Track exclusion rate, unknown units, attribute gaps, peer coverage and benchmark drift.
+
+## Contract and extension boundaries
+
+The provider owns profile validation, selection predicates, normalization, deterministic statistics and evidence. The host owns authorization, quotas, rendering and transport. The model proposes a typed plan; it cannot invent conversions or execute free SQL.
+
+The starter schema describes exact-alias profiles with explicit multiplicative conversion rules. It is intentionally not a universal ontology or a classifier. Nonlinear measures, bundles, dose-equivalence, service productivity and other unsupported semantics require a separately specified strategy and acceptance cases; do not squeeze them into a package-count rule. The shared procedure is reusable even when a provider needs a new strategy.
+
+Record per-category status as draft, local candidate, independently reviewed or retired with authority and evidence. Runtime availability is a separate field from semantic acceptance. Use source-linked benchmarks and representative samples; a few reconciled records do not validate the entire dataset.
+
+## Runtime admission and interpretation controls
+
+Enforce profile status before querying, not only in documentation. Bind live profile content to context and reject changes during execution. A selected target must not silently redefine the peer population: record target filters, reference filters and exclusions separately.
+
+Count both observations and independent clusters at the source grain. Where repeated observations share a transaction or other dependent entity, expose a sensitivity estimate with explicit weighting. Minimum sample sizes and thresholds require calibration for the domain; until then label results exploratory. Insufficient peers are an unavailable assessment, never evidence of normality.
+
+Source-declared units and independently verified commercial or physical units are different evidence states. Keep that distinction in the receipt and answer. Review data quality before interpreting an extreme value. Sparse endpoints can support a descriptive nominal difference, not an established trend.

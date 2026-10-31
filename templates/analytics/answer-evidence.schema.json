@@ -24,7 +24,8 @@
     "status": {
       "enum": [
         "complete",
-        "insufficient_data"
+        "insufficient_data",
+        "no_records"
       ]
     },
     "plan": {
@@ -51,7 +52,8 @@
         "operation": {
           "enum": [
             "compare",
-            "trend"
+            "trend",
+            "search"
           ]
         },
         "metric": {

@@ -4,5 +4,20 @@
   "created_at": "2026-10-20",
   "decision": "Place neutral skill under templates/apos/skills per existing registration guide; keep host and domain semantics outside package",
   "authority": "User-authorized implementation and Git distribution",
-  "rollback": "Revert candidate commit; pinned consumers remain unchanged"
+  "rollback": "Revert candidate commit; pinned consumers remain unchanged",
+  "recovery": {
+    "date": "2026-10-30",
+    "decision": "Restore verified skill bytes from a surviving Git copy; reconstruct schema changes explicitly as a new candidate; retain source hashes and distinguish recovered files from unavailable commits",
+    "unavailable_local_commits": [
+      "372db7fca1d43490689bd01386f06f4fd7951d52",
+      "239b83e"
+    ],
+    "baseline": "7587e66a727835eab231a853ae44d623187b8157"
+  },
+  "publication": {
+    "date": "2026-10-30",
+    "authority": "Explicit user authorization to commit and merge",
+    "decision": "Publish recovered candidate via existing PR; preserve generic scope and Git ancestry; use merge commit so immutable consumer pins remain reachable",
+    "verification": "Compare tree hash, repository gates and exact-head CI before merge"
+  }
 }
