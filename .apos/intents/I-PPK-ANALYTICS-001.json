@@ -1,0 +1,109 @@
+{
+  "id": "I-PPK-ANALYTICS-001",
+  "revision": 3,
+  "status": "candidate",
+  "problem": "Analytical procedures need portable contracts and provider-owned semantics",
+  "population": "Clients and maintainers of governed analytical providers",
+  "outcome": "Git-versioned neutral skill and schemas, independently loadable without a proprietary host",
+  "capabilities": [
+    "recover-context",
+    "design-reusable-contract",
+    "change-package",
+    "verify-package",
+    "publish-authorized-version"
+  ],
+  "required_contract_ids": [
+    "C-PPK-SCOPE-001",
+    "C-PPK-EVID-001",
+    "C-PPK-REV-001"
+  ],
+  "classification": {
+    "impact": "low",
+    "uncertainty": "low",
+    "reversibility": "reversible",
+    "environment": "repository_documentation"
+  },
+  "ceremony_selection": {
+    "level": "standard",
+    "triggers": [
+      "published_documentation"
+    ],
+    "downgrade_allowed": false
+  },
+  "change_envelope": {
+    "delta": [
+      "Portable analytical skill",
+      "Context/plan/evidence schemas",
+      "Data-domain analytical controls"
+    ],
+    "affected_surfaces": [
+      "templates/apos/skills/analyze-governed-data",
+      "templates/analytics",
+      ".apos"
+    ],
+    "affected_domains": [
+      "session_memory"
+    ],
+    "invariants": [
+      "No consumer names or data",
+      "No arbitrary SQL from model",
+      "No silent context drift"
+    ],
+    "out_of_scope": [
+      "Provider runtime",
+      "Paid services"
+    ],
+    "compatibility": [
+      "Guidance explains existing catalogs and the consumer adapter index"
+    ],
+    "regression_surface": [
+      "documentation links",
+      "APOS projections"
+    ],
+    "rollback": "Revert candidate commit preserving consumer locks",
+    "component_reuse_assessment": {
+      "decision": "not_applicable",
+      "components_reviewed": [],
+      "rationale": "Documentation only",
+      "reuse_surfaces": []
+    }
+  },
+  "source": {
+    "type": "builder_conversation",
+    "date": "2026-09-15"
+  },
+  "recovery_delivery": {
+    "expected_outcome": "Recover portable skill from Git-pinned surviving copy, reconstruct compatible schemas and add generic criteria controls",
+    "acceptance": [
+      "Recovered bytes match prior lock",
+      "Positive and negative schema cases",
+      "No consumer names or data in reusable artifacts",
+      "Repository checks pass"
+    ],
+    "invariants": [
+      "Preserve baseline history",
+      "Do not claim lost commits recovered",
+      "Provider owns domain semantics"
+    ],
+    "scope": [
+      "skill",
+      "schemas",
+      "governance"
+    ],
+    "rollback": "Revert this local candidate; existing consumer pins remain unchanged until explicit update"
+  },
+  "publication_delivery": {
+    "authority": "Explicit user authorization to commit, merge and continue roadmap on 2026-10-30",
+    "expected_outcome": "Publish portable skill and structural contracts through reviewed candidate and passing checks",
+    "acceptance": [
+      "Exact candidate tree matches reviewed local files",
+      "Required repository checks pass on candidate",
+      "Consumer pin resolves to published Git commit"
+    ],
+    "invariants": [
+      "No provider data or consumer-specific rules",
+      "Publication does not certify analytical accuracy"
+    ],
+    "rollback": "Revert merge while retaining pinned historical commit and evidence"
+  }
+}

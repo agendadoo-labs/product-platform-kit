@@ -1,8 +1,8 @@
 {
   "id": "DM-PPK-001",
-  "revision": 6,
+  "revision": 7,
   "protocol": "APOS v0.2",
-  "updated_at": "2026-10-18",
+  "updated_at": "2026-10-30",
   "purpose": "Mapear os registros de conhecimento e artefatos reutilizáveis do Product Platform Kit sem incorporar dados de consumidores.",
   "authority": {
     "schema_source": "repository",
@@ -101,6 +101,12 @@
       "id": "knowledge.dependency_fingerprint",
       "classification": "internal_evidence",
       "purpose": "Binds verified requirements to transitive specification inputs and declared implementation/tests; no automatic approval"
+    },
+    {
+      "id": "analytics.comparison_profile_schema",
+      "classification": "reusable_contract",
+      "purpose": "Exact-alias multiplicative profile structure; domain extensions and runtime admission owned by provider",
+      "source": "templates/analytics/comparison-profiles.schema.json"
     }
   ],
   "relationships": [

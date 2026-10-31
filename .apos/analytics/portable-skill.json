@@ -1,0 +1,22 @@
+{
+  "id": "SPEC-PPK-ANALYTICS-001",
+  "status": "candidate",
+  "purpose": "Portable governed analysis with provider-owned semantics",
+  "skill": "templates/apos/skills/analyze-governed-data/SKILL.md",
+  "schemas": [
+    "templates/analytics/analysis-plan.schema.json",
+    "templates/analytics/semantic-context.schema.json",
+    "templates/analytics/answer-evidence.schema.json"
+  ],
+  "invariants": [
+    "Host-independent instructions",
+    "No free SQL from model",
+    "Versioned semantic context",
+    "Independent numerical oracle",
+    "Pinned Git distribution"
+  ],
+  "limitations": [
+    "Envelope validation does not replace provider semantics",
+    "Runtime acceptance belongs to each consumer"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "E-PPK-ANALYTICS-004",
+  "intent_id": "I-PPK-ANALYTICS-001",
+  "passed": true,
+  "observed_at": "2026-10-30",
+  "scope": "Recovered skill bytes and reconstructed structural contracts",
+  "checks": [
+    "Three recovered files match prior pinned SHA256",
+    "Skill frontmatter validator passed",
+    "Four Draft202012 schemas valid; nine positive/negative contract cases passed",
+    "Repository and operating-model checks passed"
+  ],
+  "artifacts": [
+    ".apos/analytics/skill-recovery.json",
+    "scripts/verify-analytics-schemas.py"
+  ],
+  "limits": [
+    "Lost local Git objects not recovered",
+    "No domain semantics or cross-model performance certification",
+    "Local candidate, not merged"
+  ]
+}

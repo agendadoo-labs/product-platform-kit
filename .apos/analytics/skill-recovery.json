@@ -1,0 +1,11 @@
+{
+  "status": "verified_byte_recovery_new_candidate",
+  "prior_skill_commit": "372db7fca1d43490689bd01386f06f4fd7951d52",
+  "source_copy_commit": "71185f8b017de3f34b2d5d897fdd48b74b18b19b",
+  "recovered_file_sha256": {
+    "templates/apos/skills/analyze-governed-data/SKILL.md": "52a5856d1e573d43d5d1f98807f2e1382d49f7d1b1e8b52f491b8d5c978d1fd0",
+    "templates/apos/skills/analyze-governed-data/references/host-contract.md": "cbe35957f6c82f0a047081ca4a54135c18dde1d66c62e95ab37f168b28cd40b1",
+    "templates/apos/skills/analyze-governed-data/references/category-comparability.md": "720610c9ecbac1bd5ca73091c8126b4e408ddbe5caa096333e9d9402213cfb4a"
+  },
+  "schemas": "Reconstructed from current interface, not exact recovery of unavailable objects"
+}

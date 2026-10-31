@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Auditable answer envelope",
+  "type": "object",
+  "required": [
+    "version",
+    "analysis_id",
+    "status",
+    "plan",
+    "context_hash",
+    "query",
+    "statistics",
+    "coverage",
+    "limitations"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0"
+    },
+    "analysis_id": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "status": {
+      "enum": [
+        "complete",
+        "insufficient_data",
+        "no_records"
+      ]
+    },
+    "plan": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Governed analysis plan",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "context_hash",
+        "operation",
+        "metric",
+        "filters",
+        "group_by"
+      ],
+      "properties": {
+        "version": {
+          "const": "1.0"
+        },
+        "context_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "operation": {
+          "enum": [
+            "compare",
+            "trend",
+            "search"
+          ]
+        },
+        "metric": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "filters": {
+          "type": "object",
+          "maxProperties": 20
+        },
+        "group_by": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true,
+          "maxItems": 5
+        }
+      }
+    },
+    "context_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "query": {
+      "type": "object",
+      "required": [
+        "sql",
+        "parameters",
+        "query_hash",
+        "dataset_sha256",
+        "sources",
+        "grain",
+        "joins",
+        "cardinality_check"
+      ]
+    },
+    "statistics": {
+      "type": "object"
+    },
+    "coverage": {
+      "type": "object"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
